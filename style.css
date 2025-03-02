@@ -76,6 +76,19 @@ a:hover {
     text-decoration: underline;
 }
 
+.strofa {
+    font-style: normal;
+}
+
+.ritornello {
+    font-weight: bold;
+}
+
+.tags {
+    color: #DB9941
+
+}
+
 footer {
     margin-top: 20px;
     background-color: #DB9941;

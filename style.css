@@ -76,17 +76,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.strofa {
+.verse {
     font-style: normal;
 }
 
-.ritornello {
+.chorus {
     font-weight: bold;
 }
 
 .tags {
     color: #DB9941
-
 }
 
 footer {

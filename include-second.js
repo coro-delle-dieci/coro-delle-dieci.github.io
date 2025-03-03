@@ -18,6 +18,16 @@ function updatePageTitle() {
     const pageTitles = {
         "accogli-signore-i-nostri-doni.html": "Accogli Signore i nostri doni",
         "acqua-siamo-noi.html": "Acqua siamo noi",
+        "adesso-e-la-pienezza": "Adesso è la pienezza",
+        "lode-e-gloria-a-te": "Lode e gloria a te",
+        "lode-e-gloria": "Lode e gloria",
+        "quale-gioia": "Quale gioia",
+        "risuscito": "Risuscitò",
+        "servire-e-regnare": "Servire è regnare",
+        "ti-lodiamo-e-ti-adoriamo": "Ti lodiamo e ti adoriamo",
+        "un-cuore-nuovo": "Un cuore nuovo",
+        "verbum-panis": "Verbum panis",
+        "vivere-la-vita": "Vivere la vita",
         "default": "Coro delle 10"
     };
 

@@ -76,16 +76,12 @@ a:hover {
     text-decoration: underline;
 }
 
-.verse {
-    font-style: normal;
-}
-
 .chorus {
     font-weight: bold;
 }
 
-.tags {
-    color: #DB9941
+.bridge {
+    font-style: italic;
 }
 
 footer {

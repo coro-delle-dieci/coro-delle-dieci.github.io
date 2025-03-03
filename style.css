@@ -1,48 +1,96 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background-color: #E5E5E5;
     color: #07111D;
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 
 header {
     background-color: #DB9941;
     color: #07111D;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.search-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
 }
 
 nav ul li a {
     color: #07111D;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #AE2C11;
-    text-decoration: underline;
+    background-color: #AE2C11;
+    color: white;
+}
+
+#search-input {
+    width: 250px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 2px solid #AE2C11;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+#search-input:focus {
+    border-color: #DB9941;
+    box-shadow: 0px 0px 5px rgba(219, 153, 65, 0.7);
 }
 
 main {
     padding: 20px;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .container {
     width: 80%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -59,10 +107,17 @@ section {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     color: #07111D;
+    text-align: center;
+}
+
+.canto-page section {
+    max-width: 600px;
+    text-align: left;
 }
 
 h1, h2, h3 {
     color: #AE2C11;
+    text-align: center;
 }
 
 a {
@@ -89,4 +144,5 @@ footer {
     background-color: #DB9941;
     color: #07111D;
     padding: 10px;
+    text-align: center;
 }

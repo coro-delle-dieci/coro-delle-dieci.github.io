@@ -1,15 +1,24 @@
+:root {
+    --background: #b9d6f2;
+    --header-footer: #061a40;
+    --text: #003559;
+    --accent: #0353a4;
+    --hover: #006daa;
+    --title-text: #b9d6f2;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #E5E5E5;
-    color: #07111D;
+    background-color: var(--background);
+    color: var(--text);
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
-header {
-    background-color: #DB9941;
-    color: #07111D;
+header, footer {
+    background-color: var(--header-footer);
+    color: white;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -49,12 +58,8 @@ nav ul {
     gap: 15px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
-    color: #07111D;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -62,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #AE2C11;
+    background-color: var(--hover);
     color: white;
 }
 
@@ -70,15 +75,15 @@ nav ul li a:hover {
     width: 250px;
     padding: 8px 12px;
     font-size: 1rem;
-    border: 2px solid #AE2C11;
+    border: 2px solid var(--accent);
     border-radius: 20px;
     outline: none;
     transition: 0.3s ease-in-out;
 }
 
 #search-input:focus {
-    border-color: #DB9941;
-    box-shadow: 0px 0px 5px rgba(219, 153, 65, 0.7);
+    border-color: var(--hover);
+    box-shadow: 0px 0px 5px rgba(3, 83, 164, 0.7);
 }
 
 main {
@@ -99,14 +104,14 @@ main {
 
 section {
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     margin: 10px auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    color: #07111D;
+    color: var(--text);
     text-align: center;
 }
 
@@ -115,19 +120,23 @@ section {
     text-align: left;
 }
 
-h1, h2, h3 {
-    color: #AE2C11;
+h1 {
+    color: var(--title-text);
+}
+
+h2, h3 {
+    color: var(--accent);
     text-align: center;
 }
 
 a {
-    color: #AE2C11;
+    color: var(--accent);
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #DB9941;
+    color: var(--hover);
     text-decoration: underline;
 }
 
@@ -141,8 +150,27 @@ a:hover {
 
 footer {
     margin-top: 20px;
-    background-color: #DB9941;
-    color: #07111D;
+    background-color: var(--header-footer);
+    color: white;
     padding: 10px;
     text-align: center;
 }
+
+/* Altre palette disponibili (modifica il valore di `:root` per testarle) */
+/* Palette Moonstone */
+/*.palette-moonstone {
+    --background: #46b1c9;
+    --header-footer: #9fb7b9;
+    --text: #003559;
+    --accent: #84c0c6;
+    --hover: #bcc1ba;
+}*/
+
+/* Palette Mint Green */
+/*.palette-mint {
+    --background: #ddfff7;
+    --header-footer: #462255;
+    --text: #aa4465;
+    --accent: #93e1d8;
+    --hover: #ffa69e;
+}*/

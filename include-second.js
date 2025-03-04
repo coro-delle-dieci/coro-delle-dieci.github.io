@@ -18,17 +18,24 @@ function updatePageTitle() {
     const pageTitles = {
         "accogli-signore-i-nostri-doni.html": "Accogli Signore i nostri doni",
         "acqua-siamo-noi.html": "Acqua siamo noi",
-        "adesso-e-la-pienezza": "Adesso è la pienezza",
-        "lode-e-gloria-a-te": "Lode e gloria a te",
-        "lode-e-gloria": "Lode e gloria",
-        "quale-gioia": "Quale gioia",
-        "risuscito": "Risuscitò",
-        "servire-e-regnare": "Servire è regnare",
-        "ti-lodiamo-e-ti-adoriamo": "Ti lodiamo e ti adoriamo",
-        "un-cuore-nuovo": "Un cuore nuovo",
-        "verbum-panis": "Verbum panis",
-        "vivere-la-vita": "Vivere la vita",
-        "default": "Coro delle 10"
+        "adesso-e-la-pienezza.html": "Adesso è la pienezza",
+        "lode-e-gloria-a-te.html": "Lode e gloria a te",
+        "lode-e-gloria.html": "Lode e gloria",
+        "le-tue-mani.html": "Le tue mani",
+        "mi-indicherai.html": "Mi indicherai",
+        "musica-di-festa.html": "Musica di festa",
+        "nel-tuo-silenzio.html": "Nel tuo silenzio",
+        "ogni-mia-parola.html": "Ogni mia parola (Come la pioggia e la neve)",
+        "pace-sia-pace-a-voi.html": "Pace sia, pace a voi",
+        "pane-del-cielo.html": "Pane del cielo",
+        "quale-gioia.html": "Quale gioia",
+        "risuscito.html": "Risuscitò",
+        "servire-e-regnare.html": "Servire è regnare",
+        "ti-lodiamo-e-ti-adoriamo.html": "Ti lodiamo e ti adoriamo",
+        "un-cuore-nuovo.html": "Un cuore nuovo",
+        "verbum-panis.html": "Verbum panis",
+        "vivere-la-vita.html": "Vivere la vita",
+        "default": "Coro delle Dieci"
     };
 
     let currentPage = window.location.pathname.split("/").pop();

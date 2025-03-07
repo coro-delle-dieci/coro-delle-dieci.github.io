@@ -15,7 +15,7 @@ def add_sections_to_html(file_path, link, n1, n2):
     # Aggiungi il video YouTube se il link è fornito
     if link:
         new_section += '''
-        <section>
+        <section class="video-container">
             <iframe width="560" height="315" src="{}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
         '''.format(link)
@@ -24,15 +24,13 @@ def add_sections_to_html(file_path, link, n1, n2):
     if n1 or n2:
         new_section += '''
         <section>
-            Puoi trovare questo canto al numero:
-            <ul>
+            Puoi trovare questo canto al numero:<br>
         '''
         if n1:
-            new_section += f'                <li><b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)</li>\n'
+            new_section += f'           <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
         if n2:
-            new_section += f'                <li><b>{n2}</b> nel libro dei canti dell\'assemblea</li>\n'
+            new_section += f'           <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
         new_section += '''
-            </ul>
         </section>
         '''
 
@@ -50,11 +48,11 @@ def main():
     file_path = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti/" + input("Inserisci il percorso del file HTML: ") + ".html"
 
     # Chiedi all'utente il link del video YouTube
-    link = input("Inserisci il link del video YouTube (lascia vuoto per saltare): ").strip().replace("https://youtu.be/", "https://www.youtube.com/embed/")
+    link = input("Link: ").strip().replace("https://youtu.be/", "https://www.youtube.com/embed/")
 
     # Chiedi all'utente i numeri n1 e n2
-    n1 = input("Inserisci il numero n1 (quaderno ad anelli, lascia vuoto per saltare): ").strip()
-    n2 = input("Inserisci il numero n2 (libro dei canti, lascia vuoto per saltare): ").strip()
+    n1 = input("Numero nel l. minicorale: ").strip()
+    n2 = input("Numero nel l. assemblea: ").strip()
 
     # Aggiungi le sezioni al file HTML
     add_sections_to_html(file_path, link, n1, n2)

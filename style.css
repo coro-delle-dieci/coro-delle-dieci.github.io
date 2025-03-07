@@ -7,6 +7,10 @@
     --title-text: #b9d6f2;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--background);
@@ -143,10 +147,11 @@ footer {
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Rapporto di aspetto 16:9 (9 / 16 = 0.5625 o 56.25%) */
+    padding-bottom: 56.25%; /* Rapporto di aspetto 16:9 */
     height: 0;
-    overflow: hidden;
-    max-width: 100%;
+    overflow: auto;
+    width: 95%;
+    margin: 0 auto 1.2rem;
 }
 
 .video-container iframe {
@@ -158,19 +163,25 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        margin-bottom: 1.2rem;
+    }
+
     h1 {
+        margin-top: 30px;
         font-size: 1.8rem;
     }
     
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 2px;
         padding: 0;
+        margin-bottom: 30px
     }
     
     nav ul li a {
         display: block;
-        padding: 10px;
+        padding: 5px;
     }
     
     main {
@@ -179,7 +190,8 @@ footer {
     }
     
     .container {
-        width: 95%;
+        width: 100%;
+        padding: 0 10px;
     }
     
     section {

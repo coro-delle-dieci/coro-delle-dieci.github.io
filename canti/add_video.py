@@ -27,9 +27,9 @@ def add_sections_to_html(file_path, link, n1, n2):
             Puoi trovare questo canto al numero:<br>
         '''
         if n1:
-            new_section += f'           <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
+            new_section += f'    <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
         if n2:
-            new_section += f'           <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
+            new_section += f'    <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
         new_section += '''
         </section>
         '''

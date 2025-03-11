@@ -1,2 +1,2 @@
-python update_list.py
+python ../support-files/update_list.py
 pause

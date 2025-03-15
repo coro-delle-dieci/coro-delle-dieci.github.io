@@ -1,1 +1,0 @@
-# coro-delle-dieci

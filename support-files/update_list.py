@@ -7,7 +7,7 @@ canti_folder = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti"
 html_file = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti.html"
 
 # Parole speciali che devono avere l'iniziale maiuscola
-special_words = {"gesù", "cristo", "dio", "signore", "signor", "santo", "spirito", "maria"}
+special_words = {"gesù", "cristo", "dio", "signore", "signor", "santo", "spirito", "maria", "madonna", "czestochowa", "lui", "pietro"}
 
 def format_canto_name(name):
     """
@@ -17,7 +17,7 @@ def format_canto_name(name):
     3. Capitalizza le parole speciali (Gesù, Cristo, Dio) se presenti.
     """
     # Sostituisce i trattini con spazi
-    name = name.replace("-", " ")
+    name = name.replace("-", " ").replace("l-a", "l'a").replace("l-e", "l'e").replace("l-i", "l'i").replace("l-o", "l'o").replace("l-u", "l'u").replace("m-a", "m'a")
     
     # Capitalizza solo la prima lettera del titolo
     name = name[0].upper() + name[1:]

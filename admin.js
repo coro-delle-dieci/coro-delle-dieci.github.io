@@ -30,8 +30,14 @@ document.getElementById("salva").addEventListener("click", async function () {
     let response = await fetch(sheetUrl, {
         method: "POST",
         body: JSON.stringify({ titolo, link }),
-        headers: { "Content-Type": "application/json" }
+        headers: { 
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*"
+        }
     });
+
+    let data = await response.text();
+    console.log("Risposta del server:", data);
 
     if (response.ok) {
         alert("Canto aggiornato con successo!");

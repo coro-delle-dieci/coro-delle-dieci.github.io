@@ -1,5 +1,5 @@
 const sheetId = "1NYcf3upDR8YLuPX0dm__T1ArAZLXBIdNRBgzwC5GCa0";
-const sheetUrl = `https://script.google.com/macros/s/AKfycbx7ahSbZIk2smMKO_sdhBIwWzjro96iCINA40gWt4JIoMQIdwoSFzrLnqRwb3AC5XFv/exec`;
+const sheetUrl = `https://script.google.com/macros/s/AKfycbyWFoa_JKCfF0duFdQCVva0Q259GHcU19VglFE5iKnEf0zzIhdlbaHF8OrwAEkM7Ko/exec`;
 
 async function caricaCanti() {
     const response = await fetch(`https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`);

@@ -5,30 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Coro delle 10</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Carica il client di Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Carica il file di autenticazione -->
+    <script src="auth.js"></script>
 </head>
 <body>
     <header>
         <h1>Login</h1>
     </header>
-
     <main class="container">
         <section>
-            <h2>Accedi</h2>
-            <form id="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" required>
-                <button type="submit">Login</button>
-            </form>
-            <p id="login-error" style="color: red;"></p>
+        <h2>Accedi con il tuo account Google</h2>
+        <!-- Elemento che inizializza Google Sign-In -->
+        <div id="g_id_onload"
+            data-client_id="YOUR_CLIENT_ID"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="onGoogleLogin"
+            data-auto_prompt="false">
+        </div>
+        <!-- Pulsante standard di Google Sign-In -->
+        <div class="g_id_signin" data-type="standard"></div>
+        <p id="login-error" style="color: red;"></p>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
     </footer>
-
-    <script src="login.js"></script>
 </body>
 </html>

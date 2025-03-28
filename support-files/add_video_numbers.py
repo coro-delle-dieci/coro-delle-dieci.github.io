@@ -31,8 +31,7 @@ def add_sections_to_html(file_path, link, n1, n2):
         if n2:
             new_section += f'\t\t    <b>{n2}</b> nel libro dei canti dell\'assemblea<br>'
         new_section += '''
-        </section>
-        '''
+        </section>'''
 
     # Inserisci la nuova sezione dopo </section>
     updated_content = content[:section_end_index + len('</section>')] + new_section + content[section_end_index + len('</section>'):]

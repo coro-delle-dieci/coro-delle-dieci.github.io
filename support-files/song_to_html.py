@@ -28,23 +28,23 @@ def create_song_html(title, song_text):
                 # Rimuovi " Rit." dalla fine della strofa
                 section = section[:-5].strip()
                 html_content.append(
-                    '\t\t<p class="verse">\n' +
-                    '\n'.join(f'\t\t\t{line}<br>' for line in section.split('\n')) +
-                    '\n\t\t</p>'
+                    '\t\t\t<p class="verse">\n' +
+                    '\n'.join(f'\t\t\t\t{line}<br>' for line in section.split('\n')) +
+                    '\n\t\t\t</p>'
                 )
                 # Aggiungi il ritornello memorizzato, se esiste
                 if chorus_text:
                     html_content.append(
-                        '\t\t<p class="chorus">\n' +
-                        '\n'.join(f'\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
-                        '\n\t\t</p>'
+                        '\t\t\t<p class="chorus">\n' +
+                        '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                        '\n\t\t\t</p>'
                     )
             else:
                 # Altrimenti, è una strofa normale
                 html_content.append(
-                    '\t\t<p class="verse">\n' +
-                    '\n'.join(f'\t\t\t{line}<br>' for line in section.split('\n')) +
-                    '\n\t\t</p>'
+                    '\t\t\t<p class="verse">\n' +
+                    '\n'.join(f'\t\t\t\t{line}<br>' for line in section.split('\n')) +
+                    '\n\t\t\t</p>'
                 )
     
     # Unisci tutto il contenuto HTML

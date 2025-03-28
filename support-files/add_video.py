@@ -29,7 +29,7 @@ def add_sections_to_html(file_path, link, n1, n2):
         if n1:
             new_section += f'    <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
         if n2:
-            new_section += f'    <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
+            new_section += f'\t\t    <b>{n2}</b> nel libro dei canti dell\'assemblea<br>'
         new_section += '''
         </section>
         '''

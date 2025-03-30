@@ -1,10 +1,11 @@
 :root {
-    --background: #b9d6f2;
-    --header-footer: #061a40;
+    --background-hftext: #b9d6f2;
+    --header-footer-bg: #061a40;
     --text: #003559;
-    --accent: #0353a4;
+    --h: #b9d6f2;
+    --link: #006daa;
     --hover: #006daa;
-    --title-text: #b9d6f2;
+    --section-bg: #b9d6f2;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: var(--background);
+    background-color: var(--background-hftext);
     color: var(--text);
     margin: 0;
     padding: 0;
@@ -24,8 +25,8 @@ body {
 }
 
 header, footer {
-    background-color: var(--header-footer);
-    color: white;
+    background-color: var(--header-footer-bg);
+    color: var(--background-hftext);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -47,7 +48,7 @@ header, footer {
 h1 {
     flex-grow: 1;
     text-align: center;
-    margin: 0;
+    margin: 1;
     font-size: 2rem;
 }
 
@@ -71,6 +72,10 @@ nav ul li a {
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+header nav ul li a {
+    color: var(--background-hftext);
 }
 
 nav ul li a:hover {
@@ -115,11 +120,11 @@ section {
 }
 
 h1 {
-    color: var(--title-text);
+    color: var(--header-footer-text);
 }
 
 h2, h3 {
-    color: var(--accent);
+    color: var(--h);
     text-align: center;
 }
 
@@ -144,8 +149,8 @@ a:hover {
 
 footer {
     margin-top: 20px;
-    background-color: var(--header-footer);
-    color: white;
+    background-color: var(--header-footer-bg);
+    color: var(--background-hftext);
     padding: 10px;
     text-align: center;
     width: 100%;

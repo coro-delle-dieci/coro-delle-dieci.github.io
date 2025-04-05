@@ -7,7 +7,7 @@ app.secret_key = "supersegreto"
 app.permanent_session_lifetime = timedelta(hours=2)
 
 DATA_FILE = "data/canti.json"
-USERS = {"responsabile": "password123"}  # Puoi cambiare queste credenziali
+USERS = {"user": "password"}  # Puoi cambiare queste credenziali
 
 @app.route("/")
 def home():

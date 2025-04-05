@@ -1,0 +1,12 @@
+{
+    "domenica_successiva": [
+        {
+        "titolo": "Gloria",
+        "link": "https://esempio.com/gloria"
+        },
+        {
+        "titolo": "Alleluia",
+        "link": "https://esempio.com/alleluia"
+        }
+    ]
+}

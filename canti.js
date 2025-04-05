@@ -23,4 +23,22 @@ async function caricaCanti() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", caricaCanti);
+function prossimaDomenica() {
+    const oggi = new Date();
+    const giornoCorrente = oggi.getDay();
+    const giorniDaAggiungere = (7 - giornoCorrente + 0) % 7 || 7; // 0 = domenica
+    const domenica = new Date(oggi);
+    domenica.setDate(oggi.getDate() + giorniDaAggiungere);
+
+    const opzioni = { day: 'numeric', month: 'long' };
+    const formatter = new Intl.DateTimeFormat('it-IT', opzioni);
+    return formatter.format(domenica);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    caricaCanti();
+    const dataSpan = document.getElementById("data-domenica");
+    if (dataSpan) {
+        dataSpan.textContent = prossimaDomenica();
+    }
+});

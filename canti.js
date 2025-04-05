@@ -23,4 +23,5 @@ async function caricaCanti() {
     }
 }
 
+// Carica i canti quando la pagina è pronta
 document.addEventListener("DOMContentLoaded", caricaCanti);

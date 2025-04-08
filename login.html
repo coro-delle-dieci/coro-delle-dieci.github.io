@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Coro delle Dieci</h1>
+        <nav>
+            <ul>
+                <li><a href="index/">Home</a></li>
+                <li><a href="canti/">Canti</a></li>
+                <li><a href="calendario/">Calendario</a></li>
+                <li class="login-btn"><a href="login.html">Accedi</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section>
+            <h2>Accesso Amministratori</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit">Accedi</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const users = {
+            "admin1": "password1",
+            "admin2": "password2",
+            "admin3": "password3"
+        };
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if(users[username] && users[username] === password) {
+                localStorage.setItem('auth', 'true');
+                window.location.href = 'admin.html';
+            } else {
+                alert('Credenziali non valide!');
+            }
+        });
+    </script>
+</body>
+</html>

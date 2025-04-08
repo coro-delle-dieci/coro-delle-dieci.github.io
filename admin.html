@@ -2,81 +2,49 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Area Responsabili - Inserimento Canti</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Admin Canti</title>
 </head>
 <body>
-    <h1>Modifica i Canti della Domenica</h1>
-    
-    <form id="login-form">
-        <h3>Login</h3>
-        <input type="text" id="username" placeholder="Username" required><br>
-        <input type="password" id="password" placeholder="Password" required><br>
-        <button type="submit">Accedi</button>
-    </form>
-
-    <form id="canti-form" style="display:none;">
-        <h3>Canti della Domenica</h3>
-        <div id="canti-inputs">
-            <!-- Spazi per inserire canti -->
-            <input type="text" placeholder="Titolo" name="titolo1">
-            <input type="text" placeholder="Link" name="link1"><br>
-
-            <input type="text" placeholder="Titolo" name="titolo2">
-            <input type="text" placeholder="Link" name="link2"><br>
-
-            <input type="text" placeholder="Titolo" name="titolo3">
-            <input type="text" placeholder="Link" name="link3"><br>
-        </div>
-        <button type="submit">Salva Canti</button>
-    </form>
+    <h2>Inserisci i canti</h2>
+    <div id="form"></div>
+    <button onclick="salva()">Salva</button>
+    <button onclick="logout()">Logout</button>
 
     <script>
-        const loginForm = document.getElementById("login-form");
-        const cantiForm = document.getElementById("canti-form");
+        const form = document.getElementById("form");
+        for (let i = 0; i < 10; i++) {
+            form.innerHTML += `
+                <input placeholder="Titolo ${i+1}" id="titolo${i}">
+                <input placeholder="Link ${i+1}" id="link${i}"><br>
+            `;
+        }
 
-        loginForm.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            const res = await fetch("/login", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ username, password }),
-            });
-
-            if (res.ok) {
-                loginForm.style.display = "none";
-                cantiForm.style.display = "block";
-            } else {
-                alert("Credenziali errate");
-            }
-        });
-
-        cantiForm.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const inputs = document.querySelectorAll("#canti-inputs input");
+        async function salva() {
             const canti = [];
-
-            for (let i = 0; i < inputs.length; i += 2) {
-                const titolo = inputs[i].value.trim();
-                const link = inputs[i + 1].value.trim();
+            for (let i = 0; i < 10; i++) {
+                let titolo = document.getElementById("titolo" + i).value;
+                let link = document.getElementById("link" + i).value;
                 if (titolo) canti.push({ titolo, link });
             }
 
-            const res = await fetch("/salva-canti", {
+            const res = await fetch("https://coro-delle-dieci.onrender.com/api/canti", {
                 method: "POST",
+                credentials: "include",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(canti),
+                body: JSON.stringify(canti)
             });
 
-            if (res.ok) {
-                alert("Canti salvati con successo!");
-            } else {
-                alert("Errore durante il salvataggio.");
-            }
-        });
+            if (res.ok) alert("Canti salvati!");
+            else alert("Errore nel salvataggio");
+        }
+
+        async function logout() {
+            await fetch("https://coro-delle-dieci.onrender.com/logout", {
+                method: "POST",
+                credentials: "include"
+            });
+            window.location.href = "login.html";
+        }
     </script>
 </body>
 </html>

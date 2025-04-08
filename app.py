@@ -1,29 +1,47 @@
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, session, redirect
 from flask_cors import CORS
-import json
+from datetime import datetime
 import os
 
 app = Flask(__name__)
-CORS(app)
+app.secret_key = os.environ.get("SECRET_KEY", "supersegretissimo")
+CORS(app, supports_credentials=True)
 
-# Semplice login hardcoded
-USERNAME = "admin"
-PASSWORD = "password123"
+# Utente autorizzato
+UTENTE = {
+    "username": "admin",
+    "password": "password123"
+}
+
+# Salvataggio in memoria (potresti poi passare a un file JSON o DB)
+canti_domenica = []
 
 @app.route("/login", methods=["POST"])
 def login():
-    dati = request.json
-    if dati["username"] == USERNAME and dati["password"] == PASSWORD:
+    data = request.get_json()
+    if data["username"] == UTENTE["username"] and data["password"] == UTENTE["password"]:
+        session["user"] = data["username"]
         return jsonify({"success": True})
-    return "Unauthorized", 401
+    return jsonify({"success": False}), 401
 
-@app.route("/salva-canti", methods=["POST"])
-def salva_canti():
-    dati = request.json
-    with open("canti.json", "w", encoding="utf-8") as f:
-        json.dump(dati, f, ensure_ascii=False, indent=2)
+@app.route("/logout", methods=["POST"])
+def logout():
+    session.pop("user", None)
     return jsonify({"success": True})
 
-@app.route("/canti.json")
-def get_canti():
-    return send_from_directory(".", "canti.json")
+@app.route("/api/canti", methods=["GET", "POST"])
+def gestisci_canti():
+    if request.method == "POST":
+        if session.get("user") != UTENTE["username"]:
+            return jsonify({"error": "Non autorizzato"}), 403
+        global canti_domenica
+        canti_domenica = request.get_json()[:10]
+        return jsonify({"success": True})
+
+    return jsonify({
+        "data": canti_domenica,
+        "domenica": datetime.now().strftime("domenica %-d %B")
+    })
+
+if __name__ == "__main__":
+    app.run()

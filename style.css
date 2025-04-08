@@ -55,6 +55,7 @@ h1 {
 nav {
     margin-top: 10px;
     width: 100%;
+    position: relative;
 }
 
 nav ul {
@@ -192,6 +193,12 @@ footer {
     border: none;
 }
 
+.login-btn {
+    margin-left: auto;
+    background-color: var(--hover);
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     header {
         margin-bottom: 1.2rem;
@@ -238,5 +245,11 @@ footer {
     .home-page .calendar-container {
         padding: 30%;
         padding-left: 20%;
+    }
+    
+    .login-btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
     }
 }

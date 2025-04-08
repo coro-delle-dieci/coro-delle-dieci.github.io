@@ -1,6 +1,12 @@
-const sheetId = "1NYcf3upDR8YLuPX0dm__T1ArAZLXBIdNRBgzwC5GCa0";
-const sheetUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
+// Aggiungi questa funzione per generare i link
+function generateLink(title) {
+    return title.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[àèéìòù]/g, c => 'aeiouc'['àèéìòù'.indexOf(c)])
+        .replace(/[^a-z0-9-]/g, '');
+}
 
+// Modifica la funzione caricaCanti
 async function caricaCanti() {
     try {
         const response = await fetch(sheetUrl);
@@ -8,18 +14,17 @@ async function caricaCanti() {
         const json = JSON.parse(text.substring(47).slice(0, -2));
 
         let listaCanti = document.getElementById("canti-domenica");
-        listaCanti.innerHTML = "";  // Pulisce eventuali contenuti precedenti
+        listaCanti.innerHTML = "";
 
         json.table.rows.forEach(row => {
-            let titolo = row.c[0].v;
-            let link = row.c[1] ? row.c[1].v : "#";
-            let div = document.createElement("div");
-            div.classList.add("canto-link");
-            div.innerHTML = `<a href="${link}" target="_blank">${titolo}</a>`;
+            const titolo = row.c[0].v;
+            const link = generateLink(titolo);
+            const div = document.createElement("div");
+            div.innerHTML = `<a href="canti/${link}.html">${titolo}</a>`;
             listaCanti.appendChild(div);
         });
     } catch (error) {
-        console.error("Errore nel caricamento dei canti:", error);
+        console.error("Errore:", error);
     }
 }
 

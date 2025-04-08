@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="canti.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Coro delle Dieci</h1>
+        <nav>
+            <ul>
+                <li><a href="index/">Home</a></li>
+                <li><a href="canti/">Canti</a></li>
+                <li><a href="calendario/">Calendario</a></li>
+                <li class="login-btn"><a href="login.html">Accedi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Gestione Canti Domenicali</h2>
+            <div id="adminMessage"></div>
+            <div id="songSelectors"></div>
+            <button onclick="saveSongs()">Salva Canti</button>
+        </section>
+    </main>
+
+    <script>
+        // Controllo autenticazione
+        if(!localStorage.getItem('auth')) {
+            window.location.href = 'login.html';
+        }
+
+        // Funzione per generare i selettori
+        function createSelectors() {
+            const container = document.getElementById('songSelectors');
+            container.innerHTML = '';
+            
+            for(let i = 1; i <= 10; i++) {
+                const selector = document.createElement('div');
+                selector.innerHTML = `
+                    <select id="song${i}">
+                        <option value="">Seleziona canto ${i}</option>
+                        ${window.songList.map(song => 
+                            `<option value="${song}">${song}</option>`
+                        ).join('')}
+                    </select>
+                `;
+                container.appendChild(selector);
+            }
+        }
+
+        // Carica la lista dei canti
+        window.songList = [
+            "Accogli Signore I Nostri Doni",
+            "Acqua Siamo Noi",
+            // ... inserisci tutti gli altri canti qui
+        ];
+
+        // Inizializza i selettori
+        createSelectors();
+
+        // Funzione salvataggio
+        async function saveSongs() {
+            const selectedSongs = [];
+            for(let i = 1; i <= 10; i++) {
+                const song = document.getElementById(`song${i}`).value;
+                if(song) selectedSongs.push(song);
+            }
+            
+            // Qui dovresti implementare la logica per salvare su Google Sheet
+            document.getElementById('adminMessage').textContent = 
+                "Canti salvati con successo!";
+        }
+    </script>
+</body>
+</html>

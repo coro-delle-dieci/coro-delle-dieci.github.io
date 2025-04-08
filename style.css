@@ -67,7 +67,7 @@ nav ul {
     flex-wrap: wrap;
 }
 
-nav ul li a {
+.item {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -76,7 +76,7 @@ nav ul li a {
     color: var(--background-hftext);
 }
 
-nav ul li a:hover {
+.item:hover {
     background-color: var(--hover);
     color: white;
 }

@@ -1,5 +1,5 @@
 async function caricaCanti() {
-    const url = "https://coro-delle-dieci.onrender.com/admin"; // Cambia con il tuo URL Render
+    const url = "https://coro-delle-dieci.onrender.com";
 
     try {
         const response = await fetch(url);

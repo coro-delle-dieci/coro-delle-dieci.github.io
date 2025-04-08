@@ -1,48 +1,37 @@
-from flask import Flask, request, jsonify, session, redirect
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-from datetime import datetime
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY", "supersegretissimo")
-CORS(app, supports_credentials=True)
+CORS(app)
 
-# Utente autorizzato
-UTENTE = {
-    "username": "admin",
-    "password": "password123"
-}
+# Esempio route principale per mostrare index.html
+@app.route('/')
+def home():
+    return render_template('index.html')
 
-# Salvataggio in memoria (potresti poi passare a un file JSON o DB)
-canti_domenica = []
+# API per ottenere i canti
+@app.route('/api/canti', methods=['GET'])
+def get_canti():
+    try:
+        with open('canti.json', 'r') as f:
+            canti = f.read()
+        return canti, 200, {'Content-Type': 'application/json'}
+    except FileNotFoundError:
+        return jsonify([])
 
-@app.route("/login", methods=["POST"])
-def login():
-    data = request.get_json()
-    if data["username"] == UTENTE["username"] and data["password"] == UTENTE["password"]:
-        session["user"] = data["username"]
-        return jsonify({"success": True})
-    return jsonify({"success": False}), 401
+# API per aggiornare i canti
+@app.route('/api/canti', methods=['POST'])
+def set_canti():
+    dati = request.get_json()
+    if not isinstance(dati, list) or len(dati) > 10:
+        return jsonify({'errore': 'Massimo 10 canti'}), 400
+    with open('canti.json', 'w') as f:
+        import json
+        json.dump(dati, f)
+    return jsonify({'ok': True})
 
-@app.route("/logout", methods=["POST"])
-def logout():
-    session.pop("user", None)
-    return jsonify({"success": True})
-
-@app.route("/api/canti", methods=["GET", "POST"])
-def gestisci_canti():
-    if request.method == "POST":
-        if session.get("user") != UTENTE["username"]:
-            return jsonify({"error": "Non autorizzato"}), 403
-        global canti_domenica
-        canti_domenica = request.get_json()[:10]
-        return jsonify({"success": True})
-
-    return jsonify({
-        "data": canti_domenica,
-        "domenica": datetime.now().strftime("domenica %-d %B")
-    })
-    
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+# Partenza del server su Render
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)

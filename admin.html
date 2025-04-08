@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Area Responsabili - Inserimento Canti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Modifica i Canti della Domenica</h1>
+    
+    <form id="login-form">
+        <h3>Login</h3>
+        <input type="text" id="username" placeholder="Username" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button type="submit">Accedi</button>
+    </form>
+
+    <form id="canti-form" style="display:none;">
+        <h3>Canti della Domenica</h3>
+        <div id="canti-inputs">
+            <!-- Spazi per inserire canti -->
+            <input type="text" placeholder="Titolo" name="titolo1">
+            <input type="text" placeholder="Link" name="link1"><br>
+
+            <input type="text" placeholder="Titolo" name="titolo2">
+            <input type="text" placeholder="Link" name="link2"><br>
+
+            <input type="text" placeholder="Titolo" name="titolo3">
+            <input type="text" placeholder="Link" name="link3"><br>
+        </div>
+        <button type="submit">Salva Canti</button>
+    </form>
+
+    <script>
+        const loginForm = document.getElementById("login-form");
+        const cantiForm = document.getElementById("canti-form");
+
+        loginForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            const res = await fetch("/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password }),
+            });
+
+            if (res.ok) {
+                loginForm.style.display = "none";
+                cantiForm.style.display = "block";
+            } else {
+                alert("Credenziali errate");
+            }
+        });
+
+        cantiForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const inputs = document.querySelectorAll("#canti-inputs input");
+            const canti = [];
+
+            for (let i = 0; i < inputs.length; i += 2) {
+                const titolo = inputs[i].value.trim();
+                const link = inputs[i + 1].value.trim();
+                if (titolo) canti.push({ titolo, link });
+            }
+
+            const res = await fetch("/salva-canti", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(canti),
+            });
+
+            if (res.ok) {
+                alert("Canti salvati con successo!");
+            } else {
+                alert("Errore durante il salvataggio.");
+            }
+        });
+    </script>
+</body>
+</html>

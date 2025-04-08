@@ -1,51 +1,29 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify, session
-import json, os
-from datetime import timedelta
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
+import json
+import os
 
 app = Flask(__name__)
-app.secret_key = "supersegreto"
-app.permanent_session_lifetime = timedelta(hours=2)
+CORS(app)
 
-DATA_FILE = "data/canti.json"
-USERS = {"user": "password"}  # Puoi cambiare queste credenziali
+# Semplice login hardcoded
+USERNAME = "admin"
+PASSWORD = "password123"
 
-@app.route("/")
-def home():
-    return redirect(url_for("login"))
-
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/login", methods=["POST"])
 def login():
-    if request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
-        if USERS.get(username) == password:
-            session["user"] = username
-            return redirect(url_for("admin"))
-        return render_template("login.html", error="Credenziali errate.")
-    return render_template("login.html")
+    dati = request.json
+    if dati["username"] == USERNAME and dati["password"] == PASSWORD:
+        return jsonify({"success": True})
+    return "Unauthorized", 401
 
-@app.route("/logout")
-def logout():
-    session.pop("user", None)
-    return redirect(url_for("login"))
+@app.route("/salva-canti", methods=["POST"])
+def salva_canti():
+    dati = request.json
+    with open("canti.json", "w", encoding="utf-8") as f:
+        json.dump(dati, f, ensure_ascii=False, indent=2)
+    return jsonify({"success": True})
 
-@app.route("/admin")
-def admin():
-    if "user" not in session:
-        return redirect(url_for("login"))
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
-        canti = json.load(f)
-    return jsonify(canti)
-
-@app.route("/update", methods=["POST"])
-def update():
-    if "user" not in session:
-        return "Unauthorized", 401
-    data = request.json
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    return "OK"
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+@app.route("/canti.json")
+def get_canti():
+    return send_from_directory(".", "canti.json")

@@ -214,57 +214,92 @@ footer {
     border: none;
 }
 
-@media (max-width: 768px) {
-    header {
-        margin-bottom: 1.2rem;
+@media (max-width: 1024px) {
+    .index-container {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 20px;
     }
 
-    h1 {
-        margin-top: 30px;
-        font-size: 1.8rem;
+    .left-column, .right-column, .centre-column {
+        max-width: 100%;
+        width: 100%;
     }
-    
+
+    .centre-column {
+        align-items: center;
+    }
+
+    .video-container, .calendar-section {
+        width: 100%;
+    }
+
     nav ul {
-        flex-direction: column;
-        gap: 2px;
-        padding: 0;
-        margin-bottom: 30px
+        justify-content: center;
     }
-    
-    nav ul li a {
-        display: block;
-        padding: 5px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
     }
-    
-    main {
-        padding: 10px;
-        width: 100%;
+
+    h2 {
+        font-size: 1.2rem;
     }
-    
-    .container {
-        width: 100%;
-        padding: 0 10px;
-        flex-direction: column;
+
+    .item {
+        padding: 8px;
+        font-size: 0.9rem;
     }
-    
+
+    .video-container {
+        padding-bottom: 60%; /* Adatta il rapporto per schermi piccoli */
+    }
+
     section {
-        padding: 15px;
-        max-width: 90%;
+        padding: 10px;
     }
 
-    .calendar-page .calendar-section {
-        padding: 65%;
-        padding-left: 20%;
-    }
-
+    .calendar-page .calendar-section,
     .home-page .calendar-section {
-        padding: 30%;
-        padding-left: 20%;
+        padding: 40% 5%;
     }
 
     .login-btn {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .item {
+        font-size: 0.85rem;
+        padding: 6px 8px;
+    }
+
+    .container {
+        padding: 0 5px;
+    }
+
+    .video-container {
+        padding-bottom: 65%;
     }
 }

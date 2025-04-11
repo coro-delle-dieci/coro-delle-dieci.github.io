@@ -112,11 +112,6 @@ section {
     text-align: center;
 }
 
-.canto-page section {
-    max-width: 600px;
-    text-align: left;
-}
-
 h1 {
     color: var(--header-footer-text);
 }

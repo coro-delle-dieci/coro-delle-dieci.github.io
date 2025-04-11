@@ -100,7 +100,7 @@ main {
     align-items: center;
 }
 
-section {
+section, .calendar-section {
     width: 100%;
     background-color: white;
     padding: 20px;
@@ -111,6 +111,38 @@ section {
     color: var(--text);
     text-align: center;
 }
+
+.index-container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-around;
+    column-gap: 50px;
+}
+
+.left-column, .right-column, .centre-column {
+    display: box;
+    gap: 10px;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.centre-column {
+    flex: 2;
+    align-items: center;
+}
+
+.right-column {
+    flex: 3;
+    max-width: 300px;
+}
+
 
 h1 {
     color: var(--header-footer-text);
@@ -166,17 +198,14 @@ footer {
     height: 100%;
 }
 
-.calendar-container {
-    width: 95%;
-    margin: 0 auto 1.2rem;
+.calendar-section {
+    width: 100%;
     position: relative;
-    padding: 250px;
-    padding-left: 400px;
-    height: 0;
+    height: 400px;
     overflow: hidden;
 }
 
-.calendar-container iframe {
+.calendar-section iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -223,12 +252,12 @@ footer {
         max-width: 90%;
     }
 
-    .calendar-page .calendar-container {
+    .calendar-page .calendar-section {
         padding: 65%;
         padding-left: 20%;
     }
 
-    .home-page .calendar-container {
+    .home-page .calendar-section {
         padding: 30%;
         padding-left: 20%;
     }

@@ -226,6 +226,7 @@ footer {
         align-items: center;
         column-gap: 0;
         row-gap: 20px;
+        align-items: center;
     }
 
     .left-column, .right-column, .centre-column {

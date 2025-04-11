@@ -11,9 +11,16 @@ async function caricaCanti() {
         listaCanti.innerHTML = "";  // Pulisce eventuali contenuti precedenti
 
         json.table.rows.forEach(row => {
-            let titolo = row.c[0].v;
-            let link = row.c[1] ? row.c[1].v : "#";
-            let div = document.createElement("div");
+            const titoloCell = row.c[0];
+            const linkCell = row.c[1];
+
+            // Salta righe vuote
+            if (!titoloCell || !titoloCell.v) return;
+
+            const titolo = titoloCell.v;
+            const link = linkCell && linkCell.v ? linkCell.v : "#";
+
+            const div = document.createElement("div");
             div.classList.add("canto-link");
             div.innerHTML = `<a href="${link}" target="_blank">${titolo}</a>`;
             listaCanti.appendChild(div);
@@ -26,7 +33,7 @@ async function caricaCanti() {
 function prossimaDomenica() {
     const oggi = new Date();
     const giornoCorrente = oggi.getDay();
-    const giorniDaAggiungere = (7 - giornoCorrente + 0) % 7 || 7; // 0 = domenica
+    const giorniDaAggiungere = (7 - giornoCorrente + 0) % 7 || 7;
     const domenica = new Date(oggi);
     domenica.setDate(oggi.getDate() + giorniDaAggiungere);
 

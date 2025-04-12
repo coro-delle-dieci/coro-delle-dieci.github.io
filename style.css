@@ -226,15 +226,12 @@ footer {
         align-items: center;
         column-gap: 0;
         row-gap: 20px;
-        align-items: center;
+        align-content: center;
     }
 
     .left-column, .right-column, .centre-column {
         max-width: 100%;
         width: 100%;
-    }
-
-    .centre-column {
         align-items: center;
     }
 

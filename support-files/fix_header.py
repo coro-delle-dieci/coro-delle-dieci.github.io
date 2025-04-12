@@ -3,16 +3,16 @@ import os
 folder_path = './canti'
 
 wrong_header = '''\
-                <li><a href="../index/">Home</a></li>
-                <li><a href="../canti/">Canti</a></li>
-                <li><a href="../calendario/">Calendario</a></li>
-                <li><a class="item" href="error/">Accedi</a></li>'''
+                <li><a class="item" href="../index/">Home</a></li>
+                <li><a class="item" href="../canti/">Canti</a></li>
+                <li><a class="item" href="../calendario/">Calendario</a></li>
+                <li><a class="item" href="../error/">Accedi</a></li>'''
 
 correct_header = '''\
-                <li><a class="item" href="index/">Home</a></li>
-                <li><a class="item" href="canti/">Canti</a></li>
-                <li><a class="item" href="calendario/">Calendario</a></li>
-                <li><a class="item" href="error/">Accedi</a></li>'''
+                <li><a class="item" href="../index.html">Home</a></li>
+                <li><a class="item" href="../canti.html">Canti</a></li>
+                <li><a class="item" href="../calendario.html">Calendario</a></li>
+                <li><a class="item" href="../error.html">Accedi</a></li>'''
 
 for filename in os.listdir(folder_path):
     if filename.endswith('.html'):

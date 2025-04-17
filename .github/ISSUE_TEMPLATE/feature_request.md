@@ -1,20 +1,25 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+about: Suggerisci una nuova funzionalità per migliorare il sito del coro
+title: '[Feature] - '
+labels: ['enhancement']
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Descrizione della funzionalità**
+Spiega chiaramente la funzionalità che vuoi proporre.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Motivazione**
+Perché questa funzionalità è utile? Cosa migliora o semplifica per gli utenti o i responsabili del coro?
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Comportamento atteso**
+Descrivi come dovrebbe funzionare la nuova funzionalità, passo dopo passo.
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Mockup / Idee di design**
+(se possibile) Inserisci uno schizzo, immagine, o esempio di come dovrebbe apparire.
+
+**Contesto aggiuntivo**
+Aggiungi qualsiasi informazione utile per comprendere meglio la richiesta (es. altri siti simili, esigenze particolari della parrocchia, ecc.).
+
+**Dispositivo**

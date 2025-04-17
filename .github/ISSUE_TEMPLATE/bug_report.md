@@ -1,8 +1,8 @@
 ---
 name: Segnalazione bug
 about: Segnala un errore nel sito per aiutarci a migliorarlo
-title: '[Bug] - '
-labels: ['bug']
+title: "[Bug] - "
+labels: bug
 assignees: ''
 
 ---

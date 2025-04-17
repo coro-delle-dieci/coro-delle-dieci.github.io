@@ -1,38 +1,37 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Segnalazione bug
+about: Segnala un errore nel sito per aiutarci a migliorarlo
+title: '[Bug] - '
+labels: ['bug']
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Descrizione del problema**
+Spiega chiaramente cosa non funziona o cosa succede di strano.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Come riprodurre il problema**
+Scrivi i passaggi per far comparire il problema:
+1. Vai su '...'
+2. Clicca su '...'
+3. Guarda cosa succede
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+***Esempio:***
+*1. Vai su [https://coro-delle-dieci.github.io](https://coro-delle-dieci.github.io)
+2. Clicca su “Canti”
+3. Cerca “Accogli Signore i nostri doni”
+4. Il link porta a una pagina vuota*
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Comportamento atteso**
+Cosa ti aspettavi che succedesse invece?
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Screenshot (opzionale)**
+Aggiungi uno screenshot se può aiutare a capire meglio.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+**Dettagli tecnici**
+- Dispositivo: [es. PC, iPhone, Android...]
+- Sistema operativo: [es. Windows 11, iOS 17...]
+- Browser: [es. Chrome, Safari...]
 
-**Additional context**
-Add any other context about the problem here.
+**Altro (opzionale)**
+Scrivi qui qualsiasi altra informazione utile.

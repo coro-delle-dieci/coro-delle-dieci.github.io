@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggerisci una nuova funzionalità per migliorare il sito del coro
-title: '[Feature] - '
-labels: ['enhancement']
+title: "[Feature] - "
+labels: enhancement
 assignees: ''
 
 ---

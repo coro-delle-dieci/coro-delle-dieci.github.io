@@ -22,7 +22,7 @@ async function caricaCanti() {
 
             const div = document.createElement("div");
             div.classList.add("canto-link");
-            div.innerHTML = `<a href="${link}" target="_blank">${titolo}</a>`;
+            div.innerHTML = `<p class="canto-link"><a href="${link}" target="_blank">${titolo}</a></p>`;
             listaCanti.appendChild(div);
         });
     } catch (error) {

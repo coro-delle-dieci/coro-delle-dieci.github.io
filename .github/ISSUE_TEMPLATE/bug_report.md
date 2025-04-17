@@ -17,10 +17,10 @@ Scrivi i passaggi per far comparire il problema:
 3. Guarda cosa succede
 
 ***Esempio:***
-*1. Vai su [https://coro-delle-dieci.github.io](https://coro-delle-dieci.github.io)
+1. Vai su [https://coro-delle-dieci.github.io](https://coro-delle-dieci.github.io)
 2. Clicca su “Canti”
 3. Cerca “Accogli Signore i nostri doni”
-4. Il link porta a una pagina vuota*
+4. Il link porta a una pagina vuota
 
 **Comportamento atteso**
 Cosa ti aspettavi che succedesse invece?

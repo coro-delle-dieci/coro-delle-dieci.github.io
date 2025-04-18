@@ -14,6 +14,7 @@ Permette di:
   - [viola](./demo-palette2)
   - [??](./demo-palette3)
   - [nero e rosa](./demo-palette4)
+  - [blu - default](./index.html)
 - Avere un layout responsive sia da desktop che da mobile  
 
 ## Funzionalità principali

@@ -14,4 +14,4 @@
 
 ## Stile di codice
 Mantieni il codice semplice e leggibile.
-Se lavori con HTML/CSS/JS, segui la struttura attuale del progetto.
+Segui la struttura attuale del progetto.

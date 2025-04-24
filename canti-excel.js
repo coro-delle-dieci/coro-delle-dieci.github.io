@@ -1,44 +1,58 @@
 const sheetId = "1NYcf3upDR8YLuPX0dm__T1ArAZLXBIdNRBgzwC5GCa0";
 const sheetUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
 
-async function caricaCanti() {
+function getLastMonday() {
     const oggi = new Date();
-    const giornoCorrente = oggi.getDay(); // 0 = Domenica, 1 = Lunedì, ..., 6 = Sabato
+    const giorno = oggi.getDay(); // 0 = Domenica, 1 = Lunedì, ..., 6 = Sabato
+    const diff = (giorno + 6) % 7;
+    const lunedi = new Date(oggi);
+    lunedi.setDate(oggi.getDate() - diff);
+    lunedi.setHours(0, 0, 0, 0);
+    return lunedi;
+}
 
-    let listaCanti = document.getElementById("canti-domenica");
-
-    if (giornoCorrente === 1) {
-        // Se oggi è lunedì, svuota la lista e non caricare nulla
-        if (listaCanti) {
-            listaCanti.innerHTML = "<p>I canti sono stati rimossi per il nuovo ciclo settimanale.</p>";
-        }
-        return;
-    }
-
+async function caricaCanti() {
     try {
         const response = await fetch(sheetUrl);
         const text = await response.text();
         const json = JSON.parse(text.substring(47).slice(0, -2));
 
-        if (listaCanti) {
-            listaCanti.innerHTML = "";  // Pulisce eventuali contenuti precedenti
+        const rows = json.table.rows;
+        const ultimaDataCell = rows[0].c[2]; // supponiamo che la data sia nella terza colonna della prima riga
 
-            json.table.rows.forEach(row => {
-                const titoloCell = row.c[0];
-                const linkCell = row.c[1];
-
-                // Salta righe vuote
-                if (!titoloCell || !titoloCell.v) return;
-
-                const titolo = titoloCell.v;
-                const link = linkCell && linkCell.v ? linkCell.v : "#";
-
-                const div = document.createElement("div");
-                div.classList.add("canto-link");
-                div.innerHTML = `<p class="canto-link"><a href="${link}" target="_blank">${titolo}</a></p>`;
-                listaCanti.appendChild(div);
-            });
+        if (!ultimaDataCell || !ultimaDataCell.v) {
+            console.warn("Data di aggiornamento non trovata.");
+            return;
         }
+
+        const dataAggiornamento = new Date(ultimaDataCell.v);
+        const ultimoLunedi = getLastMonday();
+
+        const listaCanti = document.getElementById("canti-domenica");
+
+        if (dataAggiornamento <= ultimoLunedi) {
+            listaCanti.innerHTML = "<p>Nessun canto disponibile per questa settimana.</p>";
+            return;
+        }
+
+        // Se è aggiornato, continua a mostrare i canti
+        listaCanti.innerHTML = "";
+
+        rows.slice(1).forEach(row => { // Salta la riga 0 che contiene la data
+            const titoloCell = row.c[0];
+            const linkCell = row.c[1];
+
+            if (!titoloCell || !titoloCell.v) return;
+
+            const titolo = titoloCell.v;
+            const link = linkCell && linkCell.v ? linkCell.v : "#";
+
+            const div = document.createElement("div");
+            div.classList.add("canto-link");
+            div.innerHTML = `<p class="canto-link"><a href="${link}" target="_blank">${titolo}</a></p>`;
+            listaCanti.appendChild(div);
+        });
+
     } catch (error) {
         console.error("Errore nel caricamento dei canti:", error);
     }

@@ -10,9 +10,9 @@ Permette di:
 - Visualizzare il calendario delle prove (embed Google Calendar)  
 - Caricare i canti della Messa domenicale direttamente da un Google Sheet  
 - Scegliere e sperimentare diverse palette di colori utilizzando le apposite cartelle:
-  - [verde](./demo-palette1)
+  - [verde (1)](./demo-palette1)
   - [viola](./demo-palette2)
-  - [??](./demo-palette3)
+  - [verde (2)](./demo-palette3)
   - [nero e rosa](./demo-palette4)
   - [blu - default](./index.html)
 - Avere un layout responsive sia da desktop che da mobile  

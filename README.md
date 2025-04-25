@@ -28,7 +28,8 @@ Permette di:
 2. **Standard di collaborazione**  
    - `LICENSE` (MIT)  
    - Template per issue (`.github/ISSUE_TEMPLATE`), pull request e contributi  
-   - `SECURITY.md` per la gestione responsabile delle vulnerabilità  
+   - `SECURITY.md` per la gestione responsabile delle vulnerabilità
+
 ***N.B.: Ogni pull request è assolutamente ben accetta, come ogni segnalazione o proposta di miglioramento!***
 
 ## Struttura del progetto

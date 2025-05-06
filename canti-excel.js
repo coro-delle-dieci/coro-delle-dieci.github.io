@@ -60,8 +60,8 @@ async function caricaCanti() {
 
 function prossimaDomenica() {
     const oggi = new Date();
-    const giornoCorrente = oggi.getDay();
-    const giorniDaAggiungere = (7 - giornoCorrente + 0) % 7 || 7;
+    const giornoCorrente = oggi.getDay(); // 0 = Domenica, 1 = Lunedì, ..., 6 = Sabato
+    const giorniDaAggiungere = (7 - giornoCorrente) % 7;
     const domenica = new Date(oggi);
     domenica.setDate(oggi.getDate() + giorniDaAggiungere);
 

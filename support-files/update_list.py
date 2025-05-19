@@ -2,7 +2,7 @@ import os
 
 canti_folder = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti"
 
-html_file = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti.html"
+html_file = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/support-files/canti2.html"
 
 special_words = {"gesù", "cristo", "dio", "signore", "signor", "santo", "spirito", "maria", "madonna", "czestochowa", "lui", "pietro"}
 

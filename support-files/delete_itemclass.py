@@ -13,7 +13,7 @@ for filename in os.listdir(directory):
             content = file.read()
 
         # Rimuove tutte le occorrenze di class="item"
-        modified_content = content.replace(' id="page-title"', '')
+        modified_content = content.replace('<a  href', '<a href')
 
         # Sovrascrive il file con il contenuto modificato
         with open(file_path, 'w', encoding='utf-8') as file:

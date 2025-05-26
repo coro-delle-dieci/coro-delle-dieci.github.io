@@ -23,11 +23,6 @@
     height: 100%;
 }
 
-.canto-link {
-    text-align: center;
-    margin: 10px 0;
-}
-
 @media (max-width: 600px) {
     .video-container {
         padding-bottom: 60%; /* Adatta il rapporto per schermi piccoli */

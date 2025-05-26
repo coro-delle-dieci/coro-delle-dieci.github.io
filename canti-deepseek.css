@@ -1,0 +1,87 @@
+/* Stile per la navigazione alfabetica */
+.alfabeto-nav {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.alfabeto-nav a {
+    margin: 0 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.alfabeto-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stile per i gruppi di lettere */
+.canti-container {
+    margin-top: 20px;
+}
+
+.lettera-gruppo {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.lettera-gruppo h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Stile per i link dei canti */
+.canto-link {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.canto-link a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.canto-link a:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+    padding-left: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .canto-link {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .alfabeto-nav {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .canto-link {
+        grid-template-columns: 1fr;
+    }
+    
+    .alfabeto-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .alfabeto-nav a {
+        margin: 5px;
+    }
+}

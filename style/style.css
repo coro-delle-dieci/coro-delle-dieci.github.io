@@ -11,6 +11,7 @@
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    text-overflow: ellipsis;
 }
 
 body {

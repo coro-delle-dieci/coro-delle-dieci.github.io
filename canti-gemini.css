@@ -1,0 +1,15 @@
+.canto-list-by-initial h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for headings */
+    border-bottom: 1px solid #ccc; /* Separator line */
+    padding-bottom: 5px;
+}
+
+.canto-list-by-initial .canto-link a {
+    display: block; /* Each link on a new line */
+    padding: 0;
+    text-decoration: none; /* Remove underline */
+    margin: 0;
+    max-height: 10px;
+}

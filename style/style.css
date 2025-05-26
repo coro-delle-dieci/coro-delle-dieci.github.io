@@ -81,7 +81,6 @@ a {
 a:hover {
     color: var(--hover);
     text-decoration: none;
-    
 }
 
 main {
@@ -115,38 +114,6 @@ section {
     text-align: center;
 }
 
-.index-container {
-    width: 100%;
-    max-width: 1800px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: space-around;
-    column-gap: 50px;
-}
-
-.left-column, .right-column, .centre-column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.left-column {
-    flex: 1;
-    max-width: 350px;
-}
-
-.centre-column {
-    flex: 2;
-    align-items: center;
-}
-
-.right-column {
-    flex: 3;
-    max-width: 350px;
-}
-
 h1 {
     color: var(--header-footer-text);
 }
@@ -156,14 +123,6 @@ h2, h3 {
     text-align: center;
 }
 
-.chorus {
-    font-weight: bold;
-}
-
-.bridge, .intro, .outro {
-    font-style: italic;
-}
-
 footer {
     margin-top: 20px;
     background-color: var(--header-footer-bg);
@@ -171,69 +130,6 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-}
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Rapporto di aspetto 16:9 */
-    height: 0;
-    overflow: auto;
-    width: 95%;
-    margin: 0 auto 1.2rem;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.calendar-page .calendar-section {
-    width: 2000px !important;
-    max-width: 2000px !important;
-    height: 454px;
-}
-
-.calendar-section {
-    width: 100%;
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-}
-
-.calendar-section iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-@media (max-width: 1024px) {
-    .index-container {
-        flex-direction: column;
-        align-items: center;
-        column-gap: 0;
-        row-gap: 20px;
-        align-content: center;
-    }
-
-    .left-column, .right-column, .centre-column {
-        max-width: 100%;
-        width: 100%;
-        align-items: center;
-    }
-
-    .video-container, .calendar-section {
-        width: 100%;
-    }
-
-    nav ul {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 600px) {
@@ -250,22 +146,8 @@ footer {
         font-size: 0.9rem;
     }
 
-    .video-container {
-        padding-bottom: 60%; /* Adatta il rapporto per schermi piccoli */
-    }
-
     section {
         padding: 10px;
-    }
-
-    .calendar-page .calendar-section,
-    .home-page .calendar-section {
-        padding: 40% 5%;
-    }
-
-    .login-btn {
-        font-size: 1rem;
-        padding: 10px 15px;
     }
 }
 
@@ -293,9 +175,5 @@ footer {
 
     .container {
         padding: 0 5px;
-    }
-
-    .video-container {
-        padding-bottom: 65%;
     }
 }

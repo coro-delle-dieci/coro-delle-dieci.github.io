@@ -1,0 +1,34 @@
+.calendar-page .calendar-section {
+    width: 2000px !important;
+    max-width: 2000px !important;
+    height: 454px;
+}
+
+.calendar-section {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.calendar-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .video-container, .calendar-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar-page .calendar-section,
+    .home-page .calendar-section {
+        padding: 40% 5%;
+    }
+}

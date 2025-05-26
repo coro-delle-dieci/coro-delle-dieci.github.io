@@ -1,7 +1,7 @@
 import os
 
 # Percorso della cartella contenente i file HTML
-cartella = '../canti/'
+cartella = 'C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti'
 
 # Scorri tutti i file nella cartella
 for nome_file in os.listdir(cartella):

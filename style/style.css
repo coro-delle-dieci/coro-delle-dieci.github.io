@@ -29,7 +29,7 @@ body {
 header, footer {
     background-color: var(--header-footer-bg);
     color: var(--background-hftext);
-    padding: 3vh 0 0 0;
+    padding: 3vh 2vw 0vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -135,7 +135,7 @@ footer {
 @media (max-width: 600px) {
     nav ul li {
         padding: 8px;
-        font-size: 0.9rem;
+        font-size: 0.5em;
     }
 }
 

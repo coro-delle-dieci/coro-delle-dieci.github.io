@@ -18,30 +18,33 @@
 .left-column {
     flex: 1;
     max-width: 350px;
+    width: 20vw;
+    margin-left: 2vw;
 }
 
 .centre-column {
     flex: 2;
     align-items: center;
+    width: 40vw;
 }
 
 .right-column {
-    flex: 3;
+    flex: 1;
     max-width: 350px;
+    width: 20vw;
+    margin-right: 2vw;
 }
 
 @media (max-width: 1024px) {
     .index-container {
         flex-direction: column;
         align-items: center;
-        column-gap: 0;
         row-gap: 20px;
         align-content: center;
     }
 
     .left-column, .right-column, .centre-column {
-        max-width: 100%;
-        width: 100%;
+        width: 90vw;
         align-items: center;
     }
 }

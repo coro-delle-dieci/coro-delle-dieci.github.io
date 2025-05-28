@@ -47,6 +47,7 @@ header {
     position: fixed;
     max-height: 20vh;
     min-height: 100px;
+    z-index: 1000;
 }
 
 h1 {
@@ -141,13 +142,6 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-}
-
-@media (max-width: 600px) {
-    nav ul li {
-        padding: 8px;
-        font-size: 0.5em;
-    }
 }
 
 @media (max-width: 400px) {

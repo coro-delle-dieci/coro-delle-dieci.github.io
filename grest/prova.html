@@ -3,115 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grest 2025 – Proposte Giornaliere</title>
+    <title>Programma Preghiera Gr.Est.</title>
     <style>
         body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        header {
-            background: #4a90e2;
-            color: white;
             padding: 20px;
-            text-align: center;
+            background-color: #b9d6f2;
+            color: #061a40;
         }
-
-        h1 {
-            margin: 0;
-        }
-
+        
         .container {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-
+        
+        h1 {
+            color: #061a40;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
         table {
             width: 100%;
             border-collapse: collapse;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            border-radius: 8px;
-            overflow: hidden;
+            margin-bottom: 20px;
         }
-
+        
         th, td {
-            padding: 15px;
+            padding: 12px;
             text-align: left;
+            border-bottom: 1px solid #a0b4c9;
         }
-
+        
         th {
-            background: #e0ecff;
-            color: #2c3e50;
+            background-color: #003559;
+            color: white;
         }
 
-        tr:nth-child(even) td {
-            background-color: #f2f6fc;
+        tr {
+            transition: background-color 0.3s ease;
         }
-
-        .week-divider td {
-            background-color: #dbe9ff;
+        
+        tr:nth-child(even) {
+            background-color: #e9eafa;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .missing {
+            color: #e74c3c;
+            font-style: italic;
+        }
+        
+        .week-container {
+            margin-bottom: 40px;
+            background-color: #f4f4f7;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #003559;
+        }
+        
+        .week-title {
             font-weight: bold;
-            text-align: center;
-            font-size: 1.1em;
-            color: #1a4a7f;
+            font-size: larger;
+            margin-bottom: 10px;
+            color: #003559;
         }
 
-        @media (max-width: 600px) {
-            th, td {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 15px;
-            }
+        a {
+            text-decoration: none;
+            color: #003559;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Proposte Grest 2025</h1>
-    <p>Un percorso di crescita e scoperta giorno per giorno</p>
-</header>
-
-<div class="container">
-    <table>
-        <thead>
-            <tr>
-                <th>Data</th>
-                <th>Parola chiave</th>
-                <th>Canto</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Settimana 1 -->
-            <tr class="week-divider"><td colspan="3">Settimana 1: 9–12 giugno</td></tr>
-            <tr><td>Lun 9 giugno</td><td>Apprezzare le piccole cose</td><td>Grandi cose / Segni nuovi</td></tr>
-            <tr><td>Mar 10 giugno</td><td>Valorizzare l'altro</td><td>In aggiornamento</td></tr>
-            <tr><td>Mer 11 giugno</td><td>Dire grazie</td><td>Ti ringrazio mio Signore</td></tr>
-            <tr><td>Gio 12 giugno</td><td>Restituire gentilezza</td><td>In aggiornamento</td></tr>
-
-            <!-- Settimana 2 -->
-            <tr class="week-divider"><td colspan="3">Settimana 2: 16–19 giugno</td></tr>
-            <tr><td>Lun 16 giugno</td><td>Godersi il momento</td><td>E la strada si apre / È un giorno di festa</td></tr>
-            <tr><td>Mar 17 giugno</td><td>Accogliere il cambiamento</td><td>Come fuoco vivo</td></tr>
-            <tr><td>Mer 18 giugno</td><td>Superare la nostalgia</td><td>Resta accanto a me</td></tr>
-            <tr><td>Gio 19 giugno</td><td>Stare bene con sé stessi</td><td>Spirito di Dio</td></tr>
-
-            <!-- Settimana 3 -->
-            <tr class="week-divider"><td colspan="3">Settimana 3: 23–26 giugno</td></tr>
-            <tr><td>Lun 23 giugno</td><td>Respirare</td><td>Tu sei</td></tr>
-            <tr><td>Mar 24 giugno</td><td>Chiedere aiuto</td><td>La canzone di Luciano</td></tr>
-            <tr><td>Mer 25 giugno</td><td>Scoprire il lato positivo</td><td>In aggiornamento</td></tr>
-            <tr><td>Gio 26 giugno</td><td>Sentirsi più forti</td><td>In aggiornamento</td></tr>
-        </tbody>
-    </table>
-</div>
-
+    <div class="container">
+        <h1>Programma Gr.Est. 2025</h1>
+        <p>Cliccare sul nome del canto per visualizzare testo e video.</p>
+        
+        <div class="week-container">
+            <div class="week-title">SETTIMANA 1: 9-12 giugno</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Parola chiave</th>
+                        <th>Canto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunedì 9 giugno</td>
+                        <td>Apprezzare le piccole cose</td>
+                        <td><a href="../canti/grandi-cose.html">Grandi cose</a> / <a href="../canti/segni-nuovi.html">Segni nuovi</a></td>
+                    </tr>
+                    <tr>
+                        <td>Martedì 10 giugno</td>
+                        <td>Valorizzare l'altro</td>
+                        <td class="missing">Da definire</td>
+                    </tr>
+                    <tr>
+                        <td>Mercoledì 11 giugno</td>
+                        <td>Dire grazie</td>
+                        <td><a href="../canti/amatevi-l-un-l-altro.html">Ti ringrazio mio Signore</a></td>
+                    </tr>
+                    <tr>
+                        <td>Giovedì 12 giugno</td>
+                        <td>Restituire gentilezza</td>
+                        <td class="missing">Da definire</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="week-container">
+            <div class="week-title">SETTIMANA 2: 16-19 giugno</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Parola chiave</th>
+                        <th>Canto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunedì 16 giugno</td>
+                        <td>Godersi il momento</td>
+                        <td><a href="../canti/e-la-strada-si-apre.html">E la strada si apre</a> / <a href="../canti/e-un-giorno-di-festa.html">È un giorno di festa</a></td>
+                    </tr>
+                    <tr>
+                        <td>Martedì 17 giugno</td>
+                        <td>Accogliere il cambiamento</td>
+                        <td><a href="../canti/come-fuoco-vivo.html">Come fuoco vivo</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mercoledì 18 giugno</td>
+                        <td>Superare la nostalgia</td>
+                        <td><a href="../canti/resta-accanto-a-me.html">Resta accanto a me</a></td>
+                    </tr>
+                    <tr>
+                        <td>Giovedì 19 giugno</td>
+                        <td>Stare bene con sé stessi</td>
+                        <td><a href="../canti/spirito-di-dio.html">Spirito di Dio</a> / <a href="../canti/e-sono-solo-un-uomo.html">E sono solo un uomo</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="week-container">
+            <div class="week-title">SETTIMANA 3: 23-26 giugno</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Parola chiave</th>
+                        <th>Canto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunedì 23 giugno</td>
+                        <td>Respirare</td>
+                        <td><a href="../canti/tu-sei.html">Tu sei</a></td>
+                    </tr>
+                    <tr>
+                        <td>Martedì 24 giugno</td>
+                        <td>Chiedere aiuto</td>
+                        <td><a href="../canti/la-canzone-di-luciano.html">La canzone di Luciano</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mercoledì 25 giugno</td>
+                        <td>Scoprire il lato positivo</td>
+                        <td><a href="../canti/come-ti-ama-dio.html">Come ti ama Dio</a></td>
+                    </tr>
+                    <tr>
+                        <td>Giovedì 26 giugno</td>
+                        <td>Sentirsi più forti</td>
+                        <td class="missing">Da definire</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>

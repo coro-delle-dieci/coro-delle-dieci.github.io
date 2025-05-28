@@ -1,7 +1,6 @@
 .calendar-page .calendar-section {
-    width: 2000px !important;
-    max-width: 2000px !important;
-    height: 454px;
+    width: 90vw;
+    height: 59.2vh;
 }
 
 .calendar-section {

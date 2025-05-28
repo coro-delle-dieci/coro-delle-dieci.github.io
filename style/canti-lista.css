@@ -7,7 +7,10 @@ h3 {
     border-bottom: 1px solid #061a40;
     margin-bottom: 1vh;
     margin-top: 6vh;
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 section {
@@ -17,4 +20,8 @@ section {
 .canto-link a {
     display: block;
     margin-bottom: -10px;
+}
+
+.lettera-gruppo {
+    text-align: center;
 }

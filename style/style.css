@@ -144,15 +144,14 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 400px) {
-    .header-top {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+@media (max-width: 600px) {
+    nav ul {
+        gap: 7vw;
     }
+}
 
-    h1 {
-        font-size: 3vh;
-        margin-bottom: 0;
+@media (max-width: 400px) {
+    nav ul {
+        gap: 10vw;
     }
 }

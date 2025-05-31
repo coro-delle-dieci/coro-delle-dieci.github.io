@@ -80,7 +80,6 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../canti.html">Canti</a></li>
                 <li><a href="../calendario.html">Calendario</a></li>
-                <li><a href="../errore.html">Accedi</a></li>
             </ul>
         </nav>
     </header>

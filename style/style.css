@@ -27,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: left;
-    font-size: 2.4vh;
+    font-size: 1.2rem;
 }
 
 header, footer {
@@ -45,14 +45,13 @@ header, footer {
 
 header {
     position: fixed;
-    max-height: 20vh;
-    min-height: 100px;
+    height: 160px;
     z-index: 1000;
 }
 
 h1 {
     text-align: center;
-    font-size: 5vh;
+    font-size: 30pt;
     margin: 10px;
     color: var(--header-footer-text);
 }
@@ -63,11 +62,10 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 3vh;
+    font-size: 2rem;
 }
 
 nav {
-    margin-top: 10px;
     width: 100%;
     position: relative;
 }
@@ -104,8 +102,7 @@ a:hover {
 }
 
 main {
-    padding: 22vh 0 0 0;
-    flex-grow: 1;
+    padding-top: 170px;
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
@@ -125,7 +122,7 @@ main {
 section {
     width: 100%;
     background-color: white;
-    padding: 1vh 1vw;
+    padding: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -142,6 +139,12 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding-top: 170px;
+    }
 }
 
 @media (max-width: 600px) {

@@ -1,12 +1,12 @@
 .index-container {
     width: 100%;
     max-width: 1800px;
-    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     align-content: space-around;
     column-gap: 50px;
+    row-gap: 20px;
 }
 
 .left-column, .right-column, .centre-column {
@@ -26,6 +26,7 @@
     flex: 2;
     align-items: center;
     width: 40vw;
+    min-width: 40vw;
 }
 
 .right-column {
@@ -39,12 +40,15 @@
     .index-container {
         flex-direction: column;
         align-items: center;
-        row-gap: 20px;
         align-content: center;
     }
 
     .left-column, .right-column, .centre-column {
         width: 90vw;
         align-items: center;
+        max-width: none;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
     }
 }

@@ -44,9 +44,9 @@ for filename in os.listdir(directory):
 
 import os
 
-directory = r"C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io"
+directory = r"C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/support-files"
 
-stringa_da_rimuovere = 'class="header-top" '
+stringa_da_rimuovere = ''
 
 for filename in os.listdir(directory):
     file_path = os.path.join(directory, filename)

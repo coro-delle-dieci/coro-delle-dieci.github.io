@@ -62,7 +62,7 @@ def create_song_html(title, song_text):
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main>
         <section data-tags="">
             <h2>{title}</h2>
 {html_body}

@@ -44,10 +44,14 @@ for filename in os.listdir(directory):
 
 import os
 
+# Percorso della cartella
 directory = r"C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/support-files"
 
-stringa_da_rimuovere = ''
+# Stringa da cercare e nuova stringa con cui sostituirla
+stringa_da_sostituire = "vecchia_stringa"
+nuova_stringa = "nuova_stringa"
 
+# Scorre tutti i file nella directory
 for filename in os.listdir(directory):
     file_path = os.path.join(directory, filename)
 
@@ -55,7 +59,7 @@ for filename in os.listdir(directory):
         with open(file_path, "r", encoding="utf-8") as file:
             contenuto = file.read()
 
-        nuovo_contenuto = contenuto.replace(stringa_da_rimuovere, "")
+        nuovo_contenuto = contenuto.replace(stringa_da_sostituire, nuova_stringa)
 
         if contenuto != nuovo_contenuto:
             with open(file_path, "w", encoding="utf-8") as file:

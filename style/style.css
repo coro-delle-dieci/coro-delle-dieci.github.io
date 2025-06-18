@@ -130,15 +130,3 @@ footer {
     text-align: center;
     width: 100%;
 }
-
-@media (max-width: 600px) {
-    nav ul {
-        gap: 7vw;
-    }
-}
-
-@media (max-width: 400px) {
-    nav ul {
-        gap: 10vw;
-    }
-}

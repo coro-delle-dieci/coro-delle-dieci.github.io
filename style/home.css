@@ -35,19 +35,69 @@ main {
     margin-right: 2vw;
 }
 
-@media (max-width: 1024px) {
-    .index-container {
+/* --- CSS RESPONSIVE --- */
+
+/* Tablet: schermi sotto i 1024px */
+@media screen and (max-width: 1024px) {
+    main {
         flex-direction: column;
         align-items: center;
-        align-content: center;
+        row-gap: 30px !important;
+        justify-content: center;        
     }
 
-    .left-column, .right-column, .centre-column {
-        width: 90vw;
+    .left-column, .centre-column, .right-column {
+        max-width: 90%;
+        width: 90%;
+        margin: 0;
         align-items: center;
-        max-width: none;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 0;
     }
+
+    .centre-column {
+        order: -1; /* Porta il centro in alto */
+    }
+}
+
+/* Smartphone: schermi sotto i 600px */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main {
+        row-gap: 20px;
+    }
+
+    .left-column,
+    .centre-column,
+    .right-column {
+        width: 95%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Generale per elementi troppo grandi */
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.canto-link a {
+    word-break: break-word;
 }

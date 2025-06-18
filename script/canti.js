@@ -6,23 +6,22 @@ function generateLink(title) {
         .replace(/[^a-z0-9-]/g, '');
 }
 
-// Modifica la funzione caricaCanti
+// Carica i canti dal backend Python
 async function caricaCanti() {
     try {
-        const response = await fetch(sheetUrl);
-        const text = await response.text();
-        const json = JSON.parse(text.substring(47).slice(0, -2));
+        const response = await fetch('https://coro-backend.onrender.com/api/canti');
+        const data = await response.json();
 
         let listaCanti = document.getElementById("canti-domenica");
         listaCanti.innerHTML = "";
 
-        json.table.rows.forEach(row => {
-            const titolo = row.c[0].v;
+        data.canti.forEach(titolo => {
             const link = generateLink(titolo);
             const div = document.createElement("div");
             div.innerHTML = `<a href="canti/${link}.html">${titolo}</a>`;
             listaCanti.appendChild(div);
         });
+
     } catch (error) {
         console.error("Errore:", error);
     }

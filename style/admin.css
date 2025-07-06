@@ -1,0 +1,28 @@
+.song-selector-container {
+    margin-bottom: 15px;
+}
+
+.song-selector-container label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.song-selector-container select {
+    width: 300px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.song-selector-container input[type="text"] {
+    width: 300px;
+    padding: 5px;
+}
+
+#adminMessage.success {
+    color: green;
+}
+
+#adminMessage.error {
+    color: red;
+}

@@ -4,47 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Coro delle Dieci</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/admin.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>Coro delle Dieci - Area Admin</h1>
-            <button id="logout-btn" class="logout-button">Logout</button>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="canti.html">Canti</a></li>
-                <li><a href="calendario.html">Calendario</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="admin-wrapper">
+        <header class="admin-header">
+            <div class="header-content">
+                <h1><i class="fas fa-music"></i> Coro delle Dieci - Admin</h1>
+                <button id="logout-btn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="canti.html"><i class="fas fa-book"></i> Canti</a></li>
+                    <li><a href="calendario.html"><i class="fas fa-calendar-alt"></i> Calendario</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="admin-container">
-        <section class="admin-section">
-            <h2>Gestione Canti Domenicali</h2>
-            <p class="section-description">Modifica la data e i canti per la prossima domenica.</p>
-            
-            <div class="form-group">
-                <label for="domenica">Data Domenica:</label>
-                <input type="text" id="domenica" placeholder="Es: 23 giugno 2025" class="date-input">
-            </div>
-            
-            <h3>Canti selezionati:</h3>
-            <div id="songSelectors" class="songs-container">
-                <p class="loading-message">Caricamento canti in corso...</p>
-            </div>
-            
-            <div class="form-actions">
-                <button id="saveBtn" class="save-button">Salva Modifiche</button>
-                <p id="adminMessage" class="message"></p>
-            </div>
-        </section>
-    </main>
+        <main class="admin-main">
+            <section class="admin-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-edit"></i> Gestione Canti Domenicali</h2>
+                    <p class="section-description">
+                        Modifica la data e i canti per la prossima domenica.
+                    </p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="domenica"><i class="fas fa-calendar-day"></i> Data Domenica:</label>
+                    <input type="text" id="domenica" class="date-input" placeholder="Es: 23 giugno 2025">
+                </div>
+                
+                <div class="songs-container">
+                    <h3><i class="fas fa-list-ol"></i> Canti selezionati:</h3>
+                    <div id="songSelectors" class="song-selectors-container">
+                        <div class="loading-state">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Caricamento canti in corso...</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button id="saveBtn" class="save-btn">
+                        <i class="fas fa-save"></i> Salva Modifiche
+                    </button>
+                    <div id="adminMessage" class="message"></div>
+                </div>
+            </section>
+        </main>
 
-    <script src="script/credentials.js"></script>
-    <script src="script/admin.js"></script>
+        <footer class="admin-footer">
+            <p>Sistema di gestione Coro delle Dieci &copy; 2023</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script/credentials.js"></script>
+    <script src="./script/admin.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
-// admin.js - Gestione Amministrativa Coro delle Dieci
+// admin.js - Gestione Amministrativa Coro delle Dieci con selezione canti
 
 // Configurazioni
 const BACKEND_URL = 'https://coro-backend.onrender.com/api/canti';
+const SONGS_API_URL = '/api/songs-list'; // Endpoint per la lista dei canti esistenti
 const MAX_SONGS = 10;
 
 // Elementi UI
@@ -10,46 +11,106 @@ let adminMessage = document.getElementById('adminMessage');
 let saveButton = document.querySelector('button');
 
 // Inizializzazione
-document.addEventListener('DOMContentLoaded', () => {
-    // Verifica autenticazione
+document.addEventListener('DOMContentLoaded', async () => {
     if (!isAuthenticated()) {
         redirectToLogin();
         return;
     }
 
-    // Carica i canti
-    loadSongs();
-    
-    // Configura pulsante salva
-    if (saveButton) {
-        saveButton.addEventListener('click', saveSongs);
+    try {
+        // Carica sia i canti esistenti che quelli disponibili
+        const [currentSongs, availableSongs] = await Promise.all([
+            fetch(BACKEND_URL).then(res => res.json()),
+            fetch(SONGS_API_URL).then(res => res.json())
+        ]);
+        
+        renderSongSelectors(currentSongs, availableSongs);
+        
+    } catch (error) {
+        console.error('Errore nel caricamento:', error);
+        showMessage('Errore nel caricamento dei dati.', 'error');
     }
 });
 
 // Funzioni principali
-async function loadSongs() {
-    try {
-        const response = await fetch(BACKEND_URL);
-        
-        if (!response.ok) {
-            throw new Error(`Errore HTTP: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        renderSongInputs(data);
-        
-    } catch (error) {
-        console.error('Errore nel caricamento dei canti:', error);
-        showMessage('Errore nel caricamento dei dati.', 'error');
+function renderSongSelectors(currentData, availableSongs) {
+    if (!songSelectors) return;
+
+    // Pulisci il contenuto
+    songSelectors.innerHTML = '';
+
+    // Imposta la data
+    document.getElementById('domenica').value = currentData.domenica || '';
+
+    // Crea select per i canti esistenti
+    currentData.canti.forEach((canto, index) => {
+        addSongSelector(canto, index, availableSongs);
+    });
+
+    // Aggiungi select vuote fino a MAX_SONGS
+    for (let i = currentData.canti.length; i < MAX_SONGS; i++) {
+        addSongSelector('', i, availableSongs);
     }
+}
+
+function addSongSelector(selectedSong, index, availableSongs) {
+    const container = document.createElement('div');
+    container.className = 'song-selector-container';
+
+    const label = document.createElement('label');
+    label.textContent = `Canto ${index + 1}:`;
+    label.htmlFor = `song-select-${index}`;
+
+    const select = document.createElement('select');
+    select.id = `song-select-${index}`;
+    select.className = 'songSelect';
+    
+    // Aggiungi opzione vuota
+    const emptyOption = document.createElement('option');
+    emptyOption.value = '';
+    emptyOption.textContent = '-- Seleziona un canto --';
+    select.appendChild(emptyOption);
+    
+    // Popola con i canti disponibili
+    availableSongs.forEach(song => {
+        const option = document.createElement('option');
+        option.value = song;
+        option.textContent = song;
+        option.selected = song === selectedSong;
+        select.appendChild(option);
+    });
+    
+    // Aggiungi input per nuovo canto
+    const newSongInput = document.createElement('input');
+    newSongInput.type = 'text';
+    newSongInput.placeholder = 'Oppure inserisci nuovo canto';
+    newSongInput.className = 'newSongInput';
+    newSongInput.style.display = 'none';
+    newSongInput.value = selectedSong && !availableSongs.includes(selectedSong) ? selectedSong : '';
+    
+    // Mostra input se selezionato "altro"
+    select.addEventListener('change', function() {
+        newSongInput.style.display = this.value === '' ? 'block' : 'none';
+    });
+
+    container.appendChild(label);
+    container.appendChild(select);
+    container.appendChild(newSongInput);
+    songSelectors.appendChild(container);
 }
 
 async function saveSongs() {
     const domenica = document.getElementById('domenica').value.trim();
-    const inputs = document.querySelectorAll('.songInput');
-    const canti = Array.from(inputs)
-        .map(input => input.value.trim())
-        .filter(canto => canto !== '');
+    const selects = document.querySelectorAll('.songSelect');
+    const inputs = document.querySelectorAll('.newSongInput');
+    
+    const canti = Array.from(selects).map((select, index) => {
+        if (select.value !== '') {
+            return select.value;
+        } else {
+            return inputs[index].value.trim();
+        }
+    }).filter(canto => canto !== '');
 
     if (!domenica) {
         showMessage('Inserisci la data della domenica.', 'error');
@@ -85,47 +146,7 @@ async function saveSongs() {
     }
 }
 
-// Funzioni di supporto
-function renderSongInputs(data) {
-    if (!songSelectors) return;
-
-    // Pulisci il contenuto
-    songSelectors.innerHTML = '';
-
-    // Imposta la data
-    document.getElementById('domenica').value = data.domenica || '';
-
-    // Crea input per i canti esistenti
-    data.canti.forEach((canto, index) => {
-        addSongInput(canto, index);
-    });
-
-    // Aggiungi input vuoti fino a MAX_SONGS
-    for (let i = data.canti.length; i < MAX_SONGS; i++) {
-        addSongInput('', i);
-    }
-}
-
-function addSongInput(value, index) {
-    const container = document.createElement('div');
-    container.className = 'song-input-container';
-
-    const label = document.createElement('label');
-    label.textContent = `Canto ${index + 1}:`;
-    label.htmlFor = `song-${index}`;
-
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.value = value;
-    input.id = `song-${index}`;
-    input.className = 'songInput';
-    input.placeholder = `Titolo del canto ${index + 1}`;
-
-    container.appendChild(label);
-    container.appendChild(input);
-    songSelectors.appendChild(container);
-}
-
+// Funzioni di supporto (rimangono uguali alle precedenti)
 function isAuthenticated() {
     return localStorage.getItem('auth') === 'true';
 }
@@ -136,8 +157,6 @@ function redirectToLogin() {
 
 function getAuthHeader() {
     const username = localStorage.getItem('username');
-    // Nota: In un'applicazione reale, non dovresti memorizzare la password nel localStorage
-    // Questo è solo per dimostrazione. Una soluzione migliore sarebbe usare sessioni server-side o JWT
     const password = getPasswordForUser(username);
     return 'Basic ' + btoa(`${username}:${password}`);
 }
@@ -148,21 +167,8 @@ function showMessage(message, type = 'info') {
     adminMessage.textContent = message;
     adminMessage.className = type;
     
-    // Nascondi il messaggio dopo 5 secondi
     setTimeout(() => {
         adminMessage.textContent = '';
         adminMessage.className = '';
     }, 5000);
-}
-
-// Funzione da implementare in un file separato (credentials.js)
-function getPasswordForUser(username) {
-    // Questo dovrebbe essere sostituito con una chiamata sicura al server
-    // o con una mappatura crittografata lato client
-    const userPasswords = {
-        'admin1': 'password1',
-        'admin2': 'password2',
-        'admin3': 'password3'
-    };
-    return userPasswords[username] || '';
 }

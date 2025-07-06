@@ -2,27 +2,61 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Coro delle Dieci</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/admin.css">
-    <script>
-        // Verifica se l'utente è autenticato
-        if (!localStorage.getItem('auth') || localStorage.getItem('auth') !== 'true') {
-            window.location.href = 'login.html';
+    <style>
+        /* Stili inline per garantire il funzionamento anche se CSS esterni non caricano */
+        .song-selector {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
-        
-        // pulsante di logout
-        document.addEventListener('DOMContentLoaded', function() {
-            const header = document.querySelector('header');
-            const logoutBtn = document.createElement('button');
-            logoutBtn.textContent = 'Logout';
-            logoutBtn.onclick = function() {
-                localStorage.removeItem('auth');
-                window.location.href = 'login.html';
-            };
-            header.appendChild(logoutBtn);
-        });
-    </script>
+        .song-selector label {
+            min-width: 80px;
+            font-weight: bold;
+        }
+        .song-select, .song-input {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+        #adminMessage {
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 4px;
+            display: none;
+        }
+        #adminMessage.success {
+            background-color: #dff0d8;
+            color: #3c763d;
+            display: block;
+        }
+        #adminMessage.error {
+            background-color: #f2dede;
+            color: #a94442;
+            display: block;
+        }
+        #logout-btn {
+            margin-left: auto;
+            padding: 5px 15px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .admin-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,19 +70,38 @@
         </nav>
     </header>
 
-    <main>
+    <main class="admin-container">
         <section>
             <h2>Gestione Canti Domenicali</h2>
-            <p>Inserisci la data e seleziona i canti da aggiornare.</p>
+            <p>Modifica la data e i canti per la prossima domenica.</p>
             
-            <input type="text" id="domenica" placeholder="Data della Domenica (es: 23 giugno 2025)">
+            <div class="form-group">
+                <label for="domenica">Data Domenica:</label>
+                <input type="text" id="domenica" placeholder="Es: 23 giugno 2025">
+            </div>
+            
+            <h3>Canti selezionati:</h3>
             <div id="songSelectors"></div>
-            <button onclick="saveSongs()">Salva Canti</button>
-            <p id="adminMessage"></p>
+            
+            <div class="form-actions">
+                <button id="saveBtn">Salva Modifiche</button>
+                <p id="adminMessage"></p>
+            </div>
         </section>
     </main>
 
-    <script src="script/credentials.js"></script>
-    <script src="script/admin.js"></script>
+    <!-- Includi credentials.js prima di admin.js -->
+    <script src="js/credentials.js"></script>
+    <script src="js/admin.js"></script>
+    
+    <script>
+        // Fallback se credentials.js non è caricato
+        if (typeof getPasswordForUser === 'undefined') {
+            window.getPasswordForUser = function() {
+                console.error('Credentials.js non caricato correttamente');
+                return '';
+            };
+        }
+    </script>
 </body>
 </html>

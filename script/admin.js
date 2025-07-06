@@ -1,77 +1,83 @@
-// admin.js - Gestione Amministrativa Coro delle Dieci con selezione canti
-
-// Configurazioni
-const BACKEND_URL = 'https://coro-backend.onrender.com/api/canti';
-const SONGS_API_URL = '/api/songs-list'; // Endpoint per la lista dei canti esistenti
-const MAX_SONGS = 10;
-
-// Elementi UI
-let songSelectors = document.getElementById('songSelectors');
-let adminMessage = document.getElementById('adminMessage');
-let saveButton = document.querySelector('button');
-
-// Inizializzazione
+// admin.js - Gestione Amministrativa Coro delle Dieci
 document.addEventListener('DOMContentLoaded', async () => {
-    if (!isAuthenticated()) {
+    // Verifica autenticazione
+    if (!checkAuth()) {
         redirectToLogin();
         return;
     }
 
     try {
-        // Carica sia i canti esistenti che quelli disponibili
+        // Carica dati iniziali
         const [currentSongs, availableSongs] = await Promise.all([
-            fetch(BACKEND_URL).then(res => res.json()),
-            fetch(SONGS_API_URL).then(res => res.json())
+            fetchCanti(),
+            fetchAvailableSongs()
         ]);
         
-        renderSongSelectors(currentSongs, availableSongs);
+        // Renderizza l'interfaccia
+        renderAdminInterface(currentSongs, availableSongs);
+        
+        // Aggiungi pulsante logout
+        addLogoutButton();
         
     } catch (error) {
-        console.error('Errore nel caricamento:', error);
-        showMessage('Errore nel caricamento dei dati.', 'error');
+        showError('Errore nel caricamento dei dati');
+        console.error('Errore inizializzazione:', error);
     }
 });
 
-// Funzioni principali
-function renderSongSelectors(currentData, availableSongs) {
-    if (!songSelectors) return;
+// Funzioni core
+async function fetchCanti() {
+    const response = await fetch('https://coro-backend.onrender.com/api/canti');
+    if (!response.ok) throw new Error('Errore caricamento canti');
+    return await response.json();
+}
 
-    // Pulisci il contenuto
-    songSelectors.innerHTML = '';
+async function fetchAvailableSongs() {
+    const response = await fetch('https://coro-backend.onrender.com/api/songs-list');
+    if (!response.ok) throw new Error('Errore caricamento lista canti');
+    return await response.json();
+}
 
-    // Imposta la data
-    document.getElementById('domenica').value = currentData.domenica || '';
+function renderAdminInterface(currentData, availableSongs) {
+    // Imposta la data corrente
+    const dateInput = document.getElementById('domenica');
+    if (dateInput) {
+        dateInput.value = currentData.domenica || '';
+    }
 
-    // Crea select per i canti esistenti
-    currentData.canti.forEach((canto, index) => {
-        addSongSelector(canto, index, availableSongs);
+    // Renderizza i selettori dei canti
+    const container = document.getElementById('songSelectors');
+    container.innerHTML = '';
+
+    currentData.canti.forEach((song, index) => {
+        container.appendChild(createSongSelector(song, index, availableSongs));
     });
 
-    // Aggiungi select vuote fino a MAX_SONGS
-    for (let i = currentData.canti.length; i < MAX_SONGS; i++) {
-        addSongSelector('', i, availableSongs);
+    // Aggiungi selettori vuoti fino a 10
+    for (let i = currentData.canti.length; i < 10; i++) {
+        container.appendChild(createSongSelector('', i, availableSongs));
     }
 }
 
-function addSongSelector(selectedSong, index, availableSongs) {
-    const container = document.createElement('div');
-    container.className = 'song-selector-container';
-
+function createSongSelector(selectedSong, index, availableSongs) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'song-selector';
+    
     const label = document.createElement('label');
     label.textContent = `Canto ${index + 1}:`;
-    label.htmlFor = `song-select-${index}`;
-
-    const select = document.createElement('select');
-    select.id = `song-select-${index}`;
-    select.className = 'songSelect';
+    label.htmlFor = `song-${index}`;
     
-    // Aggiungi opzione vuota
+    const select = document.createElement('select');
+    select.id = `song-${index}`;
+    select.className = 'song-select';
+    
+    // Opzione vuota
     const emptyOption = document.createElement('option');
     emptyOption.value = '';
     emptyOption.textContent = '-- Seleziona un canto --';
     select.appendChild(emptyOption);
     
-    // Popola con i canti disponibili
+    // Popola con canti disponibili
     availableSongs.forEach(song => {
         const option = document.createElement('option');
         option.value = song;
@@ -80,74 +86,29 @@ function addSongSelector(selectedSong, index, availableSongs) {
         select.appendChild(option);
     });
     
-    // Aggiungi input per nuovo canto
-    const newSongInput = document.createElement('input');
-    newSongInput.type = 'text';
-    newSongInput.placeholder = 'Oppure inserisci nuovo canto';
-    newSongInput.className = 'newSongInput';
-    newSongInput.style.display = 'none';
-    newSongInput.value = selectedSong && !availableSongs.includes(selectedSong) ? selectedSong : '';
+    // Input per nuovo canto
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'song-input';
+    input.placeholder = 'Inserisci nuovo canto';
+    input.value = selectedSong && !availableSongs.includes(selectedSong) ? selectedSong : '';
+    input.style.display = selectedSong && !availableSongs.includes(selectedSong) ? 'block' : 'none';
     
-    // Mostra input se selezionato "altro"
+    // Mostra/nascondi input
     select.addEventListener('change', function() {
-        newSongInput.style.display = this.value === '' ? 'block' : 'none';
+        input.style.display = this.value === '' ? 'block' : 'none';
+        if (this.value !== '') input.value = '';
     });
 
-    container.appendChild(label);
-    container.appendChild(select);
-    container.appendChild(newSongInput);
-    songSelectors.appendChild(container);
-}
-
-async function saveSongs() {
-    const domenica = document.getElementById('domenica').value.trim();
-    const selects = document.querySelectorAll('.songSelect');
-    const inputs = document.querySelectorAll('.newSongInput');
+    wrapper.appendChild(label);
+    wrapper.appendChild(select);
+    wrapper.appendChild(input);
     
-    const canti = Array.from(selects).map((select, index) => {
-        if (select.value !== '') {
-            return select.value;
-        } else {
-            return inputs[index].value.trim();
-        }
-    }).filter(canto => canto !== '');
-
-    if (!domenica) {
-        showMessage('Inserisci la data della domenica.', 'error');
-        return;
-    }
-
-    if (canti.length === 0) {
-        showMessage('Inserisci almeno un canto.', 'error');
-        return;
-    }
-
-    const data = { domenica, canti };
-
-    try {
-        const response = await fetch(BACKEND_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': getAuthHeader()
-            },
-            body: JSON.stringify(data)
-        });
-
-        if (!response.ok) {
-            throw new Error(`Errore HTTP: ${response.status}`);
-        }
-
-        showMessage('Canti aggiornati con successo!', 'success');
-        
-    } catch (error) {
-        console.error('Errore nel salvataggio:', error);
-        showMessage('Errore durante il salvataggio.', 'error');
-    }
+    return wrapper;
 }
 
-// Funzioni di supporto (rimangono uguali alle precedenti)
-function isAuthenticated() {
+// Funzioni di autenticazione
+function checkAuth() {
     return localStorage.getItem('auth') === 'true';
 }
 
@@ -155,20 +116,97 @@ function redirectToLogin() {
     window.location.href = 'login.html';
 }
 
+function addLogoutButton() {
+    const header = document.querySelector('header');
+    if (!header) return;
+    
+    const logoutBtn = document.createElement('button');
+    logoutBtn.id = 'logout-btn';
+    logoutBtn.textContent = 'Logout';
+    logoutBtn.addEventListener('click', () => {
+        localStorage.removeItem('auth');
+        redirectToLogin();
+    });
+    
+    header.appendChild(logoutBtn);
+}
+
 function getAuthHeader() {
     const username = localStorage.getItem('username');
-    const password = getPasswordForUser(username);
+    const password = getPasswordForUser(username); // Da credentials.js
     return 'Basic ' + btoa(`${username}:${password}`);
 }
 
-function showMessage(message, type = 'info') {
-    if (!adminMessage) return;
+// Funzioni per il salvataggio
+document.getElementById('saveBtn')?.addEventListener('click', saveSongs);
+
+async function saveSongs() {
+    const dateInput = document.getElementById('domenica');
+    if (!dateInput || !dateInput.value.trim()) {
+        showError('Inserisci la data della domenica');
+        return;
+    }
+
+    const songs = collectSelectedSongs();
+    if (songs.length === 0) {
+        showError('Inserisci almeno un canto');
+        return;
+    }
+
+    try {
+        const response = await fetch('https://coro-backend.onrender.com/api/canti', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': getAuthHeader()
+            },
+            body: JSON.stringify({
+                domenica: dateInput.value.trim(),
+                canti: songs
+            })
+        });
+
+        if (!response.ok) throw new Error('Errore nel salvataggio');
+        
+        showSuccess('Canti salvati con successo!');
+        
+    } catch (error) {
+        showError('Errore durante il salvataggio');
+        console.error('Errore salvataggio:', error);
+    }
+}
+
+function collectSelectedSongs() {
+    const songs = [];
+    const selects = document.querySelectorAll('.song-select');
+    const inputs = document.querySelectorAll('.song-input');
     
-    adminMessage.textContent = message;
-    adminMessage.className = type;
+    selects.forEach((select, index) => {
+        if (select.value !== '') {
+            songs.push(select.value);
+        } else if (inputs[index]?.value.trim()) {
+            songs.push(inputs[index].value.trim());
+        }
+    });
     
-    setTimeout(() => {
-        adminMessage.textContent = '';
-        adminMessage.className = '';
-    }, 5000);
+    return songs;
+}
+
+// Funzioni di utilità
+function showError(message) {
+    const msgElement = document.getElementById('adminMessage');
+    if (msgElement) {
+        msgElement.textContent = message;
+        msgElement.className = 'error';
+        setTimeout(() => msgElement.textContent = '', 5000);
+    }
+}
+
+function showSuccess(message) {
+    const msgElement = document.getElementById('adminMessage');
+    if (msgElement) {
+        msgElement.textContent = message;
+        msgElement.className = 'success';
+        setTimeout(() => msgElement.textContent = '', 5000);
+    }
 }

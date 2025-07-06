@@ -1,8 +1,47 @@
+/* Stili generali */
+.admin-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Form stili */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.date-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Selettori canti */
+.songs-container {
+    margin: 1.5rem 0;
+}
+
 .song-selector {
-    margin-bottom: 15px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .song-selector label {
@@ -10,38 +49,68 @@
     font-weight: bold;
 }
 
-.song-select, .song-input {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
 .song-select {
+    flex: 1;
     min-width: 250px;
-}
-
-#adminMessage {
-    padding: 10px;
-    margin: 15px 0;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
     border-radius: 4px;
 }
 
-#adminMessage.success {
-    background-color: #dff0d8;
-    color: #3c763d;
+.song-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none;
 }
 
-#adminMessage.error {
-    background-color: #f2dede;
-    color: #a94442;
-}
-
-#logout-btn {
-    margin-left: auto;
-    padding: 5px 15px;
-    background-color: #f44336;
+/* Pulsanti */
+.save-button {
+    background-color: #4CAF50;
     color: white;
+    padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Messaggi */
+.message {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    display: none;
+}
+
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    display: block;
+}
+
+.message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    display: block;
+}
+
+.loading-message {
+    color: #666;
+    font-style: italic;
+    padding: 1rem;
 }

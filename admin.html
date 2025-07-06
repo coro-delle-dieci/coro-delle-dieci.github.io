@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <title>Admin - Coro delle Dieci</title>
     <link rel="stylesheet" href="style/style.css">
+    <script>
+        // Verifica se l'utente è autenticato
+        if (!localStorage.getItem('auth') || localStorage.getItem('auth') !== 'true') {
+            window.location.href = 'login.html';
+        }
+        
+        // Aggiungi anche un pulsante di logout
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            const logoutBtn = document.createElement('button');
+            logoutBtn.textContent = 'Logout';
+            logoutBtn.onclick = function() {
+                localStorage.removeItem('auth');
+                window.location.href = 'login.html';
+            };
+            header.appendChild(logoutBtn);
+        });
+    </script>
 </head>
 <body>
     <header>

@@ -1,35 +1,28 @@
-.canti-container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.canto-link {
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    border-bottom: 1px solid #061a40;
+    margin-bottom: 1vh;
+    margin-top: 6vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px 0 15px;
+}
+
+section {
+    padding: 2vh 5vw;
+}
+
+.canto-link a {
+    display: block;
+    margin-bottom: -10px;
 }
 
 .lettera-gruppo {
-    margin-bottom: 2rem;
-}
-
-.lettera-gruppo h3 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #f39c12;
-}
-
-.alfabeto-nav {
     text-align: center;
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
-}
-
-.alfabeto-nav a {
-    color: #2980b9;
-    text-decoration: none;
-    margin: 0 0.3rem;
-}
-
-.alfabeto-nav a:hover {
-    color: #e74c3c;
-    text-decoration: underline;
 }

@@ -1,24 +1,33 @@
-.calendar-page main {
-    max-width: 800px;
-    margin: 0 auto;
+.calendar-page .calendar-section {
+    width: 90vw;
+    height: 63vh;
 }
 
 .calendar-section {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.calendar-section h2 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
 }
 
 .calendar-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 600px;
+    height: 100%;
     border: none;
-    border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+    .video-container, .calendar-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar-page .calendar-section,
+    .home-page .calendar-section {
+        padding: 40% 5%;
+    }
 }

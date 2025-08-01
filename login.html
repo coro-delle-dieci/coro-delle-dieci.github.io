@@ -3,55 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .login-form div {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+        
+        .message {
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Coro delle Dieci</h1>
         <nav>
             <ul>
-                <li><a href="index/">Home</a></li>
-                <li><a href="canti/">Canti</a></li>
-                <li><a href="calendario/">Calendario</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="canti.html">Canti</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
             </ul>
         </nav>
     </header>
     
-    <main>
+    <main class="login-container">
         <section>
-            <h2>Accesso Amministratori</h2>
-            <form id="loginForm">
+            <h2><i class="fas fa-lock"></i> Accesso Amministratori</h2>
+            <form id="loginForm" class="login-form">
                 <div>
                     <label for="username">Username:</label>
-                    <input type="text" id="username" required>
+                    <input type="text" id="username" required autocomplete="username">
                 </div>
                 <div>
                     <label for="password">Password:</label>
-                    <input type="password" id="password" required>
+                    <input type="password" id="password" required autocomplete="current-password">
                 </div>
-                <button type="submit">Accedi</button>
+                <button type="submit" id="loginBtn">
+                    <span>Accedi</span>
+                </button>
             </form>
+            <div id="loginMessage" class="message"></div>
         </section>
     </main>
 
     <script>
-        const users = {
-            "admin1": "password1",
-            "admin2": "password2",
-            "admin3": "password3"
-        };
-
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
+        const API_BASE_URL = 'https://coro-backend.onrender.com';
+        
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
             e.preventDefault();
+            
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-
-            if(users[username] && users[username] === password) {
-                localStorage.setItem('auth', 'true');
-                localStorage.setItem('username', username); // Salva l'username per eventuali log
+            const loginBtn = document.getElementById('loginBtn');
+            const messageEl = document.getElementById('loginMessage');
+            
+            // Reset message
+            messageEl.textContent = '';
+            messageEl.className = 'message';
+            
+            // Show loading
+            loginBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Accesso in corso...';
+            loginBtn.disabled = true;
+            
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+                
+                if (!response.ok) {
+                    const error = await response.json().catch(() => ({ message: 'Credenziali non valide' }));
+                    throw new Error(error.message || 'Errore durante il login');
+                }
+                
+                const data = await response.json();
+                
+                // Salva il token JWT nel localStorage
+                localStorage.setItem('jwt', data.token);
+                localStorage.setItem('username', username);
+                
+                // Reindirizza alla pagina admin
                 window.location.href = 'admin.html';
-            } else {
-                alert('Credenziali non valide!');
+                
+            } catch (error) {
+                console.error('Login error:', error);
+                messageEl.textContent = error.message || 'Errore durante il login';
+                messageEl.className = 'message error';
+                
+                // Reset button
+                loginBtn.innerHTML = '<span>Accedi</span>';
+                loginBtn.disabled = false;
             }
         });
     </script>

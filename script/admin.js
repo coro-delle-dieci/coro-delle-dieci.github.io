@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById('domenica');
     const saveBtn = document.getElementById('saveBtn');
     const message = document.getElementById('adminMessage');
+    const addSongBtn = document.querySelector('.add-song-btn');
 
-    // Lista FISSA dei canti disponibili (puoi modificarla)
+    // Lista FISSA dei canti disponibili
     const availableSongs = [
         "Accogli Signore i nostri doni",
         "Acqua siamo noi",
@@ -157,24 +158,34 @@ document.addEventListener('DOMContentLoaded', () => {
                         `<option value="${song}">${song}</option>`
                     ).join('')}
                 </select>
-                <button class="remove-song-btn">
+                <button class="remove-song-btn" ${index === 0 ? 'disabled' : ''}>
                     <i class="fas fa-trash"></i>
                 </button>
             </div>
         `;
         
         songSelectors.appendChild(selectorDiv);
+        
+        // Scrolla fino all'ultimo elemento aggiunto
+        selectorDiv.scrollIntoView({ behavior: 'smooth' });
+        
+        // Aggiorna lo stato del pulsante di rimozione per il primo elemento
+        updateRemoveButtons();
     }
 
     // Pulsante per aggiungere nuovi selettori
-    document.querySelector('.add-song-btn')?.addEventListener('click', addNewSongSelector);
+    addSongBtn?.addEventListener('click', addNewSongSelector);
 
     // Gestione rimozione selettori
     songSelectors.addEventListener('click', (e) => {
         if (e.target.classList.contains('remove-song-btn') || 
             e.target.closest('.remove-song-btn')) {
-            e.target.closest('.song-selector').remove();
-            updateSongNumbers();
+            const btn = e.target.classList.contains('remove-song-btn') ? e.target : e.target.closest('.remove-song-btn');
+            if (!btn.disabled) {
+                e.target.closest('.song-selector').remove();
+                updateSongNumbers();
+                updateRemoveButtons();
+            }
         }
     });
 
@@ -184,19 +195,35 @@ document.addEventListener('DOMContentLoaded', () => {
             selector.querySelector('label').textContent = `Canto ${index + 1}:`;
         });
     }
+    
+    // Disabilita il pulsante di rimozione per il primo selettore
+    function updateRemoveButtons() {
+        const selectors = document.querySelectorAll('.song-selector');
+        selectors.forEach((selector, index) => {
+            const removeBtn = selector.querySelector('.remove-song-btn');
+            if (removeBtn) {
+                removeBtn.disabled = index === 0;
+            }
+        });
+    }
 
     // Salvataggio semplice (puoi modificare cosa fa)
     saveBtn.addEventListener('click', () => {
         const date = dateInput.value.trim();
         if (!date) {
             showMessage('Inserisci la data della domenica', 'error');
+            dateInput.focus();
             return;
         }
 
         const songs = [];
-        document.querySelectorAll('.song-select').forEach(select => {
+        const emptySelects = [];
+        
+        document.querySelectorAll('.song-select').forEach((select, index) => {
             if (select.value) {
                 songs.push(select.value);
+            } else {
+                emptySelects.push(index + 1);
             }
         });
 
@@ -204,13 +231,28 @@ document.addEventListener('DOMContentLoaded', () => {
             showMessage('Seleziona almeno un canto', 'error');
             return;
         }
+        
+        if (emptySelects.length > 0) {
+            const confirmSave = confirm(`Attenzione: hai ${emptySelects.length} selettori vuoti (Canti: ${emptySelects.join(', ')}). Vuoi procedere comunque con il salvataggio?`);
+            if (!confirmSave) return;
+        }
 
         showMessage(`Canti per ${date} salvati! ${songs.join(', ')}`, 'success');
         
         // Qui puoi fare qualcosa con i dati, ad esempio:
         console.log('Data:', date);
         console.log('Canti selezionati:', songs);
+        
+        // Facoltativo: resetta il form dopo il salvataggio
+        // resetForm();
     });
+
+    // Funzione per resettare il form (opzionale)
+    function resetForm() {
+        dateInput.value = '';
+        songSelectors.innerHTML = '';
+        addNewSongSelector();
+    }
 
     // Mostra messaggi all'utente
     function showMessage(text, type = 'info') {

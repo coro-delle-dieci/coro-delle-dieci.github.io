@@ -1,113 +1,84 @@
-/* Stile per l'header dei canti */
 .songs-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .add-song-btn {
-    background-color: #4CAF50;
+    background: #4CAF50;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
-.add-song-btn:hover {
-    background-color: #45a049;
+.add-song-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
 }
 
-/* Stile per i selettori di canto */
 .song-selector {
-    margin-bottom: 15px;
-    padding: 12px;
-    background: #f8f9fa;
-    border-radius: 5px;
-    border-left: 4px solid #3498db;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
 }
 
 .select-container {
     display: flex;
-    gap: 10px;
-    margin-top: 5px;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .song-select {
     flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 0.5rem;
 }
 
 .input-group {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
-    padding: 10px;
-    background: #eef2f7;
-    border-radius: 4px;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-.song-input, .song-link-input {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.input-group input {
+    flex: 1;
+    padding: 0.5rem;
 }
 
 .remove-song-btn {
-    background-color: #e74c3c;
+    background: #f44336;
     color: white;
     border: none;
+    padding: 0.5rem;
     border-radius: 4px;
-    width: 36px;
-    height: 36px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.remove-song-btn:hover {
-    background-color: #c0392b;
-}
-
-/* Messaggi */
 .message {
-    padding: 10px;
-    margin-top: 15px;
+    padding: 0.5rem;
+    margin-top: 1rem;
     border-radius: 4px;
 }
 
 .message.success {
-    background-color: #d4edda;
-    color: #155724;
+    background: #dff0d8;
+    color: #3c763d;
 }
 
 .message.error {
-    background-color: #f8d7da;
-    color: #721c24;
+    background: #f2dede;
+    color: #a94442;
+}
+
+.message.warning {
+    background: #fcf8e3;
+    color: #8a6d3b;
 }
 
 .message.info {
-    background-color: #cce5ff;
-    color: #004085;
-}
-
-/* Stato di caricamento */
-.loading-state {
-    text-align: center;
-    padding: 20px;
-    color: #555;
-}
-
-.fa-spinner {
-    font-size: 24px;
-    margin-bottom: 10px;
+    background: #d9edf7;
+    color: #31708f;
 }

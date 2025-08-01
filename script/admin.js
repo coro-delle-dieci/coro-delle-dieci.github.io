@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 function setupEventListeners() {
     DOM.saveBtn.addEventListener('click', saveSongs);
     
-    // Pulsante per aggiungere nuovi canti
     DOM.songSelectors.addEventListener('click', (e) => {
         if (e.target.classList.contains('add-song-btn')) {
             addNewSongSelector();
@@ -38,6 +37,9 @@ function setupEventListeners() {
             renumberSongSelectors();
         }
     });
+    
+    // Auto-format della data durante l'input
+    DOM.dateInput.addEventListener('blur', formatDateInput);
 }
 
 async function loadInitialData() {
@@ -45,11 +47,13 @@ async function loadInitialData() {
     
     try {
         // Carica canti disponibili
-        const songsResponse = await fetch(`${CONFIG.API_BASE_URL}/api/songs`);
-        AppState.availableSongs = await songsResponse.json();
+        const [songsResponse, currentResponse] = await Promise.all([
+            fetch(`${CONFIG.API_BASE_URL}/api/songs`),
+            fetch(`${CONFIG.API_BASE_URL}/api/current`)
+        ]);
         
-        // Carica canti correnti
-        const currentResponse = await fetch(`${CONFIG.API_BASE_URL}/api/current`);
+        if (!songsResponse.ok) throw new Error('Errore nel caricamento dei canti disponibili');
+        AppState.availableSongs = await songsResponse.json();
         
         if (currentResponse.ok) {
             AppState.currentSongs = await currentResponse.json();
@@ -57,7 +61,7 @@ async function loadInitialData() {
         
     } catch (error) {
         console.error('Errore nel caricamento dati:', error);
-        showMessage('Errore nel caricamento dei dati', 'error');
+        showMessage(`Errore nel caricamento dei dati: ${error.message}`, 'error');
     } finally {
         showLoading(false);
     }
@@ -75,28 +79,24 @@ function renderDateInput() {
 function renderSongSelectors() {
     DOM.songSelectors.innerHTML = '';
     
-    // Header con pulsante aggiunta
     const header = document.createElement('div');
     header.className = 'songs-header';
     header.innerHTML = `
         <h3><i class="fas fa-list-ol"></i> Canti selezionati:</h3>
-        <button class="add-song-btn">
+        <button class="add-song-btn" ${AppState.currentSongs.canti.length >= CONFIG.MAX_SONGS ? 'disabled' : ''}>
             <i class="fas fa-plus"></i> Aggiungi canto
         </button>
     `;
     DOM.songSelectors.appendChild(header);
     
-    // Container canti
     const container = document.createElement('div');
     container.id = 'songs-container';
     DOM.songSelectors.appendChild(container);
     
-    // Renderizza i canti esistenti
     AppState.currentSongs.canti.forEach((song, index) => {
         container.appendChild(createSongSelector(song, index));
     });
     
-    // Se non ci sono canti, aggiungi un selettore vuoto
     if (AppState.currentSongs.canti.length === 0) {
         addNewSongSelector();
     }
@@ -107,28 +107,26 @@ function createSongSelector(selectedSong, index) {
     wrapper.className = 'song-selector';
     wrapper.dataset.index = index;
 
-    // Label
     const label = document.createElement('label');
     label.textContent = `Canto ${index + 1}:`;
     label.htmlFor = `song-${index}`;
 
-    // Select container
     const selectContainer = document.createElement('div');
     selectContainer.className = 'select-container';
 
-    // Select
     const select = document.createElement('select');
     select.id = `song-${index}`;
     select.className = 'song-select';
 
-    // Default option
     const defaultOption = document.createElement('option');
     defaultOption.value = '';
     defaultOption.textContent = '-- Seleziona un canto --';
     select.appendChild(defaultOption);
 
-    // Available songs
-    AppState.availableSongs.forEach(song => {
+    // Ordina i canti disponibili alfabeticamente
+    const sortedSongs = [...AppState.availableSongs].sort((a, b) => a.titolo.localeCompare(b.titolo));
+    
+    sortedSongs.forEach(song => {
         const option = document.createElement('option');
         option.value = song.id;
         option.textContent = song.titolo;
@@ -136,7 +134,12 @@ function createSongSelector(selectedSong, index) {
         select.appendChild(option);
     });
 
-    // Input per nuovo canto
+    // Aggiungi opzione per nuovo canto
+    const newSongOption = document.createElement('option');
+    newSongOption.value = 'new';
+    newSongOption.textContent = '-- Aggiungi nuovo canto --';
+    select.appendChild(newSongOption);
+
     const inputGroup = document.createElement('div');
     inputGroup.className = 'input-group';
     inputGroup.style.display = 'none';
@@ -145,6 +148,7 @@ function createSongSelector(selectedSong, index) {
     input.type = 'text';
     input.className = 'song-input';
     input.placeholder = 'Titolo del nuovo canto';
+    input.required = true;
     
     const linkInput = document.createElement('input');
     linkInput.type = 'text';
@@ -153,22 +157,27 @@ function createSongSelector(selectedSong, index) {
 
     inputGroup.append(input, linkInput);
 
-    // Pulsante rimuovi
     const removeBtn = document.createElement('button');
     removeBtn.className = 'remove-song-btn';
     removeBtn.innerHTML = '<i class="fas fa-trash"></i>';
     removeBtn.title = 'Rimuovi canto';
 
-    // Event listeners
-    select.addEventListener('change', () => {
-        inputGroup.style.display = select.value === '' ? 'flex' : 'none';
-        if (select.value !== '') {
+    select.addEventListener('change', (e) => {
+        inputGroup.style.display = e.target.value === 'new' ? 'flex' : 'none';
+        if (e.target.value !== 'new') {
             input.value = '';
             linkInput.value = '';
         }
     });
 
-    // Costruisci il DOM
+    // Se è un nuovo canto (non presente nella lista)
+    if (selectedSong && !selectedSong.id && selectedSong.titolo) {
+        select.value = 'new';
+        inputGroup.style.display = 'flex';
+        input.value = selectedSong.titolo;
+        if (selectedSong.link) linkInput.value = selectedSong.link;
+    }
+
     selectContainer.append(select, removeBtn);
     wrapper.append(label, selectContainer, inputGroup);
     return wrapper;
@@ -178,9 +187,21 @@ function addNewSongSelector() {
     const container = document.getElementById('songs-container');
     if (!container) return;
     
-    const index = container.querySelectorAll('.song-selector').length;
+    const currentCount = container.querySelectorAll('.song-selector').length;
+    if (currentCount >= CONFIG.MAX_SONGS) {
+        showMessage(`Numero massimo di canti raggiunto (${CONFIG.MAX_SONGS})`, 'warning');
+        return;
+    }
+    
+    const index = currentCount;
     container.appendChild(createSongSelector(null, index));
     renumberSongSelectors();
+    
+    // Disabilita il pulsante se raggiunto il massimo
+    const addBtn = document.querySelector('.add-song-btn');
+    if (addBtn && currentCount + 1 >= CONFIG.MAX_SONGS) {
+        addBtn.disabled = true;
+    }
 }
 
 function renumberSongSelectors() {
@@ -189,23 +210,58 @@ function renumberSongSelectors() {
         const label = selector.querySelector('label');
         if (label) label.textContent = `Canto ${index + 1}:`;
     });
+    
+    // Abilita il pulsante aggiungi se sotto il limite
+    const addBtn = document.querySelector('.add-song-btn');
+    if (addBtn && selectors.length < CONFIG.MAX_SONGS) {
+        addBtn.disabled = false;
+    }
 }
 
-// Funzioni di supporto
-async function fetchData(url, options = {}) {
+function formatDateInput() {
+    const dateStr = DOM.dateInput.value.trim();
+    if (!dateStr) return;
+    
     try {
-        const response = await fetch(url, options);
-        
-        if (!response.ok) {
-            const error = await response.text();
-            throw new Error(error || 'Errore nel server');
+        // Prova a formattare la data in un formato più leggibile
+        const date = parseItalianDate(dateStr);
+        if (date) {
+            const formatted = formatItalianDate(date);
+            DOM.dateInput.value = formatted;
         }
-        
-        return await response.json();
-    } catch (error) {
-        console.error(`Fetch error [${url}]:`, error);
-        throw error;
+    } catch (e) {
+        console.log("Formattazione data non riuscita, manterrà input utente");
     }
+}
+
+function parseItalianDate(dateStr) {
+    const months = {
+        'gennaio': 0, 'febbraio': 1, 'marzo': 2, 'aprile': 3,
+        'maggio': 4, 'giugno': 5, 'luglio': 6, 'agosto': 7,
+        'settembre': 8, 'ottobre': 9, 'novembre': 10, 'dicembre': 11
+    };
+    
+    const parts = dateStr.toLowerCase().split(/\s+/);
+    if (parts.length !== 3) return null;
+    
+    const day = parseInt(parts[0], 10);
+    const month = months[parts[1]];
+    const year = parseInt(parts[2], 10);
+    
+    if (isNaN(day)) return null;
+    if (month === undefined) return null;
+    if (isNaN(year)) return null;
+    
+    return new Date(year, month, day);
+}
+
+function formatItalianDate(date) {
+    const months = [
+        'gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno',
+        'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'
+    ];
+    
+    return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
 }
 
 function showLoading(show) {
@@ -232,17 +288,27 @@ function showMessage(text, type = 'info') {
 }
 
 async function saveSongs() {
-    const date = DOM.dateInput.value.trim();
-    if (!date) {
+    const dateStr = DOM.dateInput.value.trim();
+    if (!dateStr) {
         showMessage('Inserisci la data della domenica', 'error');
+        DOM.dateInput.focus();
         return;
     }
     
-    if (!isValidDate(date)) {
+    const date = parseItalianDate(dateStr);
+    if (!date || isNaN(date.getTime())) {
         showMessage('Formato data non valido (es: 25 dicembre 2023)', 'error');
+        DOM.dateInput.focus();
         return;
     }
-
+    
+    // Verifica che sia una domenica
+    if (date.getDay() !== 0) {
+        showMessage('La data deve essere una domenica', 'error');
+        DOM.dateInput.focus();
+        return;
+    }
+    
     const songs = collectSelectedSongs();
     if (songs.length === 0) {
         showMessage('Inserisci almeno un canto', 'error');
@@ -251,6 +317,7 @@ async function saveSongs() {
 
     try {
         showLoading(true);
+        DOM.saveBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Salvataggio in corso...';
         
         const response = await fetch(`${CONFIG.API_BASE_URL}/api/save-songs`, {
             method: 'POST',
@@ -258,7 +325,7 @@ async function saveSongs() {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                domenica: date,
+                domenica: formatItalianDate(date),
                 canti: songs
             })
         });
@@ -279,6 +346,7 @@ async function saveSongs() {
         showMessage(`Errore durante il salvataggio: ${error.message}`, 'error');
     } finally {
         showLoading(false);
+        DOM.saveBtn.innerHTML = '<i class="fas fa-save"></i> Salva Modifiche';
     }
 }
 
@@ -291,24 +359,18 @@ function collectSelectedSongs() {
         const input = selector.querySelector('.song-input');
         const linkInput = selector.querySelector('.song-link-input');
 
-        if (select.value) {
-            songs.push({
-                id: select.value,
-                titolo: select.options[select.selectedIndex].text
-            });
-        } else if (input?.value.trim()) {
+        if (select.value === 'new' && input?.value.trim()) {
             songs.push({
                 titolo: input.value.trim(),
                 link: linkInput?.value.trim() || ''
+            });
+        } else if (select.value && select.value !== 'new') {
+            songs.push({
+                id: select.value,
+                titolo: select.options[select.selectedIndex].text
             });
         }
     });
 
     return songs;
-}
-
-function isValidDate(dateString) {
-    // Verifica formato "25 dicembre 2023"
-    const pattern = /^\d{1,2}\s+[a-z]+\s+\d{4}$/i;
-    return pattern.test(dateString);
 }

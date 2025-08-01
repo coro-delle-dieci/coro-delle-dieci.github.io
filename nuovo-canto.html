@@ -212,7 +212,7 @@
             if (assembleaNumber) formData.append('assembleaNumber', assembleaNumber);
             
             // Invia i dati al server (che eseguirà lo script Python)
-            fetch('support-files/complete_song_creator.py', {
+            fetch('/crea-canto', {
                 method: 'POST',
                 body: formData
             })

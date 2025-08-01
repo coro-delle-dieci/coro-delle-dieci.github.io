@@ -1,7 +1,7 @@
 // Configurazioni
 const CONFIG = {
     API_BASE_URL: 'https://coro-backend.onrender.com',
-    MAX_SONGS: 10
+    MAX_SONGS: 15
 };
 
 // Elementi UI
@@ -34,23 +34,50 @@ document.addEventListener('DOMContentLoaded', async () => {
 function setupEventListeners() {
     DOM.logoutBtn.addEventListener('click', logout);
     DOM.saveBtn.addEventListener('click', saveSongs);
+    
+    // Pulsante per aggiungere nuovi canti
+    DOM.songSelectors.addEventListener('click', (e) => {
+        if (e.target.classList.contains('add-song-btn')) {
+            addNewSongSelector();
+        }
+        if (e.target.classList.contains('remove-song-btn')) {
+            e.target.closest('.song-selector').remove();
+            renumberSongSelectors();
+        }
+    });
 }
 
 async function loadInitialData() {
-    // Dati mock per test
-    AppState.currentSongs = {
-        domenica: "24 dicembre 2023",
-        canti: ["Alleluia", "Gloria"]
-    };
+    showLoading(true);
     
-    AppState.availableSongs = [
-        "Alleluia",
-        "Gloria",
-        "Agnello di Dio",
-        "Canto di Natale"
-    ];
-    
-    await new Promise(resolve => setTimeout(resolve, 500)); // Simula ritardo
+    try {
+        // Carica canti disponibili
+        const songsResponse = await fetch(`${CONFIG.API_BASE_URL}/api/songs`, {
+            headers: { 'Authorization': getAuthHeader() }
+        });
+        
+        if (songsResponse.status === 401) {
+            logout();
+            return;
+        }
+        
+        AppState.availableSongs = await songsResponse.json();
+        
+        // Carica canti correnti
+        const currentResponse = await fetch(`${CONFIG.API_BASE_URL}/api/current`, {
+            headers: { 'Authorization': getAuthHeader() }
+        });
+        
+        if (currentResponse.ok) {
+            AppState.currentSongs = await currentResponse.json();
+        }
+        
+    } catch (error) {
+        console.error('Errore nel caricamento dati:', error);
+        showMessage('Errore nel caricamento dei dati', 'error');
+    } finally {
+        showLoading(false);
+    }
 }
 
 function renderUI() {
@@ -63,44 +90,48 @@ function renderDateInput() {
 }
 
 function renderSongSelectors() {
-    // Pulisci il container
     DOM.songSelectors.innerHTML = '';
-
-    // Mostra errore se nessun canto disponibile
-    if (AppState.availableSongs.length === 0) {
-        const errorBox = document.createElement('div');
-        errorBox.className = 'message error';
-        errorBox.innerHTML = `
-            <p><strong>Attenzione:</strong> Nessun canto disponibile</p>
-            <p>Verifica che:</p>
-            <ul>
-                <li>Il backend sia online</li>
-                <li>La cartella /canti contenga file HTML</li>
-                <li>I nomi dei file siano corretti</li>
-            </ul>
-        `;
-        DOM.songSelectors.appendChild(errorBox);
-        return;
-    }
-
-    // Crea i selettori per ogni canto
-    const songsToShow = AppState.currentSongs.canti.length > 0 
-        ? AppState.currentSongs.canti 
-        : Array(CONFIG.MAX_SONGS).fill('');
-
-    songsToShow.forEach((song, index) => {
-        DOM.songSelectors.appendChild(createSongSelector(song, index));
+    
+    // Header con pulsante aggiunta
+    const header = document.createElement('div');
+    header.className = 'songs-header';
+    header.innerHTML = `
+        <h3><i class="fas fa-list-ol"></i> Canti selezionati:</h3>
+        <button class="add-song-btn">
+            <i class="fas fa-plus"></i> Aggiungi canto
+        </button>
+    `;
+    DOM.songSelectors.appendChild(header);
+    
+    // Container canti
+    const container = document.createElement('div');
+    container.id = 'songs-container';
+    DOM.songSelectors.appendChild(container);
+    
+    // Renderizza i canti esistenti
+    AppState.currentSongs.canti.forEach((song, index) => {
+        container.appendChild(createSongSelector(song, index));
     });
+    
+    // Se non ci sono canti, aggiungi un selettore vuoto
+    if (AppState.currentSongs.canti.length === 0) {
+        addNewSongSelector();
+    }
 }
 
 function createSongSelector(selectedSong, index) {
     const wrapper = document.createElement('div');
     wrapper.className = 'song-selector';
+    wrapper.dataset.index = index;
 
     // Label
     const label = document.createElement('label');
     label.textContent = `Canto ${index + 1}:`;
     label.htmlFor = `song-${index}`;
+
+    // Select container
+    const selectContainer = document.createElement('div');
+    selectContainer.className = 'select-container';
 
     // Select
     const select = document.createElement('select');
@@ -116,39 +147,88 @@ function createSongSelector(selectedSong, index) {
     // Available songs
     AppState.availableSongs.forEach(song => {
         const option = document.createElement('option');
-        option.value = song;
-        option.textContent = song;
-        option.selected = song === selectedSong;
+        option.value = song.id;
+        option.textContent = song.titolo;
+        option.selected = song.id === selectedSong?.id;
         select.appendChild(option);
     });
 
     // Input per nuovo canto
+    const inputGroup = document.createElement('div');
+    inputGroup.className = 'input-group';
+    inputGroup.style.display = 'none';
+
     const input = document.createElement('input');
     input.type = 'text';
     input.className = 'song-input';
-    input.placeholder = 'Inserisci nuovo canto';
-    input.value = selectedSong && !AppState.availableSongs.includes(selectedSong) ? selectedSong : '';
-    input.style.display = selectedSong && !AppState.availableSongs.includes(selectedSong) ? 'block' : 'none';
+    input.placeholder = 'Titolo del nuovo canto';
+    
+    const linkInput = document.createElement('input');
+    linkInput.type = 'text';
+    linkInput.className = 'song-link-input';
+    linkInput.placeholder = 'Link al canto (opzionale)';
+
+    inputGroup.append(input, linkInput);
+
+    // Pulsante rimuovi
+    const removeBtn = document.createElement('button');
+    removeBtn.className = 'remove-song-btn';
+    removeBtn.innerHTML = '<i class="fas fa-trash"></i>';
+    removeBtn.title = 'Rimuovi canto';
 
     // Event listeners
     select.addEventListener('change', () => {
-        input.style.display = select.value === '' ? 'block' : 'none';
-        if (select.value !== '') input.value = '';
+        inputGroup.style.display = select.value === '' ? 'flex' : 'none';
+        if (select.value !== '') {
+            input.value = '';
+            linkInput.value = '';
+        }
     });
 
     // Costruisci il DOM
-    wrapper.append(label, select, input);
+    selectContainer.append(select, removeBtn);
+    wrapper.append(label, selectContainer, inputGroup);
     return wrapper;
 }
 
+function addNewSongSelector() {
+    const container = document.getElementById('songs-container');
+    if (!container) return;
+    
+    const index = container.querySelectorAll('.song-selector').length;
+    container.appendChild(createSongSelector(null, index));
+    renumberSongSelectors();
+}
+
+function renumberSongSelectors() {
+    const selectors = document.querySelectorAll('.song-selector');
+    selectors.forEach((selector, index) => {
+        const label = selector.querySelector('label');
+        if (label) label.textContent = `Canto ${index + 1}:`;
+    });
+}
+
 // Funzioni di supporto
-async function fetchData(url) {
+async function fetchData(url, options = {}) {
     try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            const errorData = await response.json().catch(() => ({}));
-            throw new Error(errorData.error || 'Errore nel server');
+        const response = await fetch(url, {
+            ...options,
+            headers: {
+                ...options.headers,
+                'Authorization': getAuthHeader()
+            }
+        });
+        
+        if (response.status === 401) {
+            logout();
+            return null;
         }
+        
+        if (!response.ok) {
+            const error = await response.text();
+            throw new Error(error || 'Errore nel server');
+        }
+        
         return await response.json();
     } catch (error) {
         console.error(`Fetch error [${url}]:`, error);
@@ -165,6 +245,8 @@ function showLoading(show) {
             </div>
         `;
         DOM.saveBtn.disabled = true;
+    } else {
+        DOM.saveBtn.disabled = false;
     }
 }
 
@@ -178,7 +260,7 @@ function showMessage(text, type = 'info') {
 }
 
 function checkAuth() {
-    return localStorage.getItem('auth') === 'true';
+    return !!localStorage.getItem('jwt');
 }
 
 function redirectToLogin() {
@@ -186,7 +268,7 @@ function redirectToLogin() {
 }
 
 function logout() {
-    localStorage.removeItem('auth');
+    localStorage.removeItem('jwt');
     localStorage.removeItem('username');
     redirectToLogin();
 }
@@ -195,6 +277,11 @@ async function saveSongs() {
     const date = DOM.dateInput.value.trim();
     if (!date) {
         showMessage('Inserisci la data della domenica', 'error');
+        return;
+    }
+    
+    if (!isValidDate(date)) {
+        showMessage('Formato data non valido (es: 25 dicembre 2023)', 'error');
         return;
     }
 
@@ -206,7 +293,8 @@ async function saveSongs() {
 
     try {
         showLoading(true);
-        const response = await fetch(`${CONFIG.API_BASE_URL}/api/canti`, {
+        
+        const response = await fetch(`${CONFIG.API_BASE_URL}/api/save-songs`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -218,12 +306,22 @@ async function saveSongs() {
             })
         });
 
-        if (!response.ok) throw new Error('Salvataggio fallito');
-        
+        if (response.status === 401) {
+            logout();
+            return;
+        }
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.message || 'Salvataggio fallito');
+        }
+
         showMessage('Canti salvati con successo!', 'success');
-        await loadInitialData(); // Ricarica i dati
-        renderUI();
         
+        // Ricarica i dati aggiornati
+        await loadInitialData();
+        renderUI();
+
     } catch (error) {
         console.error('Save error:', error);
         showMessage(`Errore durante il salvataggio: ${error.message}`, 'error');
@@ -234,14 +332,23 @@ async function saveSongs() {
 
 function collectSelectedSongs() {
     const songs = [];
-    const selects = document.querySelectorAll('.song-select');
-    const inputs = document.querySelectorAll('.song-input');
+    const selectors = document.querySelectorAll('.song-selector');
 
-    selects.forEach((select, index) => {
+    selectors.forEach(selector => {
+        const select = selector.querySelector('.song-select');
+        const input = selector.querySelector('.song-input');
+        const linkInput = selector.querySelector('.song-link-input');
+
         if (select.value) {
-            songs.push(select.value);
-        } else if (inputs[index]?.value.trim()) {
-            songs.push(inputs[index].value.trim());
+            songs.push({
+                id: select.value,
+                titolo: select.options[select.selectedIndex].text
+            });
+        } else if (input?.value.trim()) {
+            songs.push({
+                titolo: input.value.trim(),
+                link: linkInput?.value.trim() || ''
+            });
         }
     });
 
@@ -249,7 +356,12 @@ function collectSelectedSongs() {
 }
 
 function getAuthHeader() {
-    const username = localStorage.getItem('username');
-    const password = getPasswordForUser(username);
-    return 'Basic ' + btoa(`${username}:${password}`);
+    const token = localStorage.getItem('jwt');
+    return token ? `Bearer ${token}` : '';
+}
+
+function isValidDate(dateString) {
+    // Verifica formato "25 dicembre 2023"
+    const pattern = /^\d{1,2}\s+[a-z]+\s+\d{4}$/i;
+    return pattern.test(dateString);
 }

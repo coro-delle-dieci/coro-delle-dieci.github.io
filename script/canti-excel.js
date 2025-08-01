@@ -18,7 +18,7 @@ async function caricaCanti() {
         const json = JSON.parse(text.substring(47).slice(0, -2));
 
         const rows = json.table.rows;
-        const ultimaDataCell = rows[0].c[2]; // supponiamo che la data sia nella terza colonna della prima riga
+        const ultimaDataCell = rows[0].c[2]; // la data si trova nella terza colonna della prima riga
 
         if (!ultimaDataCell || !ultimaDataCell.v) {
             console.warn("Data di aggiornamento non trovata.");
@@ -41,15 +41,23 @@ async function caricaCanti() {
         rows.slice(1).forEach(row => { // Salta la riga 0 che contiene la data
             const titoloCell = row.c[0];
             const linkCell = row.c[1];
+            const contenutoCell = row.c[2]; // Colonna C
 
             if (!titoloCell || !titoloCell.v) return;
 
             const titolo = titoloCell.v;
             const link = linkCell && linkCell.v ? linkCell.v : "#";
+            const contenuto = contenutoCell && contenutoCell.v ? contenutoCell.v : "";
 
             const div = document.createElement("div");
             div.classList.add("canto-link");
-            div.innerHTML = `<p class="canto-link"><a href="${link}" target="_blank">${titolo}</a></p>`;
+            div.innerHTML = `
+                <p class="canto-link">
+                    <a href="${link}" target="_blank">
+                        ${contenuto ? `${contenuto}: ` : ''}${titolo}
+                    </a>
+                </p>
+            `;
             listaCanti.appendChild(div);
         });
 

@@ -212,7 +212,7 @@
             if (assembleaNumber) formData.append('assembleaNumber', assembleaNumber);
             
             // Invia i dati al server (che eseguirà lo script Python)
-            fetch('/crea-canto', {
+            fetch('https://coro-backend.onrender.com/crea-canto', {
                 method: 'POST',
                 body: formData
             })

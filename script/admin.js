@@ -9,8 +9,7 @@ const DOM = {
     songSelectors: document.getElementById('songSelectors'),
     dateInput: document.getElementById('domenica'),
     saveBtn: document.getElementById('saveBtn'),
-    message: document.getElementById('adminMessage'),
-    logoutBtn: document.getElementById('logout-btn')
+    message: document.getElementById('adminMessage')
 };
 
 // Stato applicazione
@@ -21,18 +20,12 @@ const AppState = {
 
 // Inizializzazione
 document.addEventListener('DOMContentLoaded', async () => {
-    if (!checkAuth()) {
-        redirectToLogin();
-        return;
-    }
-
     setupEventListeners();
     await loadInitialData();
     renderUI();
 });
 
 function setupEventListeners() {
-    DOM.logoutBtn.addEventListener('click', logout);
     DOM.saveBtn.addEventListener('click', saveSongs);
     
     // Pulsante per aggiungere nuovi canti
@@ -52,21 +45,11 @@ async function loadInitialData() {
     
     try {
         // Carica canti disponibili
-        const songsResponse = await fetch(`${CONFIG.API_BASE_URL}/api/songs`, {
-            headers: { 'Authorization': getAuthHeader() }
-        });
-        
-        if (songsResponse.status === 401) {
-            logout();
-            return;
-        }
-        
+        const songsResponse = await fetch(`${CONFIG.API_BASE_URL}/api/songs`);
         AppState.availableSongs = await songsResponse.json();
         
         // Carica canti correnti
-        const currentResponse = await fetch(`${CONFIG.API_BASE_URL}/api/current`, {
-            headers: { 'Authorization': getAuthHeader() }
-        });
+        const currentResponse = await fetch(`${CONFIG.API_BASE_URL}/api/current`);
         
         if (currentResponse.ok) {
             AppState.currentSongs = await currentResponse.json();
@@ -211,18 +194,7 @@ function renumberSongSelectors() {
 // Funzioni di supporto
 async function fetchData(url, options = {}) {
     try {
-        const response = await fetch(url, {
-            ...options,
-            headers: {
-                ...options.headers,
-                'Authorization': getAuthHeader()
-            }
-        });
-        
-        if (response.status === 401) {
-            logout();
-            return null;
-        }
+        const response = await fetch(url, options);
         
         if (!response.ok) {
             const error = await response.text();
@@ -259,20 +231,6 @@ function showMessage(text, type = 'info') {
     }, 5000);
 }
 
-function checkAuth() {
-    return !!localStorage.getItem('jwt');
-}
-
-function redirectToLogin() {
-    window.location.href = 'login.html';
-}
-
-function logout() {
-    localStorage.removeItem('jwt');
-    localStorage.removeItem('username');
-    redirectToLogin();
-}
-
 async function saveSongs() {
     const date = DOM.dateInput.value.trim();
     if (!date) {
@@ -297,19 +255,13 @@ async function saveSongs() {
         const response = await fetch(`${CONFIG.API_BASE_URL}/api/save-songs`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': getAuthHeader()
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 domenica: date,
                 canti: songs
             })
         });
-
-        if (response.status === 401) {
-            logout();
-            return;
-        }
 
         if (!response.ok) {
             const error = await response.json();
@@ -353,11 +305,6 @@ function collectSelectedSongs() {
     });
 
     return songs;
-}
-
-function getAuthHeader() {
-    const token = localStorage.getItem('jwt');
-    return token ? `Bearer ${token}` : '';
 }
 
 function isValidDate(dateString) {

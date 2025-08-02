@@ -58,11 +58,6 @@ main {
 
 /* Smartphone: schermi sotto i 600px */
 @media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
     main {
         row-gap: 20px;
     }

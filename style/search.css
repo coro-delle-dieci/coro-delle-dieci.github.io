@@ -1,33 +1,101 @@
+/* Improved search container */
 .search-container {
-    margin: 20px 0;
-    text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
 }
 
 #searchInput {
-    padding: 10px;
-    width: 80%;
-    max-width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+  padding: 12px 40px 12px 15px;
+  width: 85%;
+  max-width: 600px;
+  border: 2px solid #0353a4;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
+#searchInput:focus {
+  outline: none;
+  border-color: #006daa;
+  box-shadow: 0 2px 12px rgba(0,109,170,0.2);
+}
+
+.search-icon {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  pointer-events: none;
+}
+
+.clear-search {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+}
+
+.clear-search:hover {
+  color: #0353a4;
+}
+
+/* Enhanced no results message */
 .no-results {
-    display: none;
-    text-align: center;
-    padding: 20px;
-    font-style: italic;
-    color: #666;
+  display: none;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 500px;
+  border: 1px solid #f5c6cb;
+  animation: fadeIn 0.3s ease;
 }
 
-.lettera-gruppo.hidden {
-    display: none;
+/* Highlight matching text */
+.highlight {
+  background-color: #fff9c4;
+  font-weight: bold;
+  padding: 0 2px;
+  border-radius: 3px;
 }
 
-.lettera-gruppo.hidden h3 {
-    display: none;
+/* Animation for smoother transitions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.canto-link.hidden {
-    display: none;
+.lettera-gruppo {
+  animation: fadeIn 0.4s ease;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #searchInput {
+    width: 90%;
+    padding: 10px 35px 10px 12px;
+    font-size: 15px;
+  }
+  
+  .search-icon, .clear-search {
+    right: 7%;
+  }
+  
+  .alfabeto-nav {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
 }

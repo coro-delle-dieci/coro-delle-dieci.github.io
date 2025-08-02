@@ -26,3 +26,38 @@ section {
 .lettera-gruppo {
     text-align: center;
 }
+
+.alfabeto-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  margin: 10px 0;
+}
+
+.lettera-gruppo {
+  transition: opacity 0.3s ease;
+}
+
+.canto-link a {
+  transition: all 0.2s ease;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+.canto-link a:hover {
+  background-color: #f0f7ff;
+}
+
+h3 {
+  background-color: #f0f7ff;
+  padding: 15px 0;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  color: #0353a4;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

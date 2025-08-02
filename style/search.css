@@ -1,0 +1,33 @@
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+.lettera-gruppo.hidden {
+    display: none;
+}
+
+.lettera-gruppo.hidden h3 {
+    display: none;
+}
+
+.canto-link.hidden {
+    display: none;
+}

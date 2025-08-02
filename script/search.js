@@ -1,67 +1,115 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const noResults = document.getElementById('noResults');
-    const cantoLinks = document.querySelectorAll('.canto-link a');
     const letteraGruppi = document.querySelectorAll('.lettera-gruppo');
     
-    searchInput.addEventListener('input', function() {
-        const searchTerm = this.value.toLowerCase();
+    // Create clear button
+    const clearBtn = document.createElement('button');
+    clearBtn.innerHTML = '&times;';
+    clearBtn.classList.add('clear-search');
+    clearBtn.setAttribute('title', 'Cancella ricerca');
+    clearBtn.style.display = 'none';
+    
+    // Create search icon
+    const searchIcon = document.createElement('span');
+    searchIcon.innerHTML = '🔍';
+    searchIcon.classList.add('search-icon');
+    
+    // Add elements to DOM
+    const searchContainer = document.querySelector('.search-container');
+    searchContainer.appendChild(searchIcon);
+    searchContainer.appendChild(clearBtn);
+    
+    // Store original content for reset
+    const originalContents = new Map();
+    document.querySelectorAll('.canto-link a').forEach(link => {
+        originalContents.set(link, link.innerHTML);
+    });
+    
+    // Search function with highlighting
+    function performSearch(term) {
         let hasResults = false;
+        term = term.toLowerCase().trim();
         
-        // Nascondi tutti i risultati prima della ricerca
+        // Reset all groups and links
+        letteraGruppi.forEach(gruppo => {
+            gruppo.classList.remove('hidden');
+            gruppo.querySelector('h3').style.display = 'block';
+        });
+        
+        // Reset highlights
+        document.querySelectorAll('.canto-link a').forEach(link => {
+            const original = originalContents.get(link);
+            link.innerHTML = original;
+        });
+        
+        // Hide no results by default
         noResults.style.display = 'none';
         
-        // Controlla ogni gruppo di lettere
-        letteraGruppi.forEach(function(gruppo) {
-            const lettera = gruppo.id;
-            const cantoLinkDiv = gruppo.querySelector('.canto-link');
-            const cantiInGruppo = cantoLinkDiv.querySelectorAll('a');
-            let gruppoHasResults = false;
+        if (term === '') {
+            clearBtn.style.display = 'none';
+            return;
+        }
+        
+        let anyGroupVisible = false;
+        
+        // Process each group
+        letteraGruppi.forEach(gruppo => {
+            const h3 = gruppo.querySelector('h3');
+            const links = gruppo.querySelectorAll('.canto-link a');
+            let groupHasMatches = false;
             
-            // Controlla ogni canto nel gruppo
-            cantiInGruppo.forEach(function(canto) {
-                const cantoText = canto.textContent.toLowerCase();
+            links.forEach(link => {
+                const original = originalContents.get(link);
+                const text = link.textContent.toLowerCase();
                 
-                if (cantoText.includes(searchTerm)) {
-                    canto.parentNode.classList.remove('hidden');
-                    gruppoHasResults = true;
+                if (text.includes(term)) {
+                    groupHasMatches = true;
                     hasResults = true;
+                    
+                    // Highlight matching text
+                    const regex = new RegExp(`(${term})`, 'gi');
+                    link.innerHTML = original.replace(regex, '<span class="highlight">$1</span>');
                 } else {
-                    canto.parentNode.classList.add('hidden');
+                    link.parentNode.classList.add('hidden');
                 }
             });
             
-            // Mostra/nascondi il gruppo di lettere in base ai risultati
-            if (gruppoHasResults) {
-                gruppo.classList.remove('hidden');
-                gruppo.querySelector('h3').style.display = 'block';
+            if (groupHasMatches) {
+                anyGroupVisible = true;
             } else {
                 gruppo.classList.add('hidden');
-                gruppo.querySelector('h3').style.display = 'none';
+                h3.style.display = 'none';
             }
         });
         
-        // Mostra messaggio se nessun risultato trovato
-        if (!hasResults && searchTerm.length > 0) {
+        // Show no results if no matches
+        if (!anyGroupVisible) {
             noResults.style.display = 'block';
+            noResults.textContent = `Nessun canto trovato per "${term}"`;
         }
+        
+        clearBtn.style.display = 'block';
+    }
+    
+    // Event listeners
+    searchInput.addEventListener('input', function() {
+        performSearch(this.value);
     });
     
-    // Resetta la ricerca quando si clicca su una lettera nell'alfabeto-nav
-    document.querySelectorAll('.alfabeto-nav a').forEach(function(link) {
+    clearBtn.addEventListener('click', function() {
+        searchInput.value = '';
+        performSearch('');
+        this.style.display = 'none';
+        searchInput.focus();
+    });
+    
+    // Alphabet links reset
+    document.querySelectorAll('.alfabeto-nav a').forEach(link => {
         link.addEventListener('click', function() {
             searchInput.value = '';
-            noResults.style.display = 'none';
-            
-            letteraGruppi.forEach(function(gruppo) {
-                gruppo.classList.remove('hidden');
-                gruppo.querySelector('h3').style.display = 'block';
-                
-                const cantiInGruppo = gruppo.querySelectorAll('.canto-link a');
-                cantiInGruppo.forEach(function(canto) {
-                    canto.parentNode.classList.remove('hidden');
-                });
-            });
+            performSearch('');
+            clearBtn.style.display = 'none';
         });
     });
 });

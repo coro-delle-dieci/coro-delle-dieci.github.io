@@ -10,35 +10,50 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         if section.strip() == "Rit.":
             if chorus_text:
                 html_content.append(
-                    '\t\t<p class="chorus">\n' +
-                    '\n'.join(f'\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
-                    '\n\t\t</p>'
+                    '\t\t\t<p class="chorus">\n' +
+                    '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                    '\n\t\t\t</p>'
                 )
         elif section.startswith('Rit.: '):
             chorus_text = section[6:].strip()
             html_content.append(
-                '\t\t<p class="chorus">\n' +
-                '\n'.join(f'\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
-                '\n\t\t</p>'
+                '\t\t\t<p class="chorus">\n' +
+                '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                '\n\t\t\t</p>'
             )
         else:
-            if section.strip().endswith(" Rit."):
-                section = section[:-5].strip()
+            # Nuova logica per gestire intro/outro/bridge
+            class_name = "verse"
+            content = section
+            
+            # Controllo per i nuovi prefissi
+            if section.startswith("intro: "):
+                class_name = "intro"
+                content = section[7:].strip()
+            elif section.startswith("outro: "):
+                class_name = "outro"
+                content = section[7:].strip()
+            elif section.startswith("bridge: "):
+                class_name = "bridge"
+                content = section[8:].strip()
+            
+            if content.endswith(" Rit."):
+                content = content[:-5].strip()
                 html_content.append(
-                    '\t\t\t<p class="verse">\n' +
-                    '\n'.join(f'\t\t\t\t{line}<br>' for line in section.split('\n')) +
+                    f'\t\t\t<p class="{class_name}">\n' +
+                    '\n'.join(f'\t\t\t\t{line}<br>' for line in content.split('\n')) +
                     '\n\t\t\t</p>'
                 )
                 if chorus_text:
                     html_content.append(
                         '\t\t\t\t<p class="chorus">\n' +
-                        '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                        '\n'.join(f'\t\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
                         '\n\t\t\t\t</p>'
                     )
             else:
                 html_content.append(
-                    '\t\t\t<p class="verse">\n' +
-                    '\n'.join(f'\t\t\t\t{line}<br>' for line in section.split('\n')) +
+                    f'\t\t\t<p class="{class_name}">\n' +
+                    '\n'.join(f'\t\t\t\t{line}<br>' for line in content.split('\n')) +
                     '\n\t\t\t</p>'
                 )
     

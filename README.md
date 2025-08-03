@@ -41,10 +41,15 @@ Permette di:
 ├─ admin.html            ← Interfaccia protetta per gestire i canti (prossimamente in funzione)  
 ├─ style.css             ← Stile globale + variabili CSS per le palette  
 ├─ carica‑canti.js       ← JS che legge e carica i canti da Google Sheets  
-├─ canti/                ← Cartella con un file HTML per ogni canto  
+├─ canti/                ← Cartella con un file HTML per ogni canto
 │    ├─ altissimo.html
 |    ├─ camminero.html
 │    └─ …
+├─ canti-pdf/            ← Cartella con un file PDF per ogni canto
+│    ├─ altissimo.pdf
+|    ├─ camminero.pdf
+│    └─ …
+├─ images/               ← Cartella contenente immagini di diverso tipo
 └─ .github/
     ├─ ISSUE_TEMPLATE/
     │    ├─ bug_report.md

@@ -1,168 +1,166 @@
-# Questo script rinomina i file in una directory in base a una mappatura predefinita dai codici numerici agli slug descrittivi.
-# Utilizza la libreria unidecode per gestire caratteri non ASCII e fornisce un'opzione dry-run per visualizzare in anteprima le modifiche senza apportarle.
-
 import os
 import re
-import argparse
 
-try:
-    from unidecode import unidecode
-except ImportError:
-    raise ImportError("Please install unidecode: pip install unidecode")
+# Percorso fisso della cartella
+FOLDER_PATH = os.path.join(os.path.dirname(__file__), '../canti-pdf')
 
-# Table of titles with their corresponding numbers
-TABLE = '''
-ACCOGLI SIGNORE I NOSTRI DONI	1
-ACQUA SIAMO NOI	2
-ADESSO È LA PIENEZZA	3
-ADESTE FIDELES	4
-ALLELUIA (CELTICA)	5
-ALLELUIA, CANTO PER CRISTO	6
-ALLELUIA, CHI ASCOLTA	7
-ALLELUIA, ED OGGI ANCORA	8
-ALLELUIA, LA NOSTRA FESTA	9
-ALLELUIA, LA TUA PAROLA	10
-ALLELUIA, ORA LUI VIVE	11
-ALLELUIA, PASSERANNO I CIELI	12
-ALLELUIA, QUESTA TUA PAROLA	13
-ALLELUIA, SIGNORE SEI VENUTO	14
-ALTISSIMO	15
-ALZATI E RISPLENDI	16
-AMATEVI L’UN L’ALTRO	17
-ANDATE PER LE STRADE	18
-ANIMA DI CRISTO	19
-ASTRO DEL CIEL	20
-AVE MARIA	21
-AVE MARIA, GRATIA PLENA	22
-AVE MARIA, ORA PRO NOBIS	23
-BENEDICI, O SIGNORE	24
-BENEDIRÒ IL SIGNORE	25
-CAMMINERÒ	26
-CANTIAMO TE	27
-CANTICO DEI REDENTI	28
-CHE GIOIA CI HAI DATO	29
-CHI?	30
-COME FUOCO VIVO	31
-COME MARIA	32
-COME TI AMA DIO	33
-CON GIOIA VENIAMO A TE	34
-CRISTO È RISORTO VERAMENTE	35
-CRISTO VIVE IN MEZZO A NOI	36
-DALL’AURORA AL TRAMONTO	37
-DOLCE SENTIRE	38
-È BELLO LODARTI	39
-E LA STRADA SI APRE	40
-E SOLO UN UOMO	41
-È UN GIORNO DI FESTA	42
-ECCO L’ACQUA	43
-ECCO IL NOSTRO SÌ	44
-ECCO QUEL CHE ABBIAMO	45
-EVENU SHALOM	46
-FRUTTO DELLA NOSTRA DELLA TERRA	47
-GIOVANE DONNA	48
-GLORIA (BUTTAZZO)	49
-GLORIA (GIOMBINI)	50
-GLORIA (MARIANO)	51
-GRANDI COSE	52
-IL PANE DEL CAMMINO	53
-INCONTRO A TE	54
-INNALZIAMO LO SGUARDO	55
-INVOCHIAMO LA TUA PRESENZA	56
-ISAIA 11	57
-LA PREGHIERA DI GESÙ E LA NOSTRA	58
-LAUDATO SII	59
-LODE E GLORIA	60
-LODE E GLORIA A TE	61
-MADONNA DI CZESTOCHOWA	62
-MARANATHÀ, VIENI SIGNOR	63
-MI INDICHERAI	64
-MUSICA DI FESTA	65
-NEL TUO SILENZIO	66
-NOI VENIAMO A TE	67
-OGNI MIA PAROLA	68
-PACE SIA, PACE A VOI	69
-PANE DEL CIELO	70
-PANE DI VITA NUOVA	71
-POPOLI TUTTI ACCLAMATE	72
-QUALE GIOIA	73
-RALLEGRIAMOCI	74
-RE DI GLORIA	75
-RESTA ACCANTO A ME	76
-RIMANI TRA NOI	77
-RISUSCITÒ	78
-SALVE REGINA	79
-SAN FRANCESCO	80
-SANTA MARIA DEL CAMMINO	81
-SANTO (BONFITTO)	82
-SANTO (BUTTAZZO)	83
-SANTO (GEN)	84
-SANTO (ROSSI)	85
-SANTO (SPOLADORE)	86
-SANTO (ZAIRE) - OSANNA EH!	87
-SANTO (ZAPPALÀ)	88
-SANTO SEI TU	89
-SCUSA, SIGNORE	90
-SE M’ACCOGLI	91
-SEGNI DEL TUO AMORE	92
-SEGNI NUOVI	93
-SEI VENUTO DAL CIELO	94
-SERVIRE È REGNARE	95
-SERVO PER AMORE	96
-SONO QUI A LODARTI	97
-SPIRITO DI DIO	98
-SU ALI D'AQUILA	99
-SULLA TUA PAROLA (PIETRO VAI)	100
-TE AL CENTRO DEL MIO CUORE	101
-TI ESALTO DIO MIO RE	102
-TI LODIAMO E T’ADORIAMO	103
-TI OFFRIAMO SIGNORE	104
-TU SCENDI DALLE STELLE	105
-TU SEI (SOFFIERÀ, SOFFIERÀ)	106
-TU SEI LA MIA VITA	107
-TUTTA LA TERRA ATTENDE	108
-UN CUORE NUOVO	109
-VENITE FEDELI	110
-VERBUM PANIS	111
-VIENI SANTO SPIRITO DI DIO	112
-VIVERE LA VITA	113
-VOCAZIONE	114
-'''
+# Mappatura dei nomi
+SONG_MAPPING = {
+    1: "accoli-signore-i-nostri-doni",
+    2: "acqua-siamo-noi",
+    3: "adesso-e-la-pienezza",
+    4: "adeste-fideles",
+    5: "alleluia-celtica",
+    6: "alleluia-canto-per-cristo",
+    7: "alleluia-chi-ascolta",
+    8: "alleluia-ed-oggi-ancora",
+    9: "alleluia-la-nostra-festa",
+    10: "alleluia-la-tua-parola",
+    11: "alleluia-ora-lui-vive",
+    12: "alleluia-passeranno-i-cieli",
+    13: "alleluia-questa-tua-parola",
+    14: "alleluia-signore-sei-venuto",
+    15: "altissimo",
+    16: "alzati-e-risplendi",
+    17: "amatevi-lun-laltro",
+    18: "andate-per-le-strade",
+    19: "anima-di-cristo",
+    20: "astro-del-ciel",
+    21: "ave-maria",
+    22: "ave-maria-gratia-plena",
+    23: "ave-maria-ora-pro-nobis",
+    24: "benedici-o-signore",
+    25: "benediro-il-signore",
+    26: "camminero",
+    27: "cantiamo-te",
+    28: "cantico-dei-redenti",
+    29: "che-gioia-ci-hai-dato",
+    30: "chi",
+    31: "come-fuoco-vivo",
+    32: "come-maria",
+    33: "come-ti-ama-dio",
+    34: "con-gioia-veniamo-a-te",
+    35: "cristo-e-risorto-veramente",
+    36: "cristo-vive-in-mezzo-a-noi",
+    37: "dallaurora-al-tramonto",
+    38: "dolce-sentire",
+    39: "e-bello-lodarti",
+    40: "e-la-strada-si-apre",
+    41: "e-solo-un-uomo",
+    42: "e-un-giorno-di-festa",
+    43: "ecco-lacqua",
+    44: "ecco-il-nostro-si",
+    45: "ecco-quel-che-abbiamo",
+    46: "evenu-shalom",
+    47: "frutto-della-nostra-della-terra",
+    48: "giovane-donna",
+    49: "gloria-butazzo",
+    50: "gloria-giombini",
+    51: "gloria-mariano",
+    52: "grandi-cose",
+    53: "il-pane-del-cammino",
+    54: "incontro-a-te",
+    55: "innalziamo-lo-sguardo",
+    56: "invochiamo-la-tua-presenza",
+    57: "isaia-11",
+    58: "la-preghiera-di-gesu-e-la-nostra",
+    59: "laudato-sii",
+    60: "lode-e-gloria",
+    61: "lode-e-gloria-a-te",
+    62: "madonna-di-czestochowa",
+    63: "maranatha-vieni-signor",
+    64: "mi-indicherai",
+    65: "musica-di-festa",
+    66: "nel-tuo-silenzio",
+    67: "noi-veniamo-a-te",
+    68: "ogni-mia-parola",
+    69: "pace-sia-pace-a-voi",
+    70: "pane-del-cielo",
+    71: "pane-di-vita-nuova",
+    72: "popoli-tutti-acclamate",
+    73: "quale-gioia",
+    74: "rallegriamoci",
+    75: "re-di-gloria",
+    76: "resta-accanto-a-me",
+    77: "rimani-tra-noi",
+    78: "risuscito",
+    79: "salve-regina",
+    80: "san-francesco",
+    81: "santa-maria-del-cammino",
+    82: "santo-bonfitto",
+    83: "santo-butazzo",
+    84: "santo-gen",
+    85: "santo-rossi",
+    86: "santo-spoladore",
+    87: "santo-zaire-osanna-eh",
+    88: "santo-zappala",
+    89: "santo-sei-tu",
+    90: "scusa-signore",
+    91: "se-maccogli",
+    92: "segni-del-tuo-amore",
+    93: "segni-nuovi",
+    94: "sei-venuto-dal-cielo",
+    95: "servire-e-regnare",
+    96: "servo-per-amore",
+    97: "sono-qui-a-lodarti",
+    98: "spirito-di-dio",
+    99: "su-ali-daquila",
+    100: "sulla-tua-parola-pietro-vai",
+    101: "te-al-centro-del-mio-cuore",
+    102: "ti-esalto-dio-mio-re",
+    103: "ti-lodiamo-e-tadoriamo",
+    104: "ti-offriamo-signore",
+    105: "tu-scendi-dalle-stelle",
+    106: "tu-sei-soffiera-soffiera",
+    107: "tu-sei-la-mia-vita",
+    108: "tutta-la-terra-attende",
+    109: "un-cuore-nuovo",
+    110: "venite-fedeli",
+    111: "verbum-panis",
+    112: "vieni-santo-spirito-di-dio",
+    113: "vivere-la-vita",
+    114: "vocazione"
+}
 
-def slugify(text):
-    """
-    Convert text to a slug: lowercase, ascii, replace non-alphanumeric with hyphens.
-    """
-    text = unidecode(text)
-    text = text.lower()
-    # replace any sequence of non-alphanumeric characters with single hyphen
-    text = re.sub(r"[^a-z0-9]+", "-", text)
-    text = text.strip("-")
-    return text
+def clean_filename(name):
+    """Pulisce il nome del file secondo le specifiche"""
+    name = name.lower()
+    name = re.sub(r'[\(\)\'’\.,;:!?]', '', name)  # Rimuove punteggiatura
+    name = re.sub(r'\s+', '-', name)               # Sostituisce spazi con trattini
+    return name
 
-# Build mapping from padded number to slugified title
-mapping = {}
-for line in TABLE.strip().splitlines():
-    title, num = line.rsplit("\t", 1)
-    key = f"{int(num):03d}"
-    mapping[key] = slugify(title)
-
-
-def rename_files(directory, dry_run=False):
-    for fname in os.listdir(directory):
-        name, ext = os.path.splitext(fname)
-        if name in mapping:
-            new_name = mapping[name] + ext.lower()
-            src = os.path.join(directory, fname)
-            dst = os.path.join(directory, new_name)
-            if dry_run:
-                print(f"Would rename: {fname} -> {new_name}")
-            else:
-                print(f"Renaming: {fname} -> {new_name}")
-                os.rename(src, dst)
+def rename_pdf_files():
+    """Rinomina i file PDF nella cartella specificata"""
+    if not os.path.exists(FOLDER_PATH):
+        print(f"Errore: La cartella {FOLDER_PATH} non esiste!")
+        return
+    
+    print(f"Elaborazione files in: {FOLDER_PATH}")
+    
+    for filename in os.listdir(FOLDER_PATH):
+        if filename.lower().endswith('.pdf'):
+            try:
+                # Estrai il numero dal nome del file (senza estensione)
+                file_num = int(os.path.splitext(filename)[0])
+                
+                # Verifica se il numero è nella mappatura
+                if file_num in SONG_MAPPING:
+                    new_name = f"{SONG_MAPPING[file_num]}.pdf"
+                    old_path = os.path.join(FOLDER_PATH, filename)
+                    new_path = os.path.join(FOLDER_PATH, new_name)
+                    
+                    # Rinomina il file
+                    os.rename(old_path, new_path)
+                    print(f"Rinominato: {filename:>10} -> {new_name}")
+                else:
+                    print(f"Attenzione: Nessun mapping per il numero {file_num}")
+                    
+            except ValueError:
+                print(f"Saltato: {filename} (non è un file numerico)")
+            except Exception as e:
+                print(f"Errore elaborando {filename}: {str(e)}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Rename files from numeric codes to descriptive slugs.")
-    parser.add_argument("directory", nargs="?", default=".", help="Target directory (default: current)")
-    parser.add_argument("--dry-run", action="store_true", help="Show changes without renaming")
-    args = parser.parse_args()
-    rename_files(args.directory, dry_run=args.dry_run)
+    print("=== Rinomina PDF dei canti ===")
+    rename_pdf_files()
+    print("Operazione completata!")

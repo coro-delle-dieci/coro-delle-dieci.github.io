@@ -130,3 +130,24 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+.ico {
+    height: 2.5rem;
+    max-width: 100%;
+    width: auto;
+    border-style: none;
+    vertical-align: middle;
+}
+
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

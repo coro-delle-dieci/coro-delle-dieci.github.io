@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grazie per il tuo contributo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <style>
+        /* Stili specifici per la pagina di ringraziamento */
+        .thank-you-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        
+        .thank-you-icon {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+        
+        .thank-you-message {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--h);
+        }
+        
+        .back-link {
+            display: inline-block;
+            background-color: var(--h);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .back-link:hover {
+            background-color: var(--link);
+            color: white;
+        }
+        
+        /* Animazione */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .thank-you-container {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coro delle Dieci</h1>
+        <nav>
+            <ul>
+                <li><a href="index/">Home</a></li>
+                <li><a href="canti/">Canti</a></li>
+                <li><a href="calendario/">Calendario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="thank-you-container">
+            <div class="thank-you-icon">✓</div>
+            <h2>Grazie!</h2>
+            <p class="thank-you-message">Il tuo contributo è stato inviato con successo.</p>
+            <p>Il canto sarà revisionato e aggiunto alla nostra raccolta al più presto.</p>
+            <a href="canti/" class="back-link">Torna all'elenco dei canti</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
+    </footer>
+</body>
+</html>

@@ -26,7 +26,7 @@ form#cantoForm textarea {
     color: var(--text);
 }
 
-form#cantoForm input[type="text"]:focus,
+form#cantoForm input:focus,
 form#cantoForm textarea:focus {
     outline: none;
     border-color: var(--link);

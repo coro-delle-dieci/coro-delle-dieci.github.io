@@ -28,28 +28,28 @@
         <section>
             <h2>Lista dei Canti</h2>
             <form id="cantoForm" action="https://formsubmit.co/coro10.sanvito@gmail.com" method="POST">
-                <!-- Oggetto personalizzato -->
-                <input type="hidden" name="_subject" id="oggettoEmail" value="Nuovo canto da inserire">
+                <!-- Nome canto -->
+                <label for="nome_canto">Nome canto:</label>
+                <input type="text" id="nome_canto" name="nome_canto" required>
 
-                <!-- Disabilita captcha -->
-                <input type="hidden" name="_captcha" value="false">
+                <!-- Testo canto -->
+                <label for="testo_canto">Testo del canto:</label>
+                <textarea id="testo_canto" name="testo_canto" rows="8" required></textarea>
 
-                <!-- Nome del canto -->
-                <label>Nome del canto:</label><br>
-                <input type="text" id="nomeCanto" name="nome_canto" required><br><br>
-
-                <!-- Testo del canto -->
-                <label>Testo del canto:</label><br>
-                <textarea name="testo_canto" rows="8" required></textarea><br><br>
-
+                <!-- Pulsante -->
                 <button type="submit">Invia</button>
+
+                <!-- Campi nascosti -->
+                <input type="hidden" name="_subject" id="subject" value="">
+                <input type="hidden" name="_next" value="https://coro-delle-dieci.github.io/grazie.html">
+                <input type="hidden" name="_captcha" value="false">
             </form>
 
             <script>
-                document.getElementById("cantoForm").addEventListener("submit", function() {
-                    let nomeCanto = document.getElementById("nomeCanto").value;
-                    document.getElementById("oggettoEmail").value = "Nuovo canto da inserire: " + nomeCanto;
-                });
+            document.getElementById("cantoForm").addEventListener("submit", function() {
+            const nomeCanto = document.getElementById("nome_canto").value;
+            document.getElementById("subject").value = "Nuovo canto da inserire: " + nomeCanto;
+            });
             </script>
         </section>
     </main>

@@ -35,21 +35,28 @@ Permette di:
 ## Struttura del progetto
 ```text
 /
-├─ index.html            ← Homepage con sezione canti + calendario  
-├─ canti.html            ← Elenco statico dei canti  
-├─ calendario.html       ← Pagina dedicata al calendario  
-├─ admin.html            ← Interfaccia protetta per gestire i canti (prossimamente in funzione)  
-├─ style.css             ← Stile globale + variabili CSS per le palette  
-├─ carica‑canti.js       ← JS che legge e carica i canti da Google Sheets  
-├─ canti/                ← Cartella con un file HTML per ogni canto
+├─ index.html                 ← Homepage con sezione canti + calendario  
+├─ canti.html                 ← Elenco statico dei canti  
+├─ calendario.html            ← Pagina dedicata al calendario  
+├─ style.css                  ← Stile globale + variabili CSS per le palette  
+├─ carica‑canti.js            ← JS che legge e carica i canti da Google Sheets  
+├─ canti/                     ← Cartella con un file HTML per ogni canto
 │    ├─ altissimo.html
 |    ├─ camminero.html
 │    └─ …
-├─ canti-pdf/            ← Cartella con un file PDF per ogni canto
+├─ canti-pdf/                 ← Cartella con un file PDF per ogni canto
 │    ├─ altissimo.pdf
 |    ├─ camminero.pdf
 │    └─ …
-├─ images/               ← Cartella contenente immagini di diverso tipo
+├─ images/                    ← Cartella contenente immagini di diverso tipo
+├─ admin/                     ← Contiene tutto ciò che è legato alla gestione riservata
+│    ├─ login.html            ← Accesso agli amminisratori (prossimamente in funzione)
+│    ├─ dashboad.html         ← Interfaccia protetta per gestire i canti, pannello di controllo 
+│    └─ aggiungi-canto.html   ← Form per inserire nuovi canti
+├─ system/                    ← Per pagine tecniche o di servizio
+│    ├─ grazie.html           ← Pagina di conferma dopo un'azione
+│    └─ docs/                 ← Documentazione e guide
+│        └─ guida-scrittura-canti.html
 └─ .github/
     ├─ ISSUE_TEMPLATE/
     │    ├─ bug_report.md
@@ -67,3 +74,25 @@ Permette di:
 2. **Accesso per tutti i membri del coro**
    - Accesso protetto (username/password o OAuth Google)
    - Interfaccia per visualizzare audio e/o video riservati ai membri del coro (seconde voci, salmi cantati, etc…)
+
+
+## Richiesta di inserimento di un nuovo canto ([aggiungi-canto.html](./admin/aggiungi-canto.html))
+Per proporre l’aggiunta di un nuovo canto al sito, è disponibile un modulo online.
+Quando un utente compila e invia il modulo, i dati vengono inviati automaticamente via email ai responsabili del coro tramite il servizio FormSubmit.
+
+### Campi da compilare
+Il modulo richiede i seguenti dati:  
+1. Nome del canto (obbligatorio): inserire il titolo completo del canto.
+2. Testo del canto (obbligatorio): copiare l’intero testo del canto così come deve comparire nel sito.
+3. Link YouTube (facoltativo): inserire il link a un video YouTube del canto (utile per ascolto e apprendimento).
+4. Numero sul libretto (facoltativo): specificare il numero corrispondente sul libretto dei canti.
+
+### Come funziona l'invio
+Quando il modulo viene inviato, il sistema genera un’email con oggetto:  
+`Nuovo canto da inserire: [Nome canto]`  
+Il corpo dell’email contiene tutti i dati inseriti dall’utente nei campi del modulo.  
+Il servizio [FormSubmit](formsubmit.co/) recapita l’email direttamente all’indirizzo dei responsabili del coro.  
+I responsabili verificano le informazioni e, se approvate, inseriscono il canto nel sito.
+
+### Nota bene!
+**Il sistema non consente l’inserimento diretto nel sito: tutte le richieste vengono verificate manualmente.**

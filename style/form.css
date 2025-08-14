@@ -1,25 +1,26 @@
-/* form.css */
-form#cantoForm {
+form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-width: 800px;
+    gap: 1.5rem;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
-form#cantoForm label {
+label {
     font-weight: bold;
     color: var(--h);
-    margin-bottom: -10px;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
 }
 
-form#cantoForm input[type="text"],
-form#cantoForm input[type="url"],
-form#cantoForm textarea {
+input[type="text"],
+input[type="url"],
+textarea {
     width: 100%;
-    padding: 12px;
-    border: 2px solid var(--h);
+    padding: 0.8rem;
+    border: 2px solid var(--link);
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -27,64 +28,55 @@ form#cantoForm textarea {
     color: var(--text);
 }
 
-form#cantoForm input[type="text"]:focus,
-form#cantoForm input[type="url"]:focus,
-form#cantoForm textarea:focus {
+input[type="text"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border-color: var(--hover);
     outline: none;
-    border-color: var(--link);
-    box-shadow: 0 0 5px rgba(0, 109, 170, 0.5);
+    box-shadow: 0 0 0 2px rgba(0, 109, 170, 0.2);
 }
 
-form#cantoForm textarea {
-    min-height: 200px;
+textarea {
+    min-height: 150px;
     resize: vertical;
 }
 
-form#cantoForm button[type="submit"] {
-    background-color: var(--h);
+button[type="submit"] {
+    background-color: var(--link);
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
-form#cantoForm button[type="submit"]:hover {
-    background-color: var(--link);
+button[type="submit"]:hover {
+    background-color: var(--hover);
 }
 
-/* Validazione visiva per il campo URL */
-form#cantoForm input[type="url"]:valid {
-    border-color: #28a745; /* Verde quando il campo è valido */
+/* Stile per i placeholder */
+::placeholder {
+    color: #a3a3a3;
+    opacity: 1;
 }
 
-form#cantoForm input[type="url"]:invalid:not(:placeholder-shown) {
-    border-color: #dc3545; /* Rosso quando il campo è invalido e non vuoto */
+/* Stile per i campi facoltativi */
+input:optional, 
+textarea:optional {
+    border-color: var(--background-hftext);
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    form#cantoForm {
-        padding: 15px;
+    form {
+        padding: 1rem;
     }
     
-    form#cantoForm label {
-        font-size: 1rem;
-    }
-    
-    form#cantoForm input[type="text"],
-    form#cantoForm input[type="url"],
-    form#cantoForm textarea {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-    
-    form#cantoForm button[type="submit"] {
-        padding: 10px 15px;
-        font-size: 1rem;
+    button[type="submit"] {
+        width: 100%;
     }
 }

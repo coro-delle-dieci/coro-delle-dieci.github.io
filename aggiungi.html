@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco dei canti</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/canti-lista.css">
+    <link rel="stylesheet" href="style/search.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <h1>Elenco dei canti</h1>
+        <nav>
+            <ul>
+                <li><a href="index/">Home</a></li>
+                <li><a href="canti/">Canti</a></li>
+                <li><a href="calendario/">Calendario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Lista dei Canti</h2>
+            <form id="cantoForm" action="https://formsubmit.co/coro10.sanvito@gmail.com" method="POST">
+                <!-- Oggetto personalizzato -->
+                <input type="hidden" name="_subject" id="oggettoEmail" value="Nuovo canto da inserire">
+
+                <!-- Disabilita captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Nome del canto -->
+                <label>Nome del canto:</label><br>
+                <input type="text" id="nomeCanto" name="nome_canto" required><br><br>
+
+                <!-- Testo del canto -->
+                <label>Testo del canto:</label><br>
+                <textarea name="testo_canto" rows="8" required></textarea><br><br>
+
+                <button type="submit">Invia</button>
+            </form>
+
+            <script>
+                document.getElementById("cantoForm").addEventListener("submit", function() {
+                    let nomeCanto = document.getElementById("nomeCanto").value;
+                    document.getElementById("oggettoEmail").value = "Nuovo canto da inserire: " + nomeCanto;
+                });
+            </script>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
+    </footer>
+
+</body>
+</html>

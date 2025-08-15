@@ -27,13 +27,13 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             content = section
             
             # Controllo per i nuovi prefissi
-            if section.startswith("intro: "):
+            if section.startswith("Intro: "):
                 class_name = "intro"
                 content = section[7:].strip()
-            elif section.startswith("outro: "):
+            elif section.startswith("Outro: "):
                 class_name = "outro"
                 content = section[7:].strip()
-            elif section.startswith("bridge: "):
+            elif section.startswith("Bridge: "):
                 class_name = "bridge"
                 content = section[8:].strip()
             

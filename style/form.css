@@ -17,8 +17,7 @@ label {
     text-align: left;
 }
 
-input[type="text"],
-input[type="url"],
+input,
 textarea {
     width: 100%;
     padding: 0.8rem;

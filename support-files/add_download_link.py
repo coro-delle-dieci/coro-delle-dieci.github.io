@@ -20,22 +20,27 @@ insert_code = """
 for filename in os.listdir(folder_path):
     if filename.endswith('.html'):
         file_path = os.path.join(folder_path, filename)
-        
+
         with open(file_path, 'r', encoding='utf-8') as file:
             content = file.read()
+
+        # Se il blocco è già presente, salta
+        if '<span>Scarica il canto in PDF</span>' in content:
+            print(f'Blocco già presente in: {filename}')
+            continue
 
         # Genera il codice specifico per questa pagina
         page_name = os.path.splitext(filename)[0]
         specific_code = insert_code.replace('{pagina}', page_name)
-        
+
         # Effettua la sostituzione usando espressioni regolari
         new_content = re.sub(
-            r'(?=</main>)', 
-            specific_code, 
+            r'(?=</main>)',
+            specific_code,
             content,
             flags=re.IGNORECASE
         )
-        
+
         # Scrivi il nuovo contenuto solo se è stato effettuato un cambiamento
         if new_content != content:
             with open(file_path, 'w', encoding='utf-8') as file:

@@ -45,11 +45,11 @@ for filename in os.listdir(directory):
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/support-files"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = "vecchia_stringa"
-nuova_stringa = "nuova_stringa"
+stringa_da_sostituire = "iconapdf.png"
+nuova_stringa = "download.svg"
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

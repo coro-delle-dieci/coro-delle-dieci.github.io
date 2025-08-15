@@ -6,9 +6,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 600px;
     margin: 0 auto;
-    padding: 1.5rem;
 }
 
 label {
@@ -55,14 +53,14 @@ button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: bold;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 button[type="submit"]:hover {
     background-color: var(--hover);
 }
 
-p {
+.info {
     margin: -10px 0;
     padding: 0;
     font-size: smaller;

@@ -59,14 +59,8 @@
                 <input type="hidden" name="_subject" id="subject" value="">
                 <input type="hidden" name="_next" value="https://coro-delle-dieci.github.io/system/grazie.html">
                 <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_replyto" id="replyto" value="">
             </form>
-
-            <script>
-                document.getElementById("cantoForm").addEventListener("submit", function() {
-                const nomeCanto = document.getElementById("nome_canto").value;
-                document.getElementById("subject").value = "Nuovo canto da inserire: " + nomeCanto;
-                });
-            </script>
         </section>
     </main>
     
@@ -75,4 +69,17 @@
     </footer>
 
 </body>
+
+<script>
+    document.getElementById("cantoForm").addEventListener("submit", function() {
+        const nomeCanto = document.getElementById("nome_canto").value.trim();
+        const emailRichiedente = document.getElementById("email_richiedente").value.trim();
+
+        // Imposta l'oggetto della mail
+        document.getElementById("subject").value = "Nuovo canto da inserire: " + nomeCanto;
+
+        // Imposta il reply-to
+        document.getElementById("replyto").value = emailRichiedente;
+    });
+</script>
 </html>

@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <h1>Elenco dei canti</h1>
+        <h1>Coro delle Dieci</h1>
         <nav>
             <ul>
                 <li><a href="../index/">Home</a></li>
@@ -33,8 +33,8 @@
 
                 <!-- Testo del canto -->
                 <label for="testo_canto">Testo del canto</label>
-                <p>Scopri come scrivere il testo del canto correttamente: <a href="../docs/guida-scrittura-canti.html">Guida alla formattazione</a></p>
-                <textarea id="testo_canto" name="testo_canto" rows="8" required></textarea>
+                <p>Scopri come scrivere il testo del canto correttamente: <a href="../system/docs/guida-scrittura-canti.html">Guida alla formattazione</a></p>
+                <textarea id="testo_canto" name="testo_canto" rows="15" required></textarea>
 
                 <!-- Link YouTube -->
                 <label for="video_youtube">Link YouTube (facoltativo)</label>
@@ -49,9 +49,10 @@
 
                 <!-- Campi nascosti per FormSubmit -->
                 <input type="hidden" name="_subject" id="subject" value="">
-                <input type="hidden" name="_next" value="https://coro-delle-dieci.github.io/grazie.html">
-                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://coro-delle-dieci.github.io/system/grazie.html">
+                <input type="hidden" name="_captcha" value="true">
             </form>
+
             <script>
                 document.getElementById("cantoForm").addEventListener("submit", function() {
                 const nomeCanto = document.getElementById("nome_canto").value;

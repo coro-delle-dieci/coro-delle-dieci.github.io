@@ -9,7 +9,7 @@ insert_code = """
         <section>
             <div class="download">
                 <a href="../canti-pdf/{pagina}.pdf" download target="_blank" class="download-link">
-                    <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/iconapdf.png">
+                    <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/download.png">
                     <span>Scarica il canto in PDF</span>
                 </a>
             </div>

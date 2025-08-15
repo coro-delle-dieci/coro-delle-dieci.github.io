@@ -48,8 +48,8 @@ import os
 directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = "iconapdf.png"
-nuova_stringa = "download.svg"
+stringa_da_sostituire = "download.svg"
+nuova_stringa = "download.png"
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

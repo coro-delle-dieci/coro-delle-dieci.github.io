@@ -9,6 +9,10 @@ main {
     row-gap: 20px;
 }
 
+section {
+    padding: 1rem;
+}
+
 .left-column, .right-column, .centre-column {
     display: flex;
     flex-direction: column;

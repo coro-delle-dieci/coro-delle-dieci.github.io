@@ -120,7 +120,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 </html>'''
 
     # Path di destinazione fisso
-    save_dir = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti"
+    save_dir = "C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
     filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "") + ".html"
     full_path = os.path.join(save_dir, filename)
 

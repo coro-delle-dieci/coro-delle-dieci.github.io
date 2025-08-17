@@ -37,6 +37,7 @@ async function caricaCanti() {
 
         // Se è aggiornato, continua a mostrare i canti
         listaCanti.innerHTML = "";
+        let haCanti = false; // flag per verificare se ci sono canti
 
         rows.slice(1).forEach(row => { // Salta la riga 0 che contiene la data
             const titoloCell = row.c[0];
@@ -45,6 +46,7 @@ async function caricaCanti() {
 
             if (!titoloCell || !titoloCell.v) return;
 
+            haCanti = true; // trovato almeno un canto
             const titolo = titoloCell.v;
             const link = linkCell && linkCell.v ? linkCell.v : "#";
             const contenuto = contenutoCell && contenutoCell.v ? contenutoCell.v : "";
@@ -60,6 +62,11 @@ async function caricaCanti() {
             `;
             listaCanti.appendChild(div);
         });
+
+        // Se non ha trovato canti, mostra messaggio
+        if (!haCanti) {
+            listaCanti.innerHTML = "<p>Nessun canto disponibile al momento.</p>";
+        }
 
     } catch (error) {
         console.error("Errore nel caricamento dei canti:", error);

@@ -13,3 +13,9 @@ data/canti.json
 
 # Logs
 *.log
+
+# Pagina Chi siamo e relativi immagini e CSS
+images/music-icons/
+images/music-icons/*
+style/avatar.css
+chi-siamo.html

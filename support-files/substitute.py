@@ -4,8 +4,8 @@ import os
 directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '../canti-pdf/'
-nuova_stringa = '../testi-pdf/'
+stringa_da_sostituire = '../testi-pdf/'
+nuova_stringa = '../pdf-testi/'
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

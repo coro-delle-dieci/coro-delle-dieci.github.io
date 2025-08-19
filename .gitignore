@@ -17,5 +17,5 @@ data/canti.json
 # Pagina Chi siamo e relativi immagini e CSS
 images/music-icons/
 images/music-icons/*
-style/avatar.css
+style/chi-siamo.css
 chi-siamo.html

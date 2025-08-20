@@ -79,6 +79,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             extra_sections += f'            <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
         extra_sections += '        </section>'
     
+    filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
     html_template = f'''<!DOCTYPE html>
 <html lang="it">
 <head>
@@ -130,7 +131,6 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
     # Path di destinazione fisso
     save_dir = "C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
-    filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
     filename_html = filename + ".html"
     full_path = os.path.join(save_dir, filename_html)
 

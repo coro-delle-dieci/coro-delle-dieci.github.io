@@ -2,6 +2,7 @@
     font-size: 4rem;
     color: #28a745;
     margin-bottom: 1rem;
+    margin-top: -5px;
 }
 
 .thank-you-message {
@@ -34,5 +35,64 @@
 }
 
 .thank-you-container {
+    margin: 3rem auto; 
     animation: fadeIn 0.6s ease-out forwards;
+}
+
+span {
+    margin: 0 15px;
+}
+
+.link-container {
+    display: flex;
+    flex-wrap: wrap;       /* va a capo se lo spazio è stretto */
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;             /* spazio uniforme tra gli elementi */
+    margin: 10px 0;
+}
+
+.link-container a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.link-container span {
+    margin: 0 5px;
+    font-size: 0.95em;
+}
+
+/* Su schermi piccoli, metto gli elementi uno sotto l'altro */
+@media (max-width: 600px) {
+    .link-container {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .link-container span {
+        display: none; /* inutile il "oppure" in verticale */
+    }
+
+    .link-container a {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link-container {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .link-container span {
+        display: none; /* inutile il "oppure" in verticale */
+    }
+
+    .link-container a {
+        width: 100%; 
+        text-align: center;
+    }
 }

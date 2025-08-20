@@ -26,7 +26,7 @@
     <main>
         <section>
             <h2>Richiedi un nuovo canto</h2>
-            <form id="cantoForm" action="https://formsubmit.co/coro10.sanvito@gmail.com" method="POST">
+            <form id="cantoForm" action="https://formsubmit.co/coro10.sanvito@gmail.com" method="POST">                
                 <!-- Nome richiedente
                 <label for="nome_richiedente">Il tuo nome:</label>
                 <input type="text" id="nome_richiedente" name="nome_richiedente" required>
@@ -73,15 +73,17 @@
 </body>
 
 <script>
-    document.getElementById("cantoForm").addEventListener("submit", function() {
+    document.getElementById("cantoForm").addEventListener("submit", function(e) {
         const nomeCanto = document.getElementById("nome_canto").value.trim();
-        const emailRichiedente = document.getElementById("email_richiedente").value.trim();
+        const subjectInput = document.getElementById("subject");
+        subjectInput.value = "Nuovo canto da inserire: " + nomeCanto;
 
-        // Imposta l'oggetto della mail
-        document.getElementById("subject").value = "Nuovo canto da inserire: " + nomeCanto;
-
-        // Imposta il reply-to
-        //document.getElementById("replyto").value = emailRichiedente;
+        /* Imposta il reply-to
+        const emailField = document.getElementById("email_richiedente");
+        if (emailField) {
+            document.getElementById("replyto").value = emailField.value.trim();
+        }
+        */
     });
 </script>
 </html>

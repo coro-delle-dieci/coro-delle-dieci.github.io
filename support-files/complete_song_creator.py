@@ -111,6 +111,15 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             <h2>{title}</h2>
 {html_body}
         </section>{extra_sections}
+
+        <section>
+            <div class="download">
+                <a href="../pdf-testi/{filename}.pdf" download target="_blank" class="download-link">
+                    <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                    <span>Scarica il testo in PDF</span>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -121,8 +130,9 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
     # Path di destinazione fisso
     save_dir = "C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
-    filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "") + ".html"
-    full_path = os.path.join(save_dir, filename)
+    filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
+    filename_html = filename + ".html"
+    full_path = os.path.join(save_dir, filename_html)
 
     with open(full_path, 'w', encoding='utf-8') as file:
         file.write(html_template)

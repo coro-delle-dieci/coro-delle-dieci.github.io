@@ -1,7 +1,7 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
 stringa_da_sostituire = '''<footer>

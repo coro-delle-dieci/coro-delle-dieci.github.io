@@ -1,20 +1,16 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/admin"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/demo-palette4"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''<footer>
-        <p>&copy; 2025 Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
-    </footer>'''
-nuova_stringa = '''<footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
-        
-        <p class="disclamer">I testi e gli spartiti dei canti sono proprietà dei rispettivi autori ed editori. 
-        Sono riportati solo a fini liturgici e pastorali, senza scopo di lucro.
-    </footer>
-
-    <script src="./script/anno.js"></script>'''
+stringa_da_sostituire = '''<li><a href="index/">Home</a></li>
+                <li><a href="canti/">Canti</a></li>
+                <li><a href="calendario/">Calendario</a></li>'''
+nuova_stringa = '''<li><a href="index/">Home</a></li>
+                <li><a href="canti/">Canti</a></li>
+                <li><a href="calendario/">Calendario</a></li>
+                <li><a href="../admin/aggiungi-canto/">Area riservata</a></li>'''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

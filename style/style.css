@@ -58,6 +58,12 @@ header {
     margin-bottom: 20px;
 }
 
+.disclamer {
+    font-size: 1rem;
+    color: var(--background-hftext);
+    margin-top: 1rem;
+}
+
 h1 {
     text-align: center;
     font-size: 30pt;

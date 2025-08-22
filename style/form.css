@@ -63,6 +63,30 @@ button[type="submit"]:hover {
     font-size: smaller;
 }
 
+.admin-warning {
+    background: #fff3f3;
+    border: 2px solid #cc0000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.warning-icon {
+    width: 60px;
+    height: auto;
+}
+
+.warning-text {
+    left: auto;
+    right: 10px;
+    color: #cc0000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 /* Stile per i placeholder */
 ::placeholder {
     color: #a3a3a3;

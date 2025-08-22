@@ -1,16 +1,11 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/demo-palette4"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/style"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''<li><a href="index/">Home</a></li>
-                <li><a href="canti/">Canti</a></li>
-                <li><a href="calendario/">Calendario</a></li>'''
-nuova_stringa = '''<li><a href="index/">Home</a></li>
-                <li><a href="canti/">Canti</a></li>
-                <li><a href="calendario/">Calendario</a></li>
-                <li><a href="../admin/aggiungi-canto/">Area riservata</a></li>'''
+stringa_da_sostituire = '''600px'''
+nuova_stringa = '''750px'''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

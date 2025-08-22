@@ -23,7 +23,7 @@
     height: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .video-container {
         padding-bottom: 60%; /* Adatta il rapporto per schermi piccoli */
     }

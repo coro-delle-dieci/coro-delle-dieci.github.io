@@ -65,7 +65,7 @@ span {
 }
 
 /* Su schermi piccoli, metto gli elementi uno sotto l'altro */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .link-container {
         flex-direction: column;
         gap: 6px;

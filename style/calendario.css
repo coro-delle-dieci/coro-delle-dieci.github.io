@@ -25,7 +25,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .calendar-page .calendar-section,
     .home-page .calendar-section {
         padding: 40% 5%;

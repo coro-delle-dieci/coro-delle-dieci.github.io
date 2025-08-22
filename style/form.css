@@ -17,8 +17,7 @@ label {
     text-align: left;
 }
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 0.8rem;
     border: 2px solid var(--link);
@@ -30,8 +29,7 @@ textarea {
     margin: 0;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
     border-color: var(--hover);
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 109, 170, 0.2);
@@ -80,7 +78,7 @@ textarea:optional {
 
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     form {
         padding: 1rem;
     }

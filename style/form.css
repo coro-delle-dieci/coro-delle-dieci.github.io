@@ -9,7 +9,7 @@ form {
     margin: 0 auto;
 }
 
-label {
+.label-input {
     font-weight: bold;
     color: var(--h);
     margin-bottom: -10px;

@@ -179,7 +179,7 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     section {
         padding: 0.5rem 1rem;
     }
@@ -286,38 +286,5 @@ footer {
     /* Nascondi la navigazione normale su mobile */
     nav ul {
         display: none;
-    }
-}
-
-/* Stile per desktop - nascondi icona hamburger e mostra menu normale */
-@media screen and (min-width: 601px) {
-    .menu-icon {
-        display: none;
-    }
-    
-    .overlay {
-        display: none;
-    }
-    
-    nav ul {
-        display: flex;
-        position: static;
-        flex-direction: row;
-        width: auto;
-        height: auto;
-        padding: 0;
-        background: none;
-        box-shadow: none;
-        gap: 20px;
-    }
-    
-    nav ul li {
-        width: auto;
-        border-bottom: none;
-    }
-    
-    nav ul li a {
-        padding: 10px 15px;
-        color: var(--background-hftext);
     }
 }

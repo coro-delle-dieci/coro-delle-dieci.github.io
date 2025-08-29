@@ -257,8 +257,8 @@ footer {
     }
     
     nav ul li a:hover {
-        background-color: #f0f5ff;
-        color: var(--header-footer-bg);
+        background-color: rgba(185, 214, 242, 0.3);
+        color: var(--background-hftext);
     }
     
     /* Mostra menu quando checkbox è selezionato */

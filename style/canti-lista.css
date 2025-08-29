@@ -12,6 +12,11 @@ section {
   margin-bottom: -10px;
 }
 
+.canto-link a:first-of-type {
+  margin-top: 1.5rem;
+}
+
+
 .lettera-gruppo {
   text-align: center;
 }
@@ -77,7 +82,7 @@ h3 {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
   z-index: 1000;
   text-decoration: none;
 }
@@ -88,7 +93,7 @@ h3 {
 }
 
 .back-to-top:hover {
-  background-color: #3a5a8a;
+  background-color: #132A53;
   transform: translateY(-3px);
 }
 

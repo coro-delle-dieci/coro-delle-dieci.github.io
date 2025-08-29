@@ -108,7 +108,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         <div class="overlay"></div>
         <nav>
             <ul>
-                <li><a href="../index">Home</a></li>
+                <li><a href="..">Home</a></li>
                 <li><a href="../canti">Canti</a></li>
                 <li><a href="../calendario">Calendario</a></li>
                 <li><a href="../admin/aggiungi-canto">Area riservata</a></li>

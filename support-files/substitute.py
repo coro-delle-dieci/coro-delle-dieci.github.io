@@ -1,11 +1,11 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/style"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/admin"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''600px'''
-nuova_stringa = '''750px'''
+stringa_da_sostituire = '''/index'''
+nuova_stringa = ''''''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

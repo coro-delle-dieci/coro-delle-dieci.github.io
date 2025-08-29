@@ -47,7 +47,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
                 if chorus_text:
                     html_content.append(
                         '\t\t\t\t<p class="chorus">\n' +
-                        '\n'.join(f'\t\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                        '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
                         '\n\t\t\t\t</p>'
                     )
             else:
@@ -76,7 +76,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         if n1:
             extra_sections += f'    <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
         if n2:
-            extra_sections += f'            <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
+            extra_sections += f'    <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
         extra_sections += '        </section>'
     
     filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")

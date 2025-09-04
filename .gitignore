@@ -20,6 +20,9 @@ images/music-icons/*
 style/chi-siamo.css
 chi-siamo.html
 
+# Icone files
+images/icone-files/
+
 # Support files
-support-files/
+support-files
 support-files/*

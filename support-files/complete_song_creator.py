@@ -134,6 +134,8 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
     <footer>
         <p>&copy; 2025 Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
     </footer>
+
+    <script src="../script/anno.js"></script>
 </body>
 </html>'''
 

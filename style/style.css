@@ -301,3 +301,11 @@ a, button, input, textarea, label {
     -webkit-focus-ring-color: transparent;    /* Android */
     outline: none;
 }
+
+.warning {
+    background: #fcfff3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}

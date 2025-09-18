@@ -8,7 +8,7 @@
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Rapporto di aspetto 16:9 */
+    padding-bottom: 35%;
     height: 0;
     overflow: auto;
     width: 95%;
@@ -23,20 +23,22 @@
     height: 100%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1263px) {
     .video-container {
-        padding-bottom: 60%; /* Adatta il rapporto per schermi piccoli */
+        padding-bottom: 43%;
     }
-}
-
-@media (max-width: 400px) {
-    .video-container {
-        padding-bottom: 65%;
-    }
+    
 }
 
 @media (max-width: 1024px) {
     .video-container {
         width: 100%;
+        padding-bottom: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-container {
+        padding-bottom: 55%;
     }
 }

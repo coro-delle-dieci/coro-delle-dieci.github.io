@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy e Note Legali - Coro delle Dieci</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+</head>
+<body>
+  <header>
+    <h1>Coro delle Dieci</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="overlay"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./canti">Canti</a></li>
+        <li><a href="./calendario">Calendario</a></li>
+        <li><a href="./admin/aggiungi-canto">Area riservata</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <h2>Privacy e Note Legali</h2>
+
+        <h3>1. Raccolta e utilizzo dei dati</h3>
+        <p>
+            Questo sito non raccoglie dati personali degli utenti visitatori.
+            L'unico modulo presente (gestito tramite <a href="https://formsubmit.co/" target="_blank">Formsubmit</a>)
+            è riservato ai responsabili del coro ed è utilizzato esclusivamente per l'invio di nuovi canti
+            in un formato specifico via email all'amministratore del sito.
+            I dati inseriti nel modulo non vengono archiviati né utilizzati per altri scopi.
+        </p>
+
+        <h3>2. Servizi esterni utilizzati</h3>
+        <ul>
+            <li><strong>Google Sheets</strong>: utilizzato per visualizzare i canti della domenica. Si applicano i <a href="https://policies.google.com/privacy" target="_blank">termini e la privacy policy di Google</a>.</li>
+            <li><strong>Formsubmit</strong>: utilizzato per l'invio del modulo di comunicazione interna. Vedi la <a href="https://formsubmit.co/privacy.pdf" target="_blank">privacy policy di Formsubmit</a>.</li>
+            <li><strong>YouTube</strong>: i video dei brani sono integrati tramite iframe. Visitando queste pagine, YouTube può raccogliere dati secondo la sua <a href="https://policies.google.com/privacy" target="_blank">privacy policy</a>.</li>
+        </ul>
+
+        <h3>3. Diritti d'autore sui canti</h3>
+        <p>
+            I testi e gli spartiti dei canti presenti in questo sito sono proprietà dei rispettivi autori ed editori.
+            Sono riportati unicamente a fini liturgici e pastorali, senza scopo di lucro.
+            L'amministratore del sito non rivendica alcun diritto su tali contenuti.
+            Qualsiasi utilizzo diverso da quello liturgico e pastorale deve rispettare i diritti d'autore e le normative vigenti.
+        </p>
+
+        <h3>4. Limitazione di responsabilità</h3>
+        <p>
+            Questo sito ha finalità esclusivamente pastorali e non commerciali.
+            L'amministratore non è responsabile per eventuali utilizzi impropri dei materiali pubblicati
+            né per i contenuti ospitati su servizi esterni (Google Sheets, Formsubmit, YouTube).
+        </p>
+
+        <h3>5. Aggiornamenti</h3>
+        <p>
+            Questa informativa può essere aggiornata in qualsiasi momento in base a modifiche tecniche o normative.
+            La versione più recente sarà sempre disponibile in questa pagina.
+        </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anno"></span> Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
+    <p class="disclamer">I testi e gli spartiti dei canti sono proprietà dei rispettivi autori ed editori. 
+    Sono riportati solo a fini liturgici e pastorali, senza scopo di lucro.</p>
+  </footer>
+
+  <script src="./script/anno.js"></script>
+</body>
+</html>

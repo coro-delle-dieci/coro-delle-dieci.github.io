@@ -58,10 +58,16 @@ header {
     margin-bottom: 20px;
 }
 
-.disclamer {
-    font-size: 1rem;
+.privacy {
+    font-size: 1.1rem;
     color: var(--background-hftext);
-    margin-top: 1rem;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.privacy:hover {
+    color: var(--background-hftext);
+    text-decoration: underline;
 }
 
 h1 {
@@ -125,7 +131,7 @@ nav ul li a:hover {
     user-select: none;
 }
 
-a {
+a:not(.privacy) {
     color: var(--accent);
     text-decoration: none;
     font-weight: bold;

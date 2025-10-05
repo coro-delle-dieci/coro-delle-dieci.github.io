@@ -1,104 +1,89 @@
-.canto-link {
-  text-align: center;
-  margin: 0;
-}
-
-section {
-  padding: 2vh 5vw;
-}
-
-.canto-link a {
-  display: block;
-  margin-bottom: -10px;
-}
-
-.canto-link a:first-of-type {
-  margin-top: 1.5rem;
-}
-
-
-.lettera-gruppo {
-  text-align: center;
-}
-
 .alfabeto-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 15px 0;
-  margin: 10px 0;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.alfabeto-nav a {
+    margin: 0 0.2rem;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.alfabeto-nav a:hover {
+    text-decoration: underline;
+}
+
+.canti-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .lettera-gruppo {
-  transition: opacity 0.3s ease;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.lettera-gruppo h3 {
+    color: #2c3e50;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.canto-link {
+    margin: 0;
 }
 
 .canto-link a {
-  transition: all 0.2s ease;
-  padding: 3px 5px;
-  border-radius: 4px;
+    display: block;
+    padding: 0;
+    margin-bottom: -8px;
+    color: #14416E;
+    text-decoration: none;
 }
 
 .canto-link a:hover {
-  background-color: #f0f7ff;
+    text-decoration: underline;
+    background-color: #f8f9fa;
 }
 
-h3 {
-  width: 80%;
-  border-bottom: 1px solid #061a40;
-  margin-bottom: 1vh;
-  margin-top: 6vh;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #f0f7ff;
-  padding: 15px 0;
-  border-radius: 8px;
-  font-size: 1.8rem;
-  color: #0353a4;
-  position: sticky;
-  top: 10px;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-
-/* Stile per il pulsante Torna su */
 .back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: #061a40;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
-  z-index: 1000;
-  text-decoration: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #061a40;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.4s, transform 0.3s ease;
 }
 
 .back-to-top.visible {
-  opacity: 1;
-  visibility: visible;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
 }
 
 .back-to-top:hover {
-  background-color: #132A53;
-  transform: translateY(-3px);
+    opacity: 1;
 }
 
 .back-to-top img {
-  width: 100%;
-  height: auto;
-  filter: brightness(0) invert(1); /* Rende l'icona bianca */
+    width: 24px;
+    height: 24px;
 }

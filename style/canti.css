@@ -1,44 +1,102 @@
+.subtitle {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+}
+
+.verse, .chorus, .bridge {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
 .chorus {
     font-weight: bold;
 }
 
-.bridge, .intro, .outro {
+.bridge {
     font-style: italic;
 }
 
 .video-container {
-    position: relative;
-    padding-bottom: 35%;
-    height: 0;
-    overflow: auto;
-    width: 95%;
-    margin: 0 auto 1.2rem;
+    margin: 2rem 0;
+    width: 32rem;
+    height: 18rem;
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
-@media (max-width: 1263px) {
-    .video-container {
-        padding-bottom: 43%;
+.download {
+    margin-bottom: 1rem;
+}
+
+.download-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #2c3e50;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.download-link:hover {
+    background-color: #f8f9fa;
+    border-color: #2980b9;
+}
+
+.ico {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+}
+
+.details {
+    position: sticky;
+    align-self: start;
+    top: 1.5em;
+    padding-top: 1em;
+    margin-bottom: 0;
+}
+
+.song, p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 968px) {
+    main {
+        grid-template-columns: 1fr;
     }
-    
-}
 
-@media (max-width: 1024px) {
     .video-container {
+        position: relative;
         width: 100%;
-        padding-bottom: 50%;
+        padding-bottom: 56.25%;
+        height: 0;
+        margin-top: 0;
     }
-}
 
-@media (max-width: 900px) {
-    .video-container {
-        padding-bottom: 55%;
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .details {
+        padding-top: 0;
     }
 }

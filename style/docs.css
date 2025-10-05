@@ -1,18 +1,24 @@
-section {
-    padding: 30px;
-    text-align: left;
+.example {
+    background-color: #f8f9fa;
+    border-left: 4px solid #2980b9;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: monospace;
+    white-space: pre-wrap;
 }
 
 code {
-    background-color: #f0f0f0;
-    padding: 2px 4px;
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-family: monospace;
 }
 
-.example {
-    background-color: #f8f8f8;
-    border-left: 4px solid var(--h);
-    padding: 10px;
-    margin: 10px 0;
+ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
 }

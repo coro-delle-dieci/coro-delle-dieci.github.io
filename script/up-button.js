@@ -1,10 +1,10 @@
-// Script per gestire la visibilità del pulsante
 document.addEventListener('DOMContentLoaded', function() {
     const backToTopButton = document.getElementById('backToTop');
     const alfabetoNav = document.querySelector('.alfabeto-nav');
     
     // Funzione per controllare se l'alfabeto-nav è visibile
     function isAlfabetoNavVisible() {
+        if (!alfabetoNav) return false;
         const rect = alfabetoNav.getBoundingClientRect();
         return (
             rect.top >= 0 &&
@@ -14,20 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Funzione per gestire lo scroll
     function handleScroll() {
-        if (!isAlfabetoNavVisible()) {
+        if (window.scrollY === 0) {
+            // Se sono proprio in cima → nascondi
+            backToTopButton.classList.remove('visible');
+        } else if (!isAlfabetoNavVisible()) {
+            // Se alfabeto-nav non è visibile → mostra
             backToTopButton.classList.add('visible');
         } else {
+            // Altrimenti nascondi
             backToTopButton.classList.remove('visible');
         }
     }
     
-    // Aggiungi l'event listener per lo scroll
     window.addEventListener('scroll', handleScroll);
-    
-    // Controlla anche al caricamento iniziale
     handleScroll();
     
-    // Funzione per tornare all'inizio
     backToTopButton.addEventListener('click', function() {
         window.scrollTo({
             top: 0,

@@ -18,7 +18,9 @@ header {
     background-color: #061a40;
     color: white;
     padding: 1rem;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 main a {
@@ -189,4 +191,10 @@ footer {
     #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+a, button, input, textarea, label {
+    -webkit-tap-highlight-color: transparent; /* iOS e Android */
+    -webkit-focus-ring-color: transparent;    /* Android */
+    outline: none;
 }

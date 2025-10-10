@@ -1,3 +1,7 @@
+h2 {
+    position: sticky;
+}
+
 .subtitle {
     font-style: italic;
     color: #7892AF;

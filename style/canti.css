@@ -1,6 +1,6 @@
 .subtitle {
     font-style: italic;
-    color: #7f8c8d;
+    color: #7892AF;
     margin-bottom: 1.5rem;
 }
 
@@ -65,8 +65,8 @@ main {
 .details {
     position: sticky;
     align-self: start;
-    top: 1.5em;
-    padding-top: 1em;
+    top: 7rem;
+    padding-top: 1rem;
     margin-bottom: 0;
 }
 

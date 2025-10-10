@@ -20,7 +20,7 @@ header {
     padding: 1rem;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 main a {
@@ -106,18 +106,24 @@ nav a:hover {
 /* Main content */
 main {
     margin: 0 auto;
-    padding: 2rem 3rem;
+    padding: 0 3rem 2rem;
+    overflow: visible;
 }
 
 section {
     margin-bottom: 2rem;
+    overflow: visible;
 }
 
 h2 {
     color: #061a40;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #7892AF;
+    padding: 2.3rem 0 0.1rem;
+    position: sticky;
+    top: 4.4rem;
+    z-index: 2;
 }
 
 h3 {

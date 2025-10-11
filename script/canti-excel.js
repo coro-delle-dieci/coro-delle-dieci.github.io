@@ -51,16 +51,14 @@ async function caricaCanti() {
             const link = linkCell && linkCell.v ? linkCell.v : "#";
             const contenuto = contenutoCell && contenutoCell.v ? contenutoCell.v : "";
 
-            const div = document.createElement("div");
-            div.classList.add("canto-link");
-            div.innerHTML = `
-                <p class="canto-link">
-                    <a href="${link}" target="_blank">
-                        ${contenuto ? `${contenuto}: ` : ''}${titolo}
-                    </a>
-                </p>
+            const p = document.createElement("p");
+            p.classList.add("canto-link");
+            p.innerHTML = `
+                <a href="${link}">
+                    ${contenuto ? `${contenuto}: ` : ''}${titolo}
+                </a>
             `;
-            listaCanti.appendChild(div);
+            listaCanti.appendChild(p);
         });
 
         // Se non ha trovato canti, mostra messaggio

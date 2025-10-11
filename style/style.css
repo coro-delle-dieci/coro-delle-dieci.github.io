@@ -108,6 +108,7 @@ main {
     margin: 0 auto;
     padding: 2rem 3rem;
     overflow: visible;
+    min-height: calc(100vh - 8rem);
 }
 
 section {
@@ -133,7 +134,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1.5rem;
-    margin-top: 0;
+    margin-top: auto;
+    bottom: 0;
 }
 
 .disclamer {

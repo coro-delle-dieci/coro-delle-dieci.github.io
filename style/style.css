@@ -117,11 +117,8 @@ section {
 
 h2 {
     color: #061a40;
-    background-color: #f8f9fa;
     margin-bottom: 0.5rem;
     border-bottom: 1px solid #7892AF;
-    padding: 2.3rem 0 0.1rem;
-    top: 4.4rem;
     z-index: 2;
 }
 

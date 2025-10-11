@@ -22,9 +22,12 @@ section {
 }
 
 .canto-link {
-    margin-bottom: 0.5rem;
     transition: all 0.2s ease;
     line-height: 1.6rem;
+}
+
+.canto-link:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .canto-link a {

@@ -40,9 +40,9 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             if content.endswith(" Rit."):
                 content = content[:-5].strip()
                 html_content.append(
-                    f'\t\t\t<p class="{class_name}">\n' +
+                    f'\t\t<p class="{class_name}">\n' +
                     '\n'.join(f'\t\t\t\t{line}<br>' for line in content.split('\n')) +
-                    '\n\t\t\t</p>'
+                    '\n\t\t</p>'
                 )
                 if chorus_text:
                     html_content.append(
@@ -64,20 +64,20 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
     
     if link:
         extra_sections += f'''
-        <section class="video-container">
-            <iframe width="560" height="315" src="{link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+            <section class="video-container">
+                <iframe width="560" height="315" src="{link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
         '''
     if n1 or n2:
         extra_sections += '''
-        <section>
-            Puoi trovare questo canto al numero:<br>
+            <section>
+                Puoi trovare questo canto al numero:<br>
         '''
         if n1:
-            extra_sections += f'    <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
+            extra_sections += f'        <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
         if n2:
-            extra_sections += f'    <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
-        extra_sections += '        </section>'
+            extra_sections += f'        <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
+        extra_sections += '            </section>'
     
     filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
     html_template = f'''<!DOCTYPE html>
@@ -117,26 +117,36 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         </nav>
     </header>
     <main>
-        <section data-tags="">
+        <section class="song" data-tags="">
             <h2>{title}</h2>
 {html_body}
-        </section>{extra_sections}
+        </section>
+        
+        <section class="details">{extra_sections}
 
-        <section>
-            <div class="download">
-                <a href="../pdf-testi/{filename}.pdf" download target="_blank" class="download-link">
-                    <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
-                    <span>Scarica il testo in PDF</span>
-                </a>
-            </div>
+            <section>
+                <div class="download">
+                    <a href="../pdf-testi/{filename}.pdf" download target="_blank" class="download-link">
+                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                        <span>Scarica il testo in PDF</span>
+                    </a>
+                </div>
+            </section>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="privacy.html">Privacy e note legali</a></p>
+        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
     </footer>
 
+    <button id="autoScrollBtn" class="auto-scroll-btn">
+        <span class="scroll-speed">OFF</span>
+        <span class="scroll-icon">▼</span>
+    </button>
+    
     <script src="../script/anno.js"></script>
+    <script src="../script/get-zoom.js" defer></script>
+    <script src="../script/auto-scroll.js" defer></script>
 </body>
 </html>'''
 

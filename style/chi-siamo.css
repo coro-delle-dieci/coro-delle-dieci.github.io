@@ -1,0 +1,52 @@
+/* Per immagini quadrate (senza la cornice a forma di cerchio) utilizzare il seguente CSS inline:
+style="background:#922020; border-radius:50%; overflow:visible;"*/
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+    align-items: center;
+    align-content: center;
+}
+
+.member {
+    width: 140px;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #222;
+}
+
+.role {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.3;
+}

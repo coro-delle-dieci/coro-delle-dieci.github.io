@@ -1,6 +1,3 @@
-# Credenziali
-script/credentials.js
-
 # Ambiente Python
 __pycache__/
 venv/
@@ -9,20 +6,20 @@ env/
 
 # Dati di sistema
 .DS_Store
-data/canti.json
 
 # Logs
 *.log
 
 # Pagina Chi siamo e relativi immagini e CSS
-images/music-icons/
-images/music-icons/*
-style/chi-siamo.css
-chi-siamo.html
+#images/music-icons/
+#images/music-icons/*
+#style/chi-siamo.css
+#chi-siamo.html
+
 
 # Icone files
-images/icone-files/
+#images/icone-files/
 
 # Support files
-support-files
-support-files/
+#support-files
+#support-files/

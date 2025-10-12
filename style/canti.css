@@ -11,7 +11,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.verse, .chorus, .bridge {
+.verse, .chorus, .bridge, .intro, .outro {
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -20,7 +20,7 @@ h2 {
     font-weight: bold;
 }
 
-.bridge {
+.bridge, .intro, .outro {
     font-style: italic;
 }
 

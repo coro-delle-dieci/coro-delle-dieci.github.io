@@ -109,6 +109,10 @@ main {
     }
 }
 
+
+
+/* MODALITA PRESENTAZIONE */
+
 body.zoomed-in header,
 body.zoomed-in h2 {
     position: static;
@@ -123,7 +127,7 @@ body.zoomed-in .details {
 
 body.zoomed-in .song {
     position: absolute;
-    top: -1.5rem;
+    top: 1em;
     padding-bottom: 2rem;
 }
 
@@ -134,7 +138,7 @@ body.zoomed-in .song {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #2a89c8;
+    background-color: #061a40;
     color: white;
     border: none;
     cursor: pointer;

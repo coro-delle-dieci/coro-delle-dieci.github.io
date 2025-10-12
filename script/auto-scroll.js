@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentSpeed = 0;
     let isAutoScrolling = false;
     
-    // MODIFICARE QUESTI VALORI PER CAMBIARE LE VELOCITÀ
-    const speedValues = [0, 0.22, 0.40, 0.70];
+    // VELOCITÀ MOLTO LENTE
+    const speedValues = [0, 0.25, 0.5, 0.75];
+    const intervals = [0, 100, 75, 50]; // Intervalli più lunghi per maggiore lentezza
     
     function startScrolling() {
         stopScrolling();
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     stopScrolling();
                     resetSpeed();
                 }
-            }, 32);
+            }, intervals[currentSpeed]);
             
             autoScrollBtn.classList.add('active');
         } else {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beati voi</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/canti.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#061a40">
+    <meta name="msapplication-TileColor" content="#061a40">
+    <meta name="theme-color" content="#061a40">
+</head>
+<body>
+    <header>
+        <h1>Coro delle Dieci</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="overlay"></div>
+        <nav>
+            <ul>
+                <li><a href="..">Home</a></li>
+                <li><a href="../canti">Canti</a></li>
+                <li><a href="../calendario">Calendario</a></li>
+                <li><a href="../admin/aggiungi-canto">Area riservata</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="song" data-tags="">
+            <h2>Beati voi</h2>
+			<p class="chorus">
+				Beati voi, beati voi,<br>
+				Beati voi, beati voi.<br>
+			</p>
+			<p class="verse">
+				Se sarete poveri nel cuore, beati voi:<br>
+				sarà vostro il Regno di Dio Padre.<br>
+				Se sarete voi che piangerete, beati voi,<br>
+				perché un giorno vi consolerò. <br>
+			</p>
+            <p class="chorus">
+				Beati voi, beati voi,<br>
+				Beati voi, beati voi.<br>
+            </p>
+            <p class="verse">
+				Se sarete miti verso tutti, beati voi:<br>
+				erediterete tutto il mondo.<br>
+				Quando avrete fame di giustizia, beati voi,<br>
+				perché un giorno Io vi sazierò. <br>
+            </p>
+            <p class="chorus">
+				Beati voi, beati voi,<br>
+				Beati voi, beati voi.<br>
+            </p>
+            <p class="verse">
+				Se sarete misericordiosi, beati voi:<br>
+				la misericordia troverete.<br>
+				Se sarete puri dentro il cuore, beati voi,<br>
+				perché voi vedrete il Padre mio. <br>
+            </p>
+            <p class="chorus">
+				Beati voi, beati voi,<br>
+				Beati voi, beati voi.<br>
+            </p>
+            <p class="verse">
+				Se lavorerete per la pace, beati voi:<br>
+				chiameranno voi "figli di Dio".<br>
+				Se per causa mia voi soffrirete, beati voi,<br>
+				sarà grande in voi la santità.<br>
+			</p>
+            <p class="chorus">
+				Beati voi, beati voi,<br>
+				Beati voi, beati voi.<br>
+            </p>
+        </section>
+
+        <section class="details">
+            <section class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=EK0vdo45OUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+            
+            <section>
+                Puoi trovare questo canto al numero:<br>
+                <b>25</b> nel quaderno ad anelli (libretto della Minicorale)<br>
+            </section>
+
+            <section>
+                <div class="download">
+                    <a href="../pdf-testi/beati-voi.pdf" download target="_blank" class="download-link">
+                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                        <span>Scarica il testo in PDF</span>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
+    </footer>
+
+    <button id="autoScrollBtn" class="auto-scroll-btn">
+        <span class="scroll-speed">OFF</span>
+        <span class="scroll-icon">▼</span>
+    </button>
+    
+    <script src="../script/anno.js"></script>
+    <script src="../script/get-zoom.js" defer></script>
+    <script src="../script/auto-scroll.js" defer></script>
+</body>
+</html>

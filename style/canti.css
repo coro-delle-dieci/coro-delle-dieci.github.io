@@ -109,6 +109,16 @@ main {
     }
 }
 
+@media (max-width: 426px) {
+    main {
+        padding: 1rem 1.8rem;
+    }
+
+    h2 {
+        padding: 0;
+    }
+}
+
 
 
 /* MODALITA PRESENTAZIONE */

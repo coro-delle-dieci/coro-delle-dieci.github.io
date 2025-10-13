@@ -53,4 +53,16 @@ section {
     .home-page main {
         grid-template-columns: 1fr;
     }
+
+    .left-column {
+        padding-top: 1rem;
+    }
+
+    .home-page main, .left-column, .centre-column, .right-column {
+        gap: 1rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
 }

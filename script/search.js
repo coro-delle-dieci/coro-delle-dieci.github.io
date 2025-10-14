@@ -1,115 +1,128 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
-    const noResults = document.getElementById('noResults');
-    const letteraGruppi = document.querySelectorAll('.lettera-gruppo');
+// Sistema di ricerca
+let cantiData = [];
+
+// Carica i dati dei canti
+async function caricaCanti() {
+    try {
+        const response = await fetch('./canti.json');
+        const data = await response.json();
+        cantiData = data.canti;
+        console.log(`Caricati ${cantiData.length} canti per la ricerca`);
+    } catch (error) {
+        console.error('Errore nel caricamento canti:', error);
+        document.getElementById('searchInfo').innerHTML = 
+            'Errore nel caricamento della ricerca. La lista normale è disponibile.';
+    }
+}
+
+// Funzione di ricerca
+function cercaCanti(query) {
+    const searchResults = document.getElementById('searchResults');
+    const cantiContainer = document.getElementById('cantiContainer');
+    const alfabetoNav = document.getElementById('alfabetoNav');
+    const searchInfo = document.getElementById('searchInfo');
     
-    // Create clear button
-    const clearBtn = document.createElement('button');
-    clearBtn.innerHTML = '&times;';
-    clearBtn.classList.add('clear-search');
-    clearBtn.setAttribute('title', 'Cancella ricerca');
-    clearBtn.style.display = 'none';
-    
-    // Create search icon
-    const searchIcon = document.createElement('span');
-    searchIcon.innerHTML = '🔍';
-    searchIcon.classList.add('search-icon');
-    
-    // Add elements to DOM
-    const searchContainer = document.querySelector('.search-container');
-    searchContainer.appendChild(searchIcon);
-    searchContainer.appendChild(clearBtn);
-    
-    // Store original content for reset
-    const originalContents = new Map();
-    document.querySelectorAll('.canto-link a').forEach(link => {
-        originalContents.set(link, link.innerHTML);
-    });
-    
-    // Search function with highlighting
-    function performSearch(term) {
-        let hasResults = false;
-        term = term.toLowerCase().trim();
-        
-        // Reset all groups and links
-        letteraGruppi.forEach(gruppo => {
-            gruppo.classList.remove('hidden');
-            gruppo.querySelector('h3').style.display = 'block';
-        });
-        
-        // Reset highlights
-        document.querySelectorAll('.canto-link a').forEach(link => {
-            const original = originalContents.get(link);
-            link.innerHTML = original;
-        });
-        
-        // Hide no results by default
-        noResults.style.display = 'none';
-        
-        if (term === '') {
-            clearBtn.style.display = 'none';
-            return;
-        }
-        
-        let anyGroupVisible = false;
-        
-        // Process each group
-        letteraGruppi.forEach(gruppo => {
-            const h3 = gruppo.querySelector('h3');
-            const links = gruppo.querySelectorAll('.canto-link a');
-            let groupHasMatches = false;
-            
-            links.forEach(link => {
-                const original = originalContents.get(link);
-                const text = link.textContent.toLowerCase();
-                
-                if (text.includes(term)) {
-                    groupHasMatches = true;
-                    hasResults = true;
-                    
-                    // Highlight matching text
-                    const regex = new RegExp(`(${term})`, 'gi');
-                    link.innerHTML = original.replace(regex, '<span class="highlight">$1</span>');
-                } else {
-                    link.parentNode.classList.add('hidden');
-                }
-            });
-            
-            if (groupHasMatches) {
-                anyGroupVisible = true;
-            } else {
-                gruppo.classList.add('hidden');
-                h3.style.display = 'none';
-            }
-        });
-        
-        // Show no results if no matches
-        if (!anyGroupVisible) {
-            noResults.style.display = 'block';
-            noResults.textContent = `Nessun canto trovato per "${term}"`;
-        }
-        
-        clearBtn.style.display = 'block';
+    if (!query.trim()) {
+        // Nessuna query, mostra lista normale
+        searchResults.innerHTML = '';
+        cantiContainer.classList.remove('search-active');
+        alfabetoNav.classList.remove('search-active');
+        searchInfo.innerHTML = 'Digita per cercare tra i 160 canti';
+        return;
     }
     
-    // Event listeners
-    searchInput.addEventListener('input', function() {
-        performSearch(this.value);
-    });
+    const termini = query.toLowerCase().split(' ').filter(term => term.length > 2);
+    const risultati = [];
     
-    clearBtn.addEventListener('click', function() {
-        searchInput.value = '';
-        performSearch('');
-        this.style.display = 'none';
-        searchInput.focus();
-    });
-    
-    // Alphabet links reset
-    document.querySelectorAll('.alfabeto-nav a').forEach(link => {
-        link.addEventListener('click', function() {
-            searchInput.value = '';
-            performSearch('');
-            clearBtn.style.display = 'none';
+    cantiData.forEach(canto => {
+        let punteggio = 0;
+        const testoCompleto = (canto.titolo + ' ' + canto.testo + ' ' + canto.categoria).toLowerCase();
+        
+        // Calcola punteggio di rilevanza
+        termini.forEach(termine => {
+            if (canto.titolo.toLowerCase().includes(termine)) punteggio += 10;
+            if (canto.testo.toLowerCase().includes(termine)) punteggio += 5;
+            if (canto.categoria.toLowerCase().includes(termine)) punteggio += 3;
         });
+        
+        if (punteggio > 0) {
+            risultati.push({ ...canto, punteggio });
+        }
     });
+    
+    // Ordina per punteggio
+    risultati.sort((a, b) => b.punteggio - a.punteggio);
+    
+    // Mostra risultati
+    mostraRisultati(risultati, query);
+    
+    // Nascondi lista normale
+    cantiContainer.classList.add('search-active');
+    alfabetoNav.classList.add('search-active');
+    searchInfo.innerHTML = `${risultati.length} canti trovati per "${query}"`;
+}
+
+// Mostra risultati della ricerca
+function mostraRisultati(risultati, query) {
+    const container = document.getElementById('searchResults');
+    const termini = query.toLowerCase().split(' ').filter(term => term.length > 2);
+    
+    if (risultati.length === 0) {
+        container.innerHTML = '<div class="no-results">Nessun canto trovato. Prova con termini diversi.</div>';
+        return;
+    }
+    
+    container.innerHTML = risultati.map(canto => {
+        // Evidenzia i termini nel titolo
+        let titoloEvidenziato = canto.titolo;
+        termini.forEach(termine => {
+            const regex = new RegExp(`(${termine})`, 'gi');
+            titoloEvidenziato = titoloEvidenziato.replace(regex, '<span class="highlight">$1</span>');
+        });
+        
+        // Prepara anteprima del testo
+        let anteprima = canto.testo.substring(0, 120) + '...';
+        termini.forEach(termine => {
+            const regex = new RegExp(`(${termine})`, 'gi');
+            anteprima = anteprima.replace(regex, '<span class="highlight">$1</span>');
+        });
+        
+        return `
+            <div class="search-result-item" onclick="window.location.href='${canto.url}'">
+                <div class="search-result-title">${titoloEvidenziato}</div>
+                <div class="search-result-preview">${anteprima}</div>
+                <span class="search-result-category">${canto.categoria}</span>
+            </div>
+        `;
+    }).join('');
+}
+
+// Event listeners per la ricerca
+let searchTimeout;
+document.getElementById('searchInput').addEventListener('input', function(e) {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        cercaCanti(e.target.value);
+    }, 300);
+});
+
+// Ricerca con Enter
+document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        clearTimeout(searchTimeout);
+        cercaCanti(e.target.value);
+    }
+});
+
+// Cancella ricerca con ESC
+document.getElementById('searchInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        this.value = '';
+        cercaCanti('');
+    }
+});
+
+// Inizializzazione
+document.addEventListener('DOMContentLoaded', function() {
+    caricaCanti();
 });

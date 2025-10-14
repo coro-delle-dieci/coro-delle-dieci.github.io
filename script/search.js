@@ -42,7 +42,7 @@ function cercaCanti(query) {
         termini.forEach(termine => {
             if (canto.titolo.toLowerCase().includes(termine)) punteggio += 10;
             if (canto.testo.toLowerCase().includes(termine)) punteggio += 5;
-            if (canto.categoria.toLowerCase().includes(termine)) punteggio += 3;
+            if (canto.categorie && canto.categorie.some(cat => cat.toLowerCase().includes(termine))) punteggio += 3;
         });
         
         if (punteggio > 0) {

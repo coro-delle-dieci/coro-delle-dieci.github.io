@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coro-delle-dieci.github.io/sitemap.xml
+Sitemap: https://coro-delle-dieci.github.io/sitemap.txt

@@ -1,981 +1,1807 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Pagina principale -->
-  <url>
-    <loc>https://coro-delle-dieci.github.io/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <!-- Directory dei canti -->
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
 
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/accogli-signore-i-nostri-doni.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/acqua-siamo-noi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/adesso-e-la-pienezza.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/adeste-fideles.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-buttazzo-dargenio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-de-dominicis.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-giorgi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-picchi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-a-colui-che-risuscito.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-canto-per-cristo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-celtic.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-chi-ascolta.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-ed-oggi-ancora.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-la-nostra-festa.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-la-tua-parola.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-lode-cosmica.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-ora-lui-vive.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-passeranno-i-cieli.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-questa-tua-parola.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-rendete-grazie.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alleluia-signore-sei-venuto.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/altissimo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/alzati-e-risplendi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/amatevi-l-un-l-altro.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/andate-per-le-strade.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/anima-christi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/anima-di-cristo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/antica-eterna-danza.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/astro-del-ciel.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ave-maria-gratia-plena.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ave-maria-ora-pro-nobis.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ave-maria-sequeri.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/beati-voi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/beato-e-il-cuore-che-perdona.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/benedici-o-signore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/benediro-il-signore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/camminero.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/camminiamo-sulla-strada.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/cantiamo-te.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/cantico-dei-redenti.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/canto-dell-amicizia.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/che-gioia-ci-hai-dato.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/chi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/chiamati-per-nome.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/chiesa-del-risorto.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/chiesa-di-dio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/come-fuoco-vivo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/come-maria.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/come-ti-ama-dio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/con-gioia-veniamo-a-te.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/cristo-e-risorto-veramente.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/cristo-vive-in-mezzo-a-noi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/dall-aurora-al-tramonto.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/dolce-sentire.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/dov-e-carita-e-amore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/e-bello-lodarti.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/e-la-strada-si-apre.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/e-sono-solo-un-uomo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/e-un-giorno-di-festa.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ecco-il-nostro-si.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ecco-l-acqua.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ecco-quel-che-abbiamo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/emmanuel.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/evenu-shalom.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/frutto-della-nostra-terra.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/giovane-donna.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/gloria-buttazzo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/gloria-giombini.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/gloria-mariano.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/grandi-cose.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ha-pressa-no-ar-international.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ha-pressa-no-ar-italiano.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/hopes-of-peace.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/i-cieli-narrano.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/il-canto-dell-amore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/il-pane-del-cammino.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/in-notte-placida.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/incontro-a-te.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/innalziamo-lo-sguardo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/invochiamo-la-tua-presenza.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/isaia-11.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/kyrie-eleison-berthier-taize.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/la-canzone-di-luciano.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/la-mia-anima-canta.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/la-preghiera-di-gesu-e-la-nostra.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/laudato-sii-o-mi-signore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/le-beatitudini.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/le-tue-mani.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/lode-e-gloria-a-te.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/lode-e-gloria.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/madonna-di-czestochowa.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/madre-io-vorrei.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/madre-santa.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/mani.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/maranatha-vieni-signor.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/mi-indicherai.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/musica-di-festa.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/nel-tuo-silenzio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/noi-saremo-il-pane.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/noi-veniamo-a-te.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ogni-mia-parola.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/osanna-al-figlio-di-david.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/pace-sia-pace-a-voi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/pane-del-cielo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/pane-di-vita-nuova.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/pellegrini-di-speranza.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/perche-tu-sei-con-me.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/popoli-tutti-acclamate.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/quale-gioia.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/rallegriamoci.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/re-dei-re.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/re-di-gloria.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/redentore-delle-genti.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/resta-accanto-a-me.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/resta-qui-con-noi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/rimani-tra-noi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/risuscito.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/salve-regina.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/san-damiano.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/san-francesco.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santa-maria-del-cammino.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-bonfitto.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-buttazzo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-gen.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-giorgi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-rossi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-sei-tu.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-spoladore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-zaire.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/santo-zappala.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/scusa-signore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/se-m-accogli.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/segni-del-tuo-amore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/segni-nuovi.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/sei-il-mio-rifugio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/sei-venuto-dal-cielo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/servire-e-regnare.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/servo-per-amore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/sono-qui-a-lodarti.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/spirito-di-dio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/su-ali-d-aquila.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/sulla-tua-parola-pietro-vai.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/te-al-centro-del-mio-cuore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/te-deum-italiano.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/te-deum-latino.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/te-lodiamo-trinita.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ti-daro-un-cuore-nuovo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ti-esalto-dio-mio-re.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ti-lodiamo-e-t-adoriamo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/ti-offriamo-signore.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/tu-scendi-dalle-stelle.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/tu-sei-la-mia-vita.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/tu-sei.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/tutta-la-terra-attende.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/venite-fedeli.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/verbum-panis.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/vieni-santo-spirito-di-dio.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/vieni-spirito-di-cristo.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/vivere-la-vita.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://coro-delle-dieci.github.io/canti/vocazione.html</loc>
-    <lastmod>2025-10-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/calendario</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/admin/aggiungi-canto</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/privacy.html</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/accogli-signore-i-nostri-doni</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/acqua-siamo-noi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/adesso-e-la-pienezza</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/adeste-fideles</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-buttazzo-dargenio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-de-dominicis</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-giorgi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/agnello-di-dio-picchi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-a-colui-che-risuscito</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-canto-per-cristo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-celtic</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-chi-ascolta</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-ed-oggi-ancora</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-la-nostra-festa</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-la-tua-parola</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-lode-cosmica</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-ora-lui-vive</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-passeranno-i-cieli</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-questa-tua-parola</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-rendete-grazie</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alleluia-signore-sei-venuto</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/altissimo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/alzati-e-risplendi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/amatevi-l-un-l-altro</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/andate-per-le-strade</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/anima-christi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/anima-di-cristo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/antica-eterna-danza</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/astro-del-ciel</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ave-maria-gratia-plena</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ave-maria-ora-pro-nobis</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ave-maria-sequeri</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/beati-voi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/beato-e-il-cuore-che-perdona</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/benedici-o-signore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/benediro-il-signore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/camminero</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/camminiamo-sulla-strada</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/cantiamo-te</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/cantico-dei-redenti</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/canto-dell-amicizia</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/che-gioia-ci-hai-dato</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/chi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/chiamati-per-nome</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/chiesa-del-risorto</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/chiesa-di-dio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/come-fuoco-vivo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/come-maria</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/come-ti-ama-dio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/con-gioia-veniamo-a-te</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/cristo-e-risorto-veramente</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/cristo-vive-in-mezzo-a-noi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/dall-aurora-al-tramonto</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/dolce-sentire</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/dov-e-carita-e-amore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/e-bello-lodarti</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/e-la-strada-si-apre</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/e-sono-solo-un-uomo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/e-un-giorno-di-festa</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ecco-il-nostro-si</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ecco-l-acqua</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ecco-quel-che-abbiamo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/emmanuel</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/evenu-shalom</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/frutto-della-nostra-terra</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/giovane-donna</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/gloria-buttazzo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/gloria-giombini</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/gloria-mariano</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/grandi-cose</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/hopes-of-peace</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ha-pressa-no-ar-international</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ha-pressa-no-ar-italiano</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/i-cieli-narrano</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/il-canto-dell-amore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/il-pane-del-cammino</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/in-notte-placida</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/incontro-a-te</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/innalziamo-lo-sguardo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/invochiamo-la-tua-presenza</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/isaia-11</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/kyrie-eleison-berthier-taize</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/la-canzone-di-luciano</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/la-mia-anima-canta</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/la-preghiera-di-gesu-e-la-nostra</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/laudato-sii-o-mi-signore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/le-beatitudini</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/le-tue-mani</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/lode-e-gloria-a-te</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/lode-e-gloria</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/madonna-di-czestochowa</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/madre-santa</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/madre-io-vorrei</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/mani</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/maranatha-vieni-signor</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/mi-indicherai</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/musica-di-festa</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/nel-tuo-silenzio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/noi-saremo-il-pane</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/noi-veniamo-a-te</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ogni-mia-parola</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/osanna-al-figlio-di-david</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/pace-sia-pace-a-voi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/pane-del-cielo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/pane-di-vita-nuova</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/pellegrini-di-speranza</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/perche-tu-sei-con-me</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/popoli-tutti-acclamate</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/quale-gioia</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/rallegriamoci</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/re-dei-re</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/re-di-gloria</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/redentore-delle-genti</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/resta-accanto-a-me</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/resta-qui-con-noi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/rimani-tra-noi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/risuscito</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/salve-regina</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/san-damiano</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/san-francesco</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santa-maria-del-cammino</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-bonfitto</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-buttazzo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-gen</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-giorgi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-rossi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-sei-tu</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-spoladore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-zaire</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/santo-zappala</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/scusa-signore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/se-m-accogli</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/segni-del-tuo-amore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/segni-nuovi</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/sei-il-mio-rifugio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/sei-venuto-dal-cielo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/servire-e-regnare</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/servo-per-amore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/sono-qui-a-lodarti</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/spirito-di-dio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/su-ali-d-aquila</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/sulla-tua-parola-pietro-vai</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/te-al-centro-del-mio-cuore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/te-deum-italiano</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/te-deum-latino</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/te-lodiamo-trinita</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ti-daro-un-cuore-nuovo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ti-esalto-dio-mio-re</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ti-lodiamo-e-t-adoriamo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/ti-offriamo-signore</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/tu-scendi-dalle-stelle</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/tu-sei-la-mia-vita</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/tu-sei</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/tutta-la-terra-attende</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/venite-fedeli</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/verbum-panis</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/vieni-santo-spirito-di-dio</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/vieni-spirito-di-cristo</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/vivere-la-vita</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti/vocazione</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/privacy</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/system/docs/guida-scrittura-canti</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/accogli-signore-i-nostri-doni.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/acqua-siamo-noi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/adesso-e-la-pienezza.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/adeste-fideles.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/agnello-di-dio-buttazzo-dargenio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/agnello-di-dio-buttazzo-dargenio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/agnello-di-dio-de-dominicis.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/agnello-di-dio-de-dominicis.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/agnello-di-dio-giorgi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/agnello-di-dio-giorgi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/agnello-di-dio-picchi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/agnello-di-dio-picchi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-a-colui-che-risuscito.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-canto-per-cristo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-canto-per-cristo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-celtic.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-celtic.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-chi-ascolta.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-chi-ascolta.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-ed-oggi-ancora.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-ed-oggi-ancora.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-la-nostra-festa.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-la-nostra-festa.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-la-tua-parola.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-la-tua-parola.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-lode-cosmica.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-ora-lui-vive.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-passeranno-i-cieli.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-passeranno-i-cieli.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-questa-tua-parola.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-questa-tua-parola.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-rendete-grazie.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alleluia-signore-sei-venuto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/alleluia-signore-sei-venuto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/altissimo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/alzati-e-risplendi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/amatevi-l-un-l-altro.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/andate-per-le-strade.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/anima-christi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/anima-di-cristo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/antica-eterna-danza.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/astro-del-ciel.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ave-maria-gratia-plena.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ave-maria-ora-pro-nobis.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ave-maria-sequeri.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/beati-voi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/beato-e-il-cuore-che-perdona.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/beato-e-il-cuore-che-perdona.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/beato-e-il-cuore-che-perdona-solista.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/beato-e-il-cuore-che-perdona-soprano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/beato-e-il-cuore-che-perdona-contralto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/beato-e-il-cuore-che-perdona-tenore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/beato-e-il-cuore-che-perdona-basso.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/benedici-o-signore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/benediro-il-signore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/camminero.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/camminiamo-sulla-strada.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/cantiamo-te.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/cantico-dei-redenti.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/canto-dell-amicizia.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/che-gioia-ci-hai-dato.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/chi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/chiamati-per-nome.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/chiesa-del-risorto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/chiesa-di-dio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/come-fuoco-vivo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/come-maria.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/come-ti-ama-dio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/con-gioia-veniamo-a-te.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/cristo-e-risorto-veramente.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/cristo-vive-in-mezzo-a-noi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/dall-aurora-al-tramonto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/dall-aurora-al-tramonto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/dolce-sentire.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/dov-e-carita-e-amore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/e-bello-lodarti.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/e-la-strada-si-apre.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/e-sono-solo-un-uomo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/e-un-giorno-di-festa.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ecco-il-nostro-si.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ecco-l-acqua.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ecco-quel-che-abbiamo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/evenu-shalom.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/frutto-della-nostra-terra.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/giovane-donna.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/gloria-buttazzo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/gloria-buttazzo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/gloria-giombini.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/gloria-giombini.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/gloria-mariano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/gloria-mariano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/grandi-cose.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/hopes-of-peace.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ha-pressa-no-ar-international.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ha-pressa-no-ar-italiano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/i-cieli-narrano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/il-canto-dell-amore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/il-pane-del-cammino.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/in-notte-placida.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/incontro-a-te.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/innalziamo-lo-sguardo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/invochiamo-la-tua-presenza.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/isaia-11.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/kyrie-eleison-berthier-taize.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/kyrie-eleison-berthier-taize.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/la-canzone-di-luciano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/la-mia-anima-canta.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/la-preghiera-di-gesu-e-la-nostra.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/le-beatitudini.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/le-tue-mani.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/lode-e-gloria-a-te.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/lode-e-gloria.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/madre-santa.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/madre-io-vorrei.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/mani.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/maranatha-vieni-signor.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/mi-indicherai.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/musica-di-festa.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/musica-di-festa.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/nel-tuo-silenzio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/noi-saremo-il-pane.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/noi-veniamo-a-te.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ogni-mia-parola.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/osanna-al-figlio-di-david.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/pace-sia-pace-a-voi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/pane-del-cielo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/pane-di-vita-nuova.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/pellegrini-di-speranza.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/perche-tu-sei-con-me.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/popoli-tutti-acclamate.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/quale-gioia.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/rallegriamoci.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/re-dei-re.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/re-di-gloria.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/redentore-delle-genti.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/resta-accanto-a-me.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/resta-qui-con-noi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/rimani-tra-noi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/risuscito.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/salve-regina.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/san-damiano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/san-francesco.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santa-maria-del-cammino.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-bonfitto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-bonfitto.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-buttazzo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-buttazzo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-gen.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-gen.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-giorgi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-rossi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-rossi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-sei-tu.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-spoladore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-spoladore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-zaire.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-zaire.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/santo-zappala.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-spartiti/santo-zappala.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/scusa-signore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/se-m-accogli.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/segni-del-tuo-amore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/segni-nuovi.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/sei-il-mio-rifugio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/sei-venuto-dal-cielo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/servire-e-regnare.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/servo-per-amore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/sono-qui-a-lodarti.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/spirito-di-dio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/su-ali-d-aquila.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/sulla-tua-parola-pietro-vai.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/te-al-centro-del-mio-cuore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/te-deum-italiano.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/te-deum-latino.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/te-lodiamo-trinita.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ti-daro-un-cuore-nuovo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ti-esalto-dio-mio-re.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ti-lodiamo-e-t-adoriamo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/ti-offriamo-signore.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/tu-scendi-dalle-stelle.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/tu-sei-la-mia-vita.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/tu-sei.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/tutta-la-terra-attende.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/venite-fedeli.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/verbum-panis.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/vieni-santo-spirito-di-dio.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/vieni-spirito-di-cristo.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/vivere-la-vita.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/pdf-testi/vocazione.pdf</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/canti.html</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/calendario.html</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://coro-delle-dieci.github.io/admin/aggiungi-canto.html</loc>
+  <lastmod>2025-10-15T15:18:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>

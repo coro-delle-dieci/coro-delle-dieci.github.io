@@ -1,6 +1,12 @@
 .search-container {
+    position: sticky;
+    top: 80px;
+    z-index: 9;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0;
     margin: 20px 0;
-    position: relative;
+    transition: all 0.3s ease;
 }
 
 #searchInput {
@@ -14,7 +20,7 @@
 }
 
 #searchInput:focus {
-    border-color: #4a90e2;
+    border-color: #061a40;
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 

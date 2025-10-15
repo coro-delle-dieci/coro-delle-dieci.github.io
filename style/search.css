@@ -1,12 +1,10 @@
 .search-container {
-    position: sticky;
-    top: 80px;
-    z-index: 9;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 0;
     margin: 20px 0;
     transition: all 0.3s ease;
+    height: fit-content;
 }
 
 #searchInput {
@@ -26,16 +24,16 @@
 
 #searchResults {
     margin-top: 10px;
+    position: relative;
+    display: none;
 }
 
 .search-result-item {
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
     cursor: pointer;
-    transition: all 0.3s ease;
+    background-color: white;
+    transition: background-color 0.2s ease;
 }
 
 .search-result-item:hover {
@@ -87,10 +85,11 @@
 }
 
 /* Nascondi lista normale durante la ricerca */
-.canti-container.search-active {
-    display: none;
+#searchResults:not(:empty) ~ .alfabeto-nav,
+#searchResults:not(:empty) ~ .canti-container {
+    display: none !important;
 }
 
-.alfabeto-nav.search-active {
-    display: none;
+#searchResults:not(:empty) {
+    display: block;
 }

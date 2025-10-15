@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 80px;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -21,6 +29,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    height: 70px;
 }
 
 main a {

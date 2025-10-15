@@ -131,6 +131,7 @@ body.zoomed-in h2 {
 body.zoomed-in header,
 body.zoomed-in footer,
 body.zoomed-in h2,
+body.zoomed-in .subtitle,
 body.zoomed-in .details {
     visibility: hidden;
 }

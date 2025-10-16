@@ -74,3 +74,13 @@ button:hover {
 .info a {
     color: #2980b9;
 }
+
+@media (max-width: 769px) {
+    .admin-warning {
+        margin-top: 2rem;
+    }
+
+    .warning-text {
+        text-align: center;
+    }
+}

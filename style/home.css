@@ -8,7 +8,7 @@ section {
     margin-bottom: 2rem;
 }
 
-.left-column, .centre-column, .right-column {
+aside, .centre-column {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -53,8 +53,8 @@ section {
     .home-page main {
         grid-template-columns: 1fr;
     }
-
-    .left-column {
+    
+    aside {
         padding-top: 1rem;
     }
 

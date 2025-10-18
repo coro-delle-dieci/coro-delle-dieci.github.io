@@ -12,7 +12,7 @@
       "id": 2,
       "titolo": "Acqua siamo noi",
       "testo": "Acqua siamo noi dall’antica sorgente veniamo, fiumi siamo noi se i ruscelli si mettono insieme, mari siamo noi se i torrenti si danno la mano, vita nuova c’è se Gesù è in mezzo a noi. E allora diamoci la mano e tutti insieme camminiamo ed un oceano di pace nascerà. E l’egoismo cancelliamo, un cuore limpido sentiamo è Dio che bagna del suo amor l’umanità Su nel cielo c’è Dio Padre che vive per l’uomo, crea tutti noi e ci ama di amore infinito, figli siamo noi e fratelli di Cristo Signore, vita nuova c’è quando lui è in mezzo a noi. E allora diamoci la mano e tutti insieme camminiamo ed un oceano di pace nascerà. E l’egoismo cancelliamo, un cuore limpido sentiamo è Dio che bagna del suo amor l’umanità Nuova umanità oggi nasce da chi crede in lui, nuovi siamo noi se l’amore è la legge di vita, figli siamo noi se non siamo divisi da niente, vita eterna c’è quando lui è dentro a noi. E allora diamoci la mano e tutti insieme camminiamo ed un oceano di pace nascerà. E l’egoismo cancelliamo, un cuore limpido sentiamo è Dio che bagna del suo amor l’umanità.",
-      "categorie": ["congedo", "acqua"],
+      "categorie": ["congedo"],
       "url": "canti/acqua-siamo-noi",
       "fileName": "acqua-siamo-noi.html"
     },
@@ -484,7 +484,7 @@
       "id": 61,
       "titolo": "Ecco l'acqua",
       "testo": "Ecco l’acqua uscire dal tempio e dal fianco di Cristo Signore. E a quanti quest’acqua giungerà, porterà salvezza. Ed essi canteranno glorificando Te: Alleluia, Alleluia. Ecco l’acqua uscire dal tempio e dal fianco di Cristo Signore. E a quanti quest’acqua giungerà, porterà salvezza. Ed essi canteranno glorificando Te: Alleluia, Alleluia. Alleluia, Alleluia.",
-      "categorie": ["acqua", "aspersione"],
+      "categorie": ["liturgia", "aspersione"],
       "url": "canti/ecco-l-acqua",
       "fileName": "ecco-l-acqua.html"
     },

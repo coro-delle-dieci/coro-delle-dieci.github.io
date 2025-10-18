@@ -55,7 +55,7 @@ async function caricaCanti() {
             p.classList.add("canto-link");
             p.innerHTML = `
                 <a href="${link}">
-                    ${contenuto ? `${contenuto}: ` : ''}${titolo}
+                    ${contenuto ? `<b>${contenuto}:</b> ` : ''}${titolo}
                 </a>
             `;
             listaCanti.appendChild(p);

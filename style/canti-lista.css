@@ -59,6 +59,10 @@
     margin: 0;
 }
 
+.canto-link:last-child {
+    margin-bottom: -1.2rem;
+}
+
 .canto-link a {
     display: block;
     padding: 0;

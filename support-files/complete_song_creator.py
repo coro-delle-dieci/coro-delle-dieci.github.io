@@ -99,7 +99,8 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 </head>
 <body>
     <header>
-        <h1>Coro delle Dieci</h1>
+        <h1><a href="../">Coro delle Dieci</a></h1>
+        
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">
             <span></span>

@@ -4,15 +4,9 @@ import os
 directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/system/docs"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''<footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - Parrocchia S. Vito e C.M. - Spinea (VE)</p>
-        
-        <p class="disclamer">I testi e gli spartiti dei canti sono proprietà dei rispettivi autori ed editori. 
-        Sono riportati solo a fini liturgici e pastorali, senza scopo di lucro.
-    </footer>'''
-nuova_stringa = '''<footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="privacy.html">Privacy e note legali</a></p>
-    </footer>'''
+stringa_da_sostituire = '''<h1>Coro delle Dieci</h1>'''
+nuova_stringa = '''<h1><a href="../../">Coro delle Dieci</a></h1>
+        '''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

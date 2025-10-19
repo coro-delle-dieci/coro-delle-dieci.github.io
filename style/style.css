@@ -41,6 +41,11 @@ a:hover {
     text-decoration: underline;
 }
 
+h1 a, h1 a:hover, h1 a:visited, h1 a:active {
+    color: white;
+    text-decoration: none;
+}
+
 .privacy {
     color: white;
     text-decoration: none;

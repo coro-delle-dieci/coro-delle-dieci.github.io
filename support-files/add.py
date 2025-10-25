@@ -2,18 +2,12 @@ import os
 import re
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/system/docs"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-elementi_da_aggiungere = '''<input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <div class="overlay"></div>'''
+elementi_da_aggiungere = '''\n    <script src="./script/contatore-visite.js"></script>'''
 
-sopra_cosa = '''<nav>'''
+sopra_cosa = '''</body>'''
 
 pattern = r'(\s*' + re.escape(sopra_cosa) + r')'
 # Scorre tutti i file nella directory

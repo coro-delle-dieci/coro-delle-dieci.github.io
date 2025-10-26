@@ -29,7 +29,7 @@ function cercaCanti(query) {
         return;
     }
     
-    const termini = query.toLowerCase().split(' ').filter(term => term.length > 2);
+    const termini = query.toLowerCase().split(' ').filter(term => term.length > 0);
     const risultati = [];
     
     cantiData.forEach(canto => {

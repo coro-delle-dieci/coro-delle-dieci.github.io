@@ -1,11 +1,11 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/grest"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''<script src="./script/contatore-visite.js"></script>'''
-nuova_stringa = '''<script src="../script/contatore-visite.js"></script>'''
+stringa_da_sostituire = '''data-utcoffset="2"'''
+nuova_stringa = '''data-utcoffset="1"'''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

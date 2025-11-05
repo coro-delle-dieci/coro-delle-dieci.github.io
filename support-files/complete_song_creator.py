@@ -96,7 +96,6 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
     <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#061a40">
     <meta name="msapplication-TileColor" content="#061a40">
     <meta name="theme-color" content="#061a40">
-    <script src="https://cdn.counter.dev/script.js" data-id="0b8a28a7-bd9e-4970-aa87-bd107e273a32" data-utcoffset="1"></script>
 </head>
 <body>
     <header>

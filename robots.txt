@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://coro-delle-dieci.github.io/sitemap.xml
+Disallow: /

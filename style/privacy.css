@@ -20,6 +20,12 @@ main section li {
     margin-bottom: 0.5rem;
 }
 
+.subtitle {
+    font-style: italic;
+    color: #7892AF;
+    margin-bottom: 1.5rem;
+}
+
 @media (max-width: 768px) {
     section {
         padding: 1.5rem;

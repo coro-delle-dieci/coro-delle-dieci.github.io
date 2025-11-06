@@ -1,4 +1,6 @@
 import os
+import json
+import re
 
 def create_song_html(title, song_text, link=None, n1=None, n2=None):
     sections = song_text.split('\n\n')
@@ -22,11 +24,10 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
                 '\n\t\t\t</p>'
             )
         else:
-            # Nuova logica per gestire intro/outro/bridge
             class_name = "verse"
             content = section
             
-            # Controllo per i nuovi prefissi
+            # Controllo per i prefissi
             if section.startswith("Intro: "):
                 class_name = "intro"
                 content = section[7:].strip()
@@ -40,15 +41,15 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             if content.endswith(" Rit."):
                 content = content[:-5].strip()
                 html_content.append(
-                    f'\t\t<p class="{class_name}">\n' +
+                    f'\t\t\t<p class="{class_name}">\n' +
                     '\n'.join(f'\t\t\t\t{line}<br>' for line in content.split('\n')) +
-                    '\n\t\t</p>'
+                    '\n\t\t\t</p>'
                 )
                 if chorus_text:
                     html_content.append(
-                        '\t\t\t\t<p class="chorus">\n' +
+                        '\t\t\t<p class="chorus">\n' +
                         '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
-                        '\n\t\t\t\t</p>'
+                        '\n\t\t\t</p>'
                     )
             else:
                 html_content.append(
@@ -161,6 +162,187 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         file.write(html_template)
 
     print(f"✅ File HTML creato con successo: {full_path}")
+    
+    return filename, filename_html
+
+
+def add_song_to_html_list(title, filename):
+    """Aggiunge il canto alla lista in canti.html in ordine alfabetico"""
+    html_file_path = "C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti.html"
+    
+    with open(html_file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Trova la lettera iniziale del titolo
+    first_letter = title[0].upper()
+    
+    # Se la lettera non è A-Z, usa 'A' come default
+    if not first_letter.isalpha():
+        first_letter = 'A'
+    
+    # Trova il gruppo della lettera corrispondente
+    letter_group_pattern = f'<div class="lettera-gruppo" id="{first_letter}">(.*?)</div>'
+    match = re.search(letter_group_pattern, content, re.DOTALL)
+    
+    if not match:
+        print(f"❌ Gruppo lettera '{first_letter}' non trovato in canti.html")
+        return False
+    
+    letter_group = match.group(0)
+    canto_links_section = match.group(1)
+    
+    # Crea il nuovo link
+    new_link = f'<a href="canti/{filename}">{title}</a><br>'
+    
+    # Trova la sezione canto-link specifica
+    canto_link_pattern = r'<div class="canto-link">(.*?)</div>'
+    canto_link_match = re.search(canto_link_pattern, letter_group, re.DOTALL)
+    
+    if not canto_link_match:
+        print("❌ Sezione canto-link non trovata")
+        return False
+    
+    old_canto_link_content = canto_link_match.group(1)
+    
+    # Trova tutti i link esistenti con i loro href originali
+    links_pattern = r'<a href="(canti/[^"]*)">([^<]*)</a><br>'
+    existing_links = re.findall(links_pattern, old_canto_link_content)
+    
+    # Aggiungi il nuovo link alla lista
+    existing_links.append((f"canti/{filename}", title))
+    
+    # Ordina per titolo (ignorando case)
+    existing_links.sort(key=lambda x: x[1].lower())
+    
+    # Ricostruisci la sezione dei link mantenendo gli href originali
+    new_links_content = '\n                        '.join([f'<a href="{href}">{text}</a><br>' for href, text in existing_links])
+    
+    # Sostituisci solo la sezione canto-link
+    new_canto_link = f'<div class="canto-link">\n                        {new_links_content}\n                    </div>'
+    new_letter_group = letter_group.replace(canto_link_match.group(0), new_canto_link)
+    
+    # Sostituisci nel contenuto totale
+    new_content = content.replace(letter_group, new_letter_group)
+    
+    # Scrivi il file aggiornato
+    with open(html_file_path, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    
+    print(f"✅ Canto aggiunto a canti.html nel gruppo '{first_letter}'")
+    return True
+
+
+def get_filename_for_title(title, all_titles, current_filename):
+    """Restituisce il filename corretto per un titolo"""
+    if title == all_titles[-1]:  # Se è l'ultimo titolo (quello appena aggiunto)
+        return current_filename.replace('.html', '')
+    
+    # Per gli altri titoli, mantieni il filename esistente
+    # Questa è una semplificazione - in un'implementazione completa dovresti avere una mappa titolo->filename
+    return title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
+
+
+def add_song_to_json(title, filename, song_text):
+    """Aggiunge il canto al file canti.json nella posizione alfabetica corretta"""
+    json_file_path = "C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti.json"
+    
+    # Leggi tutto il file come testo per mantenere la formattazione
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Carica anche come JSON per trovare la posizione corretta
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    # Trova la posizione corretta per inserire il nuovo canto
+    insert_index = 0
+    for i, canto in enumerate(data["canti"]):
+        if title.lower() < canto["titolo"].lower():
+            insert_index = i
+            break
+        insert_index = i + 1  # Se è più grande di tutti, inserisci alla fine
+    
+    # Crea la stringa del nuovo canto con la stessa formattazione
+    new_canto_string = f'''    {{   "titolo": "{title}",
+        "id": {len(data["canti"]) + 1},
+        "testo": {json.dumps(song_text.replace('\n', ' ').strip(), ensure_ascii=False)},
+        "categorie": [],
+        "url": "canti/{filename.replace('.html', '')}",
+        "fileName": "{filename}"
+    }}'''
+    
+    # Se inseriamo alla fine, gestiamo diversamente
+    if insert_index == len(data["canti"]):
+        # Trova l'ultimo canto e aggiungi una virgola
+        last_canto_end = content.rfind('    }')
+        if last_canto_end != -1:
+            # Aggiungi virgola all'ultimo canto
+            content = content[:last_canto_end + 5] + ',' + content[last_canto_end + 5:]
+            # Inserisci il nuovo canto prima della chiusura dell'array
+            closing_bracket_pos = content.rfind('  ]')
+            new_content = content[:closing_bracket_pos] + '\n' + new_canto_string + '\n' + content[closing_bracket_pos:]
+        else:
+            print("❌ Impossibile trovare l'ultimo canto")
+            return False
+    else:
+        # Trova il canto dopo cui inserire
+        target_canto = data["canti"][insert_index]
+        target_pattern = f'''    {{   "titolo": "{target_canto["titolo"]}",
+        "id": {target_canto["id"]},
+        "testo": {json.dumps(target_canto["testo"], ensure_ascii=False)},
+        "categorie": {json.dumps(target_canto["categorie"], ensure_ascii=False)},
+        "url": "{target_canto["url"]}",
+        "fileName": "{target_canto["fileName"]}"
+    }}'''
+        
+        # Aggiungi virgola al nuovo canto (poiché non è l'ultimo)
+        new_canto_string += ','
+        
+        # Inserisci prima del canto target
+        new_content = content.replace(target_pattern, new_canto_string + '\n' + target_pattern)
+    
+    # Scrivi il file con il nuovo canto
+    with open(json_file_path, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    
+    print(f"✅ Canto aggiunto a canti.json nella posizione {insert_index + 1}")
+    
+    # Ora aggiorna solo gli ID (senza riordinare)
+    update_json_ids()
+
+def update_json_ids():
+    """Aggiorna gli ID nel file JSON mantenendo la formattazione"""
+    json_file_path = "C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti.json"
+    
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    # Aggiorna gli ID
+    for i, canto in enumerate(data["canti"], start=1):
+        canto["id"] = i
+    
+    # Ricostruisci il contenuto con la formattazione originale
+    output_lines = []
+    output_lines.append('{')
+    output_lines.append('  "canti": [')
+    
+    for i, canto in enumerate(data["canti"]):
+        canto_line = f'''    {{   "titolo": "{canto["titolo"]}",
+        "id": {canto["id"]},
+        "testo": {json.dumps(canto["testo"], ensure_ascii=False)},
+        "categorie": {json.dumps(canto["categorie"], ensure_ascii=False)},
+        "url": "{canto["url"]}",
+        "fileName": "{canto["fileName"]}"
+    }}{"," if i < len(data["canti"]) - 1 else ""}'''
+        output_lines.append(canto_line)
+    
+    output_lines.append('  ]')
+    output_lines.append('}')
+    
+    with open(json_file_path, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(output_lines))
+    
+    print("✅ ID aggiornati in canti.json")
 
 
 def main():
@@ -184,7 +366,14 @@ def main():
     n1 = input("Numero nel libretto della Minicorale (opzionale): ").strip()
     n2 = input("Numero nel libro dell'assemblea (opzionale): ").strip()
     
-    create_song_html(title, song_text, link if link else None, n1 if n1 else None, n2 if n2 else None)
+    filename, filename_html = create_song_html(title, song_text, link if link else None, n1 if n1 else None, n2 if n2 else None)
+    
+    # Aggiungi il canto alla lista HTML
+    add_song_to_html_list(title, filename)
+    
+    # Aggiungi il canto al JSON
+    add_song_to_json(title, filename_html, song_text)
+
 
 if __name__ == "__main__":
     main()

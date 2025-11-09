@@ -8,9 +8,10 @@ async function caricaCantiNuovi() {
 
         const rows = json.table.rows;
         const listaCanti = document.getElementById("canti-nuovi");
+        const sezioneNuovi = document.getElementById("sezione-nuovi-canti");
 
-        if (!listaCanti) {
-            console.error("Elemento 'canti-nuovi' non trovato");
+        if (!listaCanti || !sezioneNuovi) {
+            console.error("Elemento 'canti-nuovi' o 'sezione-nuovi-canti' non trovato");
             return;
         }
 
@@ -20,36 +21,33 @@ async function caricaCantiNuovi() {
         // Itera su tutte le righe tranne l'intestazione
         for (let i = 1; i < rows.length; i++) {
             const row = rows[i];
-            
+
             // Colonna E (indice 4) = testo del link
             // Colonna F (indice 5) = URL del link
-            if (row.c && row.c[4] && row.c[4].v && row.c[5] && row.c[5].v) {
+            if (row.c && row.c[4]?.v && row.c[5]?.v) {
                 haCanti = true;
-                const testo = row.c[4].v; // Colonna E
-                const url = row.c[5].v;   // Colonna F
+                const testo = row.c[4].v;
+                const url = row.c[5].v;
 
                 const p = document.createElement("p");
                 p.classList.add("canto-link");
-                
+
                 const link = document.createElement("a");
                 link.href = url;
                 link.textContent = testo;
-                
+
                 p.appendChild(link);
                 listaCanti.appendChild(p);
             }
         }
 
-        if (!haCanti) {
-            listaCanti.innerHTML = "<p>Nessun canto disponibile al momento.</p>";
-        }
+        // Mostra la sezione solo se ci sono canti
+        sezioneNuovi.style.display = haCanti ? "block" : "none";
 
     } catch (error) {
         console.error("Errore nel caricamento dei canti nuovi:", error);
-        const listaCanti = document.getElementById("canti-nuovi");
-        if (listaCanti) {
-            listaCanti.innerHTML = "<p>Errore nel caricamento dei canti.</p>";
-        }
+        const sezioneNuovi = document.getElementById("sezione-nuovi-canti");
+        if (sezioneNuovi) sezioneNuovi.style.display = "none";
     }
 }
 

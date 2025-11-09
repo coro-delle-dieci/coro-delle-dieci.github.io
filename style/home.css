@@ -49,6 +49,14 @@ aside, .centre-column {
     border-radius: 5px;
 }
 
+#tempi-forti {
+    display: none;
+}
+
+#sezione-nuovi-canti {
+    display: none;
+}
+
 @media (max-width: 968px) {
     .home-page main {
         grid-template-columns: 1fr;
@@ -58,7 +66,7 @@ aside, .centre-column {
         padding-top: 1rem;
     }
 
-    .home-page main, .left-column, .centre-column, .right-column {
+    .home-page main, aside, .centre-column {
         gap: 1rem;
     }
 

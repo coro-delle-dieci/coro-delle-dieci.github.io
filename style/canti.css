@@ -28,7 +28,7 @@ h2 {
 }
 
 .video-container {
-    margin: 2rem 0;
+    margin: 0 0 2rem;
     width: 32rem;
     height: 18rem;
 }
@@ -76,9 +76,9 @@ main {
 .details {
     position: sticky;
     align-self: start;
-    top: 7rem;
-    padding-top: 1rem;
+    top: 10rem;
     margin-bottom: 0;
+    padding: 0;
 }
 
 .song, p:last-of-type {

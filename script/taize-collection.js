@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoData = {
         'ubi-caritas': 'https://www.youtube.com/embed/MYfyoRi3t8I',
         'magnificat': 'https://www.youtube.com/embed/ijHz0HfRt10',
-        'laudate-omnes-gentes': '',
-        'veni-sancte-spiritus': '',
-        'nada-te-turbe': '',
-        'bless-the-lord': ''
+        'laudate-omnes-gentes': 'https://www.youtube.com/embed/nYBfHdbf-6M',
+        'tui-amoris-ignem': 'https://www.youtube.com/embed/s1EW-43E_Hk',
+        'nada-te-turbe': 'https://www.youtube.com/embed/CfFm72k-6DE',
+        'misericordias-domini': 'https://www.youtube.com/embed/9O0bbMusa3U',
+        'adoramus-te-domine': 'https://www.youtube.com/embed/kOGN__V2Jyw'
     };
     
     // Gestione click sui canoni

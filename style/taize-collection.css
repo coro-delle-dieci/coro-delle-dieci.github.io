@@ -30,16 +30,13 @@
 .taize-video-sidebar {
     width: 100%;
     aspect-ratio: 16/9;
-    margin-bottom: 0.5rem;
-    margin: 0;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
     background-color: #ffffff;
-    position: inherit;
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
-    top: 0;
     border-bottom: 1px solid #7892AF;
     z-index: 2;
 }
@@ -58,18 +55,28 @@ h2 {
     padding: 1rem;
 }
 
-
-
 /* VIDEO MOBILE - Nascondi di default su desktop */
 .taize-mobile-video {
     display: none;
     margin-top: 1.5rem;
     width: 100%;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+    height: 0;
+}
+
+.taize-mobile-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .video-placeholder-mobile {
     width: 100%;
-    height: 180px;
+    padding-bottom: 56.25%; /* Stesso rapporto 16:9 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,14 +85,17 @@ h2 {
     border-radius: 8px;
     color: #666;
     text-align: center;
-    padding: 1rem;
+    position: relative;
     font-size: 0.9rem;
 }
 
-.taize-mobile-video iframe {
-    width: 100%;
-    height: 180px;
-    border-radius: 8px;
+.video-placeholder-mobile p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 1rem;
 }
 
 .taize-info-compact {
@@ -131,25 +141,48 @@ h2 {
 
 .download {
     margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-/* RESPONSIVE MOBILE */
+.details {
+    position: sticky;
+    align-self: start;
+    top: 10rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
 @media (max-width: 968px) {
-    .taize-collection {
+    main.taize {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        padding: 0 2rem 2rem;
     }
     
-    .taize-sidebar {
-        order: -1;
-        display: none; /* Nascondi sidebar su mobile */
+    .details {
+        position: static;
+        order: 3; /* Sposta il download in fondo */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .song {
+        padding-top: 1rem;
     }
     
+    /* Nascondi completamente il video sidebar su mobile */
     .taize-video-sidebar {
-        height: 250px;
+        display: none;
     }
     
-    /* Mostra video mobile e nascondi placeholder quando attivo */
+    .download {
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    
+    /* Mostra video mobile quando attivo */
     .taize-song.active .taize-mobile-video {
         display: block;
     }
@@ -161,15 +194,22 @@ h2 {
     .taize-song.active .taize-mobile-video iframe {
         display: block;
     }
+    
+    /* Stile per il canone attivo su mobile */
+    .taize-song.active {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 426px) {
-    .taize-collection {
-        padding: 1rem;
+    main.taize {
+        padding: 1rem 1.2rem;
     }
     
     .taize-song {
         padding: 1rem;
+        margin-bottom: 1rem;
     }
     
     .taize-verse {
@@ -182,15 +222,7 @@ h2 {
         height: 160px;
     }
     
-    .taize-song {
-        margin-bottom: 1rem;
-    }
-}
-
-/* Stile per il canone attivo su mobile */
-@media (max-width: 968px) {
-    .taize-song.active {
-        margin-bottom: 2rem;
-        padding-bottom: 2rem;
+    h2 {
+        font-size: 1.3rem;
     }
 }

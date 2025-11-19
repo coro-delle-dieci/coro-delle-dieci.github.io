@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const taizeSongs = document.querySelectorAll('.taize-song');
     const videoIframeDesktop = document.querySelector('.taize-video-sidebar iframe');
-    const videoPlaceholderDesktop = document.querySelector('.video-placeholder');
+    const videoPlaceholderDesktop = document.querySelector('.taize-video-sidebar .video-placeholder');
+    const detailsSection = document.querySelector('.details');
     
     // Dati video per ogni canone
     const videoData = {
@@ -12,7 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
         'tui-amoris-ignem': 'https://www.youtube.com/embed/s1EW-43E_Hk',
         'nada-te-turbe': 'https://www.youtube.com/embed/CfFm72k-6DE',
         'misericordias-domini': 'https://www.youtube.com/embed/9O0bbMusa3U',
-        'adoramus-te-domine': 'https://www.youtube.com/embed/kOGN__V2Jyw'
+        'adoramus-te-domine': 'https://www.youtube.com/embed/kOGN__V2Jyw',
+        'jubilate-servite': 'https://www.youtube.com/embed/ri2lolcTu2c',
+        'dona-la-pace': 'https://www.youtube.com/embed/PWbi0Fz8_0Q',
+        'bless-the-lord': 'https://www.youtube.com/embed/3y_2ZStGV58',
+        'il-signore-e-la-mia-forza': 'https://www.youtube.com/embed/0u920dwDucc',
     };
     
     // Gestione click sui canoni
@@ -40,12 +45,25 @@ document.addEventListener('DOMContentLoaded', function() {
             // Aggiungi classe active a quello cliccato
             this.classList.add('active');
             
-            // Aggiorna video desktop (se visibile)
+            // Aggiorna video in base al dispositivo
             if (window.innerWidth > 968) {
-                videoPlaceholderDesktop.style.display = 'none';
-                videoIframeDesktop.style.display = 'block';
-                videoIframeDesktop.src = videoUrl;
+                // Desktop: mostra video nella sidebar
+                if (videoPlaceholderDesktop) {
+                    videoPlaceholderDesktop.style.display = 'none';
+                }
+                if (videoIframeDesktop) {
+                    videoIframeDesktop.style.display = 'block';
+                    videoIframeDesktop.src = videoUrl;
+                }
             } else {
+                // Mobile: nascondi sidebar e mostra video inline
+                if (videoPlaceholderDesktop) {
+                    videoPlaceholderDesktop.style.display = 'none';
+                }
+                if (videoIframeDesktop) {
+                    videoIframeDesktop.style.display = 'none';
+                }
+                
                 // Aggiorna video mobile
                 const mobileVideo = this.querySelector('.taize-mobile-video iframe');
                 const mobilePlaceholder = this.querySelector('.video-placeholder-mobile');
@@ -61,19 +79,66 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gestione resize per mantenere la coerenza
     window.addEventListener('resize', function() {
         const activeSong = document.querySelector('.taize-song.active');
-        if (activeSong && window.innerWidth <= 968) {
-            // Su mobile, assicurati che il video mobile sia visibile
+        if (!activeSong) return;
+        
+        const songId = activeSong.id;
+        const videoUrl = videoData[songId];
+        
+        if (window.innerWidth <= 968) {
+            // Su mobile: nascondi sidebar e gestisci video mobile
+            if (videoPlaceholderDesktop) {
+                videoPlaceholderDesktop.style.display = 'none';
+            }
+            if (videoIframeDesktop) {
+                videoIframeDesktop.style.display = 'none';
+            }
+            
             const mobileVideo = activeSong.querySelector('.taize-mobile-video iframe');
             const mobilePlaceholder = activeSong.querySelector('.video-placeholder-mobile');
-            if (mobileVideo && mobileVideo.src) {
+            if (mobileVideo && videoUrl) {
                 mobilePlaceholder.style.display = 'none';
                 mobileVideo.style.display = 'block';
+                mobileVideo.src = videoUrl;
+            }
+        } else {
+            // Su desktop: mostra sidebar e nascondi video mobile
+            if (videoPlaceholderDesktop) {
+                videoPlaceholderDesktop.style.display = 'flex';
+            }
+            if (videoIframeDesktop && videoUrl) {
+                videoIframeDesktop.style.display = 'block';
+                videoIframeDesktop.src = videoUrl;
+            }
+            
+            const mobileVideo = activeSong.querySelector('.taize-mobile-video iframe');
+            const mobilePlaceholder = activeSong.querySelector('.video-placeholder-mobile');
+            if (mobileVideo) {
+                mobileVideo.style.display = 'none';
+                mobileVideo.src = '';
+            }
+            if (mobilePlaceholder) {
+                mobilePlaceholder.style.display = 'flex';
             }
         }
     });
     
-    // Attiva il primo canone di default
-    if (taizeSongs.length > 0) {
-        taizeSongs[0].click();
+    // Inizializzazione
+    function initializeLayout() {
+        if (window.innerWidth <= 968) {
+            // Su mobile: nascondi sidebar
+            if (videoPlaceholderDesktop) {
+                videoPlaceholderDesktop.style.display = 'none';
+            }
+            if (videoIframeDesktop) {
+                videoIframeDesktop.style.display = 'none';
+            }
+        }
+        
+        // Attiva il primo canone di default
+        if (taizeSongs.length > 0) {
+            taizeSongs[0].click();
+        }
     }
+    
+    initializeLayout();
 });

@@ -101,11 +101,6 @@ h2 {
 .taize-info-compact {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #e0e0e0;
-}
-
-.taize-info-compact p {
-    margin: 0;
     font-size: 0.9rem;
     color: #666;
 }
@@ -114,7 +109,6 @@ h2 {
     color: #2c3e50;
 }
 
-/* Stili per i canoni Taizé */
 .taize-verse {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -137,12 +131,6 @@ h2 {
     margin: 0;
     color: #666;
     font-size: 0.95rem;
-}
-
-.download {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .details {
@@ -174,12 +162,6 @@ h2 {
     /* Nascondi completamente il video sidebar su mobile */
     .taize-video-sidebar {
         display: none;
-    }
-    
-    .download {
-        margin: 0;
-        border: 0;
-        padding: 0;
     }
     
     /* Mostra video mobile quando attivo */

@@ -1134,5 +1134,22 @@
         "url": "canti/vocazione",
         "fileName": "vocazione.html"
     }
+  ],
+  "canoni": [
+    {   "titolo": "Adoramus Te, Domine",
+        "id": "C1",
+        "testo": "Oh, oh, oh, adoramus te, Domine. Oh, oh, oh, adoramus te, Domine.",
+        "categorie": ["latino", "canone", "taize", "ritornello"],
+        "url": "canti/taize.html#adoramus-te-domine",
+        "fileName": "taize.html"
+    },
+    {   "titolo": "Bless the Lord",
+        "id": "C2",
+        "testo": "Bless the Lord, my soul, and bless God’s holy name. Bless the Lord, my soul, who leads me into life.",
+        "traduzione": "Benedici il Signore, anima mia, e benedici il Santo nome del Dio. Benedici il Signore, anima mia, che mi guida alla vita.",
+        "categorie": ["inglese", "canone", "taize", "ritornello", "salmo", "salmo 102"],
+        "url": "canti/taize.html#",
+        "fileName": "vocazione.html"
+    }
   ]
 }

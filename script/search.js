@@ -6,8 +6,13 @@ async function caricaCanti() {
     try {
         const response = await fetch('../canti.json');
         const data = await response.json();
-        cantiData = data.canti;
-        console.log(`Caricati ${cantiData.length} canti per la ricerca`);
+
+        // Unisci canti normali + canoni di Taizé (se ci sono)
+        const canoni = data.canoni || [];
+        cantiData = [...data.canti, ...canoni];
+
+        console.log(`Caricati ${cantiData.length} canti totali (inclusi Taizé)`);
+
     } catch (error) {
         console.error('Errore nel caricamento canti:', error);
     }

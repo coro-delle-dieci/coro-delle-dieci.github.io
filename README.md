@@ -24,9 +24,11 @@ Il sito è sviluppato per il ***Coro delle Dieci*** e include:
     
     - **Altri momenti e temi di preghiera**: *Adorazione* Eucaristica, *Bambini*, *Beatitudini*, *Giubileo*, *GMG*, *Maria*, *Matrimonio*, *Missione*, *Perdono*, *Ringraziamento*, *Scout*, *Spirito Santo*, *Vocazione*
 
+    - **Canoni**, in particolare quelli di Taizé
+
 - **Formati disponibili**: Testi (scritti per il sito in HTML e in PDF), spartiti (in PDF), video YouTube
 
-- **Numerazione** secondo il libretto "*Cantiamo al Signore*" e il quadernino ad anelli della "*Minicorale*"
+- **Numerazione** secondo il libretto "*Cantiamo al Signore*" della Diocesi di Treviso e il quadernino ad anelli della "*Minicorale*"
 
 
 ### Struttura dei canti
@@ -51,7 +53,7 @@ Ogni canto include:
 ## Struttura del progetto
 ```text
 /
-├── index.html                 # Homepage
+├── index.html                # Homepage
 ├── canti.html                # Lista completa canti
 ├── calendario.html           # Calendario prove
 ├── privacy.html              # Privacy e note legali
@@ -78,17 +80,17 @@ Ogni canto include:
 ├── images/                   # Risorse grafiche
 ├── pdf-testi/                # PDF testi canti
 ├── pdf-spartiti/             # PDF spartiti
-└── system/
-│   ├─ grazie.html            # Ringraziamento dopo l'invio di un canto
+├── system/
+│   ├── grazie.html            # Ringraziamento dopo l'invio di un canto
 │   └── docs/
 │       └── guida-scrittura-canti.html  # Guida formattazione
-└─ .github/
-    ├─ ISSUE_TEMPLATE/
-    │    ├─ bug_report.md
-    │    ├─ feature_request.yml
-    │    └─ idee_grafiche.yml
-    ├─ PULL_REQUEST_TEMPLATE.md
-    └─ SECURITY.md
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    │    ├── bug_report.md
+    │    ├── feature_request.yml
+    │    └── idee_grafiche.yml
+    ├── PULL_REQUEST_TEMPLATE.md
+    └── SECURITY.md
 ```
 
 ## Funzionalità principali

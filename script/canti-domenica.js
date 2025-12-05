@@ -23,6 +23,7 @@ async function caricaCanti() {
         const text = await response.text();
 
         const json = JSON.parse(text.substring(47).slice(0, -2));
+
         const rows = json.table.rows;
 
         if (!rows || rows.length === 0) {
@@ -30,7 +31,14 @@ async function caricaCanti() {
             return;
         }
 
+        // La data è nella prima riga, colonna C (indice 2)
         const riga0 = rows[0];
+        
+        if (!riga0 || !riga0.c) {
+            console.error("La riga 0 non esiste o è vuota");
+            return;
+        }
+
         const dataCell = riga0.c[2]; // Colonna C
         if (!dataCell || !dataCell.v) {
             console.error("La cella della data è vuota:", dataCell);
@@ -53,22 +61,36 @@ async function caricaCanti() {
 
         // CASO 2: data valida → mostrare canti
         titoloElem.textContent = formattaDataCompleta(dataFoglio);
+
         listaCanti.innerHTML = "";
         let haCanti = false;
 
-        // Prendi solo le righe dalla 1 alla 16
-        rows.slice(1, 17).forEach(row => {
-            if (!row.c || row.c.length < 2) return;
+        // Scorre tutte le righe tranne la prima
+        rows.slice(1).forEach(row => {
+            if (!row.c || row.c.length < 3) return;
 
-            const titoloCell = row.c[0];
-            if (!titoloCell || !titoloCell.v) return;
+            const titoloCell = row.c[0];      // Colonna A
+            const linkCell = row.c[1];        // Colonna B
+            const indicazioneCell = row.c[2]; // Colonna C
 
-            const linkCell = row.c[1];
-            const indicazioneCell = row.c[2];
+            // Salta le righe dove il titolo è vuoto
+            if (!titoloCell || !titoloCell.v || titoloCell.v.trim() === "") {
+                return;
+            }
 
-            const titolo = titoloCell.v;
+            // Filtra le righe che sembrano URL o istruzioni, non titoli di canti
+            const titolo = titoloCell.v.trim();
+            if (titolo.startsWith("http") || titolo.toLowerCase().includes("inserire")) {
+                return;
+            }
+
             const link = linkCell?.v || "#";
             const indicazione = indicazioneCell?.v || "";
+
+            // Salta le righe dove l'indicazione è vuota (non sono canti)
+            if (!indicazione || indicazione.trim() === "") {
+                return;
+            }
 
             haCanti = true;
 

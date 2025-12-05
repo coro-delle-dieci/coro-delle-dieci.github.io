@@ -1,14 +1,20 @@
 const sheetId = "1NYcf3upDR8YLuPX0dm__T1ArAZLXBIdNRBgzwC5GCa0";
 const sheetUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
 
-function getLastMonday() {
+function formattaDataCompleta(data) {
+    const opzioni = { weekday: 'long', day: 'numeric', month: 'long' };
+    return new Intl.DateTimeFormat('it-IT', opzioni).format(data);
+}
+
+function prossimaDomenica() {
     const oggi = new Date();
-    const giorno = oggi.getDay(); // 0 = Domenica, 1 = Lunedì, ..., 6 = Sabato
-    const diff = (giorno + 6) % 7;
-    const lunedi = new Date(oggi);
-    lunedi.setDate(oggi.getDate() - diff);
-    lunedi.setHours(0, 0, 0, 0);
-    return lunedi;
+    const giorno = oggi.getDay(); // 0 domenica
+    const diff = (7 - giorno) % 7;
+    const domenica = new Date(oggi);
+    domenica.setDate(oggi.getDate() + diff);
+
+    const opzioni = { day: 'numeric', month: 'long' };
+    return "domenica " + new Intl.DateTimeFormat('it-IT', opzioni).format(domenica);
 }
 
 async function caricaCanti() {
@@ -18,50 +24,57 @@ async function caricaCanti() {
         const json = JSON.parse(text.substring(47).slice(0, -2));
 
         const rows = json.table.rows;
-        const ultimaDataCell = rows[0].c[2]; // la data si trova nella terza colonna della prima riga
+        const dataCell = rows[0].c[2];
 
-        if (!ultimaDataCell || !ultimaDataCell.v) {
-            console.warn("Data di aggiornamento non trovata.");
+        if (!dataCell || !dataCell.v) {
+            console.warn("Data non trovata nel foglio.");
             return;
         }
 
-        const dataAggiornamento = new Date(ultimaDataCell.v);
-        const ultimoLunedi = getLastMonday();
+        const dataFoglio = new Date(dataCell.v);
+        const oggi = new Date();
+        oggi.setHours(0, 0, 0, 0);
 
+        const titoloElem = document.getElementById("titolo-canti");
         const listaCanti = document.getElementById("canti-domenica");
 
-        if (dataAggiornamento <= ultimoLunedi) {
+        // Caso 1: data foglio più vecchia di oggi → non mostrare canti
+        if (dataFoglio < oggi) {
+            titoloElem.textContent = "I canti di " + prossimaDomenica();
             listaCanti.innerHTML = "<p>Nessun canto disponibile per questa settimana.</p>";
             return;
         }
 
-        // Se è aggiornato, continua a mostrare i canti
-        listaCanti.innerHTML = "";
-        let haCanti = false; // flag per verificare se ci sono canti
+        // Caso 2: data foglio = oggi o successiva → mostrare canti
+        const dataFormattata = formattaDataCompleta(dataFoglio);
+        titoloElem.textContent = "I canti di " + dataFormattata;
 
-        rows.slice(1).forEach(row => { // Salta la riga 0 che contiene la data
+        listaCanti.innerHTML = "";
+        let haCanti = false;
+
+        rows.slice(1).forEach(row => {
             const titoloCell = row.c[0];
             const linkCell = row.c[1];
-            const contenutoCell = row.c[2]; // Colonna C
+            const indicazioneCell = row.c[2];
 
             if (!titoloCell || !titoloCell.v) return;
 
-            haCanti = true; // trovato almeno un canto
             const titolo = titoloCell.v;
-            const link = linkCell && linkCell.v ? linkCell.v : "#";
-            const contenuto = contenutoCell && contenutoCell.v ? contenutoCell.v : "";
+            const link = linkCell?.v || "#";
+            const indicazione = indicazioneCell?.v || "";
+
+            haCanti = true;
 
             const p = document.createElement("p");
             p.classList.add("canto-link");
             p.innerHTML = `
                 <a href="${link}">
-                    ${contenuto ? `<b>${contenuto}:</b> ` : ''}${titolo}
+                    ${indicazione ? `<b>${indicazione}:</b> ` : ""}${titolo}
                 </a>
             `;
             listaCanti.appendChild(p);
         });
 
-        // Se non ha trovato canti, mostra messaggio
         if (!haCanti) {
             listaCanti.innerHTML = "<p>Nessun canto disponibile al momento.</p>";
         }
@@ -71,22 +84,6 @@ async function caricaCanti() {
     }
 }
 
-function prossimaDomenica() {
-    const oggi = new Date();
-    const giornoCorrente = oggi.getDay(); // 0 = Domenica, 1 = Lunedì, ..., 6 = Sabato
-    const giorniDaAggiungere = (7 - giornoCorrente) % 7;
-    const domenica = new Date(oggi);
-    domenica.setDate(oggi.getDate() + giorniDaAggiungere);
-
-    const opzioni = { day: 'numeric', month: 'long' };
-    const formatter = new Intl.DateTimeFormat('it-IT', opzioni);
-    return formatter.format(domenica);
-}
-
 document.addEventListener("DOMContentLoaded", () => {
     caricaCanti();
-    const dataSpan = document.getElementById("data-domenica");
-    if (dataSpan) {
-        dataSpan.textContent = prossimaDomenica();
-    }
 });

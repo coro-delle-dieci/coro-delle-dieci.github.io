@@ -1,13 +1,11 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/support-files"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''</section>
-    </main>'''
-nuova_stringa = '''</aside>
-    </main>'''
+stringa_da_sostituire = '''<script src="./script/contatore-visite.js"></script>'''
+nuova_stringa = '''<!--<script src="./script/contatore-visite.js"></script>-->'''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

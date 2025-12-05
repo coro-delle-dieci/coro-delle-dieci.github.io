@@ -8,7 +8,7 @@ function formattaDataCompleta(data) {
 
 function prossimaDomenica() {
     const oggi = new Date();
-    const giorno = oggi.getDay(); // 0 domenica
+    const giorno = oggi.getDay();
     const diff = (7 - giorno) % 7;
     const domenica = new Date(oggi);
     domenica.setDate(oggi.getDate() + diff);
@@ -21,13 +21,21 @@ async function caricaCanti() {
     try {
         const response = await fetch(sheetUrl);
         const text = await response.text();
+
         const json = JSON.parse(text.substring(47).slice(0, -2));
 
         const rows = json.table.rows;
-        const dataCell = rows[0].c[2];
 
+        if (!rows || rows.length === 0) {
+            console.error("Il foglio è vuoto.");
+            return;
+        }
+
+        const riga0 = rows[0];
+
+        const dataCell = riga0.c[2]; // Colonna C
         if (!dataCell || !dataCell.v) {
-            console.warn("Data non trovata nel foglio.");
+            console.error("La cella della data è vuota:", dataCell);
             return;
         }
 
@@ -35,29 +43,30 @@ async function caricaCanti() {
         const oggi = new Date();
         oggi.setHours(0, 0, 0, 0);
 
-        const titoloElem = document.getElementById("titolo-canti");
+        const titoloElem = document.getElementById("data");
         const listaCanti = document.getElementById("canti-domenica");
 
-        // Caso 1: data foglio più vecchia di oggi → non mostrare canti
+        // CASO 1: data vecchia → NO canti
         if (dataFoglio < oggi) {
-            titoloElem.textContent = "I canti di " + prossimaDomenica();
+            titoloElem.textContent = prossimaDomenica();
             listaCanti.innerHTML = "<p>Nessun canto disponibile per questa settimana.</p>";
             return;
         }
 
-        // Caso 2: data foglio = oggi o successiva → mostrare canti
-        const dataFormattata = formattaDataCompleta(dataFoglio);
-        titoloElem.textContent = "I canti di " + dataFormattata;
+        // CASO 2: data valida → mostrare canti
+        titoloElem.textContent = formattaDataCompleta(dataFoglio);
 
         listaCanti.innerHTML = "";
         let haCanti = false;
 
         rows.slice(1).forEach(row => {
+            if (!row.c || row.c.length < 2) return;
+
             const titoloCell = row.c[0];
+            if (!titoloCell || !titoloCell.v) return;
+
             const linkCell = row.c[1];
             const indicazioneCell = row.c[2];
-
-            if (!titoloCell || !titoloCell.v) return;
 
             const titolo = titoloCell.v;
             const link = linkCell?.v || "#";

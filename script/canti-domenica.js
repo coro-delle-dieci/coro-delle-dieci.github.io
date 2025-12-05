@@ -23,7 +23,6 @@ async function caricaCanti() {
         const text = await response.text();
 
         const json = JSON.parse(text.substring(47).slice(0, -2));
-
         const rows = json.table.rows;
 
         if (!rows || rows.length === 0) {
@@ -32,7 +31,6 @@ async function caricaCanti() {
         }
 
         const riga0 = rows[0];
-
         const dataCell = riga0.c[2]; // Colonna C
         if (!dataCell || !dataCell.v) {
             console.error("La cella della data è vuota:", dataCell);
@@ -55,11 +53,11 @@ async function caricaCanti() {
 
         // CASO 2: data valida → mostrare canti
         titoloElem.textContent = formattaDataCompleta(dataFoglio);
-
         listaCanti.innerHTML = "";
         let haCanti = false;
 
-        rows.slice(1).forEach(row => {
+        // Prendi solo le righe dalla 1 alla 16
+        rows.slice(1, 17).forEach(row => {
             if (!row.c || row.c.length < 2) return;
 
             const titoloCell = row.c[0];

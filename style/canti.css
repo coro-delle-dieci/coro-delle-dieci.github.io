@@ -14,6 +14,10 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+.song {
+    min-height: 100vh;
+}
+
 .verse, .chorus, .bridge, .intro, .outro {
     margin-bottom: 1.5rem;
     line-height: 1.5;

@@ -1,6 +1,59 @@
 /* Per immagini quadrate (senza la cornice a forma di cerchio) utilizzare il seguente CSS inline:
 style="background:#922020; border-radius:50%; overflow:visible;"*/
 
+.coro {
+    padding: 3rem 1rem;
+}
+
+/* Palco = livelli */
+.palco-coro {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 3.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.riga {
+    width: 100%;
+}
+
+.riga.adulti {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.riga.centrale {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2.5rem;
+}
+
+.colonna {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.chitarristi {
+    justify-content: flex-start;
+}
+
+.femmine {
+    justify-content: center;
+}
+
+.maschi {
+    justify-content: flex-end;
+}
+
+.riga.direttrice {
+    display: flex;
+    justify-content: center;
+}
+
 h3 {
     font-size: 30px;
     font-weight: 700;
@@ -21,6 +74,7 @@ h3 {
 .member {
     width: 140px;
     text-align: center;
+    min-width: 90px;
 }
 
 .avatar {
@@ -42,13 +96,14 @@ h3 {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 4px;
-    color: #222;
+    color: #061a40;
 }
 
 .role {
     font-size: 13px;
     color: #555;
     line-height: 1.3;
+    opacity: 0.85;
 }
 
 blockquote {
@@ -84,4 +139,51 @@ p {
 
 .link {
     text-align: center;
+}
+
+@media (max-width: 1330px) {
+    .palco-coro {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .riga {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .riga.centrale {
+        display: contents;
+    }
+
+    .colonna {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .riga.direttrice {
+        order: 1;
+    }
+
+    .colonna.chitarristi {
+        order: 2;
+    }
+
+    .colonna.maschi {
+        order: 3;
+    }
+
+    .colonna.femmine {
+        order: 4;
+    }
+
+    .riga.adulti {
+        order: 5;
+    }
 }

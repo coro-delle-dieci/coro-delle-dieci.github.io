@@ -10,9 +10,8 @@ style="background:#922020; border-radius:50%; overflow:visible;"*/
     display: grid;
     grid-template-rows: auto auto auto;
     gap: 3.5rem;
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
-    margin: solid #061a40;
 }
 
 .riga {

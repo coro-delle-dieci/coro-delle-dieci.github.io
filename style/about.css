@@ -12,6 +12,7 @@ style="background:#922020; border-radius:50%; overflow:visible;"*/
     gap: 3.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin: solid #061a40;
 }
 
 .riga {
@@ -59,16 +60,6 @@ h3 {
     font-weight: 700;
     text-align: center;
     margin: 0 0 50px;
-}
-
-.members {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    padding: 10px 0;
-    align-items: center;
-    align-content: center;
 }
 
 .member {
@@ -140,6 +131,19 @@ p {
 .link {
     text-align: center;
 }
+
+/*
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+    align-content: center;
+    margin: solid #061a40;
+}
+*/
 
 @media (max-width: 1330px) {
     .palco-coro {

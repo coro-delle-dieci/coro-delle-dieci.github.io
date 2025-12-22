@@ -35,12 +35,42 @@ aside, .centre-column {
 }
 
 .warning {
-    background-color: #fff3cd;
-    border: 1px solid #ffeaa7;
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
+    border: 5px solid transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.warning h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.warning .closing {
+    font-family: "Walter Turncoat";
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.restart {
+    background: linear-gradient(#ebeafa, #ebeafa) padding-box,
+                linear-gradient(115deg, #061a40, #0446bf) border-box;
+}
+
+.christmas {
+    background: linear-gradient(#faeaea, #faeaea) padding-box,
+                linear-gradient(115deg, #56050b, #cf0a17) border-box;
+}
+
+.restart .warning-content b, .restart .closing, .christmas h3 { color: #061a40; }
+
+.christmas .warning-content b { color: #325632; }
+
+.christmas .closing, .christmas h3 { color: #700a11; }
 
 .calendar-section iframe {
     width: 100%;

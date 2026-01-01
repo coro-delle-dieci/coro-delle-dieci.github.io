@@ -22,4 +22,6 @@ env/
 
 # Support files
 support-files
-support-files/
+
+# Fonts
+fonts

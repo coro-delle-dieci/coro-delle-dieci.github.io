@@ -89,6 +89,41 @@ main {
     margin-bottom: 0;
 }
 
+.song-metadata {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.song-metadata h4 {
+    margin-bottom: 1rem;
+    color: #061a40;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 0.5rem;
+}
+
+.metadata-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 5%;
+    align-items: center;
+}
+
+.metadata-label {
+    font-weight: 600;
+    color: #2c3e50;
+    white-space: nowrap;
+}
+
+.metadata-value {
+    color: #34495e;
+}
+
+
 @media (max-width: 968px) {
     main {
         grid-template-columns: 1fr;
@@ -123,6 +158,21 @@ main {
 
     h2 {
         padding: 0;
+    }
+
+    .metadata-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .metadata-label {
+        line-height: 1.15rem;
+        margin-top: 0.5rem;
+        font-weight: 700;
+    }
+
+    .song-metadata h4 {
+        margin-bottom: 0.5rem;
     }
 }
 

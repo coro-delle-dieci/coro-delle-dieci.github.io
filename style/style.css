@@ -150,14 +150,6 @@ footer {
     bottom: 0;
 }
 
-.ico {
-    height: 2rem;
-    max-width: 100%;
-    width: auto;
-    border-style: none;
-    vertical-align: middle;
-}
-
 @media (max-width: 768px) {
     main {
         padding: 0 1.5rem;

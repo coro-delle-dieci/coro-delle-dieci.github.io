@@ -4,14 +4,8 @@ import os
 directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/canti"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''<link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/canti.css">'''
-nuova_stringa = '''<link rel="preload" href="../style/style.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="../style/canti.css" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="../style/style.css">
-        <link rel="stylesheet" href="../style/canti.css">
-    </noscript>'''
+stringa_da_sostituire = '''<img class="ico"'''
+nuova_stringa = '''<img class="ico" height="32px" width="32px"'''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

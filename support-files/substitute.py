@@ -1,16 +1,11 @@
 import os
 
 # Percorso della cartella
-directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/system/docs"
+directory = r"C:/Users/ficot/Desktop/coro-delle-dieci.github.io/script"
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = '''</button>
-    
-    <script src="../../script/anno.js"></script>
-    <script src="../../script/get-zoom.js" defer></script>'''
-nuova_stringa = '''</button>
-    
-    <script src="../../script/get-zoom.js" defer></script>'''
+stringa_da_sostituire = '''www.youtube.com'''
+nuova_stringa = '''www.youtube-nocookie.com'''
 
 # Scorre tutti i file nella directory
 for filename in os.listdir(directory):

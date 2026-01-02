@@ -360,7 +360,7 @@ def main():
     print("\n--- Sezioni Aggiuntive (opzionali) ---")
     link = input("Link al video YouTube (lascia vuoto se non presente): ").strip()
     if link:
-        link = link.replace("https://youtu.be/", "https://www.youtube.com/embed/")
+        link = link.replace("https://youtu.be/", "https://www.youtube-nocookie.com/embed/")
     
     n1 = input("Numero nel libretto della Minicorale (opzionale): ").strip()
     n2 = input("Numero nel libro dell'assemblea (opzionale): ").strip()

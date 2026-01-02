@@ -7,18 +7,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Dati video per ogni canone
     const videoData = {
-        'adoramus-te-domine': 'https://www.youtube.com/embed/kOGN__V2Jyw',
-        'bless-the-lord': 'https://www.youtube.com/embed/3y_2ZStGV58',
-        'dona-la-pace': 'https://www.youtube.com/embed/PWbi0Fz8_0Q',
-        'il-signore-e-la-mia-forza': 'https://www.youtube.com/embed/0u920dwDucc',
-        'jubilate-servite': 'https://www.youtube.com/embed/ri2lolcTu2c',
-        'laudate-omnes-gentes': 'https://www.youtube.com/embed/nYBfHdbf-6M',
-        'magnificat': 'https://www.youtube.com/embed/ijHz0HfRt10',
-        'misericordias-domini': 'https://www.youtube.com/embed/9O0bbMusa3U',
-        'nada-te-turbe': 'https://www.youtube.com/embed/CfFm72k-6DE',
-        'niente-ti-turbi': "https://www.youtube.com/embed/989DyIWvRRo",
-        'tui-amoris-ignem': 'https://www.youtube.com/embed/s1EW-43E_Hk',
-        'ubi-caritas': 'https://www.youtube.com/embed/MYfyoRi3t8I',
+        'adoramus-te-domine': 'https://www.youtube-nocookie.com/embed/kOGN__V2Jyw',
+        'bless-the-lord': 'https://www.youtube-nocookie.com/embed/3y_2ZStGV58',
+        'dona-la-pace': 'https://www.youtube-nocookie.com/embed/PWbi0Fz8_0Q',
+        'il-signore-e-la-mia-forza': 'https://www.youtube-nocookie.com/embed/0u920dwDucc',
+        'jubilate-servite': 'https://www.youtube-nocookie.com/embed/ri2lolcTu2c',
+        'laudate-omnes-gentes': 'https://www.youtube-nocookie.com/embed/nYBfHdbf-6M',
+        'magnificat': 'https://www.youtube-nocookie.com/embed/ijHz0HfRt10',
+        'misericordias-domini': 'https://www.youtube-nocookie.com/embed/9O0bbMusa3U',
+        'nada-te-turbe': 'https://www.youtube-nocookie.com/embed/CfFm72k-6DE',
+        'niente-ti-turbi': "https://www.youtube-nocookie.com/embed/989DyIWvRRo",
+        'tui-amoris-ignem': 'https://www.youtube-nocookie.com/embed/s1EW-43E_Hk',
+        'ubi-caritas': 'https://www.youtube-nocookie.com/embed/MYfyoRi3t8I',
     };
     
     // Gestione click sui canoni

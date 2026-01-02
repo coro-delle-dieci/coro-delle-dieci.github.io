@@ -146,7 +146,6 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         <span class="scroll-icon">▼</span>
     </button>
     
-    <script src="../script/anno.js"></script>
     <script src="../script/get-zoom.js" defer></script>
     <script src="../script/auto-scroll.js" defer></script>
     <!--<script src="../script/contatore-visite.js"></script>-->

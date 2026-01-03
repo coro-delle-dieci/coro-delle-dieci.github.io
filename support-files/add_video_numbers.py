@@ -38,7 +38,7 @@ def add_sections_to_html(file_path, link, n1, n2):
 def main():
     file_path = "C:/Users/Scuola/Desktop/github/coro-delle-dieci.github.io/canti/" + input("Inserisci il percorso del file HTML: ") + ".html"
 
-    link = input("Link: ").strip().replace("https://youtu.be/", "https://www.youtube.com/embed/")
+    link = input("Link: ").strip().replace("https://youtu.be/", "https://www.youtube-nocookie.com/embed/")
 
     n1 = input("Numero nel l. minicorale: ").strip()
     n2 = input("Numero nel l. assemblea: ").strip()

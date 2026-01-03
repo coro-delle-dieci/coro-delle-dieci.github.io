@@ -3,8 +3,12 @@
 <head><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madre, io vorrei</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/canti.css">
+    <link rel="preload" href="../style/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="../style/canti.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/canti.css">
+    </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -71,7 +75,7 @@
         
         <aside class="details">
             <section class="video-container">
-                <iframe src="https://www.youtube.com/embed/A1mXFg9sUo0?si=TK9UiK-5Gh7wBw6W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/A1mXFg9sUo0?si=TK9UiK-5Gh7wBw6W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
             
             <section>
@@ -82,7 +86,7 @@
             <section>
                 <div class="download">
                     <a href="../pdf-testi/madre-io-vorrei.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
                         <span>Scarica il testo in PDF</span>
                     </a>
                 </div>
@@ -91,7 +95,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
+        <p>&copy; 2025 Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
     </footer>
 
     <button id="autoScrollBtn" class="auto-scroll-btn">
@@ -99,7 +103,6 @@
         <span class="scroll-icon">▼</span>
     </button>
     
-    <script src="../script/anno.js"></script>
     <script src="../script/get-zoom.js" defer></script>
     <script src="../script/auto-scroll.js" defer></script>
     <!--<script src="../script/contatore-visite.js"></script>-->

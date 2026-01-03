@@ -138,7 +138,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
     </main>
 
     <footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
+        <p>&copy; 2025 Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
     </footer>
 
     <button id="autoScrollBtn" class="auto-scroll-btn">
@@ -146,7 +146,6 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         <span class="scroll-icon">▼</span>
     </button>
     
-    <script src="../script/anno.js"></script>
     <script src="../script/get-zoom.js" defer></script>
     <script src="../script/auto-scroll.js" defer></script>
     <!--<script src="../script/contatore-visite.js"></script>-->
@@ -361,7 +360,7 @@ def main():
     print("\n--- Sezioni Aggiuntive (opzionali) ---")
     link = input("Link al video YouTube (lascia vuoto se non presente): ").strip()
     if link:
-        link = link.replace("https://youtu.be/", "https://www.youtube.com/embed/")
+        link = link.replace("https://youtu.be/", "https://www.youtube-nocookie.com/embed/")
     
     n1 = input("Numero nel libretto della Minicorale (opzionale): ").strip()
     n2 = input("Numero nel libro dell'assemblea (opzionale): ").strip()

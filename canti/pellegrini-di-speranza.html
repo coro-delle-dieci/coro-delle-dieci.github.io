@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pellegrini di speranza</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/canti.css">
+    <link rel="preload" href="../style/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="../style/canti.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/canti.css">
+    </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -85,34 +89,34 @@
         
         <aside class="details">
             <section class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xQNCSeykhFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xQNCSeykhFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         
             <section>
                 <div class="download">
                     <a href="../pdf-testi/pellegrini-di-speranza.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
                         <span>Scarica il testo in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="https://www.iubilaeum2025.va/content/dam/iubilaeum2025/inno-giubileo/testo/ITA---Testo-Inno-Giubileo.pdf" target="_blank" class="download-link">
-                        <img class="ico" src="../images/text-file.png">
+                        <img class="ico" height="32px" width="32px" src="../images/text-file.png">
                         <span>Scarica il testo in PDF dal sito ufficiale del Giubileo</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="https://www.iubilaeum2025.va/content/dam/iubilaeum2025/inno-giubileo/spartito/Spartito-Inno-Giubileo-Completo---Italiano.pdf" target="_blank" class="download-link">
-                        <img class="ico" src="../images/music-file.png">
+                        <img class="ico" height="32px" width="32px" src="../images/music-file.png">
                         <span>Scarica lo spartito in PDF dal sito ufficiale del Giubileo</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="https://www.iubilaeum2025.va/content/dam/iubilaeum2025/inno-giubileo/spartito/Pellegrini-di-speranza-A4-melodia-e-accordi-1.pdf" target="_blank" class="download-link">
-                        <img class="ico" src="../images/guitar.png">
+                        <img class="ico" height="32px" width="32px" src="../images/guitar.png">
                         <span>Scarica gli accordi in PDF dal sito ufficiale del Giubileo</span>
                     </a>
                 </div>
@@ -121,7 +125,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
+        <p>&copy; 2025 Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
     </footer>
 
     <button id="autoScrollBtn" class="auto-scroll-btn">
@@ -129,7 +133,6 @@
         <span class="scroll-icon">▼</span>
     </button>
     
-    <script src="../script/anno.js"></script>
     <script src="../script/get-zoom.js" defer></script>
     <script src="../script/auto-scroll.js" defer></script>
     <!--<script src="../script/contatore-visite.js"></script>-->

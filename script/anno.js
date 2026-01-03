@@ -1,1 +1,0 @@
-document.getElementById("anno").textContent = new Date().getFullYear();

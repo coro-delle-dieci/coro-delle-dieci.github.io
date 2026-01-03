@@ -3,8 +3,12 @@
 <head><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beato è il cuore che perdona (Inno GMG 2016)</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/canti.css">
+    <link rel="preload" href="../style/style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="../style/canti.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="../style/canti.css">
+    </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -101,7 +105,7 @@
         
         <aside class="details">
             <section class="video-container">
-                <iframe src="https://www.youtube.com/embed/mveVDYA8CwA?si=6OrvO-RKYlbqQ9qV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube-nocookie.com/embed/mveVDYA8CwA?si=6OrvO-RKYlbqQ9qV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
 
             <section class="song-metadata">
@@ -127,49 +131,49 @@
             <section>
                 <div class="download">
                     <a href="../pdf-testi/beato-e-il-cuore-che-perdona.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
                         <span>Scarica il testo in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="../pdf-spartiti/beato-e-il-cuore-che-perdona.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/music-file.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/music-file.png">
                         <span>Scarica lo spartito in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="../pdf-spartiti/beato-e-il-cuore-che-perdona-solista.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/solista.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/solista.png">
                         <span>Scarica lo spartito per solista in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="../pdf-spartiti/beato-e-il-cuore-che-perdona-soprano.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/soprano.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/soprano.png">
                         <span>Scarica lo spartito per soprano in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="../pdf-spartiti/beato-e-il-cuore-che-perdona-contralto.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/contralto.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/contralto.png">
                         <span>Scarica lo spartito per contralto in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="../pdf-spartiti/beato-e-il-cuore-che-perdona-tenore.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/tenore.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/tenore.png">
                         <span>Scarica lo spartito per tenore in PDF</span>
                     </a>
                 </div>
 
                 <div class="download">
                     <a href="../pdf-spartiti/beato-e-il-cuore-che-perdona-basso.pdf" target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/basso.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/basso.png">
                         <span>Scarica lo spartito per basso in PDF</span>
                     </a>
                 </div>
@@ -178,7 +182,7 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="anno"></span> Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
+        <p>&copy; 2025 Coro delle Dieci - <a class="privacy" href="../privacy">Privacy e note legali</a></p>
     </footer>
 
     <button id="autoScrollBtn" class="auto-scroll-btn">
@@ -186,7 +190,6 @@
         <span class="scroll-icon">▼</span>
     </button>
     
-    <script src="../script/anno.js"></script>
     <script src="../script/get-zoom.js" defer></script>
     <script src="../script/auto-scroll.js" defer></script>
     <!--<script src="../script/contatore-visite.js"></script>-->

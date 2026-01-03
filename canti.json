@@ -278,7 +278,7 @@
         "categorie": ["offertorio"],
         "url": "canti/benedici-o-signore",
         "fileName": "benedici-o-signore.html",
-        "autori": [""]
+        "autori": ["Benedikt Enderle", "Valerio Cirpì"]
     },
     {   "titolo": "Benedirò il Signore",
         "id": 36,
@@ -286,7 +286,7 @@
         "categorie": ["ingresso"],
         "url": "canti/benediro-il-signore",
         "fileName": "benediro-il-signore.html",
-        "autori": [""]
+        "autori": ["Fabio Avolio"]
     },
     {   "titolo": "Camminerò",
         "id": 37,

@@ -122,23 +122,28 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    
-    // Inizializzazione
+
+    function activateSong(songId) {
+        const song = document.getElementById(songId);
+        if (song) {
+            song.click(); // usa la logica già scritta per il click
+        }
+    }
+
+    // Inizializzazione layout
     function initializeLayout() {
         if (window.innerWidth <= 968) {
             // Su mobile: nascondi sidebar
-            if (videoPlaceholderDesktop) {
-                videoPlaceholderDesktop.style.display = 'none';
-            }
-            if (videoIframeDesktop) {
-                videoIframeDesktop.style.display = 'none';
-            }
+            if (videoPlaceholderDesktop) videoPlaceholderDesktop.style.display = 'none';
+            if (videoIframeDesktop) videoIframeDesktop.style.display = 'none';
         }
-        
-        // Attiva il primo canone di default
-        if (taizeSongs.length > 0) {
-            taizeSongs[0].click();
+
+        // Controlla hash nell'URL
+        const hash = window.location.hash.substring(1); // rimuove il #
+        if (hash) {
+            activateSong(hash);
         }
+        // Se non c'è l'hash, nessuna scheda diventa attiva
     }
     
     initializeLayout();

@@ -8,8 +8,7 @@ async function caricaCanti() {
         const data = await response.json();
 
         // Unisci canti normali + canoni di Taizé (se ci sono)
-        const canoni = data.canoni || [];
-        cantiData = [...data.canti, ...canoni];
+        cantiData = [...data.canti, ...data.taize];
 
         console.log(`Caricati ${cantiData.length} canti totali (inclusi Taizé)`);
 
@@ -30,7 +29,7 @@ function cercaCanti(query) {
         searchResults.innerHTML = '';
         cantiContainer.classList.remove('search-active');
         alfabetoNav.classList.remove('search-active');
-        searchInfo.innerHTML = 'Digita per cercare tra i 160 canti';
+        searchInfo.innerHTML = `Digita per cercare tra i ${cantiData.length} canti`;
         return;
     }
     
@@ -39,23 +38,20 @@ function cercaCanti(query) {
     
     cantiData.forEach(canto => {
         let punteggio = 0;
-        const categorie = canto.categorie
+        const categorie = canto.categorie || [];
         const testoCompleto = (canto.titolo + ' ' + canto.testo + ' ' + categorie.join(' ')).toLowerCase();
         
         // Calcola punteggio di rilevanza
         termini.forEach(termine => {
             if (canto.titolo.toLowerCase().includes(termine)) punteggio += 10;
             if (canto.testo.toLowerCase().includes(termine)) punteggio += 5;
-            if (categorie.some(cat => cat.toLowerCase().includes(termine))) {
-                punteggio += 3;
-            }
+            if (categorie.some(cat => cat.toLowerCase().includes(termine))) punteggio += 3;
         });
         
         if (punteggio > 0) {
             risultati.push({ 
                 ...canto, 
                 punteggio,
-                // Mostra TUTTE le categorie
                 tutteLeCategorie: categorie.join(', ')
             });
         }
@@ -98,11 +94,15 @@ function mostraRisultati(risultati, query) {
             });
         }
 
-        // Usa TUTTE le categorie separate da virgola
         const categorieTesto = canto.tutteLeCategorie || 'Altro';
-        
+        const link = canto.url || '#';
+
+        // Gestione link con hash per Taizé
+        const isTaize = link.includes('#');
+        const href = isTaize ? link : link;
+
         return `
-            <div class="search-result-item" onclick="window.location.href='${canto.url}'">
+            <div class="search-result-item" onclick="window.location.href='${href}'">
                 <div class="search-result-title">${titoloEvidenziato}</div>
                 <div class="search-result-preview">${anteprima}</div>
                 <span class="search-result-category">${categorieTesto}</span>
@@ -120,7 +120,6 @@ document.getElementById('searchInput').addEventListener('input', function(e) {
     }, 300);
 });
 
-// Ricerca con Enter
 document.getElementById('searchInput').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         clearTimeout(searchTimeout);
@@ -128,7 +127,6 @@ document.getElementById('searchInput').addEventListener('keypress', function(e) 
     }
 });
 
-// Cancella ricerca con ESC
 document.getElementById('searchInput').addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         this.value = '';

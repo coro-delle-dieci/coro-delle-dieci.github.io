@@ -70,7 +70,8 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             </section>
         '''
     if n1 or n2:
-        extra_sections += '<section>Puoi trovare questo canto al numero:<br>'
+        extra_sections += '''
+            <section>Puoi trovare questo canto al numero:<br>'''
         if n1:
             extra_sections += f'        <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
         if n2:
@@ -121,7 +122,9 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 {html_body}
         </section>
 
-        <section class="details">{extra_sections}
+        <section class="details">
+        
+            {extra_sections}
 
             <section>
                 <div class="download">

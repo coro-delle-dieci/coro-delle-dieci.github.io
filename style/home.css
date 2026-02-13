@@ -1,120 +1,117 @@
 @font-face { font-family: 'Pinyon Script'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/PinyonScript-Regular.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: 'Walter Turncoat'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/WalterTurncoat-Regular.woff2') format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
-.home-page main {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
+
+
+.is-christmas { background: linear-gradient(#faeaea, #faeaea) padding-box, linear-gradient(115deg, #56050b, #cf0a17) border-box; }
+
+.is-christmas .closing, .is-christmas h3 { color: #700a11; }
+
+.is-restart .closing, .is-christmas h3 {color: #061a40;}
+#tempi-forti, #sezione-nuovi-canti { display: none; }
+
+
+
+/* Ordine mobile personalizzato */
+@media screen and (max-width: 768px) {
+    .columns {
+        display: flex !important;
+        flex-direction: column;
+    }
+    
+    /* Canti domenica (già primo nella colonna centrale) */
+    .order-mobile-1 {
+        order: 1;
+    }
+    
+    /* Tempo forte */
+    .order-mobile-3 {
+        order: 3;
+        margin-top: 1rem;
+    }
+    
+    /* Nuovi canti */
+    .order-mobile-4 {
+        order: 4;
+        margin-top: 1rem;
+    }
+    
+    /* Calendario */
+    .order-mobile-5 {
+        order: 5;
+        margin-top: 1rem;
+    }
 }
 
-section {
-    margin-bottom: 2rem;
+/* Stile per gli avvisi */
+.notification {
+    padding-bottom: 0.5rem;
 }
 
-aside, .centre-column {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.notification.title {
+    font-size: 2rem !important;
 }
 
-.div-canti {
-    background-color: white;
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.notification.is-restart {
+    background: linear-gradient(#ebeafa, #ebeafa) padding-box,
+                linear-gradient(115deg, #061a40, #0446bf) border-box !important;
+    border: 5px solid transparent !important;
+    border-radius: 5px !important;
+    color: #061a40 !important;
 }
 
-.canto-link {
-    transition: all 0.2s ease;
-    line-height: 1.6rem;
+.notification.is-christmas {
+    background: linear-gradient(#faeaea, #faeaea) padding-box,
+                linear-gradient(115deg, #56050b, #cf0a17) border-box !important;
+    border: 5px solid transparent !important;
+    border-radius: 5px !important;
+    color: #061a40 !important;
 }
 
-.canto-link:not(:last-child) {
-    margin-bottom: 1rem;
-}
-
-.canto-link a {
-    color: #061a40;
-}
-
-.warning {
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 5px solid transparent;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.warning h3 {
-    margin-top: 0;
-    margin-bottom: 0.8rem;
-    font-size: 1.4rem;
-    text-align: center;
-}
-
-.warning .closing {
-    font-family: "Walter Turncoat";
-    font-size: 1.6rem;
+.notification.is-restart .closing {
+    font-family: 'Walter Turncoat', cursive;
     font-weight: bold;
-    margin-top: 1.2rem;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin: 0;
+    color: #061a40;
     text-align: center;
 }
 
-.christmas .closing {
-    font-family: "Pinyon Script";
+.notification.is-christmas .closing {
+    font-family: 'Pinyon Script', cursive;
     font-weight: 600;
     font-style: normal;
     font-size: 2.2rem;
-    line-height: 1;
+    margin: 0;
+    color: #700a11;
+    text-align: center;
 }
 
-.restart {
-    background: linear-gradient(#ebeafa, #ebeafa) padding-box,
-                linear-gradient(115deg, #061a40, #0446bf) border-box;
+.notification.is-restart b { color: #061a40; }
+
+.notification.is-christmas b { color: #325632; }
+
+/* Stile per i link nei canti */
+.content a {
+    color: #061a40;
+    text-decoration: none;
 }
 
-.christmas {
-    background: linear-gradient(#faeaea, #faeaea) padding-box,
-                linear-gradient(115deg, #56050b, #cf0a17) border-box;
+.content a:hover {
+    text-decoration: underline;
 }
 
-.restart .warning-content b, .restart .closing, .christmas h3 { color: #061a40; }
-
-.christmas .warning-content b { color: #325632; }
-
-.christmas .closing, .christmas h3 { color: #700a11; }
-
-.calendar-section iframe {
-    width: 100%;
-    height: 400px;
-    border: none;
-    border-radius: 5px;
+.content p {
+    margin-bottom: 0.5rem !important;
 }
 
-#tempi-forti, #sezione-nuovi-canti {
-    display: none;
+/* Titoli degli avvisi */
+.notification.is-restart .title,
+.notification.is-christmas .title {
+    color: inherit !important;
+    margin-bottom: 0.5rem !important;
 }
 
-@media (max-width: 968px) {
-    .home-page main {
-        grid-template-columns: 1fr;
-    }
-    
-    aside {
-        padding-top: 1rem;
-    }
-
-    .home-page main, aside, .centre-column {
-        gap: 1rem;
-    }
-
-    section {
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 426px) {
-    .calendar-section iframe {
-        height: 260px;
-    }
-}
+.notification.is-restart .title { color: #061a40 !important; }
+.notification.is-christmas .title { color: #700a11 !important; }

@@ -21,9 +21,7 @@ async function caricaCanti() {
     try {
         const response = await fetch(sheetUrl);
         const text = await response.text();
-
         const json = JSON.parse(text.substring(47).slice(0, -2));
-
         const rows = json.table.rows;
 
         if (!rows || rows.length === 0) {
@@ -33,13 +31,12 @@ async function caricaCanti() {
 
         // La data è nella prima riga, colonna C (indice 2)
         const riga0 = rows[0];
-        
         if (!riga0 || !riga0.c) {
             console.error("La riga 0 non esiste o è vuota");
             return;
         }
 
-        const dataCell = riga0.c[2]; // Colonna C
+        const dataCell = riga0.c[2];
         if (!dataCell || !dataCell.v) {
             console.error("La cella della data è vuota:", dataCell);
             return;
@@ -61,7 +58,6 @@ async function caricaCanti() {
 
         // CASO 2: data valida → mostrare canti
         titoloElem.textContent = formattaDataCompleta(dataFoglio);
-
         listaCanti.innerHTML = "";
         let haCanti = false;
 
@@ -69,16 +65,16 @@ async function caricaCanti() {
         rows.slice(1).forEach(row => {
             if (!row.c || row.c.length < 3) return;
 
-            const titoloCell = row.c[0];      // Colonna A
-            const linkCell = row.c[1];        // Colonna B
-            const indicazioneCell = row.c[2]; // Colonna C
+            const titoloCell = row.c[0];
+            const linkCell = row.c[1];
+            const indicazioneCell = row.c[2];
 
             // Salta le righe dove il titolo è vuoto
             if (!titoloCell || !titoloCell.v || titoloCell.v.trim() === "") {
                 return;
             }
 
-            // Filtra le righe che sembrano URL o istruzioni, non titoli di canti
+            // Filtra le righe che sembrano URL o istruzioni
             const titolo = titoloCell.v.trim();
             if (titolo.startsWith("http") || titolo.toLowerCase().includes("inserire")) {
                 return;
@@ -87,7 +83,7 @@ async function caricaCanti() {
             const link = linkCell?.v || "#";
             const indicazione = indicazioneCell?.v || "";
 
-            // Salta le righe dove l'indicazione è vuota (non sono canti)
+            // Salta le righe dove l'indicazione è vuota
             if (!indicazione || indicazione.trim() === "") {
                 return;
             }
@@ -95,7 +91,6 @@ async function caricaCanti() {
             haCanti = true;
 
             const p = document.createElement("p");
-            p.classList.add("canto-link");
             p.innerHTML = `
                 <a href="${link}">
                     ${indicazione ? `<b>${indicazione}:</b> ` : ""}${titolo}
@@ -110,9 +105,11 @@ async function caricaCanti() {
 
     } catch (error) {
         console.error("Errore nel caricamento dei canti:", error);
+        const listaCanti = document.getElementById("canti-domenica");
+        if (listaCanti) {
+            listaCanti.innerHTML = "<p>Errore nel caricamento dei canti.</p>";
+        }
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    caricaCanti();
-});
+document.addEventListener("DOMContentLoaded", caricaCanti);

@@ -1,15 +1,15 @@
+const sheetUrlTempi = `https://docs.google.com/spreadsheets/d/1NYcf3upDR8YLuPX0dm__T1ArAZLXBIdNRBgzwC5GCa0/gviz/tq?tqx=out:json`;
+
 async function caricaCantiTempo() {
     try {
-        const response = await fetch(sheetUrlNuovi);
+        const response = await fetch(sheetUrlTempi);
         const text = await response.text();
         const json = JSON.parse(text.substring(47).slice(0, -2));
-
         const rows = json.table.rows;
+        
         const listaCanti = document.getElementById("canti-tempo");
-        const sectionTempiForti = document.getElementById("tempi-forti");
-
-        if (!listaCanti || !sectionTempiForti) {
-            console.error("Elemento 'canti-tempo' o 'tempi-forti' non trovato");
+        if (!listaCanti) {
+            console.error("Elemento 'canti-tempo' non trovato");
             return;
         }
 
@@ -28,45 +28,58 @@ async function caricaCantiTempo() {
                 const url = row.c[8].v;
 
                 const p = document.createElement("p");
-                p.classList.add("canto-link");
-
                 const link = document.createElement("a");
                 link.href = url;
                 link.textContent = testo;
-
                 p.appendChild(link);
                 listaCanti.appendChild(p);
             }
         }
 
-        // Mostra la sezione solo se ci sono canti
-        sectionTempiForti.style.display = haCanti ? "block" : "none";
+        // Se non ci sono canti, mostra un messaggio
+        if (!haCanti) {
+            listaCanti.innerHTML = "<p>Nessun canto disponibile per questo tempo liturgico.</p>";
+        }
 
     } catch (error) {
         console.error("Errore nel caricamento dei tempi forti:", error);
-        const sectionTempiForti = document.getElementById("tempi-forti");
-        if (sectionTempiForti) sectionTempiForti.style.display = "none";
+        const listaCanti = document.getElementById("canti-tempo");
+        if (listaCanti) {
+            listaCanti.innerHTML = "<p>Errore nel caricamento dei canti.</p>";
+        }
     }
 }
 
 async function caricaTempo() {
     try {
-        const response = await fetch(sheetUrlNuovi);
+        const response = await fetch(sheetUrlTempi);
         const text = await response.text();
         const json = JSON.parse(text.substring(47).slice(0, -2));
-
         const rows = json.table.rows;
+
+        const tempoSpan = document.getElementById("tempo");
+        if (!tempoSpan) {
+            console.error("Elemento 'tempo' non trovato");
+            return;
+        }
 
         if (rows[0]?.c[7]?.v) {
             const tempo = rows[0].c[7].v;
-            const tempoSpan = document.getElementById("tempo");
-            if (tempoSpan) tempoSpan.textContent = tempo;
+            tempoSpan.textContent = tempo;
+        } else {
+            tempoSpan.textContent = "Tempo liturgico";
         }
 
     } catch (error) {
         console.error("Errore nel caricamento del tempo:", error);
+        const tempoSpan = document.getElementById("tempo");
+        if (tempoSpan) {
+            tempoSpan.textContent = "Tempo liturgico";
+        }
     }
 }
 
-document.addEventListener("DOMContentLoaded", caricaTempo);
-document.addEventListener("DOMContentLoaded", caricaCantiTempo);
+document.addEventListener("DOMContentLoaded", () => {
+    caricaTempo();
+    caricaCantiTempo();
+});

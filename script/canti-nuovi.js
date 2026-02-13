@@ -5,13 +5,11 @@ async function caricaCantiNuovi() {
         const response = await fetch(sheetUrlNuovi);
         const text = await response.text();
         const json = JSON.parse(text.substring(47).slice(0, -2));
-
         const rows = json.table.rows;
+        
         const listaCanti = document.getElementById("canti-nuovi");
-        const sezioneNuovi = document.getElementById("sezione-nuovi-canti");
-
-        if (!listaCanti || !sezioneNuovi) {
-            console.error("Elemento 'canti-nuovi' o 'sezione-nuovi-canti' non trovato");
+        if (!listaCanti) {
+            console.error("Elemento 'canti-nuovi' non trovato");
             return;
         }
 
@@ -30,24 +28,25 @@ async function caricaCantiNuovi() {
                 const url = row.c[5].v;
 
                 const p = document.createElement("p");
-                p.classList.add("canto-link");
-
                 const link = document.createElement("a");
                 link.href = url;
                 link.textContent = testo;
-
                 p.appendChild(link);
                 listaCanti.appendChild(p);
             }
         }
 
-        // Mostra la sezione solo se ci sono canti
-        sezioneNuovi.style.display = haCanti ? "block" : "none";
+        // Se non ci sono canti, mostra un messaggio
+        if (!haCanti) {
+            listaCanti.innerHTML = "<p>Nessun nuovo canto al momento.</p>";
+        }
 
     } catch (error) {
         console.error("Errore nel caricamento dei canti nuovi:", error);
-        const sezioneNuovi = document.getElementById("sezione-nuovi-canti");
-        if (sezioneNuovi) sezioneNuovi.style.display = "none";
+        const listaCanti = document.getElementById("canti-nuovi");
+        if (listaCanti) {
+            listaCanti.innerHTML = "<p>Errore nel caricamento dei canti nuovi.</p>";
+        }
     }
 }
 

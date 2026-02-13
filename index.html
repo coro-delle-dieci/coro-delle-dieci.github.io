@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coro delle dieci</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/home.css">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
     <script src="https://cdn.counter.dev/script.js" data-id="0b8a28a7-bd9e-4970-aa87-bd107e273a32" data-utcoffset="1" async></script>
 </head>
 <body class="home-page">
@@ -33,91 +34,64 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <aside>
-            <section id="tempi-forti">
-                <h3><span id="tempo"></span></h3>
-                <div id="canti-tempo" class="div-canti"></div>
-            </section>
+    
+    <main class="section">
+        <div class="container">
+            <div class="columns is-multiline">
 
-            <!--
-            <section>
-                <h3>I canti di Pasqua</h3>
-                <div class="div-canti">
-                    <p class="canto-link"><a href="canti/cristo-vive-in-mezzo-a-noi" target="_blank">Cristo vive in mezzo a noi</a></p>
-                    <p class="canto-link"><a href="canti/gloria-buttazzo" target="_blank">Gloria (Buttazzo)</a></p>
-                    <p class="canto-link"><a href="canti/alleluia-ora-lui-vive" target="_blank">Alleluia, ora Lui vive</a></p>
-                    <p class="canto-link"><a href="canti/santo-giorgi" target="_blank">Santo (Giorgi)</a></p>
-                    <p class="canto-link"><a href="canti/cristo-e-risorto-veramente" target="_blank">Cristo è risorto veramente</a></p>
-                </div>
-            </section>
-            -->
+            <!-- Colonna centrale -->
+            <div class="column is-12-mobile is-8-desktop order-mobile-1">
+                <!-- Avvisi 
+                <section class="notification is-restart mb-4">
+                    <h3 class="title is-5">ATTENZIONE!</h3>
+                    <p>Ricominceremo il nostro servizio di animazione della S. Messa delle ore 10:00 <b>domenica 21 settembre</b>.</p>
+                    <p class="closing has-text-weight-semibold">Vi aspettiamo numerosi!</p>
+                </section>
 
-            <!--
-            <section>
-                <h3>I canti di Natale</h3>
-                <div class="div-canti">
-                    <p class="canto-link"><a href="canti/canto" target="_blank">Canto</a></p>
-                    <p class="canto-link"><a href="canti/canto" target="_blank">Canto</a></p>
-                    <p class="canto-link"><a href="canti/canto" target="_blank">Canto</a></p>
-                    <p class="canto-link"><a href="canti/canto" target="_blank">Canto</a></p>
-                    <p class="canto-link"><a href="canti/canto" target="_blank">Canto</a></p>
-                </div>
-            </section>
-            -->
-        </aside>
-        
+                <section class="notification is-christmas mb-4">
+                    <h3 class="title is-5">Vacanze di Natale</h3>
+                    <p>Durante le vacanze di Natale <b>non svolgeremo il servizio di animazione</b>, quindi a Santo Stefano, domenica 28 dicembre e domenica 4 gennaio non canteremo.</p>
+                    <p>Il coro animerà la <b>S. Messa di Natale</b> e riprenderà direttamente il servizio all’<b>Epifania</b>, lunedì 6 gennaio.</p>
+                    <p class="closing has-text-weight-semibold">Buon Natale e buone feste!</p>
+                </section>
+                -->
+                
 
-        <div class="centre-column">
-            <!-- Avviso di inizio anno
-            <section class="warning restart">
-                <h3>ATTENZIONE!</h3>
-                <div>
-                    <p>Ricominceremo il nostro servizio di animazione della S. Messa delle ore 10:00 domenica 21 settembre.</p>
-                    <p class="closing">Vi aspettiamo numerosi!</p>
-                </div>
-            </section>
-            -->
+                <!-- Canti domenica -->
+                <section class="mb-4">
+                    <h3 class="title is-5">I canti di <span id="data"></span></h3>
+                    <div id="canti-domenica" class="content"></div>
+                </section>
+            </div>
 
-            <!-- Avviso vacanze di Natale 
-            <section class="warning christmas">
-                <h3>Vacanze di Natale</h3>
-                <div class="warning-content">
-                    <p>
-                        Durante le vacanze di Natale <b>non svolgeremo il servizio di animazione</b>,
-                        quindi a Santo Stefano, domenica 28 dicembre e domenica 4 gennaio non canteremo.
-                    </p>
+            <!-- Sidebar tempo forte -->
+            <div class="column is-12-mobile is-4-desktop order-mobile-3">
+                <section>
+                    <h3 class="title is-5"><span id="tempo"></span></h3>
+                    <div id="canti-tempo" class="content"></div>
+                </section>
+            </div>
 
-                    <p>
-                        Il coro animerà la <b>S. Messa di Natale</b> e
-                        riprenderà direttamente il servizio all’<b>Epifania</b>, lunedì 6 gennaio</b>.
-                    </p>
+            <!-- Nuovi canti -->
+            <div class="column is-12-mobile order-mobile-4">
+                <section>
+                    <h3 class="title is-5">Nuovi canti</h3>
+                    <div id="canti-nuovi" class="content"></div>
+                </section>
+            </div>
 
-                    <p class="closing">Buon Natale e buone feste!</p>
-                </div>
-            </section>
-            -->
-            
+            <!-- Calendario -->
+            <div class="column is-12-mobile order-mobile-5">
+                <section>
+                <h3 class="title is-5">Calendario delle prove</h3>
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showTitle=0&showTz=0&mode=AGENDA&showNav=0&showDate=0&showPrint=0&showTabs=0&src=Y29ybzEwLnNhbnZpdG9AZ21haWwuY29t&src=Y2M0NTIxMjNlYjZiZDY4NGE4Njc0YjBiMGQ3ZDRkYjZiY2I1MDUyMjI2NDJjYzgxNjcyNzUxNWI5OGY5ODY3MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23006daa&color=%23061a40" title="Google Calendar" style="width:100%; height:400px; border:0;"></iframe>
+                </section>
+            </div>
 
-            <section>
-                <h3>I canti di <span id="data"></span></h3>
-                <div id="canti-domenica" class="div-canti"></div>
-            </section>
-
-            <section class="calendar-section">
-                <h3>Calendario delle prove</h3>
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showTitle=0&showTz=0&mode=AGENDA&showNav=0&showDate=0&showPrint=0&showTabs=0&src=Y29ybzEwLnNhbnZpdG9AZ21haWwuY29t&src=Y2M0NTIxMjNlYjZiZDY4NGE4Njc0YjBiMGQ3ZDRkYjZiY2I1MDUyMjI2NDJjYzgxNjcyNzUxNWI5OGY5ODY3MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23006daa&color=%23061a40" title="Google Calendar"></iframe>
-            </section>
+            </div>
         </div>
-
-        
-        <aside>
-            <section id="sezione-nuovi-canti">
-                <h3>Nuovi canti</h3>
-                <div id="canti-nuovi" class="div-canti"></div>
-            </section>
-        </aside>
     </main>
+
 
     <footer>
         <p>&copy; 2025 Coro delle Dieci - <a class="privacy" href="privacy.html">Privacy e note legali</a></p>

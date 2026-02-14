@@ -35,37 +35,39 @@
         </nav>
     </header>
     
-    <main class="section">
-        <div class="container">
-            <div class="columns is-multiline">
-
-            <!-- Colonna centrale -->
-            <div class="column is-12-mobile is-8-desktop order-mobile-1">
-                <!-- Avvisi 
-                <section class="notification is-restart mb-4">
+    <main>
+        <!-- Avvisi - full width sopra tutto -->
+        <div class="columns is-multiline">
+            <!-- Colonna piena per gli avvisi
+            <div class="column is-12">
+                <section class="notification is-restart mb-4 mt-5">
                     <h3 class="title is-5">ATTENZIONE!</h3>
                     <p>Ricominceremo il nostro servizio di animazione della S. Messa delle ore 10:00 <b>domenica 21 settembre</b>.</p>
                     <p class="closing has-text-weight-semibold">Vi aspettiamo numerosi!</p>
                 </section>
+            
 
-                <section class="notification is-christmas mb-4">
+                <section class="notification is-christmas mb-4 mt-5">
                     <h3 class="title is-5">Vacanze di Natale</h3>
                     <p>Durante le vacanze di Natale <b>non svolgeremo il servizio di animazione</b>, quindi a Santo Stefano, domenica 28 dicembre e domenica 4 gennaio non canteremo.</p>
                     <p>Il coro animerà la <b>S. Messa di Natale</b> e riprenderà direttamente il servizio all’<b>Epifania</b>, lunedì 6 gennaio.</p>
                     <p class="closing has-text-weight-semibold">Buon Natale e buone feste!</p>
                 </section>
-                -->
-                
+            </div>-->
+            
+            
 
+            <!-- Colonna centrale -->
+            <div class="column is-12-mobile is-7-desktop order-mobile-1">
                 <!-- Canti domenica -->
                 <section class="mb-4">
-                    <h3 class="title is-5">I canti di <span id="data"></span></h3>
+                    <h3 class="title is-5 mb-2">I canti di <span id="data"></span></h3>
                     <div id="canti-domenica" class="content"></div>
                 </section>
             </div>
 
             <!-- Sidebar tempo forte -->
-            <div class="column is-12-mobile is-4-desktop order-mobile-3">
+            <div class="column is-12-mobile is-5-desktop order-mobile-3">
                 <section>
                     <h3 class="title is-5"><span id="tempo"></span></h3>
                     <div id="canti-tempo" class="content"></div>
@@ -73,7 +75,7 @@
             </div>
 
             <!-- Nuovi canti -->
-            <div class="column is-12-mobile order-mobile-4">
+            <div class="column is-12-mobile is-7-desktop order-mobile-4">
                 <section>
                     <h3 class="title is-5">Nuovi canti</h3>
                     <div id="canti-nuovi" class="content"></div>
@@ -81,13 +83,11 @@
             </div>
 
             <!-- Calendario -->
-            <div class="column is-12-mobile order-mobile-5">
+            <div class="column is-12-mobile is-5-desktop order-mobile-5">
                 <section>
-                <h3 class="title is-5">Calendario delle prove</h3>
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showTitle=0&showTz=0&mode=AGENDA&showNav=0&showDate=0&showPrint=0&showTabs=0&src=Y29ybzEwLnNhbnZpdG9AZ21haWwuY29t&src=Y2M0NTIxMjNlYjZiZDY4NGE4Njc0YjBiMGQ3ZDRkYjZiY2I1MDUyMjI2NDJjYzgxNjcyNzUxNWI5OGY5ODY3MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23006daa&color=%23061a40" title="Google Calendar" style="width:100%; height:400px; border:0;"></iframe>
+                    <h3 class="title is-5">Calendario delle prove</h3>
+                    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FRome&showTitle=0&showTz=0&mode=AGENDA&showNav=0&showDate=0&showPrint=0&showTabs=0&src=Y29ybzEwLnNhbnZpdG9AZ21haWwuY29t&src=Y2M0NTIxMjNlYjZiZDY4NGE4Njc0YjBiMGQ3ZDRkYjZiY2I1MDUyMjI2NDJjYzgxNjcyNzUxNWI5OGY5ODY3MkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23006daa&color=%23061a40" title="Google Calendar" style="width:100%; height:400px; border:0;"></iframe>
                 </section>
-            </div>
-
             </div>
         </div>
     </main>

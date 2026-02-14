@@ -12,11 +12,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :target {
-  scroll-margin-top: 80px;
+    scroll-margin-top: 80px;
 }
 
 body {
@@ -38,11 +38,6 @@ header {
     height: 70px;
 }
 
-main a {
-    color: #2a89c8;
-    text-decoration: none;
-}
-
 a:hover {
     text-decoration: underline;
 }
@@ -50,6 +45,12 @@ a:hover {
 h1 a, h1 a:hover, h1 a:visited, h1 a:active {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .privacy {
@@ -59,15 +60,6 @@ h1 a, h1 a:hover, h1 a:visited, h1 a:active {
 
 .privacy:hover {
     text-decoration: underline;
-}
-
-.banner {
-    height: 10vh;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
 }
 
 .menu-toggle {
@@ -110,13 +102,13 @@ nav ul {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s;
+    color: white !important;
+    text-decoration: none !important;
+    transition: opacity 0.3s !important;
 }
 
 nav a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 main {
@@ -137,8 +129,9 @@ h2 {
 }
 
 h3 {
-    color: #061a40;
-    margin-bottom: 0.5rem;
+    color: #061a40 !important;
+    margin-bottom: 0.5rem !important;
+    font-weight: 700 !important;
 }
 
 footer {

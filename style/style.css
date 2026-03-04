@@ -23,7 +23,7 @@ body {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #061a40;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     font-size: 1.15rem;
     font-display: swap;
 }
@@ -124,8 +124,7 @@ section {
 }
 
 h2 {
-    color: #061a40;
-    margin-bottom: 1.5rem;
+    color: #061a40 !important;
 }
 
 h3 {

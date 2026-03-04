@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
-<head><meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coro delle Dieci - Chi Siamo</title>
+    
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#061a40">
     <meta name="msapplication-TileColor" content="#061a40">
     <meta name="theme-color" content="#061a40">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/about.css">
+    
     <script src="https://cdn.counter.dev/script.js" data-id="0b8a28a7-bd9e-4970-aa87-bd107e273a32" data-utcoffset="1"></script>
 </head>
 <body>
+    <!-- Header (da sostituire con navbar Bulma in futuro) -->
     <header>
         <h1><a href="./">Coro delle Dieci</a></h1>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -32,386 +39,371 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>Chi siamo</h2>
 
-            <p>
-                Il <b>Coro delle Dieci</b> nasce come erede della storica <b>Minicorale</b>,
-                un piccolo coro di bambini nato circa quarant’anni fa nella nostra parrocchia.
-                Per tanti anni la Minicorale ha accompagnato con entusiasmo e voci allegre la Messa delle 10 della domenica,
-                facendo cantare tutta la comunità.
-            </p>
+    <main class="section">
+        <div class="container">
+            <!-- Sezione testo: larghezza controllata per leggibilità -->
+            <div class="columns is-centered">
+                <div class="column is-10-desktop is-12-tablet">
+                    <section class="content">
+                        <h2 class="title is-2 has-text-centered mb-6">Chi siamo</h2>
 
-            <blockquote>
-                Cantare, suonare, comporre, dirigere, fare musica nella Chiesa sono tra le cose più belle a gloria di Dio.
-                È un privilegio, un dono di Dio esprimere l’arte musicale e aiutare la partecipazione ai divini misteri.<br>
-                <cite>Papa Francesco</cite>
-            </blockquote>
+                        <p>
+                            Il <b>Coro delle Dieci</b> nasce come erede della storica <b>Minicorale</b>,
+                            un piccolo coro di bambini nato circa quarant'anni fa nella nostra parrocchia.
+                            Per tanti anni la Minicorale ha accompagnato con entusiasmo e voci allegre la Messa delle 10 della domenica,
+                            facendo cantare tutta la comunità.
+                        </p>
 
-            <p>
-                Ed è proprio con questo spirito che, anche nei momenti più difficili, abbiamo cercato di non far spegnere la nostra voce.
-                Dopo il periodo del <b>Covid</b>, il gruppo si è quasi sciolto:
-                di quel coro sono rimaste solo <b>Anna, Alessia, Marta e Agnese</b>,
-                insieme alla direttrice <b>Elena</b> e a suo marito <b>Francesco</b>,
-                che con la sua chitarra ha continuato ad accompagnarci con passione e costanza.
-            </p>
+                        <blockquote>
+                            <p class="is-italic">
+                                Cantare, suonare, comporre, dirigere, fare musica nella Chiesa sono tra le cose più belle a gloria di Dio.
+                                È un privilegio, un dono di Dio esprimere l'arte musicale e aiutare la partecipazione ai divini misteri.
+                            </p>
+                            <cite class="is-block has-text-right mt-1">— Papa Francesco</cite>
+                        </blockquote>
 
-            <p>
-                Nel <b>2024</b> è iniziato un nuovo capitolo: <b>Gianpaolo</b> ha preso le redini del coro,
-                guidandoci con la sua voce e la sua chitarra.
-                Poco dopo si sono unite anche <b>Alessandra</b>, che ci aiuta nella direzione,
-                e <b>Lisa</b>, altra chitarrista sempre pronta a dare ritmo e armonia.
-            </p>
+                        <p>
+                            Ed è proprio con questo spirito che, anche nei momenti più difficili, abbiamo cercato di non far spegnere la nostra voce.
+                            Dopo il periodo del <b>Covid</b>, il gruppo si è quasi sciolto:
+                            di quel coro sono rimaste solo <b>Anna, Alessia, Marta e Agnese</b>,
+                            insieme alla direttrice <b>Elena</b> e a suo marito <b>Francesco</b>,
+                            che con la sua chitarra ha continuato ad accompagnarci con passione e costanza.
+                        </p>
 
-            <blockquote>
-                Il cantare è proprio di chi ama.<br>
-                <cite>Sant’Agostino</cite>
-            </blockquote>
+                        <p>
+                            Nel <b>2024</b> è iniziato un nuovo capitolo: <b>Gianpaolo</b> ha preso le redini del coro,
+                            guidandoci con la sua voce e la sua chitarra.
+                            Poco dopo si sono unite anche <b>Alessandra</b>, che ci aiuta nella direzione,
+                            e <b>Lisa</b>, altra chitarrista sempre pronta a dare ritmo e armonia.
+                        </p>
 
-            <p>
-                E noi continuiamo a cantare proprio perché amiamo: la musica, la fede e la comunità.
-            </p>
+                        <blockquote>
+                            <p class="is-italic">Il cantare è proprio di chi ama.</p>
+                            <cite class="is-block has-text-right mt-1">— Sant'Agostino</cite>
+                        </blockquote>
 
-            <p>
-                Con il tempo, il gruppo ha iniziato a crescere di nuovo.
-                Grazie all’entusiasmo di <b>Giovanna</b>, catechista e grande sostenitrice del coro,
-                e all’aiuto di <b>Anna</b> e <b>Alessia</b>,
-                siamo riusciti ad accogliere un buon numero di nuovi bambini, di età compresa tra gli <b>8 e i 12 anni</b>,
-                riportando nuova energia e sorrisi.
-            </p>
+                        <p>E noi continuiamo a cantare proprio perché amiamo: la musica, la fede e la comunità.</p>
 
-            <p>
-                All’inizio dell’anno scolastico <b>2025/2026</b>, si è aggiunta anche <b>Sara</b>,
-                un’altra chitarrista che, oltre ad accompagnarci con gli accordi,
-                ci sostiene nel canto con la sua voce.
-            </p>
+                        <p>
+                            Con il tempo, il gruppo ha iniziato a crescere di nuovo.
+                            Grazie all'entusiasmo di <b>Giovanna</b>, catechista e grande sostenitrice del coro,
+                            e all'aiuto di <b>Anna</b> e <b>Alessia</b>,
+                            siamo riusciti ad accogliere un buon numero di nuovi bambini, di età compresa tra gli <b>8 e i 12 anni</b>,
+                            riportando nuova energia e sorrisi.
+                        </p>
 
-            <p>
-                Negli ultimi mesi abbiamo anche cercato di <b>rinnovare il nostro repertorio</b>,
-                per conciliare i canti più tradizionali, cari agli adulti,
-                con quelli più vivaci e semplici, pensati per i bambini.
-                In particolare, abbiamo cercato di inserire alcuni semplici elementi della <b>liturgia cantata</b>:
-                il ritornello del Salmo, l'Agnello di Dio e, nelle celebrazioni più solenni,
-                l'Atto Penitenziale (Kyrie). <br> 
-                Vogliamo che ogni Messa sia un momento di unità e partecipazione,
-                in cui grandi e piccoli possano pregare e cantare insieme con la stessa gioia.
-            </p>
+                        <p>
+                            All'inizio dell'anno scolastico <b>2025/2026</b>, si è aggiunta anche <b>Sara</b>,
+                            un'altra chitarrista che, oltre ad accompagnarci con gli accordi,
+                            ci sostiene nel canto con la sua voce.
+                        </p>
 
-            <blockquote>
-                La musica sacra svolge anche un altro compito, quello di saldare insieme la storia cristiana:
-                nella Liturgia risuonano il canto gregoriano, la polifonia, la musica popolare e quella contemporanea…
-                La musica sacra crea ponti, avvicina le persone, riduce le distanze.
-                Per questo in ogni parrocchia il gruppo di canto è un gruppo dove si respira disponibilità e aiuto reciproco.<br>
-                <cite>Papa Francesco</cite>
-            </blockquote>
+                        <p>
+                            Negli ultimi mesi abbiamo anche cercato di <b>rinnovare il nostro repertorio</b>,
+                            per conciliare i canti più tradizionali, cari agli adulti,
+                            con quelli più vivaci e semplici, pensati per i bambini.
+                            In particolare, abbiamo cercato di inserire alcuni semplici elementi della <b>liturgia cantata</b>:
+                            il ritornello del Salmo, l'Agnello di Dio e, nelle celebrazioni più solenni,
+                            l'Atto Penitenziale (Kyrie). <br>
+                            Vogliamo che ogni Messa sia un momento di unità e partecipazione,
+                            in cui grandi e piccoli possano pregare e cantare insieme con la stessa gioia.
+                        </p>
 
-            <blockquote>
-                La musica sacra non è un ornamento, ma parte integrante della Liturgia.<br>
-                <cite>Benedetto XVI</cite>
-            </blockquote>
+                        <blockquote class="blockquote">
+                            <p class="is-italic">
+                                La musica sacra svolge anche un altro compito, quello di saldare insieme la storia cristiana:
+                                nella Liturgia risuonano il canto gregoriano, la polifonia, la musica popolare e quella contemporanea…
+                                La musica sacra crea ponti, avvicina le persone, riduce le distanze.
+                                Per questo in ogni parrocchia il gruppo di canto è un gruppo dove si respira disponibilità e aiuto reciproco.
+                            </p>
+                            <cite class="is-block has-text-right mt-1">— Papa Francesco</cite>
+                        </blockquote>
 
-            <p>
-                E per noi ogni canto è proprio questo: una parte viva della preghiera,
-                un modo per rendere più bella e partecipata la Messa.
-            </p>
+                        <blockquote>
+                            <p class="is-italic">La musica sacra non è un ornamento, ma parte integrante della Liturgia.</p>
+                            <cite class="is-block has-text-right mt-1">— Papa Benedetto XVI</cite>
+                        </blockquote>
 
-            <p>
-                Oggi il <b>Coro delle Dieci</b> è un gruppo vario e pieno di entusiasmo:
-                grandi e piccoli che cantano insieme per condividere la gioia, la fede e l’amicizia
-                che ci uniscono ogni settimana.
-            </p>
+                        <p>
+                            E per noi ogni canto è proprio questo: una parte viva della preghiera,
+                            un modo per rendere più bella e partecipata la Messa.
+                        </p>
 
-            <p>
-                E ogni domenica, tra note e sorrisi, proviamo a trasformare la nostra voce in un piccolo dono a Dio.
-            </p>
-        </section>
-        <!--
-        <section>
-            <h3>Lo staff</h3>
-            <div class="members">
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-stand1.png" alt=""></div>
-                    <div class="name">Alessandra</div>
-                    <div class="role">Direttrice</div>
-                </div>
-            </div>
-            <div class="members">
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/guitar3.png" alt=""></div>
-                    <div class="name">Gianpaolo</div>
-                    <div class="role">Chitarrista, referente e vice-direttore</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/guitar4.png" alt=""></div>
-                    <div class="name">Lisa</div>
-                    <div class="role">Chitarrista</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/guitar6.png" alt=""></div>
-                    <div class="name">Sara</div>
-                    <div class="role">Chitarrista</div>
-                </div>
-            </div>
-            <div class="members">
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/browser.png" alt=""></div>
-                    <div class="name">Anna</div>
-                    <div class="role">Contralto, animatrice e webmaster</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-notes1.png" alt=""></div>
-                    <div class="name">Alessia</div>
-                    <div class="role">Contralto e animatrice</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-books.png" alt=""></div>
-                    <div class="name">Giovanna</div>
-                    <div class="role">Contralto</div>
+                        <p>
+                            Oggi il <b>Coro delle Dieci</b> è un gruppo vario e pieno di entusiasmo:
+                            grandi e piccoli che cantano insieme per condividere la gioia, la fede e l'amicizia
+                            che ci uniscono ogni settimana.
+                        </p>
+
+                        <p class="has-text-weight-medium is-size-5 mt-5">
+                            E ogni domenica, tra note e sorrisi, proviamo a trasformare la nostra voce in un piccolo dono a Dio.
+                        </p>
+                    </section>
                 </div>
             </div>
 
-            <h3>Le voci</h3>
-            <div class="members">
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone3.png" alt=""></div>
-                    <div class="name">Jacopo</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone10.png" alt=""></div>
-                    <div class="name">Alan</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone1.png" alt=""></div>
-                    <div class="name">Mattia</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-            </div>
-            <div class="members">
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone20.png" alt=""></div>
-                    <div class="name">Iolanda</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone4.png" alt=""></div>
-                    <div class="name">Melissa</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone5.png" alt=""></div>
-                    <div class="name">Camilla</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone6.png" alt=""></div>
-                    <div class="name">Marta</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone7.png" alt=""></div>
-                    <div class="name">Maria</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone8.png" alt=""></div>
-                    <div class="name">Margherita</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone9.png" alt=""></div>
-                    <div class="name">Matilde</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone11.png" alt=""></div>
-                    <div class="name">Agata</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/microphone12.png" alt=""></div>
-                    <div class="name">Elisa</div>
-                    <div class="role">Corista<br>(voce bianca)</div>
-                </div>
-            </div>
-            <div class="members">
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-notes2.png" alt=""></div>
-                    <div class="name">Agnese</div>
-                    <div class="role">Contralto</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-notes3.png" alt=""></div>
-                    <div class="name">Luz</div>
-                    <div class="role">Contralto</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-notes4.png" alt=""></div>
-                    <div class="name">Alessandra</div>
-                    <div class="role">Contralto</div>
-                </div>
-                <div class="member">
-                    <div class="avatar"><img src="./images/music-icons/music-notes5.png" alt=""></div>
-                    <div class="name">Gioia</div>
-                    <div class="role">Contralto</div>
-                </div>
-            </div>
-        </section>
-        -->
+            <!-- Sezione Il coro - con layout a "palco" ma usando Bulma -->
+            <section class="coro-section mt-6">
+                <h3 class="title is-2 has-text-centered mb-6">Il coro</h3>
 
-        
-        <section class="coro">
-            <h3>Il coro</h3>
-
-            <div class="palco-coro">
-
-                <div class="riga adulti">
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-notes2.png" alt=""></div>
-                        <div class="name">Agnese</div>
-                        <div class="role">Contralto</div>
-                    </div>
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-notes3.png" alt=""></div>
-                        <div class="name">Luz</div>
-                        <div class="role">Contralto</div>
-                    </div>
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-notes4.png" alt=""></div>
-                        <div class="name">Alessandra</div>
-                        <div class="role">Contralto</div>
-                    </div>
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-notes5.png" alt=""></div>
-                        <div class="name">Gioia</div>
-                        <div class="role">Contralto</div>
-                    </div>
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/browser.png" alt=""></div>
-                        <div class="name">Anna</div>
-                        <div class="role">Contralto, animatrice e webmaster</div>
-                    </div>
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-notes1.png" alt=""></div>
-                        <div class="name">Alessia</div>
-                        <div class="role">Contralto e animatrice</div>
-                    </div>
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-books.png" alt=""></div>
-                        <div class="name">Giovanna</div>
-                        <div class="role">Contralto</div>
-                    </div>
-                </div>
-
-                <div class="riga centrale">
-
-                    <div class="colonna chitarristi">
+                <!-- Adulti (contralti) - usiamo Bulma columns -->
+                <div class="columns is-multiline is-centered is-variable is-2 mb-6">
+                    <div class="column is-narrow">
                         <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/guitar3.png" alt=""></div>
-                            <div class="name">Gianpaolo</div>
-                            <div class="role">Chitarrista, referente e vice-direttore</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/guitar4.png" alt=""></div>
-                            <div class="name">Lisa</div>
-                            <div class="role">Chitarrista</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/guitar6.png" alt=""></div>
-                            <div class="name">Sara</div>
-                            <div class="role">Chitarrista</div>
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-notes2.png" alt="">
+                            </div>
+                            <p class="name">Agnese</p>
+                            <p class="role">Contralto</p>
                         </div>
                     </div>
-
-                    <div class="colonna femmine">
+                    <div class="column is-narrow">
                         <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone20.png" alt=""></div>
-                            <div class="name">Iolanda</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone4.png" alt=""></div>
-                            <div class="name">Melissa</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone5.png" alt=""></div>
-                            <div class="name">Camilla</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone6.png" alt=""></div>
-                            <div class="name">Marta</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone7.png" alt=""></div>
-                            <div class="name">Maria</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone8.png" alt=""></div>
-                            <div class="name">Margherita</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone9.png" alt=""></div>
-                            <div class="name">Matilde</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone11.png" alt=""></div>
-                            <div class="name">Agata</div>
-                            <div class="role">Voce bianca</div>
-                        </div>
-                        <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone12.png" alt=""></div>
-                            <div class="name">Elisa</div>
-                            <div class="role">Voce bianca</div>
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-notes3.png" alt="">
+                            </div>
+                            <p class="name">Luz</p>
+                            <p class="role">Contralto</p>
                         </div>
                     </div>
-
-                    <div class="colonna maschi">
+                    <div class="column is-narrow">
                         <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone1.png" alt=""></div>
-                            <div class="name">Mattia</div>
-                            <div class="role">Voce bianca</div>
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-notes4.png" alt="">
+                            </div>
+                            <p class="name">Alessandra</p>
+                            <p class="role">Contralto</p>
                         </div>
+                    </div>
+                    <div class="column is-narrow">
                         <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone3.png" alt=""></div>
-                            <div class="name">Jacopo</div>
-                            <div class="role">Voce bianca</div>
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-notes5.png" alt="">
+                            </div>
+                            <p class="name">Gioia</p>
+                            <p class="role">Contralto</p>
                         </div>
+                    </div>
+                    <div class="column is-narrow">
                         <div class="member">
-                            <div class="avatar"><img src="./images/music-icons/microphone10.png" alt=""></div>
-                            <div class="name">Alan</div>
-                            <div class="role">Voce bianca</div>
+                            <div class="avatar">
+                                <img src="./images/music-icons/browser.png" alt="">
+                            </div>
+                            <p class="name">Anna</p>
+                            <p class="role">Contralto, animatrice e webmaster</p>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <div class="member">
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-notes1.png" alt="">
+                            </div>
+                            <p class="name">Alessia</p>
+                            <p class="role">Contralto e animatrice</p>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <div class="member">
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-books.png" alt="">
+                            </div>
+                            <p class="name">Giovanna</p>
+                            <p class="role">Contralto</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="riga direttrice">
-                    <div class="member">
-                        <div class="avatar"><img src="./images/music-icons/music-stand1.png" alt=""></div>
-                        <div class="name">Alessandra</div>
-                        <div class="role">Direttrice</div>
+                <!-- Riga centrale: chitarristi + voci bianche -->
+                <div class="columns is-variable is-5 is-8-desktop is-offset-2-desktop mb-6">
+                    <!-- Chitarristi (colonna sinistra) -->
+                    <div class="column is-4-desktop is-12-tablet">
+                        <div class="has-text-centered mb-3">
+                            <span class="tag is-primary is-medium">Chitarristi</span>
+                        </div>
+                        <div class="columns is-multiline is-centered is-variable is-2">
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/guitar3.png" alt="">
+                                    </div>
+                                    <p class="name">Gianpaolo</p>
+                                    <p class="role">Chitarrista, referente e vice-direttore</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/guitar4.png" alt="">
+                                    </div>
+                                    <p class="name">Lisa</p>
+                                    <p class="role">Chitarrista</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/guitar6.png" alt="">
+                                    </div>
+                                    <p class="name">Sara</p>
+                                    <p class="role">Chitarrista</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Voci bianche femminili (colonna centrale) -->
+                    <div class="column is-5-desktop is-12-tablet">
+                        <div class="has-text-centered mb-3">
+                            <span class="tag is-primary is-medium">Voci bianche</span>
+                        </div>
+                        <div class="columns is-multiline is-centered is-variable is-2">
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone20.png" alt="">
+                                    </div>
+                                    <p class="name">Iolanda</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone4.png" alt="">
+                                    </div>
+                                    <p class="name">Melissa</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone5.png" alt="">
+                                    </div>
+                                    <p class="name">Camilla</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone6.png" alt="">
+                                    </div>
+                                    <p class="name">Marta</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone7.png" alt="">
+                                    </div>
+                                    <p class="name">Maria</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone8.png" alt="">
+                                    </div>
+                                    <p class="name">Margherita</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone9.png" alt="">
+                                    </div>
+                                    <p class="name">Matilde</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone11.png" alt="">
+                                    </div>
+                                    <p class="name">Agata</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone12.png" alt="">
+                                    </div>
+                                    <p class="name">Elisa</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Voci bianche maschili (colonna destra) -->
+                    <div class="column is-3-desktop is-12-tablet">
+                        <div class="has-text-centered mb-3">
+                            <span class="tag is-primary is-medium">Voci bianche</span>
+                        </div>
+                        <div class="columns is-multiline is-centered is-variable is-2">
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone1.png" alt="">
+                                    </div>
+                                    <p class="name">Mattia</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone3.png" alt="">
+                                    </div>
+                                    <p class="name">Jacopo</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                            <div class="column is-narrow">
+                                <div class="member">
+                                    <div class="avatar">
+                                        <img src="./images/music-icons/microphone10.png" alt="">
+                                    </div>
+                                    <p class="name">Alan</p>
+                                    <p class="role">Voce bianca</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-        </section>
+                <!-- Direttrice (centrata) -->
+                <div class="columns is-centered">
+                    <div class="column is-narrow">
+                        <div class="member">
+                            <div class="avatar">
+                                <img src="./images/music-icons/music-stand1.png" alt="">
+                            </div>
+                            <p class="name">Alessandra</p>
+                            <p class="role">Direttrice</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        
-        <section class="link"><a href="https://www.flaticon.com/free-icons/music" title="flaticon icons" target="_blank">Icons created by Freepik - Flaticon</a></section>
+            <!-- Link Flaticon -->
+            <section class="has-text-centered mt-6">
+                <a href="https://www.flaticon.com/free-icons/music" title="flaticon icons" target="_blank" class="is-size-7 has-text-grey">
+                    Icons created by Freepik - Flaticon
+                </a>
+            </section>
+        </div>
     </main>
-    
+
     <footer>
         <p>&copy; 2025 Coro delle Dieci - <a class="privacy" href="privacy">Privacy e note legali</a></p>
     </footer>
-
-    <!--<script src="./script/contatore-visite.js"></script>-->
-    
 </body>
 </html>

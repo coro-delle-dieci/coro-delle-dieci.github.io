@@ -97,13 +97,10 @@ h3 {
 }
 
 blockquote {
-    font-style: italic;
-    background: #f7f7f7;
-    border-left: 4px solid #061a40;
-    margin: 1em 0;
-    padding: 1em 2.5em;
+    border-left: 4px solid #061a40 !important;
     border-radius: 6px;
     position: relative;
+    padding-left: 2.2rem !important;
 }
 
 blockquote::before {

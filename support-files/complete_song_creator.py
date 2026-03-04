@@ -128,8 +128,8 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
             <section>
                 <div class="download">
-                    <a href="../pdf-testi/{filename}.pdf" download target="_blank" class="download-link">
-                        <img class="ico" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                    <a href="../pdf-testi/{filename}.pdf" target="_blank" class="download-link">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
                         <span>Scarica il testo in PDF</span>
                     </a>
                 </div>

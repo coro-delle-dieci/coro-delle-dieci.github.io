@@ -10,6 +10,9 @@ env/
 # Logs
 *.log
 
+# Visual Studio Code
+.vscode/
+
 # Pagina Chi siamo e relativi immagini e CSS
 #images/music-icons/
 #images/music-icons/*

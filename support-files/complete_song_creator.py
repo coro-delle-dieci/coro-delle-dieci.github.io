@@ -82,24 +82,30 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
     filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
     html_template = f'''<!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/canti.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <title>Accogli Signore i nostri doni</title>
+
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
     <link rel="manifest" href="../images/site.webmanifest">
-    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#061a40">
+
     <meta name="msapplication-TileColor" content="#061a40">
     <meta name="theme-color" content="#061a40">
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/canti.css">
+
+    <script src="https://cdn.counter.dev/script.js" data-id="0b8a28a7-bd9e-4970-aa87-bd107e273a32" data-utcoffset="1"></script>
 </head>
+
 <body>
     <header>
         <h1><a href="../">Coro delle Dieci</a></h1>
-
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">
             <span></span>
@@ -129,12 +135,13 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             <section>
                 <div class="download">
                     <a href="../pdf-testi/{filename}.pdf" target="_blank" class="download-link">
-                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf" src="../images/text-file.png">
+                        <img class="ico" height="32px" width="32px" alt="canto.pdf" title="canto.pdf"
+                            src="../images/text-file.png">
                         <span>Scarica il testo in PDF</span>
                     </a>
                 </div>
             </section>
-        </section>
+        </aside>
     </main>
 
     <footer>
@@ -148,7 +155,9 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
     <script src="../script/get-zoom.js" defer></script>
     <script src="../script/auto-scroll.js" defer></script>
+    <!--<script src="../script/contatore-visite.js"></script>-->
 </body>
+
 </html>'''
 
     # Salva il file

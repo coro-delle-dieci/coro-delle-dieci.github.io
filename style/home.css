@@ -68,7 +68,7 @@ aside, .centre-column {
     line-height: 1;
 }
 
-.restart {
+.restart, .end {
     background: linear-gradient(#ebeafa, #ebeafa) padding-box,
                 linear-gradient(115deg, #061a40, #0446bf) border-box;
 }
@@ -77,8 +77,6 @@ aside, .centre-column {
     background: linear-gradient(#faeaea, #faeaea) padding-box,
                 linear-gradient(115deg, #56050b, #cf0a17) border-box;
 }
-
-.restart .warning-content b, .restart .closing, .christmas h3 { color: #061a40; }
 
 .christmas .warning-content b { color: #325632; }
 

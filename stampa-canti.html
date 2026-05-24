@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stampa Canti | Messale</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,400;0,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+        :root {
+            --font-canti: 'EB Garamond', Georgia, 'Times New Roman', serif;
+            --font-numeri: 'EB Garamond', Georgia, 'Times New Roman', serif;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .content-wrap {
+            padding: 0;
+        }
+
+        /* ── TOOLBAR ── */
+        .toolbar {
+            background: #fafafa;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .btn-stampa {
+            background: #1a1a1a;
+            border: none;
+            color: white;
+            font-weight: 500;
+            padding: 0.5rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-stampa:hover {
+            background: #333;
+        }
+
+        .font-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .font-selector label {
+            font-size: 0.75rem;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .font-btn {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.15s;
+            color: #333;
+        }
+
+        .font-btn:hover {
+            border-color: #888;
+        }
+
+        .font-btn.attivo {
+            background: #1a1a1a;
+            color: #fff;
+            border-color: #1a1a1a;
+        }
+
+        /* ── EDITOR ── */
+        .editor-container {
+            background: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .editor-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        .editor-scroll {
+            overflow-y: auto;
+        }
+
+        .editor-riga {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            flex-wrap: wrap;
+        }
+
+        .editor-riga:last-child {
+            border-bottom: none;
+        }
+
+        .numero-input,
+        .numero-input2 {
+            width: 130px;
+            padding: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #fff;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        .numero-input:focus,
+        .numero-input2:focus {
+            border-color: #888;
+            outline: none;
+        }
+
+        .canto-label {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #111;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .input-group span {
+            font-size: 0.7rem;
+            color: #888;
+        }
+
+        .info-note {
+            font-size: 0.7rem;
+            color: #888;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        /* ── FOGLIETTI ── */
+        #pagina {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10mm;
+            margin-top: 1rem;
+        }
+
+        .foglietto {
+            border: 1px solid #ddd;
+            background: white;
+            padding: 2mm;
+            position: relative;
+            page-break-inside: avoid;
+            max-height: 9cm;
+        }
+
+        .foglietto-data {
+            font-family: var(--font-canti);
+            font-size: 10pt;
+            color: #666;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .canto-indicazione {
+            font-weight: normal;
+            font-style: italic;
+            color: #555;
+            flex-shrink: 0;
+            font-size: 14pt;
+        }
+
+        .canti p {
+            font-size: 17pt;
+            margin: 5px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            line-height: 1.15;
+            gap: 8px;
+            font-family: var(--font-canti);
+        }
+
+        .canti p:first-child {
+            margin-top: 0;
+        }
+
+        .canti p:last-child {
+            margin-bottom: 0;
+        }
+
+        .canto-titolo {
+            flex: 0 1 auto;
+            font-weight: normal;
+            color: #000;
+        }
+
+        .canto-numero,
+        .canto-numero2 {
+            font-weight: bolder;
+            margin-left: 5mm;
+            flex-shrink: 0;
+            white-space: nowrap;
+            font-size: 17pt;
+            background: none;
+            padding: 0;
+            color: #111;
+            font-family: var(--font-numeri);
+        }
+
+        /* ── STAMPA ── */
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+                margin: 0;
+                min-height: 0;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            #pagina {
+                gap: 2mm;
+                margin: 2mm;
+                display: grid;
+            }
+
+            .foglietto {
+                border: 1px solid #ccc;
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            .canto-numero,
+            .canto-numero2 {
+                background: none;
+                font-weight: 700;
+                margin-left: 2mm;
+                font-size: 17pt;
+            }
+        }
+
+        /* ── MOBILE ── */
+        @media (max-width: 700px) {
+            .editor-riga {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .input-group {
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            .canto-label {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar no-print">
+        <div class="is-flex is-align-items-center">
+            <i class="fa-solid fa-book-open" style="color: #1a1a1a;"></i>
+            <span style="font-weight: 500; margin-left: 8px; color: #1a1a1a;">Canti liturgici</span>
+            <span class="ml-3" style="font-size: 0.75rem; color: #777;">5+1 foglietti</span>
+        </div>
+        <div class="font-selector">
+            <label>Font:</label>
+            <button class="font-btn attivo" data-font="garamond"
+                onclick="cambiaFont('garamond', this)">Garamond</button>
+            <button class="font-btn" data-font="lato" onclick="cambiaFont('lato', this)">Lato</button>
+            <button class="font-btn" data-font="sourceserif" onclick="cambiaFont('sourceserif', this)">Source
+                Serif</button>
+        </div>
+        <button onclick="window.print()" class="btn-stampa">
+            <i class="fa-solid fa-print" style="color: #fafafa;"></i>&emsp;Stampa
+        </button>
+    </div>
+
+    <div class="content-wrap">
+        <div id="editor-container" class="no-print"></div>
+        <div id="pagina"></div>
+    </div>
+</body>
+
+<script>
+    const sheetId = "1NYcf3upDR8YLuPX0dm__T1ArAZLXBIdNRBgzwC5GCa0";
+    const sheetUrl = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:json`;
+
+    let listaCanti = [];
+    let dataFoglietto = "";
+
+    function formattaData(data) {
+        const opzioni = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+        return new Intl.DateTimeFormat('it-IT', opzioni).format(data);
+    }
+
+    async function caricaCanti() {
+        try {
+            const response = await fetch(sheetUrl);
+            const text = await response.text();
+            const json = JSON.parse(text.substring(47).slice(0, -2));
+            const rows = json.table.rows;
+
+            // Leggi la data dalla prima riga, colonna C (indice 2)
+            const dataCell = rows[0]?.c?.[2];
+            if (dataCell?.v) {
+                const d = new Date(dataCell.v);
+                dataFoglietto = formattaData(d);
+            }
+
+            listaCanti = [];
+
+            rows.slice(1).forEach(row => {
+                if (!row.c || row.c.length < 3) return;
+
+                const titolo = row.c[0]?.v?.trim();
+                const indicazione = row.c[2]?.v?.trim();
+
+                if (!titolo || !indicazione) return;
+                if (indicazione.toLowerCase().includes("salmo")) return;
+
+                listaCanti.push({ titolo, indicazione });
+            });
+
+            mostraEditor();
+            generaFoglietti();
+
+        } catch (err) {
+            console.error("Errore caricamento canti:", err);
+            const container = document.getElementById("editor-container");
+            if (container) {
+                container.innerHTML = `<div class="notification is-light is-danger" style="font-size:0.9rem;"><i class="fas fa-exclamation-triangle"></i> Impossibile caricare i canti. Verifica connessione o foglio Google.</div>`;
+            }
+        }
+    }
+
+    function mostraEditor() {
+        const container = document.getElementById("editor-container");
+        if (!container) return;
+        container.innerHTML = "";
+
+        const editorDiv = document.createElement("div");
+        editorDiv.className = "editor-container";
+        editorDiv.id = "editor-canti";
+
+        const titleDiv = document.createElement("div");
+        titleDiv.className = "editor-title";
+        titleDiv.innerHTML = `<i class="fas fa-hashtag"></i> Assegna numeri ai canti <span style="font-size:0.7rem; font-weight:normal;">(primo numero per i primi 5 foglietti, secondo per il sesto)</span>`;
+        editorDiv.appendChild(titleDiv);
+
+        const scrollDiv = document.createElement("div");
+        scrollDiv.className = "editor-scroll";
+
+        listaCanti.forEach((canto, idx) => {
+            const riga = document.createElement("div");
+            riga.className = "editor-riga";
+
+            const inputGroup = document.createElement("div");
+            inputGroup.className = "input-group";
+
+            const input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = "Num. coro";
+            input.className = "numero-input";
+            input.setAttribute("data-index", idx);
+
+            const spanSep = document.createElement("span");
+            spanSep.textContent = "•";
+
+            const input2 = document.createElement("input");
+            input2.type = "text";
+            input2.placeholder = "Num. assemblea";
+            input2.className = "numero-input2";
+            input2.setAttribute("data-index2", idx);
+
+            inputGroup.appendChild(input);
+            inputGroup.appendChild(spanSep);
+            inputGroup.appendChild(input2);
+
+            const spanCanto = document.createElement("span");
+            spanCanto.className = "canto-label";
+            spanCanto.innerText = canto.titolo;
+
+            riga.appendChild(inputGroup);
+            riga.appendChild(spanCanto);
+            scrollDiv.appendChild(riga);
+        });
+
+        editorDiv.appendChild(scrollDiv);
+        container.appendChild(editorDiv);
+
+        caricaNumeriSalvati();
+
+        document.querySelectorAll(".numero-input, .numero-input2").forEach(input => {
+            input.addEventListener("input", () => {
+                generaFoglietti();
+                salvaNumeri();
+            });
+        });
+    }
+
+    function salvaNumeri() {
+        const numeri1 = {};
+        const numeri2 = {};
+
+        document.querySelectorAll(".numero-input").forEach(input => {
+            const index = input.getAttribute("data-index");
+            const valore = input.value.trim();
+            if (valore) numeri1[index] = valore;
+        });
+
+        document.querySelectorAll(".numero-input2").forEach(input => {
+            const index = input.getAttribute("data-index2");
+            const valore = input.value.trim();
+            if (valore) numeri2[index] = valore;
+        });
+
+        localStorage.setItem("numeriCanti1", JSON.stringify(numeri1));
+        localStorage.setItem("numeriCanti2", JSON.stringify(numeri2));
+        localStorage.setItem("numeriCanti_timestamp", Date.now());
+    }
+
+    function caricaNumeriSalvati() {
+        const scadenza = 24 * 60 * 60 * 1000;
+        const timestamp = localStorage.getItem("numeriCanti_timestamp");
+        const ora = Date.now();
+
+        if (timestamp && (ora - parseInt(timestamp)) < scadenza) {
+            const numeri1Salvati = localStorage.getItem("numeriCanti1");
+            if (numeri1Salvati) {
+                const numeri1 = JSON.parse(numeri1Salvati);
+                Object.keys(numeri1).forEach(index => {
+                    const input = document.querySelector(`.numero-input[data-index="${index}"]`);
+                    if (input) input.value = numeri1[index];
+                });
+            }
+
+            const numeri2Salvati = localStorage.getItem("numeriCanti2");
+            if (numeri2Salvati) {
+                const numeri2 = JSON.parse(numeri2Salvati);
+                Object.keys(numeri2).forEach(index => {
+                    const input = document.querySelector(`.numero-input2[data-index2="${index}"]`);
+                    if (input) input.value = numeri2[index];
+                });
+            }
+            return true;
+        }
+        return false;
+    }
+
+    function generaListaHTMLPrimari() {
+        let html = "";
+        listaCanti.forEach((canto, i) => {
+            const inputEl = document.querySelector(`.numero-input[data-index="${i}"]`);
+            const numero = inputEl ? inputEl.value.trim() : "";
+            const titoloSafe = escapeHtml(canto.titolo);
+            const numeroSafe = escapeHtml(numero);
+            html += `<p>
+                <span class="canto-titolo">${titoloSafe}</span>
+                ${numeroSafe ? `<span class="canto-numero">${numeroSafe}</span>` : ""}
+            </p>`;
+        });
+        return html;
+    }
+
+    function generaListaHTMLSecondari() {
+        let html = "";
+        listaCanti.forEach((canto, i) => {
+            const input2El = document.querySelector(`.numero-input2[data-index2="${i}"]`);
+            const numero2 = input2El?.value.trim() || "";
+            if (!numero2) return;
+            const titoloSafe = escapeHtml(canto.titolo);
+            const indicazioneSafe = escapeHtml(canto.indicazione.replace(/\s*\(\d+\)\s*$/, "").trim());
+            const numero2Safe = escapeHtml(numero2);
+            html += `<p>
+                ${indicazioneSafe ? `<span class="canto-indicazione">${indicazioneSafe}:</span> ` : ""}
+                <span class="canto-titolo">${titoloSafe}</span>
+                <span class="canto-numero2">${numero2Safe}</span>
+            </p>`;
+        });
+
+        if (html === "") {
+            html = `<p style="font-style: italic; color: #999; justify-content: center;">— Nessun canto con numero secondario —</p>`;
+        }
+        return html;
+    }
+
+    function escapeHtml(str) {
+        if (!str) return "";
+        return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m]));
+    }
+
+    function generaFoglietti() {
+        const pagina = document.getElementById("pagina");
+        if (!pagina) return;
+
+        const listaPrimari = generaListaHTMLPrimari();
+        const listaSecondari = generaListaHTMLSecondari();
+
+        pagina.innerHTML = "";
+
+        const dataHtml = dataFoglietto
+            ? `<div class="foglietto-data">${escapeHtml(dataFoglietto)}</div>`
+            : "";
+
+        for (let i = 0; i < 5; i++) {
+            const foglietto = document.createElement("div");
+            foglietto.className = "foglietto";
+            foglietto.innerHTML = `${dataHtml}<div class="canti">${listaPrimari}</div>`;
+            pagina.appendChild(foglietto);
+        }
+
+        const sestoFoglietto = document.createElement("div");
+        sestoFoglietto.className = "foglietto";
+        sestoFoglietto.innerHTML = `${dataHtml}<div class="canti">${listaSecondari}</div>`;
+        pagina.appendChild(sestoFoglietto);
+    }
+
+    const fontMap = {
+        garamond: { canti: "'EB Garamond', Georgia, serif", numeri: "'EB Garamond', Georgia, serif" },
+        lato: { canti: "'Lato', system-ui, sans-serif", numeri: "'Lato', system-ui, sans-serif" },
+        sourceserif: { canti: "'Source Serif 4', Georgia, serif", numeri: "'Source Serif 4', Georgia, serif" }
+    };
+
+    function cambiaFont(nome, btn) {
+        const f = fontMap[nome];
+        if (!f) return;
+        document.documentElement.style.setProperty('--font-canti', f.canti);
+        document.documentElement.style.setProperty('--font-numeri', f.numeri);
+        document.querySelectorAll('.font-btn').forEach(b => b.classList.remove('attivo'));
+        btn.classList.add('attivo');
+        localStorage.setItem('fontCanti', nome);
+    }
+
+    function ripristinaFont() {
+        const saved = localStorage.getItem('fontCanti');
+        if (saved) {
+            const btn = document.querySelector(`.font-btn[data-font="${saved}"]`);
+            if (btn) cambiaFont(saved, btn);
+        }
+    }
+
+    caricaCanti();
+    ripristinaFont();
+</script>
+
+</html>

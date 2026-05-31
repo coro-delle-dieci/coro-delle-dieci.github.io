@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
         'dona-la-pace': 'https://www.youtube-nocookie.com/embed/PWbi0Fz8_0Q',
         'il-signore-e-la-mia-forza': 'https://www.youtube-nocookie.com/embed/0u920dwDucc',
         'jubilate-servite': 'https://www.youtube-nocookie.com/embed/ri2lolcTu2c',
+        'la-tenebre': 'https://www.youtube-nocookie.com/embed/vVZ0bTCRHW4',
         'laudate-omnes-gentes': 'https://www.youtube-nocookie.com/embed/nYBfHdbf-6M',
         'magnificat': 'https://www.youtube-nocookie.com/embed/ijHz0HfRt10',
         'misericordias-domini': 'https://www.youtube-nocookie.com/embed/9O0bbMusa3U',
         'nada-te-turbe': 'https://www.youtube-nocookie.com/embed/CfFm72k-6DE',
         'niente-ti-turbi': "https://www.youtube-nocookie.com/embed/989DyIWvRRo",
+        'questa-notte': 'https://www.youtube-nocookie.com/embed/OclYePzhaUA',
         'tui-amoris-ignem': 'https://www.youtube-nocookie.com/embed/s1EW-43E_Hk',
         'ubi-caritas': 'https://www.youtube-nocookie.com/embed/MYfyoRi3t8I',
     };

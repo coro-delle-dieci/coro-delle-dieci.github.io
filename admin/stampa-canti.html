@@ -5,388 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stampa Canti | Messale</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,400;0,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-
-        :root {
-            --font-canti: 'EB Garamond', Georgia, 'Times New Roman', serif;
-            --font-numeri: 'EB Garamond', Georgia, 'Times New Roman', serif;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            background: #ffffff;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-        }
-
-        .content-wrap {
-            padding: 0;
-        }
-
-        /* ── TOOLBAR ── */
-        .toolbar {
-            background: #fafafa;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 1rem 1.5rem;
-            margin-bottom: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .btn-stampa {
-            background: #1a1a1a;
-            border: none;
-            color: white;
-            font-weight: 500;
-            padding: 0.5rem 1.2rem;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            transition: 0.2s;
-            cursor: pointer;
-        }
-
-        .btn-stampa:hover {
-            background: #333;
-        }
-
-        .font-selector {
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-        }
-
-        .font-selector label {
-            font-size: 0.75rem;
-            color: #666;
-            white-space: nowrap;
-        }
-
-        .font-btn {
-            background: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 0.3rem 0.7rem;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: 0.15s;
-            color: #333;
-        }
-
-        .font-btn:hover {
-            border-color: #888;
-        }
-
-        .font-btn.attivo {
-            background: #1a1a1a;
-            color: #fff;
-            border-color: #1a1a1a;
-        }
-
-        /* ── TOGGLE SWITCH ── */
-        .toggle-group {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .toggle-group span {
-            font-size: 0.75rem;
-            color: #666;
-            white-space: nowrap;
-            user-select: none;
-        }
-
-        .toggle-switch {
-            position: relative;
-            width: 36px;
-            height: 20px;
-            flex-shrink: 0;
-            background: #ccc;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .toggle-switch::after {
-            content: '';
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            left: 3px;
-            top: 3px;
-            background: white;
-            border-radius: 50%;
-            transition: transform 0.2s;
-        }
-
-        .toggle-switch.on {
-            background: #1a1a1a;
-        }
-
-        .toggle-switch.on::after {
-            transform: translateX(16px);
-        }
-
-        /* ── EDITOR ── */
-        .editor-container {
-            background: #fff;
-            border: 1px solid #eaeaea;
-            border-radius: 8px;
-            padding: 1.2rem 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .editor-title {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 600;
-            color: #555;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.5rem;
-        }
-
-        .editor-scroll {
-            overflow-y: auto;
-        }
-
-        .editor-riga {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f0f0f0;
-            flex-wrap: wrap;
-        }
-
-        .editor-riga:last-child {
-            border-bottom: none;
-        }
-
-        .numero-input,
-        .numero-input2 {
-            width: 130px;
-            padding: 0.4rem;
-            font-size: 0.85rem;
-            font-weight: 400;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background: #fff;
-            font-family: monospace;
-            text-align: center;
-        }
-
-        .numero-input:focus,
-        .numero-input2:focus {
-            border-color: #888;
-            outline: none;
-        }
-
-        .canto-label {
-            font-size: 0.95rem;
-            font-weight: 400;
-            color: #111;
-            flex: 1;
-            min-width: 200px;
-        }
-
-        .input-group {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .input-group span {
-            font-size: 0.7rem;
-            color: #888;
-        }
-
-        .info-note {
-            font-size: 0.7rem;
-            color: #888;
-            margin-top: 0.5rem;
-            padding-top: 0.5rem;
-            border-top: 1px solid #eee;
-        }
-
-        /* ── FOGLIETTI ── */
-        #pagina {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10mm;
-            margin-top: 1rem;
-        }
-
-        .foglietto {
-            border: 1px solid #ddd;
-            background: white;
-            padding: 2mm;
-            position: relative;
-            page-break-inside: avoid;
-            max-height: 9.6cm;
-        }
-
-        .foglietto-data {
-            font-family: var(--font-canti);
-            font-size: 10pt;
-            color: #666;
-            text-align: right;
-            padding: 0;
-            margin: 0;
-            font-style: italic;
-        }
-
-        .canto-indicazione {
-            font-weight: normal;
-            font-style: italic;
-            color: #555;
-            flex-shrink: 0;
-            font-size: 14pt;
-        }
-
-        .canti p {
-            font-size: 14pt;
-            margin: 5px 0;
-            display: flex;
-            justify-content: flex-start;
-            align-items: baseline;
-            line-height: 1.15;
-            gap: 8px;
-            font-family: var(--font-canti);
-        }
-
-        .canti p:first-child {
-            margin-top: 0;
-        }
-
-        .canti p:last-child {
-            margin-bottom: 0;
-        }
-
-        .canto-titolo {
-            flex: 0 1 auto;
-            font-weight: normal;
-            color: #000;
-        }
-
-        .canto-numero,
-        .canto-numero2 {
-            font-weight: bolder;
-            margin-left: 5mm;
-            flex-shrink: 0;
-            white-space: nowrap;
-            font-size: 14pt;
-            background: none;
-            padding: 0;
-            color: #111;
-            font-family: var(--font-numeri);
-        }
-
-        /* ── BARRA ALTEZZA ── */
-        .barra-altezza {
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            font-size: 0.85rem;
-            color: #555;
-            background: #f5f5f5;
-            border: 1px solid #e0e0e0;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .barra-altezza strong {
-            color: #555;
-        }
-
-        .barra-altezza.sforato {
-            background: #fff4f4;
-            border-color: #f5c0c0;
-            color: #333;
-        }
-
-        .barra-altezza .ok {
-            color: #2a7a2a;
-            font-size: 0.8rem;
-        }
-
-        .barra-altezza .avviso-sforato {
-            color: #cc0000;
-            font-weight: bold;
-            font-size: 0.8rem;
-        }
-
-        /* ── STAMPA ── */
-        @media print {
-            body {
-                padding: 0;
-                background: white;
-                margin: 0;
-                min-height: 0;
-            }
-
-            .no-print {
-                display: none !important;
-            }
-
-            #pagina {
-                gap: 2mm;
-                margin: 2mm;
-                display: grid;
-            }
-
-            .foglietto {
-                border: 1px solid #ccc;
-                break-inside: avoid;
-                page-break-inside: avoid;
-            }
-
-            .canto-numero,
-            .canto-numero2 {
-                background: none;
-                font-weight: 700;
-                margin-left: 2mm;
-                font-size: 14pt;
-            }
-        }
-
-        /* ── MOBILE ── */
-        @media (max-width: 700px) {
-            .editor-riga {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .input-group {
-                width: 100%;
-                justify-content: flex-start;
-            }
-
-            .canto-label {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/stampa-canti.css">
 </head>
 
 <body>
     <div class="toolbar no-print">
-        <div class="is-flex is-align-items-center">
-            <i class="fa-solid fa-book-open" style="color: #1a1a1a;"></i>
-            <span style="font-weight: 500; margin-left: 8px; color: #1a1a1a;">Canti liturgici</span>
-            <span class="ml-3" style="font-size: 0.75rem; color: #777;">5+1 foglietti</span>
+        <div class="toolbar-brand">
+            <i class="fa-solid fa-book-open"></i>
+            <span class="brand-title">Canti liturgici</span>
+            <span class="brand-sub">5+1 foglietti</span>
         </div>
         <div class="toggle-group">
             <span>Altezza</span>
@@ -607,12 +237,20 @@
         return abbreviazioni[key] || indicazione;
     }
 
+    function abbreviaTitolo(titolo) {
+        const agnello = titolo.match(/^Agnello di Dio\s*\(([^)]+)\)/i);
+        if (agnello) return agnello[1].trim();
+        const alleluia = titolo.match(/^Alleluia[,\s]+(.+)/i);
+        if (alleluia) return `All. ${alleluia[1].trim()}`;
+        return titolo;
+    }
+
     function generaListaHTMLPrimari() {
         let html = "";
         listaCanti.forEach((canto, i) => {
             const inputEl = document.querySelector(`.numero-input[data-index="${i}"]`);
             const numero = inputEl ? inputEl.value.trim() : "";
-            const titoloSafe = escapeHtml(canto.titolo);
+            const titoloSafe = escapeHtml(abbreviaTitolo(canto.titolo));
             const numeroSafe = escapeHtml(numero);
             const indicazione = canto.indicazione.replace(/\s*\(\d+\)\s*$/, "").trim();
             const indicazioneSafe = escapeHtml(abbrevia(indicazione));
@@ -631,7 +269,7 @@
             const input2El = document.querySelector(`.numero-input2[data-index2="${i}"]`);
             const numero2 = input2El?.value.trim() || "";
             if (!numero2) return;
-            const titoloSafe = escapeHtml(canto.titolo);
+            const titoloSafe = escapeHtml(abbreviaTitolo(canto.titolo));
             const indicazioneSafe = escapeHtml(canto.indicazione.replace(/\s*\(\d+\)\s*$/, "").trim());
             const numero2Safe = escapeHtml(numero2);
             html += `<p>

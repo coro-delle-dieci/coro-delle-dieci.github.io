@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,400;0,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/* ── VARIABILI FONT FOGLIETTI ── */
+:root {
+    --font-canti: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    --font-numeri: 'EB Garamond', Georgia, 'Times New Roman', serif;
+}
+
+/* ── BASE ── */
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #061a40;
+}
+
+.content-wrap {
+    padding: 1.5rem 2rem 2rem;
+}
+
+/* ── TOOLBAR ── */
+.toolbar {
+    background: #061a40;
+    border-bottom: 1px solid #0a2460;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+}
+
+.toolbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+}
+
+.toolbar-brand i {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.toolbar-brand .brand-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: white;
+}
+
+.toolbar-brand .brand-sub {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-left: 0.5rem;
+}
+
+/* ── TOGGLE SWITCH ── */
+.toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggle-group span {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    user-select: none;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 36px;
+    height: 20px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 3px;
+    top: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.toggle-switch.on {
+    background: #2a89c8;
+}
+
+.toggle-switch.on::after {
+    transform: translateX(16px);
+}
+
+/* ── FONT SELECTOR ── */
+.font-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.font-selector label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+}
+
+.font-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 0.25rem 0.65rem;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: 0.15s;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: inherit;
+}
+
+.font-btn:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+    color: white;
+}
+
+.font-btn.attivo {
+    background: white;
+    color: #061a40;
+    border-color: white;
+    font-weight: 600;
+}
+
+/* ── PULSANTE STAMPA ── */
+.btn-stampa {
+    background: #2a89c8;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    transition: background 0.2s;
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-stampa:hover {
+    background: #1e6fa0;
+}
+
+/* ── EDITOR ── */
+.editor-container {
+    background: white;
+    border: 1px solid #e0e6ef;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+}
+
+.editor-title {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #061a40;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eaeff7;
+    padding-bottom: 0.5rem;
+}
+
+.editor-scroll {
+    overflow-y: auto;
+}
+
+.editor-riga {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f4f9;
+    flex-wrap: wrap;
+}
+
+.editor-riga:last-child {
+    border-bottom: none;
+}
+
+.numero-input,
+.numero-input2 {
+    width: 130px;
+    padding: 0.4rem;
+    font-size: 0.85rem;
+    border: 1px solid #c8d3e0;
+    border-radius: 4px;
+    background: #f8f9fa;
+    font-family: monospace;
+    text-align: center;
+    color: #061a40;
+    transition: border-color 0.15s;
+}
+
+.numero-input:focus,
+.numero-input2:focus {
+    border-color: #2a89c8;
+    outline: none;
+    background: white;
+}
+
+.canto-label {
+    font-size: 0.95rem;
+    color: #061a40;
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-group span {
+    font-size: 0.7rem;
+    color: #aaa;
+}
+
+/* ── FOGLIETTI ── */
+#pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10mm;
+    margin-top: 1rem;
+}
+
+.foglietto {
+    border: 1px solid #c8d3e0;
+    background: white;
+    padding: 2mm;
+    position: relative;
+    page-break-inside: avoid;
+    max-height: 8.2cm;
+    border-radius: 3px;
+}
+
+.foglietto-data {
+    font-family: var(--font-canti);
+    font-size: 10pt;
+    color: #666;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+}
+
+.canto-indicazione {
+    font-weight: normal;
+    font-style: italic;
+    color: #555;
+    flex-shrink: 0;
+    font-size: 14pt;
+}
+
+.canti p {
+    font-size: 14pt;
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    line-height: 1.15;
+    gap: 8px;
+    font-family: var(--font-canti);
+}
+
+.canti p:first-child {
+    margin-top: 0;
+}
+
+.canti p:last-child {
+    margin-bottom: 0;
+}
+
+.canto-titolo {
+    flex: 0 1 auto;
+    font-weight: normal;
+    color: #000;
+}
+
+.canto-numero,
+.canto-numero2 {
+    font-weight: bolder;
+    margin-left: 5mm;
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 14pt;
+    background: none;
+    padding: 0;
+    color: #111;
+    font-family: var(--font-numeri);
+}
+
+/* ── BARRA ALTEZZA ── */
+.barra-altezza {
+    margin-top: 1rem;
+    padding: 0.55rem 1rem;
+    font-size: 0.82rem;
+    color: #061a40;
+    background: #eaeff7;
+    border: 1px solid #c8d3e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.barra-altezza strong {
+    color: #061a40;
+}
+
+.barra-altezza.sforato {
+    background: #fff4f4;
+    border-color: #f5c0c0;
+}
+
+.barra-altezza .ok {
+    color: #2a7a2a;
+    font-size: 0.8rem;
+}
+
+.barra-altezza .avviso-sforato {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 700px) {
+    .content-wrap {
+        padding: 1rem;
+    }
+
+    .editor-riga {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .canto-label {
+        width: 100%;
+    }
+}
+
+/* ── STAMPA ── */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+        min-height: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    #pagina {
+        gap: 0;
+        margin: 0;
+        display: grid;
+    }
+
+    .foglietto {
+        border: 1px solid #ccc;
+        border-radius: 0;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .canto-numero,
+    .canto-numero2 {
+        background: none;
+        font-weight: 700;
+        margin-left: 2mm;
+        font-size: 14pt;
+    }
+
+    .content-wrap {
+        padding: 0;
+    }
+}

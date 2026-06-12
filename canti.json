@@ -1,8 +1,18 @@
 {
   "canti": [
     {
-      "titolo": "Accogli Signore i nostri doni",
+      "titolo": "Acclamate al Signore",
       "id": 1,
+      "testo": "Acclamate al Signore, voi tutti della terra e servitelo con gioia andate a Lui con esultanza, acclamate voi tutti al Signore. Riconoscete che il Signore, che il Signore è Dio, Egli ci ha fatti siamo suoi, suo popolo e gregge del suo pascolo. Entrate nelle sue porte con degli inni di grazie, i suoi atri nella lode, benedite, lodate il suo nome. Poiché buono è il Signore, eterna è la sua misericordia, la sua fedeltà si estende sopra ogni generazione.",
+      "categorie": [
+        "ingresso"
+      ],
+      "url": "canti/acclamate-al-signore",
+      "fileName": "acclamate-al-signore.html"
+    },
+    {
+      "titolo": "Accogli Signore i nostri doni",
+      "id": 2,
       "testo": "Accogli Signore i nostri doni in questo misterioso incontro tra la nostra povertà e la tua grandezza. Noi ti offriamo queste cose che tu stesso ci ha dato e tu in cambio donaci, donaci te stesso. Accogli Signore i nostri doni in questo misterioso incontro tra la nostra povertà e la tua grandezza. Noi ti offriamo queste cose che tu stesso ci ha dato e tu in cambio donaci, donaci te stesso.",
       "categorie": [
         "offertorio"
@@ -12,7 +22,7 @@
     },
     {
       "titolo": "Acqua siamo noi",
-      "id": 2,
+      "id": 3,
       "testo": "Acqua siamo noi dall’antica sorgente veniamo, fiumi siamo noi se i ruscelli si mettono insieme, mari siamo noi se i torrenti si danno la mano, vita nuova c’è se Gesù è in mezzo a noi. E allora diamoci la mano e tutti insieme camminiamo ed un oceano di pace nascerà. E l’egoismo cancelliamo, un cuore limpido sentiamo è Dio che bagna del suo amor l’umanità Su nel cielo c’è Dio Padre che vive per l’uomo, crea tutti noi e ci ama di amore infinito, figli siamo noi e fratelli di Cristo Signore, vita nuova c’è quando lui è in mezzo a noi. E allora diamoci la mano e tutti insieme camminiamo ed un oceano di pace nascerà. E l’egoismo cancelliamo, un cuore limpido sentiamo è Dio che bagna del suo amor l’umanità Nuova umanità oggi nasce da chi crede in lui, nuovi siamo noi se l’amore è la legge di vita, figli siamo noi se non siamo divisi da niente, vita eterna c’è quando lui è dentro a noi. E allora diamoci la mano e tutti insieme camminiamo ed un oceano di pace nascerà. E l’egoismo cancelliamo, un cuore limpido sentiamo è Dio che bagna del suo amor l’umanità.",
       "categorie": [
         "congedo"
@@ -22,7 +32,7 @@
     },
     {
       "titolo": "Adesso è la pienezza",
-      "id": 3,
+      "id": 4,
       "testo": "Dopo il tempo del deserto, adesso è il tempo di pianure fertili. Dopo il tempo delle nebbie, adesso s’apre l’orizzonte limpido. Dopo il tempo dell’attesa, adesso è il canto, la pienezza della gioia: l’immacolata donna ha dato al mondo Dio. La fanciulla più nascosta adesso è madre del Signore Altissimo. La fanciulla più soave adesso illumina la terra e i secoli. La fanciulla del silenzio adesso è il canto, la pienezza della gioia: l’immacolata donna ha dato al mondo Dio. È nato, nato! È qualcosa di impensabile, eppure è nato, nato! Noi non siamo soli, il Signore ci è a fianco. È nato! Questa valle tornerà come un giardino, il cuore già lo sa. È nata la speranza, è nata la speranza. La potenza del creato adesso è il pianto di un bambino fragile. La potenza della gloria adesso sta in una capanna povera. La potenza dell’amore adesso è il canto, la pienezza della gioia, l’immacolata donna ha dato al mondo Dio. Tu adesso sei bimbo, Tu adesso hai una madre. Tu l’hai creata bellissima e ora dormi nel suo grembo. E’ nato! E’ nato! Questa valle tornerà come un giardino, il cuore già lo sa. E’ nata la speranza, è nata la speranza.",
       "categorie": [
         "natale"
@@ -32,7 +42,7 @@
     },
     {
       "titolo": "Adeste Fideles",
-      "id": 4,
+      "id": 5,
       "testo": "Adeste fideles, læti triumphantes, venite, venite in Bethlehem. Natum videte Regem angelorum. Venite adoremus, venite adoremus, venite adoremus Dominum. En grege relicto, humiles ad cunas, vocati pastores adproperant, et nos ovanti gradu festinemus. Venite adoremus, venite adoremus, venite adoremus Dominum. Æterni Parentis, splendorem æternum, velatum sub carne videbimus, Deum infantem pannis involutum. Venite adoremus, venite adoremus, venite adoremus Dominum. Pro nobis egenum, et fœno cubantem piis foveamus amplexibus; sic nos amantem quis non redamaret? Venite adoremus, venite adoremus, venite adoremus Dominum.",
       "categorie": [
         "natale"
@@ -42,7 +52,7 @@
     },
     {
       "titolo": "Agnello di Dio (Buttazzo)",
-      "id": 5,
+      "id": 6,
       "testo": "Agnello di Dio che togli i peccati del mondo, abbi pietà di noi, pietà di noi. Agnello di Dio che togli i peccati del mondo, abbi pietà di noi, pietà di noi. Agnello di Dio che togli i peccati del mondo, dona a noi la pace, dona a noi la pace.",
       "categorie": [
         "liturgia",
@@ -53,7 +63,7 @@
     },
     {
       "titolo": "Agnello di Dio (De Dominicis)",
-      "id": 6,
+      "id": 7,
       "testo": "Agnello di Dio che togli i peccati del mondo abbi pietà di noi, Agnello di Dio che togli i peccati del mondo abbi pietà di noi, Agnello di Dio che togli i peccati del mondo dona a noi la pace.",
       "categorie": [
         "liturgia",
@@ -64,7 +74,7 @@
     },
     {
       "titolo": "Agnello di Dio (Giorgi)",
-      "id": 7,
+      "id": 8,
       "testo": "Agnello di Dio, che togli i peccati del mondo, abbi pietà di noi, abbi pietà di noi Agnello di Dio, che togli i peccati del mondo, abbi pietà di noi, abbi pietà di noi Agnello di Dio, che togli i peccati del mondo, dona a noi la pace, dona a noi la pace.",
       "categorie": [
         "liturgia",
@@ -76,7 +86,7 @@
     },
     {
       "titolo": "Agnello di Dio (Picchi)",
-      "id": 8,
+      "id": 9,
       "testo": "Agnello di Dio, che togli i peccati del mondo, abbi pietà di noi. Agnello di Dio, che togli i peccati del mondo, abbi pietà di noi. Agnello di Dio, che togli i peccati del mondo, dona a noi la pace.",
       "categorie": [
         "liturgia",
@@ -86,8 +96,19 @@
       "fileName": "agnello-di-dio-picchi.html"
     },
     {
+      "titolo": "Alleluia (celtic)",
+      "id": 10,
+      "testo": "Alleluia, alleluia. Alleluia, alleluia. Cantate al Signore con inni: grandi prodigi ha compiuto. Cantatelo in tutta la terra! Alleluia, alleluia. Alleluia, alleluia. Agli occhi di tutte le genti mostra la sua grandezza, rivela la sua giustizia! Alleluia, alleluia. Alleluia, alleluia. Fedele è il Signore per sempre, buono e misericordioso: lodate il suo nome in eterno! Alleluia, alleluia. Alleluia, alleluia.",
+      "categorie": [
+        "liturgia",
+        "acclamazione al vangelo"
+      ],
+      "url": "canti/alleluia-celtic",
+      "fileName": "alleluia-celtic.html"
+    },
+    {
       "titolo": "Alleluia a colui che risuscitò",
-      "id": 9,
+      "id": 11,
       "testo": "Alleluia, alleluia, a Colui che risuscitò. Alleluia, alleluia gloria al nome di Gesù. Cristo e il Signor del mondo intero; Gesù è il Re del creato. Alleluia, alleluia, a Colui che risuscitò. Alleluia, alleluia gloria al nome di Gesù. Portiamo a tutti il suo Vangelo: Gesù è morto e risorto. Alleluia, alleluia, a Colui che risuscitò. Alleluia, alleluia gloria al nome di Gesù. Con Cristo morti sulla croce, da Lui avremo la Vita. Alleluia, alleluia, a Colui che risuscitò. Alleluia, alleluia gloria al nome di Gesù. Dio effonde la sua pace, che ogni uomo attende. Alleluia, alleluia, a Colui che risuscitò. Alleluia, alleluia gloria al nome di Gesù. Lode al Padre e al Figlio e allo Spirito. Amen! Alleluia, alleluia, a Colui che risuscitò. Alleluia, alleluia gloria al nome di Gesù.",
       "categorie": [
         "pasqua",
@@ -99,7 +120,7 @@
     },
     {
       "titolo": "Alleluia, canto per Cristo",
-      "id": 10,
+      "id": 12,
       "testo": "Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Canto per Cristo che mi libererà quando verrà nella gloria, quando la vita con lui rinascerà, alleluia, alleluia! Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Canto per Cristo: in lui rifiorirà ogni speranza perduta, ogni creatura con lui rinascerà, alleluia, alleluia! Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Canto per Cristo: un giorno tornerà! Festa per tutti gli amici, festa di un mondo che più non morirà, alleluia, alleluia! Alleluia, Allelu, Alleluia, Alleluia, Alleluia. Alleluia, Allelu, Alleluia, Alleluia, Alleluia.",
       "categorie": [
         "liturgia",
@@ -109,19 +130,8 @@
       "fileName": "alleluia-canto-per-cristo.html"
     },
     {
-      "titolo": "Alleluia (celtic)",
-      "id": 11,
-      "testo": "Alleluia, alleluia. Alleluia, alleluia. Cantate al Signore con inni: grandi prodigi ha compiuto. Cantatelo in tutta la terra! Alleluia, alleluia. Alleluia, alleluia. Agli occhi di tutte le genti mostra la sua grandezza, rivela la sua giustizia! Alleluia, alleluia. Alleluia, alleluia. Fedele è il Signore per sempre, buono e misericordioso: lodate il suo nome in eterno! Alleluia, alleluia. Alleluia, alleluia.",
-      "categorie": [
-        "liturgia",
-        "acclamazione al vangelo"
-      ],
-      "url": "canti/alleluia-celtic",
-      "fileName": "alleluia-celtic.html"
-    },
-    {
       "titolo": "Alleluia, chi ascolta",
-      "id": 12,
+      "id": 13,
       "testo": "Alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia. Chi ascolta la parola è come uno che attinge acqua alla sorgente che lo disseterà. Alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia. Chi ascolta la parola è come uno che ha costruito sulla roccia e non vacillerà. Alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia.",
       "categorie": [
         "liturgia",
@@ -132,7 +142,7 @@
     },
     {
       "titolo": "Alleluia, ed oggi ancora",
-      "id": 13,
+      "id": 14,
       "testo": "Alleluia (Alleluia), Alleluia (Alleluia), Alleluia (Alleluia), Alleluia (Alleluia). Alleluia (Alleluia), Alleluia (Alleluia), Alleluia (Alleluia), Alleluia. Ed oggi ancora, mio Signore ascolterò la tua parola che mi guida nel cammino della vita. Alleluia (Alleluia), Alleluia (Alleluia), Alleluia (Alleluia), Alleluia (Alleluia). Alleluia (Alleluia), Alleluia (Alleluia), Alleluia (Alleluia), Alleluia.",
       "categorie": [
         "liturgia",
@@ -143,7 +153,7 @@
     },
     {
       "titolo": "Alleluia, la nostra festa",
-      "id": 14,
+      "id": 15,
       "testo": "Alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia! Alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia! La nostra festa non deve finire, non deve finire e non finirà. La nostra festa non deve finire, non deve finire e non finirà. Perché la festa siamo noi, che camminiamo verso Te. Perché la festa siamo noi che cantiamo così. (La la la la la la) Alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia! Alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia!",
       "categorie": [
         "liturgia",
@@ -155,7 +165,7 @@
     },
     {
       "titolo": "Alleluia, la tua parola",
-      "id": 15,
+      "id": 16,
       "testo": "Alleluia, alleluia, alleluia, alleluia! La tua parola creò la Terra, il mare, il cielo, i fili d’erba. La tua parola creò l’amore e poi disse a ogni cuore. Alleluia, alleluia, alleluia, alleluia! La tua parola si fece carne e sulla croce versò il suo sangue. Risorto, vive e parla ancora, Vangelo eterno di vita vera. Alleluia, alleluia, alleluia, alleluia!",
       "categorie": [
         "liturgia",
@@ -167,7 +177,7 @@
     },
     {
       "titolo": "Alleluia, lode cosmica",
-      "id": 16,
+      "id": 17,
       "testo": "Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Lodino il Signor i cieli, lodino il Signor i mari, gli angeli, i cieli dei cieli: il suo nome è grande e sublime. Sole, luna e stelle ardenti, neve, pioggia, nebbia, e fuoco lodino il suo nome in eterno! Sia lode al Signor! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Lodino il Signor le terre, lodino il Signor i monti, il vento della tempesta che obbedisce alla sua voce. Giudici, sovrani tutti, giovani, fanciulle, vecchi lodino il suo nome in eterno! Sia lode al Signor! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia! Alleluia, alleluia!",
       "categorie": [
         "liturgia",
@@ -178,7 +188,7 @@
     },
     {
       "titolo": "Alleluia, ora lui vive",
-      "id": 17,
+      "id": 18,
       "testo": "Alleluia, alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia, alleluia. È nata già l’alba di una nuova età, la morte è stata sconfitta; essa non ha più potere su di noi perché oggi Cristo è risorto. Alleluia, alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia, alleluia. Dentro di noi scoppia la felicità: non ci ha lasciati da soli, se in verità siamo morti insieme a lui, ora in lui siamo risorti. Alleluia, alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia, alleluia. E ora lui vive per l’eternità, cambia la storia dell’uomo, e siamo noi il nuovo popolo di Dio, sino alla fine dei tempi. Alleluia, alleluia, alleluia, alleluia. Alleluia, alleluia, alleluia, alleluia.",
       "categorie": [
         "liturgia",
@@ -190,7 +200,7 @@
     },
     {
       "titolo": "Alleluia, passeranno i cieli",
-      "id": 18,
+      "id": 19,
       "testo": "Alle-alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia! Passeranno i cieli e passerà la terra, la sua Parola non passerà! Alleluia, alleluia! Alle-alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia!",
       "categorie": [
         "liturgia",
@@ -201,7 +211,7 @@
     },
     {
       "titolo": "Alleluia, questa tua parola",
-      "id": 19,
+      "id": 20,
       "testo": "Alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia. Questa tua parola non avrà mai fine ha varcato i cieli e porterà il suo frutto. (2v.) Alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia, alleluia.",
       "categorie": [
         "liturgia",
@@ -212,7 +222,7 @@
     },
     {
       "titolo": "Alleluia, rendete grazie",
-      "id": 20,
+      "id": 21,
       "testo": "Alleluia, alleluia, alleluia alleluia, alleluia. Rendete grazie a Dio, Egli è buono, eterno e fedele è il suo amore. Sì, è così, lo dica Israele, dica che il suo amore è per sempre. Alleluia, alleluia, alleluia alleluia, alleluia. La destra del Signore si è innalzata a compiere grandiose meraviglie. Non morirò ma resterò in vita e annuncerò i prodigi del Signore. Alleluia, alleluia, alleluia alleluia, alleluia. La pietra che avevano scartato è divenuta pietra angolare. Questo prodigio ha fatto il Signore, una meraviglia ai nostri occhi. Alleluia, alleluia, alleluia alleluia, alleluia.",
       "categorie": [
         "liturgia",
@@ -223,7 +233,7 @@
     },
     {
       "titolo": "Alleluia, Signore sei venuto",
-      "id": 21,
+      "id": 22,
       "testo": "Alleluia, alleluia, alleluia, alleluia, alleluia. Signore sei venuto, fratello in mezzo a noi. Signore hai portato amore e libertà. Signore sei vissuto nella povertà. Noi ti ringraziamo, Gesù. Alleluia, alleluia, alleluia, alleluia, alleluia. Signore sei venuto, fratello nel dolor. Signore hai parlato del regno dell’amor. Signore hai donato la tua vita a noi. Noi ti ringraziamo, Gesù. Alleluia, alleluia, alleluia, alleluia, alleluia. Signore sei risorto e resti in mezzo a noi. Signore ci hai chiamati e resi amici tuoi. Signore tu sei via, alla verità. Noi ti ringraziamo, Gesù. Alleluia, alleluia, alleluia, alleluia, alleluia.",
       "categorie": [
         "natale",
@@ -236,7 +246,7 @@
     },
     {
       "titolo": "Altissimo",
-      "id": 22,
+      "id": 23,
       "testo": "Altissimo onnipotente buon Signore, tue son le lodi, la gloria, l’onore ed ogni benedizione che a te solo e al tuo nome altissimo possiamo elevare e nessun uomo può credersi degno di poterti nominare. Laudato sii, mio Signore con tutte le sue creature, specialmente per frate sole, così bello e radioso con la sua luce illumini il giorno ed illumini noi e con grande splendore ci parla di te, Signore. Lodate e benedite il Signore, ringraziate e servite con grande umiltà. Lodate, lodate, benedite il Signore con grande umiltà, ringraziate e servite, con grande umiltà. Laudato sii mio Signore per quelli che per il tuo amore perdonano e sopportano in pace ogni persecuzione, che sora morte ha trovato viventi nella tua volontà, da te Altissimo un giorno saranno da te incoronati. Lodate e benedite il Signore, ringraziate e servite con grande umiltà, ringraziate e servite. (lodate) Lodate e benedite il Signore, ringraziate e servite con grande umiltà. Lodate, lodate, benedite il Signore con grande umiltà, ringraziate e servite, con grande umiltà.",
       "categorie": [
         "comunione"
@@ -246,7 +256,7 @@
     },
     {
       "titolo": "Alzati e risplendi",
-      "id": 23,
+      "id": 24,
       "testo": "Alzati e risplendi, ecco la tua luce, su di te la gloria del Signor. Alzati e risplendi, ecco la tua luce, su di te la gloria del Signor. Volgi i tuoi occhi e guarda lontano, che il tuo cuore palpiti di allegria. Ecco i tuoi figli che vengono a te, le tue figlie danzano di gioia. Jerusalem, Jerusalem, spogliati della tua tristezza. Jerusalem, Jerusalem, canta e danza al tuo Signor. Marceranno i popoli alla tua luce, ed i re vedranno il tuo splendor. Marceranno i popoli alla tua luce, ed i re vedranno il tuo splendor. Stuoli di cammelli ti invaderanno, tesori dal mare affluiranno a te. Verranno da Efa, da Saba e Kedar, per lodare il nome del Signor. Jerusalem, Jerusalem, spogliati della tua tristezza. Jerusalem, Jerusalem, canta e danza al tuo Signor. Figli di stranieri costruiranno le tue mura, ed i loro re verranno a te. Figli di stranieri costruiranno le tue mura, ed i loro re verranno a te. Io farò di te una fonte di gioia, tu sarai chiamata “città del Signore”. Il dolore e il lutto finiranno, sarai la mia gioia tra le genti. Jerusalem, Jerusalem, spogliati della tua tristezza. Jerusalem, Jerusalem, canta e danza al tuo Signor.",
       "categorie": [
         "quaresima",
@@ -257,7 +267,7 @@
     },
     {
       "titolo": "Amatevi l'un l'altro",
-      "id": 24,
+      "id": 25,
       "testo": "Amatevi l’un l’altro come lui ha amato noi, e siate per sempre suoi amici; e quello che farete al più piccolo tra voi, credete, l’avrete fatto a lui. Ti ringrazio, mio Signore, non ho più paura, perché, con la mia mano nella mano degli amici miei, cammino tra la gente della mia città, e non mi sento più solo; non sento la stanchezza e guardo dritto avanti a me, perché sulla mia strada ci sei tu. Se amate veramente perdonatevi tra voi, nel cuore di ognuno ci sia pace: il Padre che dai cieli vede tutti i figli suoi, con gioia, a voi perdonerà. Ti ringrazio, mio Signore, non ho più paura, perché, con la mia mano nella mano degli amici miei, cammino tra la gente della mia città, e non mi sento più solo; non sento la stanchezza e guardo dritto avanti a me, perché sulla mia strada ci sei tu. Sarete suoi amici se vi amate fra di voi e questo è tutto il suo Vangelo; l’amore non ha prezzo, non misura ciò che da, l’amore confini non ne ha. Ti ringrazio, mio Signore, non ho più paura, perché, con la mia mano nella mano degli amici miei, cammino tra la gente della mia città, e non mi sento più solo; non sento la stanchezza e guardo dritto avanti a me, perché sulla mia strada ci sei tu.",
       "categorie": [
         "congedo",
@@ -268,7 +278,7 @@
     },
     {
       "titolo": "Andate per le strade",
-      "id": 25,
+      "id": 26,
       "testo": "Andate per le strade in tutto il mondo, chiamate i miei amici per far festa: c'è un posto per ciascuno alla mia mensa. Nel vostro cammino annunciate il Vangelo, dicendo: \"È vicino il Regno dei cieli\". Guarite i malati, mondate i lebbrosi, rendete la vita a chi l'ha perduta. Andate per le strade in tutto il mondo, chiamate i miei amici per far festa: c'è un posto per ciascuno alla mia mensa. Vi è stato donato con amore gratuito: ugualmente donate con gioia ed amore. Con voi non prendete né oro né argento perché l'operaio ha diritto al suo cibo. Andate per le strade in tutto il mondo, chiamate i miei amici per far festa: c'è un posto per ciascuno alla mia mensa.",
       "categorie": [
         "congedo",
@@ -280,7 +290,7 @@
     },
     {
       "titolo": "Anima Christi",
-      "id": 26,
+      "id": 27,
       "testo": "Anima Christi, sanctifica me. Corpus Christi, salva me. Sanguis Christi, inebria me. Aqua lateris Christi, lava me. Passio Christi, conforta me. O bone Iesu, exaudi me. Intra vulnera tua absconde, absconde me. Anima Christi, sanctifica me. Corpus Christi, salva me. Sanguis Christi, inebria me. Aqua lateris Christi, lava me. Ne permittas a te me separari. Ab hoste maligno defende me. In hora mortis meæ voca me. Anima Christi, sanctifica me. Corpus Christi, salva me. Sanguis Christi, inebria me. Aqua lateris Christi, lava me. Et iube me venire ad te. Ut cum Sanctis tuis laudem te. In infinita sæcula sæculorum, Amen. Anima Christi, sanctifica me. Corpus Christi, salva me. Sanguis Christi, inebria me. Aqua lateris Christi, lava me.",
       "categorie": [
         "adorazione",
@@ -292,7 +302,7 @@
     },
     {
       "titolo": "Anima di Cristo",
-      "id": 27,
+      "id": 28,
       "testo": "Anima di Cristo, santificami. Corpo di Cristo, salvami. Sangue di Cristo, inebriami. Acqua del costato, lavami. Lode a te per la tua immensa carità. Lode a te, tu ti doni a me. Lode a te per la tua immensa carità. O Signor, io mi dono a te. Passione di Cristo, confortami. O buon Gesù, esaudiscimi. Nelle tue piaghe nascondimi. Non permettere ch'io mi separi da te. Lode a te per la tua immensa carità. Lode a te, tu ti doni a me. Lode a te per la tua immensa carità. O Signor, io mi dono a te. Dal maligno difendimi. Nell'ora della morte chiamami. E comandami di venire da te. Con i santi tuoi, adorarti. Lode a te per la tua immensa carità. Lode a te, tu ti doni a me. Lode a te per la tua immensa carità. O Signor, io mi dono a te. Anima di Cristo, santificami. Corpo di Cristo, salvami. Sangue di Cristo, inebriami. Acqua del costato, lavami. Lode a te per la tua immensa carità. Lode a te, tu ti doni a me. Lode a te per la tua immensa carità. O Signor, io mi dono a te. Amen, amen. Amen, amen.",
       "categorie": [
         "adorazione",
@@ -304,7 +314,7 @@
     },
     {
       "titolo": "Antica eterna danza",
-      "id": 28,
+      "id": 29,
       "testo": "Spighe d’oro al vento antica, eterna danza per fare un solo pane spezzato sulla mensa. Grappoli dei colli, profumo di letizia, per fare un solo vino bevanda della grazia. Con il pane e il vino Signore ti doniamo le nostre gioie pure, le attese e le paure, frutti del lavoro e fede nel futuro, la voglia di cambiare e di ricominciare. Dio della speranza, sorgente d’ogni dono, accogli questa offerta che insieme ti portiamo. Dio dell’universo raccogli chi è disperso e facci tutti Chiesa, una cosa in te.",
       "categorie": [
         "offertorio"
@@ -314,7 +324,7 @@
     },
     {
       "titolo": "Astro del ciel",
-      "id": 29,
+      "id": 30,
       "testo": "Astro del ciel, Pargol divin, mite Agnello Redentor! Tu che i Vati da lungi sognar. Tu che angeliche voci annunziar! Luce dona alle menti, pace infondi nei cuor! Luce dona alle menti, pace infondi nei cuor! Astro del ciel, Pargol divin mite Agnello Redentor! Tu di stirpe regale decor. Tu virgineo, mistico fior! Luce dona alle menti, pace infondi nei cuor! Luce dona alle menti, pace infondi nei cuor! Astro del ciel, Pargol divin mite Agnello Redentor! Tu disceso a scontare l'error. Tu sol nato a parlare d'amor! Luce dona alle menti, pace infondi nei cuor! Luce dona alle menti, pace infondi nei cuor!",
       "categorie": [
         "natale"
@@ -323,28 +333,8 @@
       "fileName": "astro-del-ciel.html"
     },
     {
-      "titolo": "Ave Maria, gratia plena",
-      "id": 30,
-      "testo": "Ave Maria, gratia plena, Dominus tecum, benedicta tu. Ecco son davanti a te, gli occhi tuoi mi attirano, prendi il mio cuor, trasformalo, riempilo di te. Ave Maria, gratia plena, Dominus tecum, benedicta tu. Ecco la mia vita, ogni attimo è tuo, Madre di Dio, Madre mia, presentala al Signor. Ave Maria, gratia plena, Dominus tecum, benedicta tu. Ecco son davanti a te, gli occhi tuoi sorridono, ogni parola, ogni pensier, si perde nel tuo amor. Ave Maria, gratia plena, Dominus tecum, benedicta tu.",
-      "categorie": [
-        "maria"
-      ],
-      "url": "canti/ave-maria-gratia-plena",
-      "fileName": "ave-maria-gratia-plena.html"
-    },
-    {
-      "titolo": "Ave Maria ora pro nobis",
-      "id": 31,
-      "testo": "Ave Maria, Ave! Ave Maria, Ave! Donna dell’attesa e madre di speranza. Ora pro nobis. Donna del sorriso e madre del silenzio. Ora pro nobis. Donna di frontiera e madre dell’ardore. Ora pro nobis. Donna del riposo e madre del sentiero. Ora pro nobis. Ave Maria, Ave! Ave Maria, Ave! Donna del deserto e madre del respiro. Ora pro nobis. Donna della sera e madre del ricordo. Ora pro nobis. Donna del presente e madre del ritorno. Ora pro nobis. Donna della terra e madre dell’amore. Ora pro nobis. Ave Maria, Ave! Ave Maria, Ave!",
-      "categorie": [
-        "maria"
-      ],
-      "url": "canti/ave-maria-ora-pro-nobis",
-      "fileName": "ave-maria-ora-pro-nobis.html"
-    },
-    {
       "titolo": "Ave Maria (Sequeri)",
-      "id": 32,
+      "id": 31,
       "testo": "Ave Maria, piena di grazia, il Signore è con te; tu sei benedetta fra tutte le donne e benedetto è il figlio tuo Gesù. Santa Maria, madre di Dio, prega per noi peccatori adesso e nell’ora della nostra morte, adesso e nell’ora della nostra morte. Amen.",
       "categorie": [
         "maria"
@@ -353,8 +343,28 @@
       "fileName": "ave-maria-sequeri.html"
     },
     {
-      "titolo": "Beati voi",
+      "titolo": "Ave Maria ora pro nobis",
+      "id": 32,
+      "testo": "Ave Maria, Ave! Ave Maria, Ave! Donna dell’attesa e madre di speranza. Ora pro nobis. Donna del sorriso e madre del silenzio. Ora pro nobis. Donna di frontiera e madre dell’ardore. Ora pro nobis. Donna del riposo e madre del sentiero. Ora pro nobis. Ave Maria, Ave! Ave Maria, Ave! Donna del deserto e madre del respiro. Ora pro nobis. Donna della sera e madre del ricordo. Ora pro nobis. Donna del presente e madre del ritorno. Ora pro nobis. Donna della terra e madre dell’amore. Ora pro nobis. Ave Maria, Ave! Ave Maria, Ave!",
+      "categorie": [
+        "maria"
+      ],
+      "url": "canti/ave-maria-ora-pro-nobis",
+      "fileName": "ave-maria-ora-pro-nobis.html"
+    },
+    {
+      "titolo": "Ave Maria, gratia plena",
       "id": 33,
+      "testo": "Ave Maria, gratia plena, Dominus tecum, benedicta tu. Ecco son davanti a te, gli occhi tuoi mi attirano, prendi il mio cuor, trasformalo, riempilo di te. Ave Maria, gratia plena, Dominus tecum, benedicta tu. Ecco la mia vita, ogni attimo è tuo, Madre di Dio, Madre mia, presentala al Signor. Ave Maria, gratia plena, Dominus tecum, benedicta tu. Ecco son davanti a te, gli occhi tuoi sorridono, ogni parola, ogni pensier, si perde nel tuo amor. Ave Maria, gratia plena, Dominus tecum, benedicta tu.",
+      "categorie": [
+        "maria"
+      ],
+      "url": "canti/ave-maria-gratia-plena",
+      "fileName": "ave-maria-gratia-plena.html"
+    },
+    {
+      "titolo": "Beati voi",
+      "id": 34,
       "testo": "Beati voi, beati voi, Beati voi, beati voi. Se sarete poveri nel cuore, beati voi: sarà vostro il Regno di Dio Padre. Se sarete voi che piangerete, beati voi, perché un giorno vi consolerò. Beati voi, beati voi, Beati voi, beati voi. Se sarete miti verso tutti, beati voi: erediterete tutto il mondo. Quando avrete fame di giustizia, beati voi, perché un giorno Io vi sazierò. Beati voi, beati voi, Beati voi, beati voi. Se sarete misericordiosi, beati voi: la misericordia troverete. Se sarete puri dentro il cuore, beati voi, perché voi vedrete il Padre mio. Beati voi, beati voi, Beati voi, beati voi. Se lavorerete per la pace, beati voi: chiameranno voi \"figli di Dio\". Se per causa mia voi soffrirete, beati voi, sarà grande in voi la santità. Beati voi, beati voi, Beati voi, beati voi.",
       "categorie": [
         "santi",
@@ -365,7 +375,7 @@
     },
     {
       "titolo": "Beato è il cuore che perdona (Inno GMG 2016)",
-      "id": 34,
+      "id": 35,
       "testo": "Sei sceso dalla tua immensità in nostro aiuto. Misericordia scorre da te sopra tutti noi. Persi in un mondo d'oscurità lì Tu ci trovi. Nelle tue braccia ci stringi e poi dai la vita per noi. Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Solo il perdono riporterà pace nel mondo. Solo il perdono ci svelerà come figli tuoi. Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Col sangue in croce hai pagato Tu le nostre povertà. Se noi ci amiamo e restiamo in te il mondo crederà! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Le nostre angosce ed ansietà gettiamo ogni attimo in te. Amore che non abbandona mai, vivi in mezzo a noi! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Beato è il cuore che perdona! Misericordia riceverà da Dio in cielo! Scarica il testo in PDF Scarica lo spartito in PDF Scarica lo spartito per solista in PDF Scarica lo spartito per soprano in PDF Scarica lo spartito per contralto in PDF Scarica lo spartito per tenore in PDF Scarica lo spartito per basso in PDF Coro delle Dieci - Privacy e note legali OFF ▼",
       "categorie": [
         "gmg",
@@ -376,7 +386,7 @@
     },
     {
       "titolo": "Benedici, o Signore",
-      "id": 35,
+      "id": 36,
       "testo": "Nebbia e freddo, giorni lunghi e amari mentre il seme muore. Poi il prodigio antico e sempre nuovo del primo filo d’erba e nel vento dell’estate ondeggiano le spighe: avremo ancora pane. Benedici, o Signore, questa offerta che portiamo a te. Facci uno come il pane che anche oggi hai dato a noi. Nei filari, dopo il lungo inverno fremono le viti. La rugiada avvolge nel silenzio i primi tralci verdi, poi i colori dell’autunno coi grappoli maturi: avremo ancora vino. Benedici, o Signore, questa offerta che portiamo a te. Facci uno come il vino che anche oggi hai dato a noi.",
       "categorie": [
         "offertorio"
@@ -386,7 +396,7 @@
     },
     {
       "titolo": "Benedirò il Signore",
-      "id": 36,
+      "id": 37,
       "testo": "Benedirò il Signore in ogni tempo, sulla mia bocca la sua lode sempre avrò, nel mio canto do gloria al Signore, si rallegra il mio cuore in umiltà. Ti benedirò, Signore in ogni tempo, canterò per te senza fine. Se sarai con me più nulla temerò ed avrò nel cuore la gioia. Benedirò il Signore in ogni tempo, il nome suo in eterno canterò. Io l’ho cercato e lui mi ha risposto, dall’angoscia lui mi libererà. Ti benedirò, Signore in ogni tempo, canterò per te senza fine. Se sarai con me più nulla temerò ed avrò nel cuore la gioia. Benedirò il Signore in ogni tempo, guardando a lui il mio volto splenderà; io lo so come è buono il Signore, nella vita vicino mi sarà. Ti benedirò, Signore in ogni tempo, canterò per te senza fine. Se sarai con me più nulla temerò ed avrò nel cuore la gioia.",
       "categorie": [
         "ingresso"
@@ -396,7 +406,7 @@
     },
     {
       "titolo": "Camminerò",
-      "id": 37,
+      "id": 38,
       "testo": "Camminerò, camminerò sulla tua strada, Signor. Dammi la mano, voglio restar per sempre insieme a Te. Quando ero solo, solo e stanco nel mondo, quando non c'era l'amor, tante persone vidi intorno a me: sentivo cantare così. Camminerò, camminerò sulla tua strada, Signor. Dammi la mano, voglio restar per sempre insieme a Te. Io non capivo, ma rimasi a sentire quando il Signor mi parlò. Lui mi chiamava, chiamava anche me, e la mia risposta s'alzò. Camminerò, camminerò sulla tua strada, Signor. Dammi la mano, voglio restar per sempre insieme a Te. Or non m'importa se uno ride di me, lui certamente non sa del gran regalo che ebbi quel dì; che dissi al Signore così. Camminerò, camminerò sulla tua strada, Signor. Dammi la mano, voglio restar per sempre insieme a Te. A volte sono triste, ma mi guardo intorno, scopro il mondo e l'amor; son questi i doni che lui fa a me; felice ritorno a cantar. Camminerò, camminerò sulla tua strada, Signor. Dammi la mano, voglio restar per sempre insieme a Te. Io non capivo ma rimasi a sentire, quando io vidi il Signor: Lui mi chiamava, chiamava anche me, ed io gli risposi così. Camminerò, camminerò sulla tua strada, Signor. Dammi la mano, voglio restar per sempre insieme a Te.",
       "categorie": [
         "congedo",
@@ -408,7 +418,7 @@
     },
     {
       "titolo": "Camminiamo sulla strada",
-      "id": 38,
+      "id": 39,
       "testo": "Camminiamo sulla strada che han percorso i santi tuoi tutti ci ritroveremo dove eterno splende il sol. E quando in ciel dei santi tuoi la grande schiera arriverà, Oh Signor come vorrei che ci fosse un posto per me. E quando il sol si spegnerà, e quando il sol si spegnerà, oh Signor come vorrei che ci fosse un posto per me. C’è chi dice che la vita sia tristezza sia dolor, ma io so che verrà il giorno in cui tutto cambierà. E quando in ciel risuonerà la tromba che ci chiamerà, oh Signor come vorrei che ci fosse un posto per me. Il giorno che la terra e il ciel a nuova vita risorgeran, oh Signor come vorrei che ci fosse un posto per me.",
       "categorie": [
         "santi",
@@ -419,15 +429,15 @@
     },
     {
       "titolo": "Canta e cammina",
-      "id": 39,
-      "testo": "Rit.: Canta e cammina con la pace nel cuore.\nCanta e cammina nel bene e nell'amore.\nCanta e cammina, non lasciare la strada.\nCristo cammina con Te.\n\nCantiamo a tutto il mondo che\nè Lui la libertà,\nin Lui c'è una speranza nuova\nper questa umanità. Rit.\n\nLa gioia del Signore in noi\nper sempre abiterà,\nse in comunione noi vivremo\nnella sua volontà. Rit.\n\nÉ Lui che guida i nostri passi,\nè Lui la verità,\nse siamo figli della luce\nin noi risplenderà. Rit.",
+      "id": 40,
+      "testo": "Canta e cammina con la pace nel cuore. Canta e cammina nel bene e nell'amore. Canta e cammina, non lasciare la strada. Cristo cammina con Te. Cantiamo a tutto il mondo che è Lui la libertà, in Lui c'è una speranza nuova per questa umanità. La gioia del Signore in noi per sempre abiterà, se in comunione noi vivremo nella sua volontà. É Lui che guida i nostri passi, è Lui la verità, se siamo figli della luce in noi risplenderà. ",
       "categorie": [],
       "url": "canti/canta-e-cammina",
       "fileName": "canta-e-cammina.html"
     },
     {
       "titolo": "Cantiamo Te",
-      "id": 40,
+      "id": 41,
       "testo": "Cantiamo te, Signore della vita: il nome tuo è grande sulla Terra tutto parla di te e canta la tua gloria, grande tu sei e compi meraviglie tu sei Dio. Cantiamo a Te, Signore Gesù Cristo, Figlio di Dio venuto sulla terra, fatto uomo per noi nel grembo di Maria. Dolce Gesù, risorto dalla morte sei con noi. Cantiamo a Te, Amore senza fine, Tu che sei Dio lo Spirito del Padre, vivi dentro di noi e guida i nostri passi. Accendi in noi il fuoco dell'eterna carità.",
       "categorie": [
         "ingresso"
@@ -437,7 +447,7 @@
     },
     {
       "titolo": "Cantico dei redenti",
-      "id": 41,
+      "id": 42,
       "testo": "Il Signore è la mia salvezza e con Lui non temo più, perché ho nel cuore la certezza: la salvezza è qui con me. Ti lodo Signore perché un giorno eri lontano da me; ora invece sei tornato e mi hai preso con te. Il Signore è la mia salvezza e con Lui non temo più, perché ho nel cuore la certezza: la salvezza è qui con me. Berrete con gioia alle fonti, alle fonti della salvezza; e quel giorno voi direte: Lodate il Signor. Il Signore è la mia salvezza e con Lui non temo più, perché ho nel cuore la certezza: la salvezza è qui con me. Fate conoscere ai popoli tutto quello che lui ha compiuto, e ricordino per sempre, ricordino sempre che il suo Nome è grande. Il Signore è la mia salvezza e con Lui non temo più, perché ho nel cuore la certezza: la salvezza è qui con me. Cantate a chi ha fatto grandezze e sia fatto sapere nel mondo; grida forte la tua gioia, abitante di Sion, perché grande con te è il Signore. Il Signore è la mia salvezza e con Lui non temo più, perché ho nel cuore la certezza: la salvezza è qui con me.",
       "categorie": [],
       "url": "canti/cantico-dei-redenti",
@@ -445,7 +455,7 @@
     },
     {
       "titolo": "Canto dell'amicizia",
-      "id": 42,
+      "id": 43,
       "testo": "In un mondo di maschere Dove sembra impossibile Riuscire a sconfiggere Tutto ciò che annienta l'uomo Il potere la falsità La violenza e l'avidità Sono mostri da abbattere Noi però non siamo soli Canta con noi, batti le mani, alzale in alto, muovile al ritmo del canto, stringi la mano del tuo vicino e scoprirai che è meno duro il cammino così. Ci hai promesso il tuo Spirito, lo sentiamo in mezzo a noi e così possiamo credere che ogni cosa può cambiare. Non possiamo più assistere impotenti ed attoniti perché siam responsabili della vita intorno a noi. Canta con noi, batti le mani, alzale in alto, muovile al ritmo del canto, stringi la mano del tuo vicino e scoprirai che è meno duro il cammino così. Canta con noi, batti le mani, alzale in alto, muovile al ritmo del canto, stringi la mano del tuo vicino e scoprirai che è meno duro il cammino così. Canta con noi, batti le mani, alzale in alto, muovile al ritmo del canto, stringi la mano del tuo vicino e scoprirai che è meno duro il cammino così.",
       "categorie": [
         "scout",
@@ -456,7 +466,7 @@
     },
     {
       "titolo": "Che gioia ci hai dato (Resurrezione)",
-      "id": 43,
+      "id": 44,
       "testo": "Che gioia ci hai dato, Signore del cielo, Signore del grande universo. Che gioia ci hai dato, vestito di luce, vestito di gloria infinita, vestito di gloria infinita. Vederti risorto, vederti Signore, il cuore sta per impazzire. Tu sei ritornato, tu sei qui tra noi e adesso ti avremo per sempre, e adesso ti avremo per sempre. Che gioia ci hai dato, Signore del cielo, Signore del grande universo. Che gioia ci hai dato, vestito di luce, vestito di gloria infinita, vestito di gloria infinita. Chi cercate, donne, quaggiù? Chi cercate, donne quaggiù? Quello ch'era morto non è qui: è Risorto! Sì, come aveva detto anche a voi. Voi gridate a tutti che è risorto Lui, tutti che è risorto Lui! Che gioia ci hai dato, Signore del cielo, Signore del grande universo. Che gioia ci hai dato, vestito di luce, vestito di gloria infinita, vestito di gloria infinita. Tu hai vinto il mondo, Gesù, tu hai vinto il mondo, Gesù, liberiamo la felicità. E la morte, no, non esiste più, l'hai vinta tu e hai salvato tutti noi, uomini con te, tutti noi, uomini con te. Uomini con te, uomini con te. Che gioia ci hai dato, ti avremo per sempre.",
       "categorie": [
         "pasqua"
@@ -466,7 +476,7 @@
     },
     {
       "titolo": "Chi?",
-      "id": 44,
+      "id": 45,
       "testo": "Filtra un raggio di sole tra le nubi del cielo, strappa la terra al gelo e nasce un fiore, e poi mille corolle rivestite di poesia in un gioco di armonia e di colori. Ma chi veste i fiori dei campi, chi ad ognuno dà colore? Va col vento leggera una rondine in volo, il suo canto sa solo di primavera, e poi intreccio di ali, come giostra di allegria, mille voli in fantasia tra terra e mari. Ma chi nutre gli uccelli del cielo, chi ad ognuno da un nido, chi? Tu, creatore del mondo, Tu, che possiedi la vita, Tu, sole infinito, Dio amore. Tu, degli uomini Padre, Tu, che abiti il cielo, Tu, immenso mistero, Dio amore, Dio amore. Un’immagine viva del creatore del mondo, un riflesso profondo della tua vita, l’uomo al centro del cosmo ha un cuore per amare, un mondo da plasmare con le sue mani. Ma chi ha dato all’uomo la vita, chi a lui ha dato un cuore, chi? Tu, creatore del mondo, Tu, che possiedi la vita, Tu, sole infinito, Dio amore. Tu, degli uomini Padre, Tu, che abiti il cielo, Tu, immenso mistero, Dio amore, Dio amore.",
       "categorie": [],
       "url": "canti/chi",
@@ -474,7 +484,7 @@
     },
     {
       "titolo": "Chiamati per nome",
-      "id": 45,
+      "id": 46,
       "testo": "Veniamo da te, chiamati per nome. Che festa, Signore, tu cammini con noi. Ci parli di te, per noi spezzi il pane, ti riconosciamo e il cuore arde: sei Tu! E noi tuo popolo siamo qui. Siamo come terra ed argilla e la tua Parola ci plasmerà, brace pronta per la scintilla e il tuo Spirito soffierà, c’infiammerà. Veniamo da te, chiamati per nome. Che festa, Signore, tu cammini con noi. Ci parli di te, per noi spezzi il pane, ti riconosciamo e il cuore arde: sei Tu! E noi tuo popolo siamo qui. Siamo come semi nel solco, come vigna che il suo frutto darà, grano del Signore risorto, la tua messe che fiorirà d’eternità. Veniamo da te, chiamati per nome. Che festa, Signore, tu cammini con noi. Ci parli di te, per noi spezzi il pane, ti riconosciamo e il cuore arde: sei Tu! E noi tuo popolo siamo qui. E noi tuo popolo siamo qui. Siamo qui. Scarica il testo in PDF Scarica lo spartito ufficiale in PDF dal sito di Gen Verde Coro delle Dieci - Privacy e note legali OFF ▼",
       "categorie": [
         "offertorio",
@@ -485,7 +495,7 @@
     },
     {
       "titolo": "Chiesa del Risorto",
-      "id": 46,
+      "id": 47,
       "testo": "Chiesa che nasci dalla Croce, dal fianco aperto del Signore, dal nuovo Adamo sei plasmata, sposa di grazia nella santità. Chiesa che vivi della Pasqua, sei dallo Spirito redenta vivificata dall’amore, resa feconda nella carità. Dal crocifisso Risorto nasce la speranza, dalle sue piaghe la salvezza, nella sua luce noi cammineremo, Chiesa redenta dal suo amore. Chiesa che annunci il Vangelo, sei testimone di speranza con la Parola del Dio vivo, in mezzo al mondo nella verità. Chiesa che vivi nella fede, rigenerata dalla grazia, stirpe regale, gente santa, sei per il mondo segno di unità. Dal crocifisso Risorto nasce la speranza, dalle sue piaghe la salvezza, nella sua luce noi cammineremo, Chiesa redenta dal suo amore. Chiesa fondata nell’amore, sei tempio santo del Signore, edificata dai tuoi santi tu sei speranza dell’umanità. Chiesa mandata per il mondo ad annunciare la salvezza, porti la grazia ad ogni uomo e lo conduci alla santità. Dal crocifisso Risorto nasce la speranza, dalle sue piaghe la salvezza, nella sua luce noi cammineremo, Chiesa redenta dal suo amore. Chiesa in cammino verso Cristo nella speranza e nella fede, tu sfidi il mondo con l’amore, tu vinci il male con la verità. Canta con gioia il tuo Creatore, loda per sempre la sua grazia, tu dallo Spirito redenta sposa di Cristo nella carità. Dal crocifisso Risorto nasce la speranza, dalle sue piaghe la salvezza, nella sua luce noi cammineremo, Chiesa redenta dal suo amore.",
       "categorie": [
         "pasqua",
@@ -496,8 +506,8 @@
     },
     {
       "titolo": "Chiesa di Dio",
-      "id": 47,
-      "testo": "Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Dio ti ha scelto, Dio ti chiama, nel suo amore ti vuole con sé: spargi nel mondo il suo vangelo, semi di pace e di bontà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Dio ti guida come un padre: tu ritrovi la vita con lui. Rendigli grazie, sii fedele, finché il suo regno ti aprirà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Di ti nutre col suo cibo, nel deserto rimane con te. Ora non chiudere il tuo cuore; spezza il tuo pane a chi non ha. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Dio mantiene la promessa: in Gesù Cristo ti trasformerà. Porta ogni giorno la preghiera di chi speranza non ha. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Chiesa che vivi nella storia, sei testimone di Cristo quaggiù; apri le porte ad ogni uomo, salva la vera libertà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Chiesa chiamata al sacrificio, dove nel pane si offre Gesù, offri gioiosa la tua vita per una nuova umanità. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Chiesa, che scopri il tuo volto quando contempli la Vergine Madre, grida di gioia con Maria, servi il Signore in umiltà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te!56 Scarica il testo in PDF Coro delle Dieci - Privacy e note legali",
+      "id": 48,
+      "testo": "Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Dio ti ha scelto, Dio ti chiama, nel suo amore ti vuole con sé: spargi nel mondo il suo vangelo, semi di pace e di bontà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Dio ti guida come un padre: tu ritrovi la vita con lui. Rendigli grazie, sii fedele, finché il suo regno ti aprirà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Di ti nutre col suo cibo, nel deserto rimane con te. Ora non chiudere il tuo cuore; spezza il tuo pane a chi non ha. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Dio mantiene la promessa: in Gesù Cristo ti trasformerà. Porta ogni giorno la preghiera di chi speranza non ha. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Chiesa che vivi nella storia, sei testimone di Cristo quaggiù; apri le porte ad ogni uomo, salva la vera libertà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Chiesa chiamata al sacrificio, dove nel pane si offre Gesù, offri gioiosa la tua vita per una nuova umanità. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te! Chiesa, che scopri il tuo volto quando contempli la Vergine Madre, grida di gioia con Maria, servi il Signore in umiltà. Chiesa di Dio, popolo in festa, Alleluia, Alleluia! Chiesa di Dio, popolo in festa, canta di gioia: il Signore è con te!",
       "categorie": [
         "ingresso"
       ],
@@ -506,7 +516,7 @@
     },
     {
       "titolo": "Come fuoco vivo",
-      "id": 48,
+      "id": 49,
       "testo": "Come fuoco vivo si accende in noi un’immensa felicità che mai più nessuno ci toglierà perché tu sei ritornato. Chi potrà tacere da ora in poi, che sei tu in cammino con noi, che la morte è vinta per sempre, che ci hai ridonato la vita? Spezzi il pane davanti a noi, mentre il sole è al tramonto. Ora gli occhi ti vedono, sei tu resta, con noi. Come fuoco vivo si accende in noi un’immensa felicità che mai più nessuno ci toglierà perché tu sei ritornato. Chi potrà tacere da ora in poi, che sei tu in cammino con noi, che la morte è vinta per sempre, che ci hai ridonato la vita? E per sempre ti mostrerai in quel gesto d’amore. Mani che ancora spezzano pane d’eternità. Come fuoco vivo si accende in noi un’immensa felicità che mai più nessuno ci toglierà perché tu sei ritornato. Chi potrà tacere da ora in poi, che sei tu in cammino con noi, che la morte è vinta per sempre, che ci hai ridonato la vita?",
       "categorie": [
         "comunione",
@@ -517,7 +527,7 @@
     },
     {
       "titolo": "Come Maria",
-      "id": 49,
+      "id": 50,
       "testo": "Vogliamo vivere, Signore, offrendo a Te la nostra vita, con questo pane e questo vino accetta quello che noi siamo. Vogliamo vivere, Signore, abbandonati alla Tua voce, staccati dalle cose vane, fissati nella vita vera. Vogliamo vivere come Maria, l'irraggiungibile, la madre amata che vince il mondo con l'Amore e offrire sempre la tua vita che viene dal Cielo. Accetta dalle nostre mani come un'offerta a Te gradita i desideri di ogni cuore, le ansie della nostra vita. Vogliamo vivere, Signore, accesi dalle Tue parole per riportare in ogni uomo la fiamma viva del Tuo amore. Vogliamo vivere come Maria, l'irraggiungibile, la madre amata che vince il mondo con l'Amore e offrire sempre la tua vita che viene dal Cielo.",
       "categorie": [
         "maria"
@@ -527,7 +537,7 @@
     },
     {
       "titolo": "Come ti ama Dio",
-      "id": 50,
+      "id": 51,
       "testo": "Io vorrei saperti amare come Dio, che ti prende per mano, ma ti lascia anche andare. Vorrei saperti amare senza farti mai domande, felice perché esisti, e così io posso darti il meglio di me. Con la forza del mare, l’eternità dei giorni, la gioia dei voli, la pace della sera, l’immensità del cielo: come ti ama Dio. Io vorrei saperti amare come ti ama Dio, che ti conosce e ti accetta come sei. Tenerti tra le mani come voli nell’azzurro, felice perché esisti, e così io posso darti il meglio di me. Con la forza del mare, l’eternità dei giorni, la gioia dei voli, la pace della sera, l’immensità del cielo: come ti ama Dio. Io vorrei saperti amare come Dio, che ti fa migliore con l’amore che ti dona. Seguirti tra la gente con la gioia che hai dentro. Felice perché esisti e così io posso darti il meglio di me. Con la forza del mare, l’eternità dei giorni, la gioia dei voli, la pace della sera, l’immensità del cielo: come ti ama Dio.",
       "categorie": [
         "matrimonio",
@@ -539,7 +549,7 @@
     },
     {
       "titolo": "Con gioia veniamo a te",
-      "id": 51,
+      "id": 52,
       "testo": "Tu ci raduni da ogni parte del mondo, noi siamo i tuoi figli, tuo popolo santo. Lodiamo in coro con le schiere celesti, insieme cantiamo, gioiosi acclamiamo. O Signore, veniamo a te, con i cuori ricolmi di gioia, ti ringraziamo per i doni che dai, e per l'amore che riversi in noi. O Signore, veniamo a te, con i cuori ricolmi di gioia, le nostre mani innalziamo al cielo, a te con gioia veniam. La Parola che ci doni, Signore, illumina i cuori, ci mostra la via. Dove andremo se non resti con noi? Tu solo sei vita, tu sei verità. O Signore, veniamo a te, con i cuori ricolmi di gioia, ti ringraziamo per i doni che dai, e per l'amore che riversi in noi. O Signore, veniamo a te, con i cuori ricolmi di gioia, le nostre mani innalziamo al cielo, a te con gioia veniam. La grazia immensa che ci doni, Signore, purifica i cuori, consola i tuoi figli. Nel tuo nome noi speriamo, Signore, salvezza del mondo, eterno splendore. O Signore, veniamo a te, con i cuori ricolmi di gioia, ti ringraziamo per i doni che dai, e per l'amore che riversi in noi. O Signore, veniamo a te, con i cuori ricolmi di gioia, le nostre mani innalziamo al cielo, a te con gioia veniam. A te con gioia veniam. A te con gioia veniam, o Signor. A te con gioia veniam.",
       "categorie": [
         "ingresso"
@@ -549,7 +559,7 @@
     },
     {
       "titolo": "Cristo è risorto veramente",
-      "id": 52,
+      "id": 53,
       "testo": "Cristo è risorto veramente, alleluia. Gesù, il vivente, qui con noi resterà. Cristo Gesù, Cristo Gesù, è il Signore della vita. Morte, dov’è la tua vittoria? Paura non mi puoi far più. Se sulla croce io morirò insieme a lui, poi insieme a lui risorgerò. Cristo è risorto veramente, alleluia. Gesù, il vivente, qui con noi resterà. Cristo Gesù, Cristo Gesù, è il Signore della vita. Tu Signore amante della vita, mi hai creato per l’eternità. La vita mia tu dal sepolcro strapperai, con questo mio corpo ti vedrò. Cristo è risorto veramente, alleluia. Gesù, il vivente, qui con noi resterà. Cristo Gesù, Cristo Gesù, è il Signore della vita. Tu mi hai donato la tua vita, io voglio donar la mia a te. Fa che possa dire: “Cristo vive anche in me” e quel giorno io risorgerò. Cristo è risorto veramente, alleluia. Gesù, il vivente, qui con noi resterà. Cristo Gesù, Cristo Gesù, è il Signore della vita.",
       "categorie": [
         "pasqua"
@@ -559,7 +569,7 @@
     },
     {
       "titolo": "Cristo vive in mezzo a noi",
-      "id": 53,
+      "id": 54,
       "testo": "Cristo vive in mezzo a noi, alleluia, alleluia. Cristo vive in mezzo a noi, in mezzo a noi, alleluia. Tu sei via, sei verità, Tu sei la nostra vita. Camminando insieme a te vivremo in te per sempre. Cristo vive in mezzo a noi, alleluia, alleluia. Cristo vive in mezzo a noi, in mezzo a noi, alleluia. Nella gioia cammineremo portando il tuo Vangelo. Testimoni di carità, figli di Dio nel mondo. Cristo vive in mezzo a noi, alleluia, alleluia. Cristo vive in mezzo a noi, in mezzo a noi, alleluia.",
       "categorie": [
         "pasqua"
@@ -569,7 +579,7 @@
     },
     {
       "titolo": "Dall'aurora al tramonto",
-      "id": 54,
+      "id": 55,
       "testo": "Dall'aurora io cerco te fino al tramonto ti chiamo. Ha sete solo di te l'anima mia come terra deserta. Non mi fermerò un solo istante, sempre canterò la tua lode. Perché sei il mio Dio, il mio riparo, mi proteggerai all'ombra delle tue ali. Dall'aurora io cerco te fino al tramonto ti chiamo. Ha sete solo di te l'anima mia come terra deserta. Non mi fermerò un solo istante, io racconterò le tue opere. Perché sei il mio Dio, unico bene, nulla mai potrà la notte contro di me. Dall'aurora io cerco te fino al tramonto ti chiamo. Ha sete solo di te l'anima mia come terra deserta. Ha sete solo di te l’anima mia come terra deserta.",
       "categorie": [
         "comunione",
@@ -580,7 +590,7 @@
     },
     {
       "titolo": "Dio si è fatto come noi",
-      "id": 55,
+      "id": 56,
       "testo": "Dio s'è fatto come noi, per farci come Lui. Vieni, Gesù, resta con noi! Resta con noi! Viene dal grembo di una donna, la Vergine Maria. Tutta la storia lo aspettava, il nostro Salvatore. Egli era un uomo come noi e ci ha chiamato amici. Egli ci ha dato la sua vita insieme a questo pane. Noi che mangiamo questo pane saremo tutti amici. Noi che crediamo nel suo amore vedremo la sua gloria. Vieni, Signore, in mezzo a noi: resta con noi per sempre.",
       "categorie": [
         "natale"
@@ -590,7 +600,7 @@
     },
     {
       "titolo": "Dolce sentire",
-      "id": 56,
+      "id": 57,
       "testo": "Dolce sentire come nel mio cuore, ora umilmente sta nascendo amore. Dolce è capire che non son più solo, ma che son parte di una immensa vita. Che generosa risplende intorno a me: dono di Lui, del suo immenso amore. Ci ha dato il cielo e le chiare stelle, fratello sole e sorella luna, la madre terra con frutti, prati e fiori, il fuoco, il vento, l'aria e l'acqua pura. Fonte di vita per le sue creature. Dono di Lui, del suo immenso amore. Dono di Lui, del suo immenso amore.",
       "categorie": [
         "comunione"
@@ -600,43 +610,15 @@
     },
     {
       "titolo": "Dov'è carità e amore",
-      "id": 57,
+      "id": 58,
       "testo": "Dov'è Carità e Amore, qui c'è Dio. Ci ha riuniti tutti insieme Cristo, Amore: godiamo esultanti nel Signore! Temiamo ed amiamo il Dio vivente e amiamoci tra noi con cuore sincero. Dov'è Carità e Amore, qui c'è Dio. Noi formiamo qui riuniti un solo corpo, evitiamo di dividerci tra noi. Via le lotte maligne, via le liti! E regni in mezzo a noi Cristo Dio. Dov'è Carità e Amore, qui c'è Dio. Chi non ama resta sempre nella notte e dall'ombra della morte non risorge: ma se noi camminiamo nell'Amore, noi saremo veri figli della Luce. Dov'è Carità e Amore, qui c'è Dio. Nell'amore di Colui che ci ha salvato, rinnovati dallo Spirito del Padre, tutti insieme sentiamoci Fratelli e la Gioia diffondiamo sulla terra. Dov'è Carità e Amore, qui c'è Dio. Imploriamo con fiducia il Padre Santo perché doni ai nostri giorni la Sua Pace: ogni popol dimentichi i rancori, ed il mondo si rinnovi nell'Amore. Dov'è Carità e Amore, qui c'è Dio. Fa' che un giorno contempliamo il Tuo volto nella gloria dei beati, Cristo Dio. E sarà gioia immensa, gioia vera: durerà per tutti i secoli, senza fine. Dov'è Carità e Amore, qui c'è Dio. Sommo bene Iddio Signore ci ha donato tra gli uomini inviando il suo amore, in cui ha compimento il patto antico, e nel quale noi vediamo la nuova legge.",
       "categorie": [],
       "url": "canti/dov-e-carita-e-amore",
       "fileName": "dov-e-carita-e-amore.html"
     },
     {
-      "titolo": "Jesus Christ, You are my life",
-      "id": 58,
-      "testo": "Jesus Christ, You are my life, alleluja, alleluja. Jesus Christ, You are my life, alleluja, alleluja.  Tu sei via, sei verità, Tu sei la nostra vita, camminando insieme a Te vivremo in Te per sempre.  Ci raccogli nell'unità, riuniti nell'amore, nella gioia dinanzi a Te cantando la Tua gloria.  Nella gioia camminerem, portando il Tuo Vangelo, testimoni di carità, figli di Dio nel mondo.  En el gozo camineremos trayendo tu evangelio, testimonios de caridad, hijos de Dios en el mundo.  Tu nous rassembles dans l'unit runis dans ton grand amour, devant toi dans la joie nous chanterons ta gloire. ",
-      "categorie": [
-        "inglese",
-        "GMG",
-        "giubileo"
-      ],
-      "url": "canti/jesus-christ-you-are-my-life",
-      "fileName": "jesus-christ-you-are-my-life.html"
-    },
-    {
-      "titolo": "prova",
-      "id": 59,
-      "testo": "prova prova",
-      "categorie": [],
-      "url": "canti/prova",
-      "fileName": "prova.html"
-    },
-    {
-      "titolo": "Santo (Francescato)",
-      "id": 60,
-      "testo": "Santo, santo, santo il Signore\nDio dell'Universo\ni cieli e la terra sono pieni\ndella tua gloria, della tua gloria.\n\nRit.: Osanna nell'alto dei cieli\nosanna nell'alto dei cieli\nOsanna nell'alto dei cieli,\nosanna nell'alto dei cieli.\n\nBenedetto colui che viene\nnel nome del Signore\nRit.",
-      "categorie": [],
-      "url": "canti/santo-francescato",
-      "fileName": "santo-francescato.html"
-    },
-    {
       "titolo": "È bello lodarti",
-      "id": 61,
+      "id": 59,
       "testo": "È bello cantare il tuo amore, è bello lodare il tuo nome. è bello cantare il tuo amore, è bello lodarti, Signore, è bello cantare a Te! Tu che sei l’amore infinito, che neppure il cielo può contenere, ti sei fatto uomo, Tu sei venuto qui ad abitare in mezzo a noi, allora… È bello cantare il tuo amore, è bello lodare il tuo nome. è bello cantare il tuo amore, è bello lodarti, Signore, è bello cantare a Te! Tu che conti tutte le stelle e le chiami ad una ad una per nome, da mille sentieri ci hai radunati qui e ci hai chiamati figli tuoi, allora… È bello cantare il tuo amore, è bello lodare il tuo nome. è bello cantare il tuo amore, è bello lodarti, Signore, è bello cantare a Te! È bello cantare con Te!",
       "categorie": [
         "ingresso"
@@ -646,7 +628,7 @@
     },
     {
       "titolo": "E la strada si apre",
-      "id": 62,
+      "id": 60,
       "testo": "Raggio che buca le nubi ed è già cielo aperto, acqua che scende decisa scavando da sé, l’argine per la vita, la traiettoria di un volo che sull’orizzonte di sera, tutto di questa natura ha una strada per sé. Attimo che segue attimo un salto nel tempo, passo di un mondo che tende oramai all’unità, che non è più domani, usiamo allora queste mani, scaviamo a fondo nel cuore, solo scegliendo l’amore il mondo vedrà… Che la strada si apre, passo dopo passo, ora su questa strada noi. E si spalanca un cielo, un mondo che rinasce, si può vivere per l’unità. Nave che segue una rotta in mezzo alle onde, uomo che s’apre la strada in una giungla d’idee seguendo sempre il sole quando si sente assetato, deve raggiungere l’acqua, sabbia che nella risacca ritorna al mare. Usiamo allora queste mani, scaviamo a fondo nell’amore, solo scegliendo l’amore il mondo vedrà… Che la strada si apre, passo dopo passo, ora su questa strada noi. E si spalanca un cielo, un mondo che rinasce, si può vivere per l’unità. Che la strada si apre, passo dopo passo, ora su questa strada noi. E si spalanca un cielo, un mondo che rinasce, si può vivere per l’unità.",
       "categorie": [
         "congedo",
@@ -657,7 +639,7 @@
     },
     {
       "titolo": "E sono solo un uomo",
-      "id": 63,
+      "id": 61,
       "testo": "Io lo so, Signore, che vengo da lontano, prima del pensiero e poi nella tua mano, io mi rendo conto che tu sei la mia vita e non mi sembra vero di pregarti così. \"Padre d'ogni uomo\", e non ti ho visto mai, \"Spirito di vita\", e nacqui da una donna, \"Figlio mio fratello\", e sono solo un uomo, eppure io capisco che tu sei verità. E imparerò a guardare tutto il mondo con gli occhi trasparenti di un bambino, e insegnerò a chiamarti \"Padre nostro\" ad ogni figlio che diventa uomo. Io lo so, Signore, che tu mi sei vicino, luce alla mia mente, guida al mio cammino, mano che sorregge, sguardo che perdona, e non mi sembra vero che tu esista così. Dove nasce amore, Tu sei la sorgente, dove c'è una croce, Tu sei la speranza, dove il tempo ha fine, Tu sei vita eterna: e so che posso sempre contare su di Te! E accoglierò la vita come un dono, e avrò il coraggio di morire anch'io, e incontro a te verrò col mio fratello che non si sente amato da nessuno.",
       "categorie": [
         "comunione",
@@ -668,7 +650,7 @@
     },
     {
       "titolo": "È un giorno di festa",
-      "id": 64,
+      "id": 62,
       "testo": "È un giorno di festa, è il giorno per noi, cantare l’amore che viene da Lui. È un giorno di gioia, la gioia per noi, scoprirsi suoi figli amati da Lui. Tu ci chiami, Signore, alla mensa che accoglie. Sei parola, pane del nostro cammino, fonte d’eternità. È un giorno di festa, è il giorno per noi, cantare l’amore che viene da Lui. È un giorno di gioia, la gioia per noi, scoprirsi suoi figli amati da Lui. Noi veniamo, Signore, per trovarti e amarti. Noi fratelli, noi una sola famiglia, un corpo solo in te. È un giorno di festa, è il giorno per noi, cantare l’amore che viene da Lui. È un giorno di gioia, la gioia per noi, scoprirsi suoi figli amati da Lui.",
       "categorie": [
         "ingresso"
@@ -678,7 +660,7 @@
     },
     {
       "titolo": "Ecco il nostro si",
-      "id": 65,
+      "id": 63,
       "testo": "Fra tutte le donne scelta in Nazareth, sul tuo volto risplende il coraggio di quando hai detto \"Sì\". Insegna a questo cuore l'umiltà, il silenzio d'amore, la speranza nel figlio tuo Gesù. Ecco il nostro sì, nuova luce che rischiara il giorno, e' bellissimo regalare al mondo la speranza. Ecco il nostro sì, camminiamo insieme a te, Maria, madre di Gesù, madre dell'umanità. Nella tua casa il Verbo si rivelò, nel segreto del cuore, il respiro del Figlio Emmanuel. Insegna a queste mani la fedeltà, a costruire la pace, una casa comune insieme a te. Ecco il nostro sì, nuova luce che rischiara il giorno, e' bellissimo regalare al mondo la speranza. Ecco il nostro sì, camminiamo insieme a te, Maria, madre di Gesù, madre dell'umanità. Donna dei nostri giorni sostienici, guida il nostro cammino con la forza di quando hai detto sì. Insegnaci ad accogliere Gesù, noi saremo dimora, la più bella poesia dell'anima. Ecco il nostro sì, nuova luce che rischiara il giorno, e' bellissimo regalare al mondo la speranza. Ecco il nostro sì, camminiamo insieme a te, Maria, madre di Gesù, madre dell'umanità.",
       "categorie": [
         "maria",
@@ -689,7 +671,7 @@
     },
     {
       "titolo": "Ecco l'acqua",
-      "id": 66,
+      "id": 64,
       "testo": "Ecco l’acqua uscire dal tempio e dal fianco di Cristo Signore. E a quanti quest’acqua giungerà, porterà salvezza. Ed essi canteranno glorificando Te: Alleluia, Alleluia. Ecco l’acqua uscire dal tempio e dal fianco di Cristo Signore. E a quanti quest’acqua giungerà, porterà salvezza. Ed essi canteranno glorificando Te: Alleluia, Alleluia. Alleluia, Alleluia.",
       "categorie": [
         "liturgia",
@@ -700,7 +682,7 @@
     },
     {
       "titolo": "Ecco quel che abbiamo",
-      "id": 67,
+      "id": 65,
       "testo": "Ecco quel che abbiamo, nulla ci appartiene ormai. Ecco i frutti della terra, che tu moltiplicherai. Ecco queste mani, puoi usarle se lo vuoi, per dividere nel mondo il pane che tu hai dato a noi. Solo una goccia hai messo tra le mani mie, Solo una goccia che tu ora chiedi a me. Una goccia che in mano a te una pioggia diventerà e la terra feconderà. Sulle strade il vento da lontano porterà il profumo del frumento che tutti avvolgerà. E sarà l'amore che il raccolto spartirà e il miracolo del pane in terra si ripeterà. Le nostre gocce, pioggia fra le mani Tue, saranno linfa di una nuova civiltà. E la terra preparerà la festa del pane che ogni uomo condividerà.",
       "categorie": [
         "offertorio"
@@ -710,7 +692,7 @@
     },
     {
       "titolo": "Emmanuel (Inno GMG 2000)",
-      "id": 68,
+      "id": 66,
       "testo": "Dall'orizzonte una grande luce viaggia nella storia e lungo gli anni ha vinto il buio facendosi Memoria, e illuminando la nostra vita chiaro ci rivela che non si vive se non si cerca la Verità. Da mille strade arriviamo a Roma sui passi della fede, sentiamo l'eco della Parola che risuona ancora da queste mura, da questo cielo per il mondo intero: è vivo oggi, è l'Uomo Vero Cristo tra noi. Siamo qui sotto la stessa luce, sotto la sua croce, cantando ad una voce. È l'Emmanuel, Emmanuel, Emmanuel. È l'Emmanuel, Emmanuel. Dalla città di chi ha versato il sangue per amore ed ha cambiato il vecchio mondo vogliamo ripartire. Seguendo Cristo, insieme a Pietro, rinasce in noi la fede, Parola viva che ci rinnova e cresce in noi. Siamo qui sotto la stessa luce, sotto la sua croce, cantando ad una voce. È l'Emmanuel, Emmanuel, Emmanuel. È l'Emmanuel, Emmanuel. Un grande dono che Dio ci ha fatto è il Cristo suo Figlio, l'umanità è rinnovata, è in lui salvata. È vero uomo, è vero Dio, è il Pane della Vita, che ad ogni uomo ai suoi fratelli ridonerà. Siamo qui sotto la stessa luce, sotto la sua croce, cantando ad una voce. È l'Emmanuel, Emmanuel, Emmanuel. È l'Emmanuel, Emmanuel. La morte è uccisa, la vita ha vinto, è Pasqua in tutto il mondo, un vento soffia in ogni uomo lo Spirito fecondo, che porta avanti nella storia la Chiesa sua sposa, sotto lo sguardo di Maria, comunità. Siamo qui sotto la stessa luce, sotto la sua croce, cantando ad una voce. È l'Emmanuel, Emmanuel, Emmanuel. È l'Emmanuel, Emmanuel. Noi debitori del passato di secoli di storia, di vite date per amore, di santi che han creduto, di uomini che ad alta quota insegnano a volare, di chi la storia sa cambiare, come Gesù. Siamo qui sotto la stessa luce, sotto la sua croce, cantando ad una voce. È l'Emmanuel, Emmanuel, Emmanuel. È l'Emmanuel, Emmanuel. È giunta un'era di primavera, è tempo di cambiare.",
       "categorie": [
         "gmg"
@@ -720,7 +702,7 @@
     },
     {
       "titolo": "Evenu shalom",
-      "id": 69,
+      "id": 67,
       "testo": "Evenu shalom alejem. Evenu shalom alejem. Evenu shalom alejem. Evenu shalom, shalom, shalom alejem. E sia la pace con voi. E sia la pace con voi. E sia la pace con voi. Evenu shalom, shalom, shalom alejem. And the peace be with us. And the peace be with us. And the peace be with us. Evenu shalom, shalom, shalom alejem. Et la paix soit avec nous. Et la paix soit avec nous. Et la paix soit avec nous. Evenu shalom, shalom, shalom alejem. Y sea la paz con nosotros. Y sea la paz con nosotros. Y sea la paz con nosotros. Evenu shalom, shalom, shalom alejem. Diciamo pace al mondo, cantiamo pace al mondo, la tua vita sia gioiosa e il mio saluto “Pace!” giunga fino a voi. Evenu shalom alejem. Evenu shalom alejem. Evenu shalom alejem. Evenu shalom, shalom, shalom alejem.",
       "categorie": [
         "pace"
@@ -730,7 +712,7 @@
     },
     {
       "titolo": "Frutto della nostra terra",
-      "id": 70,
+      "id": 68,
       "testo": "Frutto della nostra terra, del lavoro di ogni uomo, pane della nostra vita, cibo della quotidianità. Tu che lo prendevi un giorno, lo spezzavi per i tuoi, oggi vieni in questo pane, cibo vero dell'umanità. E sarò pane, e sarò vino, nella mia vita, nelle tue mani, ti accoglierò dentro di me, farò di me un'offerta viva, un sacrificio gradito a te. Frutto della nostra terra, del lavoro di ogni uomo, vino delle nostre vigne sulla mensa dei fratelli tuoi. Tu che lo prendevi un giorno, lo bevevi con i tuoi, oggi vieni in questo vino e ti doni per la vita mia. E sarò pane, e sarò vino, nella mia vita, nelle tue mani, ti accoglierò dentro di me, farò di me un'offerta viva, un sacrificio gradito a te.",
       "categorie": [
         "offertorio"
@@ -740,7 +722,7 @@
     },
     {
       "titolo": "Giovane donna",
-      "id": 71,
+      "id": 69,
       "testo": "Giovane donna, attesa dell’umanità, un desiderio d’amore e pura libertà. Il Dio lontano è qui vicino a te, voce e silenzio, annuncio di novità. Ave Maria! Ave Maria! Dio t’ha prescelta qual Madre piena di bellezza, e il suo amore ti avvolgerà con la sua ombra. Grembo per Dio venuto sulla terra, tu sarai madre di un uomo nuovo. Ecco l’ancella che vive della tua parola, libero il cuore perché l’amore trovi casa. Ora l’attesa è densa di preghiera, e l’uomo nuovo è qui, in mezzo a noi. Ave Maria! Ave Maria! Dio t’ha prescelta qual Madre piena di bellezza, e il suo amore ti avvolgerà con la sua ombra. Grembo per Dio venuto sulla terra, tu sarai madre di un uomo nuovo.",
       "categorie": [
         "maria"
@@ -750,7 +732,7 @@
     },
     {
       "titolo": "Gloria (Buttazzo)",
-      "id": 72,
+      "id": 70,
       "testo": "Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Ti lodiamo, ti benediciamo, ti adoriamo, ti glorifichiamo, ti rendiamo grazie per la tua gloria immensa. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Signore Dio, re del cielo, Dio Padre onnipotente, Gesù Cristo, agnello di Dio, Tu, figlio del Padre. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Tu che togli i peccati del mondo, la nostra supplica ascolta Signore, Tu che siedi alla destra del Padre, abbi pietà di noi. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Tu solo il Santo, tu solo il Signore, tu l’altissimo Gesù Cristo, con lo Spirito Santo nella gloria del Padre. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini.",
       "categorie": [
         "liturgia",
@@ -761,7 +743,7 @@
     },
     {
       "titolo": "Gloria (Giombini)",
-      "id": 73,
+      "id": 71,
       "testo": "Gloria, gloria a Dio nell’alto dei cieli, gloria. E pace, e pace in terra agli uomini di buona volontà. Ti lodiamo (ti lodiamo). Ti benediciamo (ti benediciamo). Ti adoriamo (ti adoriamo). Ti glorifichiamo (ti glorifichiamo). Ti rendiamo grazie per la tua gloria immensa. Signore, figlio unigenito, Gesù Cristo, Signore Dio, agnello di Dio, figlio del Padre, Tu che togli i peccati, i peccati del mondo, abbi pietà di noi, abbi pietà di noi. Tu che togli i peccati, i peccati, i peccati del mondo, accogli, accogli la nostra supplica. Tu che siedi alla destra, alla destra del Padre, abbi pietà di noi, abbi pietà di noi. Perché tu solo il Santo (perché Tu solo il Santo), Tu solo il Signore (Tu solo il Signore), Tu solo l’Altissimo (Tu solo l’Altissimo), Gesù Cristo (Gesù Cristo), con lo Spirito (e con lo Spirito) Santo, e nella gloria di Dio Padre. Amen. Con lo Spirito (e con lo Spirito), Santo e nella gloria di Dio Padre. Amen. Nella gloria di Dio Padre. Amen.",
       "categorie": [
         "liturgia",
@@ -772,7 +754,7 @@
     },
     {
       "titolo": "Gloria (Mariano)",
-      "id": 74,
+      "id": 72,
       "testo": "Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Noi ti lodiamo, ti benediciamo, ti adoriamo, ti glorifichiamo, ti rendiamo grazie per la tua immensa gloria. Signore Dio, re del cielo, Dio Padre Onnipotente. Figlio unigenito, Cristo Gesù. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Signore Dio, Agnello di Dio, Figlio del Padre Onnipotente. Tu che togli i peccati del mondo, abbi pietà di noi. Tu che togli i peccati del mondo, accogli benigno la nostra preghiera. Tu che siedi alla destra del Padre, abbi pietà di noi. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Tu solo santo, tu solo il Signore, Tu l’Altissimo Gesù Cristo. Con lo Spirito Santo, nella gloria del Padre. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama. Gloria a Dio nell’alto dei cieli e pace in terra agli uomini che egli ama.",
       "categorie": [
         "liturgia",
@@ -783,7 +765,7 @@
     },
     {
       "titolo": "Grandi cose",
-      "id": 75,
+      "id": 73,
       "testo": "Grandi cose ha fatto il Signore per noi, ha fatto germogliare i fiori tra le rocce. Grandi cose ha fatto il Signore per noi, ci ha riportati liberi alla nostra terra. Ed ora possiamo cantare, possiamo gridare l'amore che Dio ha versato su noi. Tu che sai strappare dalla morte, hai sollevato il nostro viso dalla polvere. Tu che hai sentito il nostro pianto, nel nostro cuore hai messo un seme di felicità. Grandi cose ha fatto il Signore per noi, ha fatto germogliare i fiori tra le rocce. Grandi cose ha fatto il Signore per noi, ci ha riportati liberi alla nostra terra. Ed ora possiamo cantare, possiamo gridare l'amore che Dio ha versato su noi. Ed ora possiamo cantare, possiamo gridare l'amore che Dio ha versato su noi.",
       "categorie": [
         "ingresso"
@@ -793,7 +775,7 @@
     },
     {
       "titolo": "Há pressa no ar - international",
-      "id": 76,
+      "id": 74,
       "testo": "From far and wide to gather in this place we spread our wings and here we are And with Mary proclaiming our Yes We seek to serve and follow the will of the Lord, our Father Chiamati ad essere come Cristo Gesù vogliamo dare, diventare docili al sì, essere come Maria Todos vão ouvir a nossa voz, levantemos os braços, há pressa no ar. Jesus vive e não nos deixa sós, não mais deixaremos de amar. Tú que buscas saber quién eres parte a descubrir, ven a ver lo que vi. Ven con nosotros a mirar más allá de lo que haces y que no te deja reír y amar. Oublie le passé, ne dis pas non. Écoute donc ton coeur, et pars sans peur sur cette mission. Todos vão ouvir a nossa voz, levantemos os braços, há pressa no ar. Jesus vive e não nos deixa sós, não mais deixaremos de amar. È stata Maria ad accogliere per prima la grande sorpresa della vita per sempre Fiduciosa e semplice, volle ricevere ll grande mistero di un Dio che è per te (sempre per te) e per me. No puedo callar, no puedo dejar de cantar (de cantar): \"Mi Señor\". Cuenta conmigo, ¡no más callaré!\". Todos vão ouvir a nossa voz, levantemos os braços, há pressa no ar. Jesus vive e não nos deixa sós, não mais deixaremos de amar. Sans aucun doute sur sa mission. si jeune, Marie quitte promptement sa maison et part dans les montagnes. Voir Elisabeth et trouve immédiatement Salutation, communion. Le fruit est béni, c'est mon Seigneur! And I want to hear: You trust' in my word and happiness is yours! Todos vão ouvir a nossa voz, levantemos os braços, há pressa no ar. Jesus vive e não nos deixa sós, não mais deixaremos de amar. Todos vão ouvir a nossa voz, levantemos os braços, há pressa no ar. Jesus vive e não nos deixa sós, não mais deixaremos de amar. Todos vão ouvir a nossa voz, levantemos os braços, há pressa no ar. Jesus vive e não nos deixa sós, não mais deixaremos de amar. Scarica il testo i",
       "categorie": [
         "gmg",
@@ -804,7 +786,7 @@
     },
     {
       "titolo": "Há pressa no ar - italiano",
-      "id": 77,
+      "id": 75,
       "testo": "Da tutto il mondo, verso questa città per terra, per cielo noi siamo ora qui. Con Maria ripetiamo il suo “Sì”. Vogliamo servire, seguendo il disegno che ha Dio per noi. Vogliamo donare la vita a Gesù. Siamo suoi! Tutti suoi! Aperti al suo “Sì”, la Madre è con noi! E la nostra voce correrà! Alziamo le braccia, in fretta si va. Con Gesù non siamo soli mai. Mai più smetteremo di amar. Tu che cerchi di capire chi sei dispiega la vela e salpa da qui! Stiamo insieme e andiamo al di là di ogni barriera che spegne il sorriso e l’amore fra noi. Non piangere, dai! Rialzati e vai! Se hai fede, anche tu sarai messaggero di Verità. E la nostra voce correrà! Alziamo le braccia, in fretta si va. Con Gesù non siamo soli mai. Mai più smetteremo di amar. Fu Maria che per prima abbracciò la Vita del cielo discesa fra noi. Fiduciosa volle accogliere in sé il grande mistero di un Dio che è presente per te e per me. Io non tacerò, non mi fermerò, ma dirò: “Ecco, Dio: per te io vivo! Mai ti lascerò!” E la nostra voce correrà! Alziamo le braccia, in fretta si va. Con Gesù non siamo soli mai. Mai più smetteremo di amar. Senza dubbi Lei sa dove andrà, Maria, fanciulla, di fretta ora lascia la casa e corre ai monti del Sud. Ad Elisabetta lei porta Gesù: Santità, Unità. Tu sei Benedetta, Dio abita in te! Spero sia detto a me: “Perché tu hai creduto, felice sarai!”. E la nostra voce correrà! Alziamo le braccia, in fretta si va. Con Gesù non siamo soli mai. Mai più smetteremo di amar. E la nostra voce correrà! Alziamo le braccia, in fretta si va. Con Gesù non siamo soli mai. Mai più smetteremo di amar. E la nostra voce correrà! Alziamo le braccia, in fretta si va. Con Gesù non siamo soli mai. Mai più smetteremo di amar. Scarica il testo in PDF Scarica lo spartito in PDF dal sito ufficiale della GMG Coro delle Dieci - Privacy e note legali OFF ▼",
       "categorie": [
         "gmg",
@@ -815,7 +797,7 @@
     },
     {
       "titolo": "Hopes of peace",
-      "id": 78,
+      "id": 76,
       "testo": "Senti il cuore della tua città batte nella notte intorno a te, sembra una canzone muta che cerca un'alba di serenità. Semina la pace e tu vedrai che la tua speranza rivivrà; spine tra le mani piangerai, ma un mondo nuovo nascerà. Semina la pace e tu vedrai che la tua speranza rivivrà; spine tra le mani piangerai, ma un mondo nuovo nascerà. Sì, nascerà il mondo della pace; di guerra non si parlerà mai più. La pace è un dono che la vita ci darà, un sogno che si avvererà. Open wide the vision of your world feel the love that reigns in everything now is your chance to start again breathe in hopes of peace, of light, of love. Sì, nascerà il mondo della pace; di guerra non si parlerà mai più. La pace è un dono che la vita ci darà, un sogno che si avvererà. Abre el horizonte entorno a ti, siente el latido del amor; ahora es el momento de empezar una senda de paz, de luz y de amor. Sì, nascerà il mondo della pace; di guerra non si parlerà mai più. La pace è un dono che la vita ci darà, un sogno che si avvererà. Semina la pace e tu vedrai che la tua speranza rivivrà; spine tra le mani piangerai, ma un mondo nuovo nascerà. Un mondo nuovo nascerà.",
       "categorie": [
         "pace"
@@ -825,7 +807,7 @@
     },
     {
       "titolo": "I cieli narrano",
-      "id": 79,
+      "id": 77,
       "testo": "I cieli narrano la gloria di Dio e il firmamento annunzia l'opera sua. Alleluia, alleluia, alleluia, alleluia! Il giorno al giorno ne affida il messaggio, la notte alla notte ne trasmette notizia, non è linguaggio, non sono parole, di cui non si oda il suono. I cieli narrano la gloria di Dio e il firmamento annunzia l'opera sua. Alleluia, alleluia, alleluia, alleluia! Là pose una tenda per il sole che sorge, è come uno sposo dalla stanza nuziale, esulta come un prode che corre con gioia la sua strada. I cieli narrano la gloria di Dio e il firmamento annunzia l'opera sua. Alleluia, alleluia, alleluia, alleluia! Lui sorge dall’ultimo estremo del cielo e la sua corsa l’altro estremo raggiunge. Nessuna delle creature potrà mai sottrarsi al suo calore. I cieli narrano la gloria di Dio e il firmamento annunzia l'opera sua. Alleluia, alleluia, alleluia, alleluia! La legge di Dio rinfranca l'anima mia, la testimonianza del Signore è verace. Gioisce il cuore ai suoi giusti precetti che danno la luce agli occhi. I cieli narrano la gloria di Dio e il firmamento annunzia l'opera sua. Alleluia, alleluia, alleluia, alleluia!",
       "categorie": [
         "ingresso"
@@ -835,7 +817,7 @@
     },
     {
       "titolo": "Il canto dell'amore",
-      "id": 80,
+      "id": 78,
       "testo": "Se dovrai attraversare il deserto non temere io sarò con te, se dovrai camminare nel fuoco la sua fiamma non ti brucerà. Seguirai la mia luce nella notte, sentirai la mia forza nel cammino: io sono il tuo Dio, il Signore. Sono io che ti ho fatto e plasmato, ti ho chiamato per nome. Io da sempre ti ho conosciuto e ti ho dato il mio amore. Perché tu sei prezioso ai miei occhi, vali più del più grande dei tesori. Io sarò con te dovunque andrai. Non pensare alle cose di ieri: cose nuove fioriscono già. Aprirò nel deserto sentieri, darò acqua nell'aridità. Perché tu sei prezioso ai miei occhi, vali più del più grande dei tesori. Io sarò con te dovunque andrai. Perché tu sei prezioso ai miei occhi, vali più del più grande dei tesori. Io sarò con te dovunque andrai. Io ti sarò accanto, sarò con te, per tutto il tuo viaggio sarò con te. Io ti sarò accanto sarò con te, per tutto il tuo viaggio sarò con te.",
       "categorie": [],
       "url": "canti/il-canto-dell-amore",
@@ -843,7 +825,7 @@
     },
     {
       "titolo": "Il pane del cammino",
-      "id": 81,
+      "id": 79,
       "testo": "Il tuo popolo in cammino cerca in te la guida sulla strada verso il Regno sei sostegno col tuo corpo. Resta sempre con noi, o Signore. È il tuo Pane Gesù che ci dà forza e rende più sicuro il nostro passo. Se il vigore nel cammino si svilisce la tua mano dona lieta la speranza. Il tuo popolo in cammino cerca in te la guida sulla strada verso il Regno sei sostegno col tuo corpo. Resta sempre con noi, o Signore. È il tuo vino, Gesù che ci disseta e sveglia in noi l'ardore di seguirti. Se la gioia cede il passo alla stanchezza, la tua voce fa rinascere freschezza. Il tuo popolo in cammino cerca in te la guida sulla strada verso il Regno sei sostegno col tuo corpo. Resta sempre con noi, o Signore. È il Tuo corpo Gesù che ci fa Chiesa, fratelli sulle strade della vita. Se il rancore toglie luce all'amicizia, dal Tuo Cuore nasce giovane il perdono. Il tuo popolo in cammino cerca in te la guida sulla strada verso il Regno sei sostegno col tuo corpo. Resta sempre con noi, o Signore. È il Tuo sangue Gesù il segno eterno, dell'unico linguaggio dell'amore; se il donarsi come te richiede Fede, nel Tuo Spirito sfidiamo l'incertezza. Il tuo popolo in cammino cerca in te la guida sulla strada verso il Regno sei sostegno col tuo corpo. Resta sempre con noi, o Signore.",
       "categorie": [
         "comunione"
@@ -853,7 +835,7 @@
     },
     {
       "titolo": "In notte placida",
-      "id": 82,
+      "id": 80,
       "testo": "In notte placida, per muto sentier, dai campi del ciel è sceso l'amor, all'alme fedeli il Redentor! Nell'aria un palpito d'un grande mister: del nuovo Israel è nato il Signor, il fiore più bello tra tutti i fior! Cantate popoli gloria all'Altissimo (oh), cantate popoli gloria al Signor (oh). In notte placida, per muto sentier, dai campi del ciel è sceso l'amor, all'alme fedeli il Redentor! Nell'aria un palpito d'un grande mister: del nuovo Israel è nato il Signor, il fiore più bello tra tutti i fior!",
       "categorie": [
         "natale"
@@ -863,7 +845,7 @@
     },
     {
       "titolo": "Incontro a te",
-      "id": 83,
+      "id": 81,
       "testo": "Ristorati dal tuo pane, dissetati dal tuo vino, rafforzati dalla tua parola. Proseguiamo nel domani, tutti uniti nel tuo corpo, fonte inesauribile di pace. Incontro a Te, noi camminiamo e dentro a noi crescerà, la libertà nel mondo che amiamo, porteremo la speranza, dei figli tuoi, figli del tuo amore. Nella gioia e nel dolore, nel lavoro e nel riposo, nella solitudine del cuore. Sei compagno del cammino, tenerezza immensa e vera, mano che accompagna tutti noi. Incontro a Te, noi camminiamo e dentro a noi crescerà, la libertà nel mondo che amiamo, porteremo la speranza, dei figli tuoi, figli del tuo amore.",
       "categorie": [
         "comunione",
@@ -874,7 +856,7 @@
     },
     {
       "titolo": "Innalziamo lo sguardo",
-      "id": 84,
+      "id": 82,
       "testo": "Innalziamo lo sguardo, rinnoviamo l’attesa: ecco viene il Signore, viene non tarderà. Brillerà come luce la salvezza per noi, la Parola di Dio nascerà in mezzo a noi. Questo è tempo di gioia, di speranza per noi, il Creatore del mondo regnerà in mezzo a noi. Innalziamo lo sguardo, rinnoviamo l’attesa: ecco viene il Signore, viene non tarderà. Brillerà come luce la salvezza per noi, la Parola di Dio nascerà in mezzo a noi. Proclamiamo con forza il Vangelo di Dio, annunciamo con gioia la salvezza di Dio. Innalziamo lo sguardo, rinnoviamo l’attesa: ecco viene il Signore, viene non tarderà. Brillerà come luce la salvezza per noi, la Parola di Dio nascerà in mezzo a noi.",
       "categorie": [
         "avvento"
@@ -884,7 +866,7 @@
     },
     {
       "titolo": "Invochiamo la tua presenza",
-      "id": 85,
+      "id": 83,
       "testo": "Invochiamo la tua presenza, vieni Signor. Invochiamo la tua presenza, scendi su di noi. Vieni Consolatore, dona pace e fedeltà, acqua viva d'amore, questo cuore offriamo a Te. Vieni spirito, vieni spirito, scendi su di noi. Vieni spirito, vieni spirito, scendi su di noi. Vieni su noi, maranathà, vieni su noi spirito (oh, oh, oh, oh, oh), vieni spirito, vieni spirito, scendi su di noi. Vieni spirito, vieni spirito, scendi su di noi, scendi su di noi. Invochiamo la tua presenza, vieni Signor. Invochiamo la tua presenza, scendi su di noi. Vieni luce dei cuori, dona forza e fedeltà, fuoco eterno d'amore, questa vita offriamo a Te. Vieni spirito, vieni spirito, scendi su di noi. Vieni spirito, vieni spirito, scendi su di noi. Vieni su noi, maranathà, vieni su noi spirito (oh, oh, oh, oh, oh), vieni spirito, vieni spirito, scendi su di noi. Vieni spirito, vieni spirito, scendi su di noi, scendi su di noi.",
       "categorie": [
         "spirito santo",
@@ -895,7 +877,7 @@
     },
     {
       "titolo": "Isaia 11",
-      "id": 86,
+      "id": 84,
       "testo": "Ed un virgulto sul tronco di Jesse domani germoglierà. Un ramoscello dalle sue radici a vessillo si eleverà. Su lui sapienza, intelletto, consiglio, fortezza e timor del Signor. La sua parola sarà come verga e dal male ci libererà. Ed un virgulto sul tronco di Jesse domani germoglierà. Un ramoscello dalle sue radici a vessillo si eleverà. L'agnello e il lupo insieme staranno e accanto al capretto vivran. Pascoleranno con l'orsa e il leone e un fanciullo li guiderà. Ed un virgulto sul tronco di Jesse domani germoglierà. Un ramoscello dalle sue radici a vessillo si eleverà. Ed in quel giorno di nuovo il Signore la mano su lui stenderà. Come vessillo il germoglio di Jesse sui popoli si eleverà. Ed un virgulto sul tronco di Jesse domani germoglierà. Un ramoscello dalle sue radici a vessillo si eleverà.",
       "categorie": [
         "avvento"
@@ -904,8 +886,20 @@
       "fileName": "isaia-11.html"
     },
     {
+      "titolo": "Jesus Christ, You are my life",
+      "id": 85,
+      "testo": "Jesus Christ, You are my life, alleluja, alleluja. Jesus Christ, You are my life, alleluja, alleluja. Tu sei via, sei verità, Tu sei la nostra vita, camminando insieme a Te vivremo in Te per sempre. Ci raccogli nell'unità, riuniti nell'amore, nella gioia dinanzi a Te cantando la Tua gloria. Nella gioia camminerem, portando il Tuo Vangelo, testimoni di carità, figli di Dio nel mondo. En el gozo camineremos trayendo tu evangelio, testimonios de caridad, hijos de Dios en el mundo. Tu nous rassembles dans l'unit runis dans ton grand amour, devant toi dans la joie nous chanterons ta gloire. ",
+      "categorie": [
+        "inglese",
+        "GMG",
+        "giubileo"
+      ],
+      "url": "canti/jesus-christ-you-are-my-life",
+      "fileName": "jesus-christ-you-are-my-life.html"
+    },
+    {
       "titolo": "Kyrie eleison (Berthier - Taizé)",
-      "id": 87,
+      "id": 86,
       "testo": "Kyrie, Kyrie, eleison. Kyrie, Kyrie, eleison. Christe, Christe, eleison. Christe, Christe, eleison. Kyrie, Kyrie, eleison. Kyrie, Kyrie, eleison.",
       "categorie": [
         "liturgia",
@@ -916,7 +910,7 @@
     },
     {
       "titolo": "Kyrie eleison (La nostra Eucaristia)",
-      "id": 88,
+      "id": 87,
       "testo": "Kyrie eleison, Chiste eleison. Kyrie eleison, Crhiste eleison. Signore pietà, Cristo pietà. Signore pietà, Cristo pietà.",
       "categorie": [
         "liturgia",
@@ -927,7 +921,7 @@
     },
     {
       "titolo": "La canzone di Luciano",
-      "id": 89,
+      "id": 88,
       "testo": "Fa’ Signore che io riesca a consumare la mia vita per gli altri come Tu hai fatto per me. Che non debba mai dir di no ma sempre un sì con un sorriso sulle labbra. Fa che il mio dir di sì sia sempre per la gloria Tua, fa che abbia sempre sete di Te, Signore. Fa’ Signore che la Tua volontà sia sempre più chiara verso me e il mio cuore si allarghi sempre più all'amore. Fa Signore che io abbia sempre bisogno di Te in ogni istante. Che non debba mai dir di no ma sempre un sì con un sorriso sulle labbra. Fa che il mio dir di sì sia sempre per la gloria Tua, fa che abbia sempre sete di Te, Signore. Così che tu venga subito nell'aiutarmi a rialzare persone cadute e a confortare persone in crisi e a rasserenare cuori ansiosi e a risanare i malati morali e a sorridere a tutti con il Tuo volto. Che non debba mai dir di no ma sempre un sì con un sorriso sulle labbra. Fa che il mio dir di sì sia sempre per la gloria Tua, fa che abbia sempre sete di Te, Signore. Fa’ Signore che il mio arrivo sia in paradiso. Che non debba mai dir di no ma sempre un sì con un sorriso sulle labbra. Fa che il mio dir di sì sia sempre per la gloria Tua, fa che abbia sempre sete di Te, Signore. Che non debba mai dir di no ma sempre un sì con un sorriso sulle labbra. Fa che il mio dir di sì sia sempre per la gloria Tua, fa che abbia sempre sete di Te, Signore.",
       "categorie": [
         "missione"
@@ -937,7 +931,7 @@
     },
     {
       "titolo": "La mia anima canta",
-      "id": 90,
+      "id": 89,
       "testo": "La mia anima canta la grandezza del Signore, il mio spirito esulta nel mio Salvatore. Nella mia povertà l’Infinito mi ha guardata, in eterno ogni creatura mi chiamerà beata. La mia gioia è nel Signore che ha compiuto grandi cose in me, la mia lode al Dio fedele che ha soccorso il suo popolo e non ha dimenticato le sue promesse d’amore. La mia anima canta la grandezza del Signore, il mio spirito esulta nel mio Salvatore. Nella mia povertà l’Infinito mi ha guardata, in eterno ogni creatura mi chiamerà beata. Ha disperso i superbi nei pensieri inconfessabili, ha deposto i potenti, ha risollevato gli umili, ha saziato gli affamati, e aperto ai ricchi le mani. La mia anima canta la grandezza del Signore, il mio spirito esulta nel mio Salvatore. Nella mia povertà l’Infinito mi ha guardata, in eterno ogni creatura mi chiamerà beata.",
       "categorie": [
         "maria"
@@ -947,7 +941,7 @@
     },
     {
       "titolo": "La preghiera di Gesù e la nostra",
-      "id": 91,
+      "id": 90,
       "testo": "Dove due o tre sono riuniti nel mio nome io sarò con loro, pregherò con loro, amerò con loro perché il mondo venga a Te, o Padre, conoscere il tuo amore è avere vita con Te. Voi che siete luce della terra, miei amici, risplendete sempre della vera luce, perché il mondo creda nell’amore che c’è in voi. O Padre, consacrali per sempre e diano gloria a Te. Ogni beatitudine vi attende nel mio giorno, se sarete uniti, se sarete pace, se sarete puri perché voi vedrete Dio, che é Padre, in Lui la vostra vita gioia piena sarà. Voi che ora siete miei discepoli nel mondo siate testimoni di un amore immenso, date prova di quella speranza che c’è in voi, coraggio, vi guiderò per sempre, io rimango con voi. Spirito che animi la Chiesa e la rinnovi, donale fortezza, fa’ che sia fedele, come Cristo che muore e risorge perché il regno del Padre si compia in mezzo a noi che abbiamo vita in Lui, si compia in mezzo a noi che abbiamo vita in Lui.",
       "categorie": [
         "beatitudini",
@@ -958,7 +952,7 @@
     },
     {
       "titolo": "Laudato sii",
-      "id": 92,
+      "id": 91,
       "testo": "Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. E per tutte le sue creature, per il sole e per la luna, per le stelle e per il vento, e per l'acqua e per il fuoco. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Per sorella madre terra, ci alimenta e ci sostiene, per i frutti, i fiori e l'erba, per i monti e per il mare. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Perché il senso della vita è cantare e lodarti, e perché la nostra vita sia sempre una canzone. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. E per quelli che ora piangono, e per quelli che ora soffrono, e per quelli che ora nascono, e per quelli che ora muoiono. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. E per quelli che camminano, e per quelli che ti lodano, e per quelli che ti aspettano, e per quelli che ora cantano. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore.",
       "categorie": [],
       "url": "canti/laudato-sii-o-mi-signore",
@@ -966,7 +960,7 @@
     },
     {
       "titolo": "Le beatitudini",
-      "id": 93,
+      "id": 92,
       "testo": "Beati i poveri in spirito, di essi è il regno dei cieli; beati gli afflitti perché saranno consolati; beati i miti perché erediteranno la terra; beati quelli che han fame e sete della giustizia; perché saranno saziati, beati. Beati i misericordiosi, troveranno misericordia; beati i puri di cuore perché vedranno Dio; beati i costruttori di pace, saran chiamati figli di Dio; beati i perseguitati per causa della giustizia; di essi è il regno dei cieli, beati. Rallegratevi ed esultate perché grande è la vostra ricompensa nei cieli, nei cieli. Beati, beati!",
       "categorie": [
         "beatitudini",
@@ -977,7 +971,7 @@
     },
     {
       "titolo": "Le tue mani",
-      "id": 94,
+      "id": 93,
       "testo": "Le tue mani son piene di fiori, dove li portavi, sorella mia? Li portavo alla tomba di Cristo, ma l'ho trovata vuota, fratello mio. Alleluia, alleluia! Alleluia, alleluia! I tuoi occhi riflettono gioia, dimmi cosa hai visto, fratello mio? Ho veduto morire la morte, ecco cosa ho visto, sorella mia. Alleluia, alleluia! Alleluia, alleluia! Hai portato una mano all'orecchio, dimmi cosa ascolti, sorella mia? Sento squilli di trombe lontane, sento cori d'angeli, fratello mio. Alleluia, alleluia! Alleluia, alleluia! Stai cantando un'allegra canzone, dimmi perché canti, fratello mio? Perché so che la vita non muore, ecco perché canto, sorella mia. Alleluia, alleluia! Alleluia, alleluia!",
       "categorie": [
         "pasqua",
@@ -986,6 +980,18 @@
       ],
       "url": "canti/le-tue-mani",
       "fileName": "le-tue-mani.html"
+    },
+    {
+      "titolo": "Lode e gloria",
+      "id": 94,
+      "testo": "Lode e gloria a Te, o Signore! Lode e gloria a Te, o Signore! Date lode al Signore o figli di Dio, benedite il suo nome su tutta la terra. Il suo amore per noi è fedele per sempre, il suo amore per noi è per sempre. Lode e gloria a Te, o Signore! Lode e gloria a Te, o Signore! Proclamate il Signore da tutta la terra, ci ha creati e voluti, a lui apparteniamo. Il Signore ci guida e ci tiene per mano, il suo amore per noi è per sempre. Lode e gloria a Te, o Signore! Lode e gloria a Te, o Signore!",
+      "categorie": [
+        "liturgia",
+        "acclamazione al vangelo",
+        "quaresima"
+      ],
+      "url": "canti/lode-e-gloria",
+      "fileName": "lode-e-gloria.html"
     },
     {
       "titolo": "Lode e gloria a Te",
@@ -1000,26 +1006,24 @@
       "fileName": "lode-e-gloria-a-te.html"
     },
     {
-      "titolo": "Lode e gloria",
-      "id": 96,
-      "testo": "Lode e gloria a Te, o Signore! Lode e gloria a Te, o Signore! Date lode al Signore o figli di Dio, benedite il suo nome su tutta la terra. Il suo amore per noi è fedele per sempre, il suo amore per noi è per sempre. Lode e gloria a Te, o Signore! Lode e gloria a Te, o Signore! Proclamate il Signore da tutta la terra, ci ha creati e voluti, a lui apparteniamo. Il Signore ci guida e ci tiene per mano, il suo amore per noi è per sempre. Lode e gloria a Te, o Signore! Lode e gloria a Te, o Signore!",
-      "categorie": [
-        "liturgia",
-        "acclamazione al vangelo",
-        "quaresima"
-      ],
-      "url": "canti/lode-e-gloria",
-      "fileName": "lode-e-gloria.html"
-    },
-    {
       "titolo": "Madonna di Czestochowa (Madonna nera)",
-      "id": 97,
+      "id": 96,
       "testo": "C’è una terra silenziosa dove ognuno vuol tornare, una terra e un dolce volto con due segni di violenza: sguardo intenso e premuroso che ti chiede di affidare la tua vita e il tuo mondo in mano a Lei. Madonna, Madonna Nera, è dolce esser tuo figlio! Oh lascia, Madonna Nera, ch’io viva vicino a te. Lei ti calma e rasserena, lei ti libera dal male perché sempre ha un cuore grande per ciascuno dei suoi figli; Lei ti illumina il cammino se le offri un po’ d’amore, se ogni giorno parlerai a Lei così: Madonna, Madonna Nera, è dolce esser tuo figlio! Oh lascia, Madonna Nera, ch’io viva vicino a te. Questo mondo in subbuglio, cosa all'uomo potrà offrire? Solo il volto d'una Madre pace vera può donare. Nel tuo sguardo noi cerchiamo quel sorriso del Signore che ridesta un po' di bene in fondo al cuor. Madonna, Madonna Nera, è dolce esser tuo figlio! Oh lascia, Madonna Nera, ch’io viva vicino a te.",
       "categorie": [
         "maria"
       ],
       "url": "canti/madonna-di-czestochowa",
       "fileName": "madonna-di-czestochowa.html"
+    },
+    {
+      "titolo": "Madre Santa",
+      "id": 97,
+      "testo": "Madre santa, il Creatore da ogni macchia ti serbò. Sei tutta bella nel tuo splendore: Immacolata, noi ti acclamiam! Ave, ave, ave, Maria! Tanto pura, Vergine, sei che il Signor discese in te. Formasti il cuore al Re dei re: Madre di Dio, noi ti acclamiam! Ave, ave, ave, Maria! Gran prodigio Dio creò quando tu dicesti: «sì». Il divin Verbo donasti a noi: Vergine e Madre, noi ti acclamiam! Ave, ave, ave, Maria! Hai vissuto con il Signore in amore ed umiltà. Presso la croce fu il tuo dolore: o Mediatrice, noi ti acclamiam! Ave, ave, ave, Maria! Nella gloria Assunta sei dopo tanto tuo patir. Serto di stelle splende per te: nostra Regina, noi t’invochiam! Ave, ave, ave, Maria! Nelle lotte, nei timori, in continue avversità, della Chiesa Madre sei tu: Ausiliatrice, noi t’invochiam! Ave, ave, ave, Maria! Tanto grande, Vergine, sei che dai ali al supplicar. Esuli figli vegli dal cielo: Consolatrice, noi t’invochiam! Ave, ave, ave, Maria! Tu gloriosa vivi nei cieli con l’eterna Carità. Per te accolga la nostra lode ora e per sempre la Trinità! Ave, ave, ave, Maria!",
+      "categorie": [
+        "maria"
+      ],
+      "url": "canti/madre-santa",
+      "fileName": "madre-santa.html"
     },
     {
       "titolo": "Madre, io vorrei",
@@ -1032,18 +1036,8 @@
       "fileName": "madre-io-vorrei.html"
     },
     {
-      "titolo": "Madre Santa",
-      "id": 99,
-      "testo": "Madre santa, il Creatore da ogni macchia ti serbò. Sei tutta bella nel tuo splendore: Immacolata, noi ti acclamiam! Ave, ave, ave, Maria! Tanto pura, Vergine, sei che il Signor discese in te. Formasti il cuore al Re dei re: Madre di Dio, noi ti acclamiam! Ave, ave, ave, Maria! Gran prodigio Dio creò quando tu dicesti: «sì». Il divin Verbo donasti a noi: Vergine e Madre, noi ti acclamiam! Ave, ave, ave, Maria! Hai vissuto con il Signore in amore ed umiltà. Presso la croce fu il tuo dolore: o Mediatrice, noi ti acclamiam! Ave, ave, ave, Maria! Nella gloria Assunta sei dopo tanto tuo patir. Serto di stelle splende per te: nostra Regina, noi t’invochiam! Ave, ave, ave, Maria! Nelle lotte, nei timori, in continue avversità, della Chiesa Madre sei tu: Ausiliatrice, noi t’invochiam! Ave, ave, ave, Maria! Tanto grande, Vergine, sei che dai ali al supplicar. Esuli figli vegli dal cielo: Consolatrice, noi t’invochiam! Ave, ave, ave, Maria! Tu gloriosa vivi nei cieli con l’eterna Carità. Per te accolga la nostra lode ora e per sempre la Trinità! Ave, ave, ave, Maria!",
-      "categorie": [
-        "maria"
-      ],
-      "url": "canti/madre-santa",
-      "fileName": "madre-santa.html"
-    },
-    {
       "titolo": "Mani",
-      "id": 100,
+      "id": 99,
       "testo": "Vorrei che le parole mutassero in preghiera e rivederti o Padre che dipingevi il cielo. Sapessi quante volte guardando questo mondo vorrei che tu tornassi a ritoccarne il cuore. Vorrei che le mie mani avessero la forza per sostenere chi non può camminare. Vorrei che questo cuore che esplode in sentimenti diventasse culla per chi non ha più madre. Mani, prendi queste mie mani, (queste mani) fanne vita, fanne amore, (fanne amore) braccia aperte per ricevere chi è solo. Cuore, prendi questo mio cuore, (mio cuore) fa che si spalanchi al mondo (al mondo) germogliando per quegli occhi che non sanno pianger più. Sei tu lo spazio che desidero da sempre, so che mi stringerai e mi terrai la mano. Fa che le mie strade si perdano nel buio ed io cammini dove cammineresti Tu. Tu soffio della vita prendi la mia giovinezza con le contraddizioni e le falsità. Strumento fa che sia per annunciare il Regno a chi per queste vie Tu chiami Beati. Mani, prendi queste mie mani, (queste mani) fanne vita, fanne amore, (fanne amore) braccia aperte per ricevere chi è solo. Cuore, prendi questo mio cuore, (mio cuore) fa che si spalanchi al mondo (al mondo) germogliando per quegli occhi che non sanno pianger più. Noi giovani di un mondo che cancella i sentimenti e inscatola le forze nell'asfalto di città. Siamo stanchi di guardare, siamo stanchi di gridare, ci hai chiamati, siamo Tuoi cammineremo insieme. Mani, prendi queste nostre mani, (queste mani) fanne vita, fanne amore, (fanne amore) braccia aperte per ricevere chi è solo. Cuori, prendi questo nostri cuori, (nostri cuori) fa che siano testimoni (testimoni) che Tu chiami ogni uomo a far festa con Dio. Mani, prendi queste nostre mani, (queste mani) fanne vita, fanne amore, (fanne amore) braccia aperte per ricevere chi è solo. Cuori, prendi questo nostri cuori, (nostri cuori) fa che siano testimoni (testimoni) che Tu chiami ogni uomo a far festa con Dio. Ogni uomo a far festa con",
       "categorie": [
         "scout"
@@ -1053,7 +1047,7 @@
     },
     {
       "titolo": "Maranathà, vieni Signor",
-      "id": 101,
+      "id": 100,
       "testo": "Maranathà, vieni Signor verso Te Gesù, le mani noi leviam Maranathà, vieni Signor. prendici con te e salvaci Signor. Guardo verso le montagne (guardo verso le montagne), donde mi verrà il soccorso (donde mi verrà il soccorso), il soccorso vien da Dio (il soccorso vien da Dio), che ha creato il mondo intero (che ha creato il mondo intero). Maranathà, vieni Signor verso Te Gesù, le mani noi leviam Maranathà, vieni Signor. Sorgi con il tuo amore (sorgi con il tuo amore), la tua luce splenderà (la tua luce splenderà), ogni ombra svanirà (ogni ombra svanirà), la tua gloria apparirà (la tua gloria apparirà). Maranathà, vieni Signor verso Te Gesù, le mani noi leviam Maranathà, vieni Signor. Santo è nostro Signor (santo è nostro Signor), il peccato egli portò (il peccato egli portò), dalla morte ci salvò (dalla morte ci salvò), e la vita a noi donò (e la vita a noi donò). Maranathà, vieni Signor verso Te Gesù, le mani noi leviam Maranathà, vieni Signor. Mio Signor son peccatore (Mio Signor son peccatore), a Te apro il mio cuore (a Te apro il mio cuore), fa di me quello che vuoi (fa di me quello che vuoi), e per sempre in Te vivrò. (e per sempre in Te vivrò). Maranathà, vieni Signor verso Te Gesù, le mani noi leviam Maranathà, vieni Signor.",
       "categorie": [
         "avvento",
@@ -1065,7 +1059,7 @@
     },
     {
       "titolo": "Mi indicherai",
-      "id": 102,
+      "id": 101,
       "testo": "Mi indicherai il sentiero della vita, gioia piena nella tua presenza, alla tua destra dolcezza senza fine, il sentiero tu mi indicherai (mi indicherai). Proteggimi, o Dio, in Te mi rifugio. Ho detto a Dio: “Sei Tu il mio Signore, senza di Te alcun bene non ho”. Mi indicherai il sentiero della vita, gioia piena nella tua presenza, alla tua destra dolcezza senza fine, il sentiero tu mi indicherai (mi indicherai). Ai Santi della Terra il mio amore darò, altri si affrettino a costruire idoli, i loro nomi non pronuncerò. Mi indicherai il sentiero della vita, gioia piena nella tua presenza, alla tua destra dolcezza senza fine, il sentiero tu mi indicherai (mi indicherai). Mia eredità, mio calice è il Signore, nelle tue mani è la vita mia, terra deliziosa è la mia eredità. Mi indicherai il sentiero della vita, gioia piena nella tua presenza, alla tua destra dolcezza senza fine, il sentiero tu mi indicherai (mi indicherai). Benedico Dio che mi ha dato consiglio, innanzi a me pongo il Signore, Lui è alla mia destra, non vacillerò. Mi indicherai il sentiero della vita, gioia piena nella tua presenza, alla tua destra dolcezza senza fine, il sentiero tu mi indicherai (mi indicherai).",
       "categorie": [
         "ingresso"
@@ -1075,7 +1069,7 @@
     },
     {
       "titolo": "Musica di festa",
-      "id": 103,
+      "id": 102,
       "testo": "Cantate al Signore un cantico nuovo, splende la sua gloria! Grande la sua forza, grande la sua pace, grande la sua santità. In tutta la terra popoli del mondo gridate la sua fedeltà. Musica di festa, musica di lode, musica di libertà. Agli occhi del mondo ha manifestato la sua salvezza! Per questo si canti, per questo si danzi, per questo si celebri. In tutta la terra popoli del mondo gridate la sua fedeltà. Musica di festa, musica di lode, musica di libertà. Con l’arpa ed il corno, con timpani e flauti, con tutta la voce! Canti di dolcezza, canti di salvezza, canti d’immortalità. In tutta la terra popoli del mondo gridate la sua fedeltà. Musica di festa, musica di lode, musica di libertà. I fiumi ed i monti battono le mani davanti al Signore! La sua giustizia giudica la terra, giudica le genti. In tutta la terra popoli del mondo gridate la sua fedeltà. Musica di festa, musica di lode, musica di libertà. Al Dio che ci salva gloria in eterno! Amen! Alleluia! Gloria a Dio Padre, gloria a Dio Figlio, gloria a Dio Spirito! In tutta la terra popoli del mondo gridate la sua fedeltà. Musica di festa, musica di lode, musica di libertà.",
       "categorie": [
         "congedo",
@@ -1086,7 +1080,7 @@
     },
     {
       "titolo": "Nel tuo silenzio",
-      "id": 104,
+      "id": 103,
       "testo": "Nel tuo silenzio accolgo il mistero venuto a vivere dentro di me. Sei tu che vieni, o forse è più vero che tu mi accogli in te, Gesù. Sorgente viva che nasce nel cuore: è questo dono che abita in me. La tua presenza è un fuoco d'amore. Che avvolge l'anima mia, Gesù. Ora il tuo Spirito in me dice: \"Padre\", non sono io a parlare, sei Tu. Nell'infinito oceano di pace, Tu vivi in me, io in te, Gesù.",
       "categorie": [
         "comunione"
@@ -1096,7 +1090,7 @@
     },
     {
       "titolo": "Noi saremo il pane",
-      "id": 105,
+      "id": 104,
       "testo": "Un chicco da solo che fa? Non fa un campo di grano né un pane! Un chicco da solo non potrà esser la gioia di chi ha fame! Ma uniti insieme tanti chicchi un solo pane! Noi saremo il pane, noi sarem l'amore, noi sarem la gioia per un mondo che ha fame d'infinito! Noi saremo il pane, noi sarem l'amore, noi sarem la gioia per un mondo che ha fame di Te! Un acino solo che fa? Non è uva che matura sui colli! Un uomo da solo non potrà essere \"segno\" dell'amore, ma noi gli invitati tutti insieme Chiesa viva! Noi saremo il pane, noi sarem l'amore, noi sarem la gioia per un mondo che ha fame d'infinito! Noi saremo il pane, noi sarem l'amore, noi sarem la gioia per un mondo che ha fame di Te! Noi saremo il pane.",
       "categorie": [
         "offertorio"
@@ -1106,7 +1100,7 @@
     },
     {
       "titolo": "Noi veniamo a Te",
-      "id": 106,
+      "id": 105,
       "testo": "Noi veniamo a Te, ti seguiamo, Signor, solo Tu hai parole di vita. E rinascerà dall'incontro con Te una nuova umanità. Tu, maestro degli uomini, Tu ci chiami all'ascolto, e rinnovi con noi l'alleanza d'amore infinito. Noi veniamo a Te, ti seguiamo, Signor, solo Tu hai parole di vita. E rinascerà dall'incontro con Te una nuova umanità. Tu, speranza degli uomini, Tu ci apri alla vita, e rinnovi per noi la promessa del mondo futuro. Noi veniamo a Te, ti seguiamo, Signor, solo Tu hai parole di vita. E rinascerà dall'incontro con Te una nuova umanità. Tu, amico degli uomini, Tu ci chiami fratelli, e rivivi con noi l'avventura di un nuovo cammino. Noi veniamo a Te, ti seguiamo, Signor, solo Tu hai parole di vita. E rinascerà dall'incontro con Te una nuova umanità. Tu, salvezza degli uomini, Tu rinnovi la festa, e ci chiami da sempre ad aprire le porte del cuore. Noi veniamo a Te, ti seguiamo, Signor, solo Tu hai parole di vita. E rinascerà dall'incontro con Te una nuova umanità.",
       "categorie": [
         "ingresso"
@@ -1115,8 +1109,8 @@
       "fileName": "noi-veniamo-a-te.html"
     },
     {
-      "titolo": "Come la pioggia e la neve",
-      "id": 107,
+      "titolo": "Ogni mia parola",
+      "id": 106,
       "testo": "Come la pioggia e la neve scendono giù dal cielo e non vi ritornano senza irrigare e far germogliare la terra. Così ogni mia parola non ritornerà a me senza operare quanto desidero, senza aver compiuto ciò per cui l'avevo mandata. Ogni mia parola, ogni mia parola.",
       "categorie": [
         "acclamazione al vangelo"
@@ -1126,7 +1120,7 @@
     },
     {
       "titolo": "Osanna al figlio di David",
-      "id": 108,
+      "id": 107,
       "testo": "Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor! Apritevi, o porte eterne, avanzi il Re della gloria, adori cielo e terra, l'eterno suo poter. Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor! O monti stillate dolcezza, il Re dell'amor s'avvicina, si dona pane e vino ed offre pace al cuor. Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor! O Vergine, presso l'Altissimo, trovasti grazia e onor, soccorri i tuoi figlioli, donando il Salvator. Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor! Verrai un giorno giudice, o mite e buon Gesù, rimetti i nostri falli nel tempo del perdon. Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor! A una voce sola, gridiamo a Dio che venga su questa nostra terra, lui solo a regnar. Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor! Sia luce nella notte, conforto nel cammino, il pane e la Parola e pace a ogni cuor. Osanna al figlio di David, osanna al redentor! Osanna al figlio di David, osanna al redentor!",
       "categorie": [
         "domenica delle palme"
@@ -1136,7 +1130,7 @@
     },
     {
       "titolo": "Pace sia, pace a voi",
-      "id": 109,
+      "id": 108,
       "testo": "\"Pace sia, pace a voi\": la tua pace sarà sulla terra com'è nei cieli. \"Pace sia, pace a voi\": la tua pace sarà gioia nei nostri occhi, nei cuori. \"Pace sia, pace a voi\": la tua pace sarà luce limpida nei pensieri. \"Pace sia, pace a voi\": la tua pace sarà una casa per tutti. \"Pace a voi\": sia il tuo dono visibile. \"Pace a voi\": la tua eredità. \"Pace a voi\": come un canto all'unisono che sale dalle nostre citta. \"Pace sia, pace a voi\": la tua pace sarà sulla terra com'è nei cieli. \"Pace sia, pace a voi\": la tua pace sarà gioia nei nostri occhi, nei cuori. \"Pace sia, pace a voi\": la tua pace sarà luce limpida nei pensieri. \"Pace sia, pace a voi\": la tua pace sarà una casa per tutti. \"Pace a voi\": sia un'impronta nei secoli. \"Pace a voi\": segno d'unità. \"Pace a voi\": sia l'abbraccio tra i popoli, la tua promessa all'umanità. \"Pace sia, pace a voi\": la tua pace sarà sulla terra com'è nei cieli. \"Pace sia, pace a voi\": la tua pace sarà gioia nei nostri occhi, nei cuori. \"Pace sia, pace a voi\": la tua pace sarà luce limpida nei pensieri. \"Pace sia, pace a voi\": la tua pace sarà una casa per tutti. Pace.",
       "categorie": [
         "pace",
@@ -1147,7 +1141,7 @@
     },
     {
       "titolo": "Pane del cielo",
-      "id": 110,
+      "id": 109,
       "testo": "Pane del cielo, sei tu, Gesù, via d'amore, Tu ci fai come te. No, non è rimasta fredda la terra: Tu sei rimasto con noi per nutrirci di te. Pane di vita, ed infiammare col tuo amore tutta l'umanità. Pane del cielo, sei tu, Gesù, via d'amore, Tu ci fai come te. Sì, il cielo è qui su questa terra: Tu sei rimasto con noi e ci porti con te nella tua casa, dove vivremo insieme a te tutta l'eternità. Pane del cielo, sei tu, Gesù, via d'amore, Tu ci fai come te. No, la morte non può farci paura: Tu sei rimasto con noi e chi vive in te vive per sempre, sei Dio per noi, sei Dio con noi, Dio in mezzo a noi. Pane del cielo, sei tu, Gesù, via d'amore, Tu ci fai come te.",
       "categorie": [
         "comunione"
@@ -1157,7 +1151,7 @@
     },
     {
       "titolo": "Pane di vita nuova",
-      "id": 111,
+      "id": 110,
       "testo": "Pane di vita nuova, vero cibo dato agli uomini, nutrimento che sostiene il mondo, dono splendido di grazia. Tu sei sublime frutto di quell'albero di vita che Adamo non potè toccare, ora è in Cristo a noi donato. Pane della vita, sangue di salvezza, vero corpo, vera bevanda, cibo di grazia per il mondo. Sei l’agnello immolato nel cui sangue è la salvezza memoriale della vera Pasqua, della nuova Alleanza. Manna che nel deserto nutri il popolo in cammino, sei sostegno e forza nella prova per la Chiesa in mezzo al mondo. Vino che ci dà gioia, che riscalda il nostro cuore, sei per noi il prezioso frutto della vigna del Signore. Dalla vite ai tralci scorre la vitale linfa che ci dona la vita divina, scorre il sangue dell'amore. Pane della vita, sangue di salvezza, vero corpo, vera bevanda, cibo di grazia per il mondo. Sei l’agnello immolato nel cui sangue è la salvezza memoriale della vera Pasqua, della nuova Alleanza. Manna che nel deserto nutri il popolo in cammino, sei sostegno e forza nella prova per la Chiesa in mezzo al mondo.",
       "categorie": [
         "comunione"
@@ -1167,7 +1161,7 @@
     },
     {
       "titolo": "Pellegrini di speranza",
-      "id": 112,
+      "id": 111,
       "testo": "Fiamma viva della mia speranza questo canto giunga fino a Te! Grembo eterno d’infinita vita nel cammino io confido in Te. Ogni lingua, popolo e nazione trova luce nella tua Parola. Figli e figlie fragili e dispersi sono accolti nel tuo Figlio amato. Fiamma viva della mia speranza questo canto giunga fino a Te! Grembo eterno d’infinita vita nel cammino io confido in Te. Dio ci guarda, tenero e paziente: nasce l’alba di un futuro nuovo. Nuovi Cieli Terra fatta nuova: passa i muri Spirito di vita. Fiamma viva della mia speranza questo canto giunga fino a Te! Grembo eterno d’infinita vita nel cammino io confido in Te. Alza gli occhi, muoviti col vento, serra il passo: viene Dio, nel tempo. Guarda il Figlio che s’è fatto Uomo: mille e mille trovano la via. Fiamma viva della mia speranza questo canto giunga fino a Te! Grembo eterno d’infinita vita nel cammino io confido in Te. Scarica il testo in PDF Scarica il testo in PDF dal sito ufficiale del Giubileo Scarica lo spartito in PDF dal sito ufficiale del Giubileo Scarica gli accordi in PDF dal sito ufficiale del Giubileo Coro delle Dieci - Privacy e note legali OFF ▼",
       "categorie": [
         "giubileo"
@@ -1177,7 +1171,7 @@
     },
     {
       "titolo": "Perché tu sei con me",
-      "id": 113,
+      "id": 112,
       "testo": "Solo tu sei il mio pastore niente mai mi mancherà. Solo tu sei il mio pastore, o Signore. Mi conduci dietro te sulle verdi alture, ai ruscelli tranquilli, lassù, dov’è più limpida l’acqua per me, dove mi fai riposare. Solo tu sei il mio pastore niente mai mi mancherà. Solo tu sei il mio pastore, o Signore. Anche fra le tenebre d’un abisso oscuro io non temo alcun male perché Tu mi sostieni, sei sempre con me, rendi il sentiero sicuro. Solo tu sei il mio pastore niente mai mi mancherà. Solo tu sei il mio pastore, o Signore. Siedo alla tua tavola che mi hai preparato ed il calice è colmo per me di quella linfa di felicità che per amore hai versato. Solo tu sei il mio pastore niente mai mi mancherà. Solo tu sei il mio pastore, o Signore. Sempre mi accompagnano lungo estati e inverni la tua grazia, la tua fedeltà nella tua casa io abiterò fino alla fine dei giorni. Solo tu sei il mio pastore niente mai mi mancherà. Solo tu sei il mio pastore, o Signore.",
       "categorie": [
         "comunione"
@@ -1187,7 +1181,7 @@
     },
     {
       "titolo": "Popoli tutti acclamate",
-      "id": 114,
+      "id": 113,
       "testo": "Mio Dio, Signore, nulla è pari a Te. Ora e per sempre voglio lodare il Tuo grande amor per me. Mia roccia Tu sei, pace e conforto mi dai. Con tutto il cuore e le mie forze, sempre io Ti adorerò. Popoli tutti acclamate al Signore, Gloria e potenza cantiamo al Re, mari e monti si prostrino a Te, al tuo nome, o Signore. Canto di gioia per quello che fai, per sempre, Signore, con Te resterò, non c'è promessa, non c'è fedeltà che in Te. Mio Dio, Signore, nulla è pari a Te. Ora e per sempre, voglio lodare il Tuo grande amor per me. Mia roccia Tu sei, pace e conforto mi dai. Con tutto il cuore e le mie forze, sempre io Ti adorerò. Popoli tutti acclamate al Signore, Gloria e potenza cantiamo al Re, mari e monti si prostrino a Te, al tuo nome, o Signore. Canto di gioia per quello che fai, per sempre, Signore, con Te resterò, non c'è promessa, non c'è fedeltà che in Te. Popoli tutti acclamate al Signore, Gloria e potenza cantiamo al Re, mari e monti si prostrino a Te, al tuo nome, o Signore. (aumento 1 tono) Canto di gioia per quello che fai, per sempre, Signore, con Te resterò, non c'è promessa, non c'è fedeltà che in Te. Non c'è promessa, non c'è fedeltà che in Te. Non c'è promessa, non c'è fedeltà che in Te.",
       "categorie": [
         "ingresso"
@@ -1197,7 +1191,7 @@
     },
     {
       "titolo": "Quale gioia",
-      "id": 115,
+      "id": 114,
       "testo": "Quale gioia, mi dissero: andremo alla casa del Signore; ora i piedi, o Gerusalemme, si fermano davanti a te. Ora Gerusalemme è ricostruita come città santa, forte e unita. (Quale gioia) Quale gioia, mi dissero: andremo alla casa del Signore; ora i piedi, o Gerusalemme, si fermano davanti a te. Salgono insieme le tribù di Jahvè per lodare il nome del Signore d’Israele. (Quale gioia) Quale gioia, mi dissero: andremo alla casa del Signore; ora i piedi, o Gerusalemme, si fermano davanti a te. Domandate pace per Gerusalemme, sia pace a chi ti ama, pace alle tue mura. (Quale gioia) Quale gioia, mi dissero: andremo alla casa del Signore; ora i piedi, o Gerusalemme, si fermano davanti a te. Noi siamo il tuo popolo, egli è il nostro Dio, possa rinnovarci la felicità. (Quale gioia) Quale gioia, mi dissero: andremo alla casa del Signore; ora i piedi, o Gerusalemme, si fermano davanti a te.",
       "categorie": [
         "domenica delle palme",
@@ -1208,7 +1202,7 @@
     },
     {
       "titolo": "Rallegriamoci",
-      "id": 116,
+      "id": 115,
       "testo": "Rallegriamoci, non c'è spazio alla tristezza in questo giorno. Rallegriamoci, è la vita che distrugge ogni paura. Rallegriamoci, che si compie in questo giorno ogni promessa. Rallegriamoci, ogni uomo lo vedrà: la salvezza di Dio. Gloria a Te, Emmanuele, gloria a Te, Figlio di Dio, gloria a Te, Cristo Signore che nasci per noi e torna la gioia! (2v.) Rallegriamoci, Egli viene a liberarci da ogni male. Rallegriamoci, è il momento di gustare il suo perdono. Rallegriamoci, con coraggio riceviamo la sua vita. Rallegriamoci, perché è giunta in mezzo a noi la presenza di Dio. Gloria a Te, Emmanuele, gloria a Te, Figlio di Dio, gloria a Te, Cristo Signore che nasci per noi e torna la gioia! (2v.) Rallegriamoci, tutti i popoli del mondo lo vedranno. Rallegriamoci, nel Signore è la nostra dignità. Rallegriamoci, nella luce del suo regno in cui viviamo. Rallegriamoci, siamo tempio vivo suo, siamo Chiesa di Dio. Gloria a Te, Emmanuele, gloria a Te, Figlio di Dio, gloria a Te, Cristo Signore che nasci per noi e torna la gioia! (2v.)",
       "categorie": [
         "natale",
@@ -1219,7 +1213,7 @@
     },
     {
       "titolo": "Re dei re",
-      "id": 117,
+      "id": 116,
       "testo": "Hai sollevato i nostri volti dalla polvere, le nostre colpe hai portato su di te. Signore ti sei fatto uomo in tutto come noi per amore. Figlio dell'Altissimo, povero tra i poveri, vieni a dimorare tra noi. Dio dell'impossibile, Re di tutti i secoli, vieni nella tua maestà. Re dei Re i popoli ti acclamano, i cieli ti proclamano Re dei Re. Luce degli uomini regna col tuo amore tra noi. (Oh, oh, oh) Ci hai riscattati dalla stretta delle tenebre perché potessimo glorificare te. Hai riversato in noi la vita del tuo Spirito per amore. Figlio dell'Altissimo, povero tra i poveri, vieni a dimorare tra noi. Dio dell'impossibile, Re di tutti i secoli, vieni nella tua maestà. Re dei Re i popoli ti acclamano, i cieli ti proclamano Re dei Re. Luce degli uomini regna col tuo amore tra noi. (Oh, oh, oh) Tua è la gloria per sempre. Tua è la gloria per sempre. Tua è la gloria per sempre. Gloria, gloria. Gloria, gloria Figlio dell'Altissimo, povero tra i poveri, vieni a dimorare tra noi. Dio dell'impossibile, Re di tutti i secoli, vieni nella tua maestà. Re dei Re i popoli ti acclamano, i cieli ti proclamano Re dei Re. Luce degli uomini regna col tuo amore tra noi. (Oh, oh, oh)",
       "categorie": [
         "adorazione",
@@ -1230,7 +1224,7 @@
     },
     {
       "titolo": "Re di gloria",
-      "id": 118,
+      "id": 117,
       "testo": "Ho incontrato Te Gesù e ogni cosa in me è cambiata tutta la mia vita ora ti appartiene tutto il mio passato io lo affido a Te Gesù Re di gloria mio Signor. Tutto in Te riposa, la mia mente il mio cuore trovo pace in Te Signor, Tu mi dai la gioia voglio stare insieme a Te, non lasciarti mai Gesù Re di gloria mio Signor. Dal tuo amore chi mi separerà sulla croce hai dato la vita per me Una corona di Gloria mi darai quando un giorno ti vedrò. Tutto in Te riposa, la mia mente il mio cuore trovo pace in Te Signor, Tu mi dai la gioia vera voglio stare insieme a Te, non lasciarti mai Gesù Re di gloria mio Signor. Dal tuo amore chi mi separerà sulla croce hai dato la vita per me Una corona di Gloria mi darai quando un giorno ti vedrò. Dal tuo amore chi mi separerà. Io ti aspetto mio Signor. Io ti aspetto mio Signor. Io ti aspetto mio Re.",
       "categorie": [
         "adorazione",
@@ -1241,7 +1235,7 @@
     },
     {
       "titolo": "Redentore delle genti",
-      "id": 119,
+      "id": 118,
       "testo": "Redentore delle genti ci hai salvato col tuo grande amore. Buon pastore, noi tuo gregge, ci conduci alla libertà. Cristo Salvatore hai posto in mezzo a noi la tua dimora per l'eternità. Redentore delle genti ti fai dono per l'umanità. Tu sei il verbo fatto carne noi le membra del tuo divin corpo. Cristo Salvatore hai posto in mezzo a noi la tua dimora per l'eternità. Redentore delle genti sei la luce nell'oscurità. Noi il tuo popolo fedele che cammina nella verità. Cristo Salvatore hai posto in mezzo a noi la tua dimora per l'eternità. Redentore delle genti sei speranza per l'umanità. Tu la vite, noi i tuoi tralci, nel tuo amore saldi noi vivremo. Cristo Salvatore hai posto in mezzo a noi la tua dimora per l'eternità.",
       "categorie": [],
       "url": "canti/redentore-delle-genti",
@@ -1249,7 +1243,7 @@
     },
     {
       "titolo": "Resta accanto a me",
-      "id": 120,
+      "id": 119,
       "testo": "Ora vado sulla mia strada con l'amore tuo che mi guida, oh Signore ovunque io vada resta accanto a me. Io ti prego, stammi vicino ogni passo del mio cammino, ogni notte, ogni mattino resta accanto a me. Il tuo sguardo puro sia luce per me e la tua parola sia voce per me. Che io trovi il senso del mio andare solo in Te, nel tuo fedele amare il mio perché. Ora vado sulla mia strada con l'amore tuo che mi guida, oh Signore ovunque io vada resta accanto a me. Io ti prego, stammi vicino ogni passo del mio cammino, ogni notte, ogni mattino resta accanto a me. Fa' che chi mi guarda veda che Te. Fa' che chi mi ascolta senta che Te, e chi pensa a me, fa' che nel cuore pensi a Te, e trovi quell’amore che hai dato a me. Ora vado sulla mia strada con l'amore tuo che mi guida, oh Signore ovunque io vada resta accanto a me. Io ti prego, stammi vicino ogni passo del mio cammino, ogni notte, ogni mattino resta accanto a me.",
       "categorie": [
         "congedo",
@@ -1260,13 +1254,23 @@
     },
     {
       "titolo": "Resta qui con noi",
-      "id": 121,
+      "id": 120,
       "testo": "Le ombre si distendono, scende ormai la sera, e s'allontanano dietro i monti i riflessi di un giorno che non finirà, Di un giorno che ora correrà sempre, perché sappiamo che una nuova vita da qui è partita e mai più si fermerà. Resta qui con noi il sole scende già, resta qui con noi, Signore, è sera ormai. Resta qui con noi il sole scende già se tu sei tra noi la notte non verrà. S'allarga verso il mare il tuo cerchio d'onda, che il vento spingerà fino a quando giungerà ai confini di ogni cuore, alle porte dell'amore vero. Come una fiamma che dove passa brucia così il tuo amore tutto il mondo invaderà. Resta qui con noi il sole scende già, resta qui con noi, Signore, è sera ormai. Resta qui con noi il sole scende già se tu sei tra noi la notte non verrà. Davanti a noi l'umanità lotta, soffre e spera, come una terra che nell'arsura, chiede l'acqua da un cielo senza nuvole, ma che sempre le può dare vita. Con te saremo sorgente d'acqua pura, con te fra noi il deserto fiorirà. Resta qui con noi il sole scende già, resta qui con noi, Signore, è sera ormai. Resta qui con noi il sole scende già se tu sei tra noi la notte non verrà.",
       "categorie": [
         "congedo"
       ],
       "url": "canti/resta-qui-con-noi",
       "fileName": "resta-qui-con-noi.html"
+    },
+    {
+      "titolo": "Rimani con me",
+      "id": 121,
+      "testo": "Maria Tu sei, la vita per me. Sei la speranza, la gioia, l'amore: tutto sei. Maria tu sai quello che vuoi, sai con che forza d’amore in cielo mi porterai. Maria ti do il mio cuore per sempre se vuoi, Tu dammi l'amore che non passa mai. Rimani con me e andiamo nel mondo insieme, la tua presenza sarà goccia di Paradiso per l'umanità. Maria con Te sempre vivrò, in ogni momento, giocando, cantando, ti amerò Seguendo i tuoi passi in Te io avrò la luce che illumina i giorni e le notti dell'anima. ",
+      "categorie": [
+        "maria"
+      ],
+      "url": "canti/rimani-con-me",
+      "fileName": "rimani-con-me.html"
     },
     {
       "titolo": "Rimani tra noi",
@@ -1351,8 +1355,19 @@
       "fileName": "santo-buttazzo.html"
     },
     {
-      "titolo": "Santo (Gen)",
+      "titolo": "Santo (Francescato)",
       "id": 130,
+      "testo": "Santo, santo, santo il Signore Dio dell'Universo i cieli e la terra sono pieni della tua gloria, della tua gloria. Osanna nell'alto dei cieli osanna nell'alto dei cieli Osanna nell'alto dei cieli, osanna nell'alto dei cieli. Benedetto colui che viene nel nome del Signore ",
+      "categorie": [
+        "liturgia",
+        "santo"
+      ],
+      "url": "canti/santo-francescato",
+      "fileName": "santo-francescato.html"
+    },
+    {
+      "titolo": "Santo (Gen)",
+      "id": 131,
       "testo": "Santo, Santo, Santo è il Signore, Dio dell’universo. Santo, Santo. I cieli e la terra sono pieni della tua gloria. Osanna nell’alto dei cieli. (Osanna nell’alto dei cieli.) Osanna nell’alto dei cieli. Santo, Santo, Santo è il Signore, Dio dell’universo. Santo, Santo. I cieli e la terra sono pieni della tua gloria. Benedetto colui che viene nel nome del Signore. Osanna nell’alto dei cieli. (Osanna nell’alto dei cieli.) Osanna nell’alto dei cieli. Santo, Santo, Santo.",
       "categorie": [
         "liturgia",
@@ -1363,7 +1378,7 @@
     },
     {
       "titolo": "Santo (Giorgi)",
-      "id": 131,
+      "id": 132,
       "testo": "Santo, santo, santo il signore dio dell'universo. I cieli e la terra sono pieni della tua gloria. Osanna, osanna, Osanna nell'alto dei cieli. Osanna, osanna, Osanna nell'alto dei cieli. Benedetto colui che viene nel nome del Signore. Osanna, osanna, Osanna nell'alto dei cieli. Osanna, osanna, Osanna nell'alto dei cieli.",
       "categorie": [
         "liturgia",
@@ -1375,7 +1390,7 @@
     },
     {
       "titolo": "Santo (Rossi)",
-      "id": 132,
+      "id": 133,
       "testo": "Santo, santo, santo il Signore Dio dell’universo. I cieli e la Terra sono pieni della tua gloria. Osanna, osanna, osanna nell’alto dei cieli. Benedetto colui che viene nel nome del Signore. Osanna, osanna, osanna nell’alto dei cieli.",
       "categorie": [
         "liturgia",
@@ -1383,17 +1398,6 @@
       ],
       "url": "canti/santo-rossi",
       "fileName": "santo-rossi.html"
-    },
-    {
-      "titolo": "Santo sei Tu",
-      "id": 133,
-      "testo": "Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. I cieli e la terra sono pieni di Te (sono pieni di Te), sono pieni della Tua gloria. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Benedetto Colui che viene nel Tuo nome (nel Tuo nome) nel nome tuo, Signore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore.",
-      "categorie": [
-        "liturgia",
-        "santo"
-      ],
-      "url": "canti/santo-sei-tu",
-      "fileName": "santo-sei-tu.html"
     },
     {
       "titolo": "Santo (Spoladore)",
@@ -1429,8 +1433,30 @@
       "fileName": "santo-zappala.html"
     },
     {
-      "titolo": "Scusa, Signore",
+      "titolo": "Santo il signore (Ricci)",
       "id": 137,
+      "testo": "Santo il Signore Dio dell’universo, i cieli e la terra sono pieni della tua gloria. Osanna nell’alto dei cieli e benedetto colui che viene nel nome del Signore osanna nell’alto dei cieli. È santo santo santo il Signore della vita, è santo santo santo il Signore della storia, nei cieli e sulla terra risplende la sua gloria. Osanna osanna osanna nel cielo sconfinato, osanna osanna osanna nel canto del creato e sia benedetto colui che viene in nome di Dio.",
+      "categorie": [
+        "liturgia",
+        "santo"
+      ],
+      "url": "canti/santo-il-signore-ricci",
+      "fileName": "santo-il-signore-ricci.html"
+    },
+    {
+      "titolo": "Santo sei Tu",
+      "id": 138,
+      "testo": "Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. I cieli e la terra sono pieni di Te (sono pieni di Te), sono pieni della Tua gloria. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Benedetto Colui che viene nel Tuo nome (nel Tuo nome) nel nome tuo, Signore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore. Santo sei Tu, Santo sei Tu, Dio delľuniverso, sorgente d'amore.",
+      "categorie": [
+        "liturgia",
+        "santo"
+      ],
+      "url": "canti/santo-sei-tu",
+      "fileName": "santo-sei-tu.html"
+    },
+    {
+      "titolo": "Scusa, Signore",
+      "id": 139,
       "testo": "Scusa, Signore, se bussiamo alla porta del tuo cuore: siamo noi. Scusa, Signore, se chiediamo mendicanti dell’amore un ristoro da te. Così la foglia quando è stanca cade giù, ma poi la terra ha una vita sempre in più. Così la gente quando è stanca vuole te e tu, Signore, hai una vita sempre in più, sempre in più! Scusa, Signore, se entriamo nella reggia della luce: siamo noi. Scusa, Signore, se sediamo alla mensa del tuo corpo per saziarci di te. Così la foglia quando è stanca cade giù, ma poi la terra ha una vita sempre in più. Così la gente quando è stanca vuole te e tu, Signore, hai una vita sempre in più, sempre in più! Scusa, Signore, quando usciamo dalla strada del tuo amore: siamo noi. Scusa, Signore, se ci vedi solo all’ora del perdono ritornare da te. Così la foglia quando è stanca cade giù, ma poi la terra ha una vita sempre in più. Così la gente quando è stanca vuole te e tu, Signore, hai una vita sempre in più, sempre in più!",
       "categorie": [
         "perdono"
@@ -1440,7 +1466,7 @@
     },
     {
       "titolo": "Se m'accogli",
-      "id": 138,
+      "id": 140,
       "testo": "Tra le mani non ho niente, spero che mi accoglierai, chiedo solo di restare accanto a te. Sono ricco solamente dell'amore che mi dai: è per quelli che non l'hanno avuto mai. Se m'accogli, mio Signore, altro non ti chiederò, e per sempre la tua strada la mia strada resterà, nella gioia e nel dolore, fino a quando tu vorrai con la mano nella tua camminerò. Io ti prego con il cuore, so che tu mi ascolterai, rendi forte la mia fede più che mai. Tieni accesa la mia luce fino al giorno che tu sai, con i miei fratelli incontro a te verrò. Se m'accogli, mio Signore, altro non ti chiederò, e per sempre la tua strada la mia strada resterà, nella gioia e nel dolore, fino a quando tu vorrai con la mano nella tua camminerò.",
       "categorie": [
         "offertorio"
@@ -1450,7 +1476,7 @@
     },
     {
       "titolo": "Segni del tuo amore",
-      "id": 139,
+      "id": 141,
       "testo": "E segni nuovi oggi nascono già e c'è più sole nelle nostre città. Il mondo unito splende qui fra di noi è un ideale che la storia farà un ideale che storia si fa. Vedo cambiare le cose che mi stanno attorno crollare muri e barriere fin dal profondo, vedo gente che vive la vita, vedo in alto un cielo chiaro. E segni nuovi oggi nascono già e c'è più sole nelle nostre città. Il mondo unito splende qui fra di noi è un ideale che la storia farà un ideale che storia si fa. Ormai non è così strano sentir parlare di una “casa comune”, dove abitare, e l’amore fra noi lo farà invadendo il mondo intero. E segni nuovi oggi nascono già e c'è più sole nelle nostre città. Il mondo unito splende qui fra di noi è un ideale che la storia farà un ideale che storia si fa.",
       "categorie": [
         "offertorio"
@@ -1460,7 +1486,7 @@
     },
     {
       "titolo": "Segni nuovi",
-      "id": 140,
+      "id": 142,
       "testo": "E segni nuovi oggi nascono già e c'è più sole nelle nostre città. Il mondo unito splende qui fra di noi è un ideale che la storia farà un ideale che storia si fa. Vedo cambiare le cose che mi stanno attorno crollare muri e barriere fin dal profondo, vedo gente che vive la vita, vedo in alto un cielo chiaro. E segni nuovi oggi nascono già e c'è più sole nelle nostre città. Il mondo unito splende qui fra di noi è un ideale che la storia farà un ideale che storia si fa. Ormai non è così strano sentir parlare di una casa comune, dove abitare, e l’amore fra noi lo farà invadendo il mondo intero. E segni nuovi oggi nascono già e c'è più sole nelle nostre città. Il mondo unito splende qui fra di noi è un ideale che la storia farà un ideale che storia si fa.",
       "categorie": [
         "congedo"
@@ -1470,7 +1496,7 @@
     },
     {
       "titolo": "Sei il mio rifugio",
-      "id": 141,
+      "id": 143,
       "testo": "Sei il mio rifugio, la mia salvezza, Tu mi proteggerai dal male, mi circonderai d'amor e il mio cuore libererai. Non ho timore, io confido in Te.",
       "categorie": [
         "congedo"
@@ -1480,7 +1506,7 @@
     },
     {
       "titolo": "Sei venuto dal cielo",
-      "id": 142,
+      "id": 144,
       "testo": "Io sono il pane vivo sceso dal cielo (sei venuto dal cielo tra noi). Io sono il pane vivo sceso dal cielo (sei venuto dal cielo tra noi). Io sono il pane vivo sceso dal cielo, chi ne mangerà più non morirà. Vi nutrirò di me e il mondo avrà la vita (sei venuto bambino tra noi). Vi nutrirò di me e il mondo avrà la vita (sei venuto bambino tra noi). Vi nutrirò di me e il mondo avrà la vita, sono il cibo che dà l'eternità. Ed ora tutta la terra hai seminato della tua presenza in questo viaggio, dove palpita una chiesa nel mondo, lì ci sei tu, e poi discendi dentro di noi. E segrete lacrime Tu raccogli e aneliti e al cuore di ogni uomo sei vicino, sei l'amico, l'unico. Io sono il pane vivo sceso dal cielo (sei venuto dal cielo tra noi). Io sono il pane vivo sceso dal cielo (sei venuto dal cielo tra noi). Io sono il pane vivo sceso dal cielo, chi ne mangerà più non morirà. Ed ora tutta la terra hai seminato della tua presenza in questo viaggio, dove palpita una chiesa nel mondo, lì ci sei tu, e poi discendi dentro di noi. E segrete lacrime Tu raccogli e aneliti e al cuore di ogni uomo sei vicino, sei l'amico, l'unico. E segrete lacrime Tu raccogli e aneliti e al cuore di ogni uomo sei vicino, sei l'amico, l'unico. Io sono il pane vivo sceso dal cielo (sei venuto dal cielo tra noi). Io sono il pane vivo sceso dal cielo (sei venuto dal cielo tra noi). Io sono il pane vivo sceso dal cielo, chi ne mangerà più non morirà.",
       "categorie": [
         "natale",
@@ -1491,7 +1517,7 @@
     },
     {
       "titolo": "Servire è regnare",
-      "id": 143,
+      "id": 145,
       "testo": "Guardiamo a te che sei Maestro e Signore, chinato a terra stai, ci mostri che l’amore è cingersi il grembiule, sapersi inginocchiare ci insegni che amare è servire. Fa’ che impariamo, Signore, da te, che il più grande è chi più sa servire chi si abbassa e chi si sa piegare perché grande è soltanto l’amore. E ti vediamo poi Maestro e Signore, che lavi i piedi a noi che siamo tue creature, e cinto del grembiule, che è il manto tuo regale, ci insegni che servire è regnare. Fa’ che impariamo, Signore, da te, che il più grande è chi più sa servire chi si abbassa e chi si sa piegare perché grande è soltanto l’amore.",
       "categorie": [
         "lavanda dei piedi",
@@ -1502,7 +1528,7 @@
     },
     {
       "titolo": "Servo per amore",
-      "id": 144,
+      "id": 146,
       "testo": "Una notte di sudore sulla barca in mezzo al mare e mentre il cielo si imbianca già, tu guardi le tue reti vuote. Ma la voce che ti chiama un altro mare ti mostrerà e sulle rive di ogni cuore, le tue reti getterai. Offri la vita tua come Maria ai piedi della croce e sarai servo di ogni uomo, servo per amore, sacerdote dell'umanità. Avanzavi nel silenzio fra le lacrime e speravi che il seme sparso davanti a Te cadesse sulla buona terra. Ora il cuore tuo è in festa perché il grano biondeggia ormai, è maturato sotto il sole, puoi riporlo nei granai. Offri la vita tua come Maria ai piedi della croce e sarai servo di ogni uomo, servo per amore, sacerdote dell'umanità.",
       "categorie": [
         "offertorio"
@@ -1512,7 +1538,7 @@
     },
     {
       "titolo": "Signore Gesù, venuto a perdonare",
-      "id": 145,
+      "id": 147,
       "testo": "Signore Gesù, venuto a perdonare chi ha sbagliato nel suo cuore: abbi pietà di noi. Signore, pietà. Signore, pietà. Cristo Gesù, venuto a richiamare con amore i peccatori: abbi pietà di noi. Cristo, pietà. Cristo, pietà. Signore Gesù, venuto a consolare e a dar la vita per amore: abbi pietà di noi. Signore, pietà. Signore, pietà.",
       "categorie": [
         "liturgia",
@@ -1523,7 +1549,7 @@
     },
     {
       "titolo": "Sono qui a lodarti",
-      "id": 146,
+      "id": 148,
       "testo": "Luce del mondo, nel buio del cuore vieni ed illuminami. Tu mia sola speranza di vita, resta per sempre con me. Sono qui a lodarti, qui per adorarti qui per dirti che Tu sei il mio Dio e solo Tu sei santo, sei meraviglioso degno e glorioso Sei per me. Re della storia e Re nella gloria sei sceso in terra fra noi. Con umiltà il Tuo trono hai lasciato per dimostrarci il Tuo amor. Sono qui a lodarti, qui per adorarti qui per dirti che Tu sei il mio Dio e solo Tu sei santo, sei meraviglioso degno e glorioso Sei per me. Io mai saprò quanto ti costò lì sulla croce morir per me. Io mai saprò quanto ti costò lì sulla croce morir per me. Io mai saprò quanto ti costò lì sulla croce morir per me. Sono qui a lodarti, qui per adorarti qui per dirti che Tu sei il mio Dio e solo Tu sei santo, sei meraviglioso degno e glorioso Sei per me.",
       "categorie": [
         "adorazione"
@@ -1533,7 +1559,7 @@
     },
     {
       "titolo": "Spirito di Dio",
-      "id": 147,
+      "id": 149,
       "testo": "Spirito di Dio riempimi. Spirito di Dio battezzami. Spirito di Dio consacrami. Vieni ad abitare dentro me! Spirito di Dio guariscimi. Spirito di Dio rinnovami. Spirito di Dio consacrami. Vieni ad abitare dentro me! Spirito di Dio guariscici. Spirito di Dio rinnovaci. Spirito di Dio consacraci. Vieni ad abitare dentro noi! Spirito di Dio riempici. Spirito di Dio battezzaci. Spirito di Dio consacraci. Vieni ad abitare dentro noi!",
       "categorie": [
         "spirito santo"
@@ -1543,7 +1569,7 @@
     },
     {
       "titolo": "Su ali d'aquila",
-      "id": 148,
+      "id": 150,
       "testo": "Tu che abiti al riparo del Signore e che dimori alla sua ombra dì al Signore: \"Mio rifugio, mia roccia in cui confido\". E ti rialzerà, ti solleverà su ali d'aquila ti reggerà, sulla brezza dell'alba ti farà brillar come il sole, così nelle sue mani vivrai. Dal laccio del cacciatore ti libererà e dalla carestia che distrugge. Poi ti coprirà con le sue ali e rifugio troverai. E ti rialzerà, ti solleverà su ali d'aquila ti reggerà, sulla brezza dell'alba ti farà brillar come il sole, così nelle sue mani vivrai. Non devi temere i terrori della notte né freccia che vola di giorno. Mille cadranno al tuo fianco, ma nulla ti colpirà. E ti rialzerà, ti solleverà su ali d'aquila ti reggerà, sulla brezza dell'alba ti farà brillar come il sole, così nelle sue mani vivrai. Perchè ai Suoi angeli ha dato un comando di preservarti in tutte le tue vie. Ti porteranno sulle loro mani contro la pietra non inciamperai. E ti rialzerà, ti solleverà su ali d'aquila ti reggerà, sulla brezza dell'alba ti farà brillar come il sole, così nelle sue mani vivrai. E ti rialzer ò , ti solleverò su ali d'aquila ti reggerò sulla brezza dell'alba ti farò brillar come il sole, così nelle mie mani vivrai.",
       "categorie": [
         "comunione"
@@ -1553,7 +1579,7 @@
     },
     {
       "titolo": "Sulla tua parola (Pietro vai)",
-      "id": 149,
+      "id": 151,
       "testo": "Signore, ho pescato tutto il giorno, le reti son rimaste sempre vuote, s'è fatto tardi, a casa ora ritorno, Signore son deluso e me ne vado. La vita con me è sempre stata dura e niente mai mi dà soddisfazione. La strada in cui mi guidi è insicura, sono stanco e ora non aspetto più. Pietro vai, fidati di me, getta ancora in acqua le tue reti, prendi ancora il largo sulla mia parola, con la mia potenza io ti farò pescatore di uomini. Maestro dimmi cosa devo fare, insegnami, Signore dove andare Gesù dammi la forza di partire la forza di lasciare le mie cose. Questa famiglia che mi son creato, le barche che a fatica ho conquistato, la casa, la mia terra, la mia gente, Signore, dammi Tu una fede forte. Pietro vai, fidati di me, la mia Chiesa su di te io fonderò, manderò lo Spirito, ti darò coraggio, donerò la forza dell'amore per il Regno di Dio.",
       "categorie": [
         "offertorio"
@@ -1563,7 +1589,7 @@
     },
     {
       "titolo": "Taizé",
-      "id": 150,
+      "id": 152,
       "testo": "",
       "categorie": [
         ""
@@ -1573,7 +1599,7 @@
     },
     {
       "titolo": "Te al centro del mio cuore",
-      "id": 151,
+      "id": 153,
       "testo": "Ho bisogno di incontrarti nel mio cuore, di trovare Te di stare insieme a Te, unico riferimento del mio andare, unica ragione Tu, unico sostegno Tu, al centro del mio cuore ci sei solo Tu. Anche il cielo gira intorno e non ha pace, ma c’è un punto fermo è quella stella là la stella polare è fissa ed è la sola, la stella polare Tu, la stella sicura Tu, al centro del mio cuore ci sei solo tu. Tutto ruota intorno a Te, in funzione di Te, e poi non importa il “come”, il “dome” e il “se”. Che Tu splenda sempre al centro del mio cuore il significato allora sarai Tu quello che farò sarà soltanto amore, unico sostegno Tu, la stella polare Tu, al centro del mio cuore ci sei solo Tu. Tutto ruota intorno a Te, in funzione di Te, e poi non importa il “come”, il “dome” e il “se”.",
       "categorie": [
         "comunione"
@@ -1583,7 +1609,7 @@
     },
     {
       "titolo": "Te deum (italiano)",
-      "id": 152,
+      "id": 154,
       "testo": "Noi ti lodiamo, Dio, ti proclamiamo Signore. O eterno Padre, tutta la terra ti adora. A te cantano gli angeli e tutte le potenze dei cieli: Santo, Santo, Santo il Signore Dio dell'universo. I cieli e la terra sono pieni della tua gloria. Ti acclama il coro degli apostoli e la candida schiera dei martiri; le voci dei profeti si uniscono nella tua lode; la santa Chiesa proclama la tua gloria, adora il tuo unico Figlio, e lo Spirito Santo Paraclito. O Cristo, re della gloria, eterno Figlio del Padre, tu nascesti dalla Vergine Madre per la salvezza dell'uomo. Vincitore della morte, hai aperto ai credenti il regno dei cieli. Tu siedi alla destra di Dio, nella gloria del Padre. Verrai a giudicare il mondo alla fine dei tempi. Soccorri i tuoi figli, Signore, che hai redento col tuo sangue prezioso. Accoglici nella tua gloria nell'assemblea dei santi. Salva il tuo popolo, Signore, guida e proteggi i tuoi figli. Ogni giorno ti benediciamo, lodiamo il tuo nome per sempre. Degnati oggi, Signore, di custodirci senza peccato. Sia sempre con noi la tua misericordia: in te abbiamo sperato. Pietà di noi, Signore, pietà di noi. Tu sei la nostra speranza, non saremo confusi in eterno.",
       "categorie": [
         "ringraziamento"
@@ -1593,7 +1619,7 @@
     },
     {
       "titolo": "Te deum (latino)",
-      "id": 153,
+      "id": 155,
       "testo": "Te Deum laudamus: Te Dominum confitemur, Te æternum Patrem, omnis terra veneratur. Tibi omnes angeli, tibi cæli et universæ potestates: tibi cherubim et seraphim incessabili voce proclamant: Sanctus, Sanctus, Sanctus Dominus Deus Sabaoth. Pleni sunt cæli et terra maiestatis gloriæ tuæ Te gloriosus Apostolorum chorus, te prophetarum laudabilis numerus, te martyrum candidatus laudat exercitus. Te per orbem terrarum sancta confitetur Ecclesia, Patrem immensæ maiestatis; venerandum tuum verum et unicum Filium; Sanctum quoque Paraclitum Spiritum. Tu rex gloriæ, Christe. Tu Patris sempiternum es Filius. Tu, ad liberandum suscepturus hominem, non horruisti Virginis uterum. Tu, devicto mortis aculeo, aperuisti credentibus regna cælorum. Tu ad dexteram Dei sedes, in gloria Patris. Iudex crederis esse venturus. Te ergo quæsumus, tuis famuli subveni, quos pretioso sanguine redemisti. Æterna fac cum sanctis tuis in gloria numerari. Salvum fac populum tuum, Domine, et benedic hereditati tuæ. Et rege eos, et extolle illos usque in æternum. Per singulos dies benedicimus te; et laudamus nomen tuum in sæculum, et in sæculum sæculi. Dignare, Domine, die isto sine peccato nos custodire. Miserere nostri, Domine, miserere nostri. Fiat misericordia tua, Domine, super nos, quemadmodum speravimus in te. In te, Domine, speravi: non confundar in æternum.",
       "categorie": [
         "ringraziamento"
@@ -1603,7 +1629,7 @@
     },
     {
       "titolo": "Te lodiamo, Trinità",
-      "id": 154,
+      "id": 156,
       "testo": "Te lodiamo, Trinità, nostro Dio, ti adoriamo; Padre dell'umanità, la tua gloria proclamiamo. Te lodiamo, Trinità, per l'immensa tua bontà. Tutto il mondo annuncia te: tu lo hai fatto come un segno. Ogni uomo porta in sé il sigillo del tuo regno. Te lodiamo, Trinità, per l'immensa tua bontà. Noi crediamo solo in te, nostro Padre e Creatore; noi speriamo solo in te, Gesù Cristo, Salvatore. Te lodiamo, Trinità, per l'immensa tua bontà. Infinita carità, Santo Spirito d'amore, luce, pace e verità, regna sempre nel mio cuore. Te lodiamo, Trinità, per l'immensa tua bontà.",
       "categorie": [],
       "url": "canti/te-lodiamo-trinita",
@@ -1611,7 +1637,7 @@
     },
     {
       "titolo": "Ti esalto Dio mio re",
-      "id": 155,
+      "id": 157,
       "testo": "Ti esalto Dio mio Re, canterò in eterno a Te, io voglio lodarti Signor, e benedirti. Alleluia! Il Signore è degno di ogni lode, non si può misurar la sua grandezza, ogni vivente proclami la sua gloria, la sua opera è giustizia e verità. Ti esalto Dio mio Re, canterò in eterno a Te, io voglio lodarti Signor, e benedirti. Alleluia! Il Signore è paziente e pietoso, lento all’ira e ricco di grazia, tenerezza per ogni creatura, il Signore è buono verso tutti. Ti esalto Dio mio Re, canterò in eterno a Te, io voglio lodarti Signor, e benedirti. Alleluia! Il Signore sostiene chi vacilla e rialza chiunque è caduto, gli occhi di tutti ricercano il suo volto, la sua mano provvede loro il cibo. Ti esalto Dio mio Re, canterò in eterno a Te, io voglio lodarti Signor, e benedirti. Alleluia! Il Signore protegge chi lo teme, e disperde i superbi di cuore; Egli ascolta il grido del suo servo, ogni lingua benedica il suo nome. Ti esalto Dio mio Re, canterò in eterno a Te, io voglio lodarti Signor, e benedirti. Alleluia!",
       "categorie": [
         "cristo re"
@@ -1621,7 +1647,7 @@
     },
     {
       "titolo": "Ti lodiamo e t'adoriamo",
-      "id": 156,
+      "id": 158,
       "testo": "Ti lodiamo e t'adoriamo, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor. Ti seguiamo nel cammino, ti seguiamo nel cammino, ti seguiamo nel cammino, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor. Ti doniam la nostra vita, ti doniam la nostra vita, ti doniam la nostra vita, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor. Diamo a Te tutta la gloria, diamo a Te tutta la gloria, diamo a Te tutta la gloria, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor. Ti lodiamo e t'adoriamo, Cristo Signor.",
       "categorie": [
         "quaresima",
@@ -1632,7 +1658,7 @@
     },
     {
       "titolo": "Ti offriamo Signore",
-      "id": 157,
+      "id": 159,
       "testo": "Ti offriamo Signore il nostro vivere con tutto il peso e la gioia dei giorni. Ti offriamo Signore le nostre mani, molte volte son vuote ma ricercano te. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore le nostre croci, il coraggio di amare e i santi di oggi. Ti offriamo Signore le nostre forze perché il tuo volere sia in cielo e in terra. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore queste speranze, le nostre famiglie e i bambini del mondo. Ti offriamo Signore la nostra Chiesa, la tua famiglia su tutta la terra. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore i nostri errori, peccato e tristezza, perdonaci ancora. Ti offriamo Signore chi soffre ancora, catene e ingiustizia e cerca la pace. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te. Ti offriamo Signore la vita del mondo e nelle tue mani ricominciamo con te.",
       "categorie": [
         "offertorio"
@@ -1642,7 +1668,7 @@
     },
     {
       "titolo": "Tu scendi dalle stelle",
-      "id": 158,
+      "id": 160,
       "testo": "Tu scendi dalle stelle, o Re del cielo, e vieni in una grotta al freddo e al gelo, e vieni in una grotta al freddo e al gelo. Oh bambino mio divino, io ti vedo qui a tremar; Oh Dio Beato. Ah! Quanto ti costò l'avermi amato! Ah! Quanto ti costò l'avermi amato! A te, che sei del mondo il Creatore, mancaron panni e fuoco, o mio Signore, mancaron panni e fuoco, o mio Signore. Caro eletto pargoletto, quanto questa povertà più m'innamora. Giacché ti fece amor povero ancora. Giacché ti fece amor povero ancora.",
       "categorie": [
         "natale"
@@ -1651,18 +1677,8 @@
       "fileName": "tu-scendi-dalle-stelle.html"
     },
     {
-      "titolo": "Tu sei la mia vita",
-      "id": 159,
-      "testo": "Tu sei la mia vita altro io non ho, Tu sei la mia strada la mia verità, nella tua parola io camminerò finché avrò respiro fino a quando tu vorrai. Non avrò paura sai, se Tu sei con me: io ti prego resta con me. Credo in Te Signore nato da Maria, figlio eterno e Santo, uomo come noi, morto per amore, vivo in mezzo a noi. Una cosa sola con il Padre e con i tuoi. Fino a quando io lo so, Tu ritornerai per aprirci il Regno di Dio. Tu sei la mia forza altro io non ho, Tu sei la mia pace la mia libertà, niente nella vita ci separerà, so che la tua mano forte non mi lascerà. So che da ogni male Tu mi libererai, e nel tuo perdono vivrò. Padre della vita noi crediamo in Te, figlio Salvatore noi speriamo in Te, Spirito d'amore vieni in mezzo a noi, Tu da mille strade ci raduni in unità. E per mille strade poi, dove Tu vorrai, noi saremo il seme di Dio.",
-      "categorie": [
-        "comunione"
-      ],
-      "url": "canti/tu-sei-la-mia-vita",
-      "fileName": "tu-sei-la-mia-vita.html"
-    },
-    {
       "titolo": "Tu sei",
-      "id": 160,
+      "id": 161,
       "testo": "Tu sei la prima stella del mattino, tu sei la nostra grande nostalgia, tu sei il cielo chiaro dopo la paura, dopo la paura, d'esserci perduti e tornerà la vita, in questo mare. Soffierà, soffierà, il vento forte della vita, soffierà sulle vele e le gonfierà di te. Soffierà, soffierà, il vento forte della vita, soffierà sulle vele e le gonfierà di te. Tu sei, l'unico volto della pace, tu sei, speranza nelle nostre mani. Tu sei, il vento nuovo sulle nostre ali, sulle nostre ali, soffierà la vita e gonfierà le vele, per questo mare. Soffierà, soffierà, il vento forte della vita, soffierà sulle vele e le gonfierà di te. Soffierà, soffierà, il vento forte della vita, soffierà sulle vele e le gonfierà di te.",
       "categorie": [
         "congedo"
@@ -1671,8 +1687,18 @@
       "fileName": "tu-sei.html"
     },
     {
+      "titolo": "Tu sei la mia vita",
+      "id": 162,
+      "testo": "Tu sei la mia vita altro io non ho, Tu sei la mia strada la mia verità, nella tua parola io camminerò finché avrò respiro fino a quando tu vorrai. Non avrò paura sai, se Tu sei con me: io ti prego resta con me. Credo in Te Signore nato da Maria, figlio eterno e Santo, uomo come noi, morto per amore, vivo in mezzo a noi. Una cosa sola con il Padre e con i tuoi. Fino a quando io lo so, Tu ritornerai per aprirci il Regno di Dio. Tu sei la mia forza altro io non ho, Tu sei la mia pace la mia libertà, niente nella vita ci separerà, so che la tua mano forte non mi lascerà. So che da ogni male Tu mi libererai, e nel tuo perdono vivrò. Padre della vita noi crediamo in Te, figlio Salvatore noi speriamo in Te, Spirito d'amore vieni in mezzo a noi, Tu da mille strade ci raduni in unità. E per mille strade poi, dove Tu vorrai, noi saremo il seme di Dio.",
+      "categorie": [
+        "comunione"
+      ],
+      "url": "canti/tu-sei-la-mia-vita",
+      "fileName": "tu-sei-la-mia-vita.html"
+    },
+    {
       "titolo": "Tutta la terra attende",
-      "id": 161,
+      "id": 163,
       "testo": "Tutta la terra attende impaziente che si rivelino i Figli di Dio. E soffre ancora le doglie del parto, aspetta il suo Messia. Germoglio della radice di Jesse ti innalzi segno per noi. Vieni Signore a salvare il tuo popolo, dona la libertà. Vieni Signore a salvare il tuo popolo, dona la libertà. Tutta la terra attende impaziente che si rivelino i Figli di Dio. E soffre ancora le doglie del parto, aspetta il suo Messia. Oh chiave della famiglia di Davide, ci apri il regno di Dio. Vieni Signore, rischiara le tenebre, vinci l’oscurità. Vieni Signore, rischiara le tenebre, vinci l’oscurità. Tutta la terra attende impaziente che si rivelino i Figli di Dio. E soffre ancora le doglie del parto, aspetta il suo Messia. Re delle genti sostieni la chiesa, pietra angolare sei tu. Vieni Signore e salva il tuo popolo, tutta l’umanità. Vieni Signore e salva il tuo popolo, tutta l’umanità. Tutta la terra attende impaziente che si rivelino i Figli di Dio. E soffre ancora le doglie del parto, aspetta il suo Messia. Tutta la terra attende impaziente, aspetta il suo Messia.",
       "categorie": [
         "avvento"
@@ -1682,7 +1708,7 @@
     },
     {
       "titolo": "Un cuore nuovo",
-      "id": 162,
+      "id": 164,
       "testo": "Un cuore nuovo popolo mio, il mio Spirito effonderò in te, toglierò da te il cuore di pietra, un cuore di carne ti darò popolo mio. Da tutte le nazioni io vi radunerò, vi mostrerò la strada della vita, e vivrà chi la seguirà. Ti darò un cuore nuovo popolo mio, il mio Spirito effonderò in te, toglierò da te il cuore di pietra, un cuore di carne ti darò popolo mio. Vi aspergerò con acqua, e puri vi farò, dagli idoli sarete liberati, questa è la mia libertà. Ti darò un cuore nuovo popolo mio, il mio Spirito effonderò in te, toglierò da te il cuore di pietra, un cuore di carne ti darò popolo mio. Mio popolo sarete, le genti lo vedranno, abiterete dentro la mia casa, e vedrete il mio volto. Ti darò un cuore nuovo popolo mio, il mio Spirito effonderò in te, toglierò da te il cuore di pietra, un cuore di carne ti darò popolo mio.",
       "categorie": [
         "ingresso"
@@ -1692,7 +1718,7 @@
     },
     {
       "titolo": "Venite fedeli",
-      "id": 163,
+      "id": 165,
       "testo": "Venite fedeli, l’angelo ci invita, venite, venite a Betlemme. Nasce per noi Cristo Salvatore. Venite, adoriamo, venite, adoriamo, venite adoriamo il Signore Gesù. La luce del mondo brilla in una grotta, la fede ci guida a Betlemme. Nasce per noi Cristo Salvatore. Venite, adoriamo, venite, adoriamo, venite adoriamo il Signore Gesù. La notte risplende, tutto il mondo attende, seguiamo i pastori a Betlemme. Nasce per noi Cristo Salvatore. Venite, adoriamo, venite, adoriamo, venite adoriamo il Signore Gesù. Il figlio di Dio, Re dell’universo, si è fatto bambino a Betlemme. Nasce per noi Cristo Salvatore. Venite, adoriamo, venite, adoriamo, venite adoriamo il Signore Gesù. “Sia gloria nei cieli, pace sulla terra” un angelo annuncia a Betlemme. Nasce per noi Cristo Salvatore. Venite, adoriamo, venite, adoriamo, venite adoriamo il Signore Gesù.",
       "categorie": [
         "natale"
@@ -1701,8 +1727,18 @@
       "fileName": "venite-fedeli.html"
     },
     {
+      "titolo": "Venite, applaudiamo al Signore",
+      "id": 166,
+      "testo": "Venite applaudiamo al Signore, alleluia, alleluia. Roccia della nostra salvezza. Amen, alleluia. Accostiamoci a Lui per rendergli grazie, a Lui cantiamo con inni di lode al grande Re della terra. Sopra tutti gli dei è grande il Signore, in mano sua son tutti gli abissi, sue son le vette dei monti. Ecco, suo è il mare, Egli l'ha fatto, le sue mani lo hanno formato, hanno plasmato la terra. . Su, venite, prostrati adoriamo, inginocchiati davanti al Signore, il Dio che ci ha creati. Egli è il nostro Dio, noi il suo popolo, il popolo che ai suoi pascoli guida, il gregge ch'Egli conduce. Oggi, ascoltate la sua voce, non indurite più il vostro cuore come nei giorni antichi. ",
+      "categorie": [
+        "ingresso"
+      ],
+      "url": "canti/venite-applaudiamo-al-signore",
+      "fileName": "venite-applaudiamo-al-signore.html"
+    },
+    {
       "titolo": "Verbum panis",
-      "id": 164,
+      "id": 167,
       "testo": "Prima del tempo, prima ancora che la terra cominciasse a vivere, il verbo era presso Dio. Venne nel mondo, e per non abbandonarci in questo viaggio ci lasciò tutto se stesso come pane. Verbum caro factum est, verbum panis factum est. Verbum caro factum est, verbum panis factum est. Qui spezzi ancora il pane in mezzo a noi e chiunque mangerà non avrà più fame. Qui vive la tua chiesa intorno a te, dove ognuno troverà la sua vera casa. Verbum caro factum est, verbum panis factum est. Verbum caro factum est, verbum panis. Prima del tempo, prima ancora che la terra cominciasse a vivere, il verbo era presso Dio. Venne nel mondo, e per non abbandonarci in questo viaggio ci lasciò tutto se stesso come pane. Verbum caro factum est, verbum panis factum est. Verbum caro factum est, verbum panis factum est. Qui spezzi ancora il pane in mezzo a noi e chiunque mangerà non avrà più fame. Qui vive la tua chiesa intorno a te, dove ognuno troverà la sua vera casa. Verbum caro factum est, verbum panis factum est. Verbum caro factum est, verbum panis factum est.",
       "categorie": [
         "comunione"
@@ -1712,7 +1748,7 @@
     },
     {
       "titolo": "Vieni Santo Spirito di Dio",
-      "id": 165,
+      "id": 168,
       "testo": "Vieni, Santo Spirito di Dio, come vento soffia sulla chiesa! Vieni come fuoco, ardi in noi, e con te saremo veri testimoni di Gesù. Sei vento: spazza il cielo dalle nubi del timore, sei fuoco sciogli il gelo e accendi il nostro ardore. Spirito creatore, scendi su di noi! Vieni, Santo Spirito di Dio, come vento soffia sulla chiesa! Vieni come fuoco, ardi in noi, e con te saremo veri testimoni di Gesù. Tu bruci tutti i semi di morte e di peccato; Tu scuoti le certezze che ingannano la vita. Fonte di sapienza, scendi su di noi! Vieni, Santo Spirito di Dio, come vento soffia sulla chiesa! Vieni come fuoco, ardi in noi, e con te saremo veri testimoni di Gesù. Tu sei coraggio e forza nelle lotte della vita; Tu sei l’amore vero, sostegno nella prova. Spirito d’amore, scendi su di noi! Vieni, Santo Spirito di Dio, come vento soffia sulla chiesa! Vieni come fuoco, ardi in noi, e con te saremo veri testimoni di Gesù.",
       "categorie": [
         "spirito santo",
@@ -1723,7 +1759,7 @@
     },
     {
       "titolo": "Vieni Spirito di Cristo",
-      "id": 166,
+      "id": 169,
       "testo": "Vieni, vieni, Spirito d’amore ad insegnare le cose di Dio. Vieni, vieni, Spirito di pace a suggerir le cose che Lui ha detto a noi. Noi t’invochiamo, Spirito di Cristo, vieni Tu dentro di noi, cambia i nostri occhi, fa’ che noi vediamo la bontà di Dio per noi. Vieni, vieni, Spirito d’amore ad insegnare le cose di Dio. Vieni, vieni, Spirito di pace a suggerir le cose che Lui ha detto a noi. Vieni, o Spirito, dai quattro venti e soffia su chi non ha la vita. Vieni, o Spirito, e soffia su di noi perché anche noi riviviamo. Vieni, vieni, Spirito d’amore ad insegnare le cose di Dio. Vieni, vieni, Spirito di pace a suggerir le cose che Lui ha detto a noi. Insegnaci a sperare, insegnaci ad amare, insegnaci a lodare Iddio, insegnaci a pregare, insegnaci la vita, insegnaci Tu l’unità. Vieni, vieni, Spirito d’amore ad insegnare le cose di Dio. Vieni, vieni, Spirito di pace a suggerir le cose che Lui ha detto a noi.",
       "categorie": [
         "spirito santo",
@@ -1734,7 +1770,7 @@
     },
     {
       "titolo": "Vivere la vita",
-      "id": 167,
+      "id": 170,
       "testo": "Vivere la vita con le gioie e coi dolori di ogni giorno, è quello che Dio vuole da te. Vivere la vita e inabissarti nell'amore è il tuo destino, è quello che Dio vuole da te. Fare insieme agli altri la tua strada verso Lui, correre con i fratelli tuoi… Scoprirai allora il cielo dentro di te, una scia di luce lascerai. Vivere la vita è l'avventura più stupenda dell'amore, è quello che Dio vuole da te. Vivere la vita e generare ogni momento il paradiso è quello che Dio vuole da te. Vivere perché ritorni al mondo l'unità, perchè Dio sta nei fratelli tuoi… Scoprirai allora il cielo dentro di te, una scia di luce lascerai.",
       "categorie": [
         "congedo"
@@ -1744,7 +1780,7 @@
     },
     {
       "titolo": "Vocazione",
-      "id": 168,
+      "id": 171,
       "testo": "Era un giorno come tanti altri e quel giorno lui passò. Era un uomo come tutti gli altri e passando mi chiamò. Come lo sapesse che il mio nome era proprio quello, come mai vedesse proprio me nella sua vita, non lo so. Era un giorno come tanti altri e quel giorno mi chiamò. Tu Dio che conosci il nome mio, fa che ascoltando la tua voce io ricordi dove porta la tua strada, nella vita all’incontro con te. Era un’alba triste e senza vita e qualcuno mi chiamò. Era un uomo come tanti altri, ma la voce, quella no. Quante volte un uomo con il nome giusto mi ha chiamato una volta sola l’ho sentito pronunciare con amore. Era un uomo come nessun altro e quel giorno mi chiamò. Tu Dio che conosci il nome mio, fa che ascoltando la tua voce io ricordi dove porta la tua strada, nella vita all’incontro con te.",
       "categorie": [
         "vocazione",

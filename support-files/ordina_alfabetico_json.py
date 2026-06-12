@@ -1,11 +1,10 @@
 import json
-import locale
-
-# Usa l'ordinamento italiano (case-insensitive, ignora accenti)
-locale.setlocale(locale.LC_ALL, '')
+import unicodedata
 
 def chiave_ordinamento(canto):
-    return canto["titolo"].lower()
+    # Normalizza: rimuove gli accenti solo per il confronto, senza toccare i dati
+    titolo = canto["titolo"].lower()
+    return unicodedata.normalize("NFD", titolo).encode("ascii", "ignore").decode("ascii")
 
 # Apri il file
 with open("canti.json", "r", encoding="utf-8") as f:

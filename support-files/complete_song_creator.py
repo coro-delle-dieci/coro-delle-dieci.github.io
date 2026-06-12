@@ -73,10 +73,13 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
         extra_sections += '''
             <section>Puoi trovare questo canto al numero:<br>'''
         if n1:
-            extra_sections += f'        <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'
+            extra_sections += f'''
+            <b>{n1}</b> nel quaderno ad anelli (libretto della Minicorale)<br>\n'''
         if n2:
-            extra_sections += f'        <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'
-        extra_sections += '</section>'
+            extra_sections += f'''
+            <b>{n2}</b> nel libro dei canti dell\'assemblea<br>\n'''
+        extra_sections += f'''
+        </section>'''
 
     # Creazione filename
     filename = title.lower().replace(" ", "-").replace("'", "-").replace("è", "e").replace("ò", "o").replace("à", "a").replace("(", "").replace(")", "").replace("È", "e").replace("ì", "i").replace(",", "")
@@ -161,7 +164,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 </html>'''
 
     # Salva il file
-    save_dir = r"./canti"
+    save_dir = r"../canti"
     full_path = os.path.join(save_dir, f"{filename}.html")
     with open(full_path, 'w', encoding='utf-8') as file:
         file.write(html_template)
@@ -171,7 +174,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
 def add_song_to_html_list(title, filename):
     """Aggiunge il canto alla lista in canti.html in ordine alfabetico"""
-    html_file_path = "./canti.html"
+    html_file_path = "../canti.html"
     
     with open(html_file_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -243,7 +246,7 @@ def update_json_ids(data):
     return data
 
 def add_song_to_json(title, filename_html, song_text):
-    json_file_path = r"./canti.json"
+    json_file_path = r"../canti.json"
     
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)

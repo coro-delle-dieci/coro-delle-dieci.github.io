@@ -89,7 +89,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accogli Signore i nostri doni</title>
+    <title>{title}</title>
 
     <link rel="icon" href="../images/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">

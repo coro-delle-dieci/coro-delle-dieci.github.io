@@ -18,12 +18,55 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
                     '\n\t\t\t</p>'
                 )
         elif section.startswith('Rit.: '):
-            chorus_text = section[6:].strip()
+            # La prima riga (o più righe fino a una riga vuota) definisce il ritornello.
+            # Le righe successive (se presenti) vengono trattate come strofe.
+            lines_all = section.split('\n')
+            # Prima riga: "Rit.: testo primo rigo"
+            chorus_first_line = lines_all[0][6:].strip()
+            # Raccogli tutte le righe del ritornello (finché non troviamo una riga
+            # che finisce con " Rit." o non inizia con "Rit")
+            chorus_lines = [chorus_first_line]
+            verse_start_idx = 1
+            for idx in range(1, len(lines_all)):
+                line = lines_all[idx]
+                if line == "" or line.endswith(" Rit.") or not line.strip():
+                    verse_start_idx = idx
+                    break
+                chorus_lines.append(line)
+                verse_start_idx = idx + 1
+            chorus_text = '\n'.join(chorus_lines)
             html_content.append(
                 '\t\t\t<p class="chorus">\n' +
-                '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_lines) +
                 '\n\t\t\t</p>'
             )
+            # Righe rimanenti: trattale come strofa con eventuale " Rit."
+            remaining_lines = lines_all[verse_start_idx:]
+            if remaining_lines:
+                pending_lines = []
+                for line in remaining_lines:
+                    if line.endswith(" Rit."):
+                        pending_lines.append(line[:-5].rstrip())
+                        html_content.append(
+                            '\t\t\t<p class="verse">\n' +
+                            '\n'.join(f'\t\t\t\t{l}<br>' for l in pending_lines) +
+                            '\n\t\t\t</p>'
+                        )
+                        if chorus_text:
+                            html_content.append(
+                                '\t\t\t<p class="chorus">\n' +
+                                '\n'.join(f'\t\t\t\t{l}<br>' for l in chorus_text.split('\n')) +
+                                '\n\t\t\t</p>'
+                            )
+                        pending_lines = []
+                    else:
+                        pending_lines.append(line)
+                if pending_lines:
+                    html_content.append(
+                        '\t\t\t<p class="verse">\n' +
+                        '\n'.join(f'\t\t\t\t{l}<br>' for l in pending_lines) +
+                        '\n\t\t\t</p>'
+                    )
         else:
             class_name = "verse"
             content = section
@@ -38,24 +81,33 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
             elif section.startswith("Bridge: "):
                 class_name = "bridge"
                 content = section[8:].strip()
-            
-            if content.endswith(" Rit."):
-                content = content[:-5].strip()
-                html_content.append(
-                    f'\t\t\t<p class="{class_name}">\n' +
-                    '\n'.join(f'\t\t\t\t{line}<br>' for line in content.split('\n')) +
-                    '\n\t\t\t</p>'
-                )
-                if chorus_text:
+
+            # Processa riga per riga: ogni riga che finisce con " Rit." fa
+            # emettere il blocco accumulato + il ritornello, poi ricomincia.
+            lines = content.split('\n')
+            pending_lines = []
+            for line in lines:
+                if line.endswith(" Rit."):
+                    pending_lines.append(line[:-5].rstrip())  # rimuovi " Rit."
                     html_content.append(
-                        '\t\t\t<p class="chorus">\n' +
-                        '\n'.join(f'\t\t\t\t{line}<br>' for line in chorus_text.split('\n')) +
+                        f'\t\t\t<p class="{class_name}">\n' +
+                        '\n'.join(f'\t\t\t\t{l}<br>' for l in pending_lines) +
                         '\n\t\t\t</p>'
                     )
-            else:
+                    if chorus_text:
+                        html_content.append(
+                            '\t\t\t<p class="chorus">\n' +
+                            '\n'.join(f'\t\t\t\t{l}<br>' for l in chorus_text.split('\n')) +
+                            '\n\t\t\t</p>'
+                        )
+                    pending_lines = []
+                else:
+                    pending_lines.append(line)
+            # Righe rimaste senza Rit. finale
+            if pending_lines:
                 html_content.append(
                     f'\t\t\t<p class="{class_name}">\n' +
-                    '\n'.join(f'\t\t\t\t{line}<br>' for line in content.split('\n')) +
+                    '\n'.join(f'\t\t\t\t{l}<br>' for l in pending_lines) +
                     '\n\t\t\t</p>'
                 )
 
@@ -163,8 +215,8 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
 </html>'''
 
-    # Salva il file
-    save_dir = r"../canti"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    save_dir = os.path.join(script_dir, "..", "canti")
     full_path = os.path.join(save_dir, f"{filename}.html")
     with open(full_path, 'w', encoding='utf-8') as file:
         file.write(html_template)
@@ -174,7 +226,8 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 
 def add_song_to_html_list(title, filename):
     """Aggiunge il canto alla lista in canti.html in ordine alfabetico"""
-    html_file_path = "../canti.html"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    html_file_path = os.path.join(script_dir, "..", "canti.html")
     
     with open(html_file_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -246,7 +299,8 @@ def update_json_ids(data):
     return data
 
 def add_song_to_json(title, filename_html, song_text):
-    json_file_path = r"../canti.json"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    json_file_path = os.path.join(script_dir, "..", "canti.json")
     
     with open(json_file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)

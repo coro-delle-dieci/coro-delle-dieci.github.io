@@ -1,11 +1,11 @@
 import os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-CANTI_DIR = os.path.join(SCRIPT_DIR, "..", "canti")
+CANTI_DIR = os.path.join(SCRIPT_DIR, ".")
 
 # Stringa da cercare e nuova stringa con cui sostituirla
-stringa_da_sostituire = ' data-tags'
-nuova_stringa = ''
+stringa_da_sostituire = '<section class="details">'
+nuova_stringa = '<aside class="details">'
 
 def main():
     if not os.path.isdir(CANTI_DIR):
@@ -13,7 +13,7 @@ def main():
         print("Esegui lo script da support-files/ (o verifica la struttura delle cartelle).")
         return
 
-    html_files = [f for f in os.listdir(CANTI_DIR) if f.endswith(".html")]
+    html_files = [f for f in os.listdir(CANTI_DIR) if f.endswith(".py")]
 
     if not html_files:
         print(f"Nessun file .html trovato in '{CANTI_DIR}'.")

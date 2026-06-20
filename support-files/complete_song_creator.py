@@ -183,7 +183,7 @@ def create_song_html(title, song_text, link=None, n1=None, n2=None):
 {html_body}
         </section>
 
-        <section class="details">
+        <aside class="details">
         
             {extra_sections}
 

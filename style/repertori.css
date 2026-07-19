@@ -1,0 +1,106 @@
+.repertorio-header {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.5rem;
+}
+
+.repertorio-header .evento-data {
+    color: #7892AF;
+    font-style: italic;
+}
+
+.repertorio-header p {
+    width: 100%;
+    margin-top: 0.3rem;
+    color: #061a40;
+}
+
+.scaletta {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.scaletta-voce {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.9rem 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.scaletta-voce:last-child {
+    border-bottom: none;
+}
+
+.scaletta-voce .numero {
+    flex: 0 0 1.8rem;
+    font-weight: bold;
+    color: rgba(6, 26, 64, 0.4);
+    text-align: right;
+}
+
+.scaletta-voce .voce-contenuto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.scaletta-voce .titolo-canto a {
+    color: #14416E;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.scaletta-voce .titolo-canto a:hover {
+    text-decoration: underline;
+}
+
+.scaletta-voce .momento {
+    flex: 0 0 auto;
+    font-size: 0.85rem;
+    color: #7892AF;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.scaletta-voce .nota {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #061a40b3;
+}
+
+/* Voce senza link (es. canto non ancora presente sul sito) */
+.scaletta-voce .titolo-canto.senza-link {
+    color: #061a40;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .scaletta-voce {
+        flex-wrap: wrap;
+        padding: 0.8rem 1rem;
+    }
+
+    .scaletta-voce .momento {
+        order: 3;
+        flex-basis: 100%;
+        padding-left: 2.8rem;
+    }
+}

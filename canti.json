@@ -249,7 +249,8 @@
       "id": 23,
       "testo": "Altissimo onnipotente buon Signore, tue son le lodi, la gloria, l’onore ed ogni benedizione che a te solo e al tuo nome altissimo possiamo elevare e nessun uomo può credersi degno di poterti nominare. Laudato sii, mio Signore con tutte le sue creature, specialmente per frate sole, così bello e radioso con la sua luce illumini il giorno ed illumini noi e con grande splendore ci parla di te, Signore. Lodate e benedite il Signore, ringraziate e servite con grande umiltà. Lodate, lodate, benedite il Signore con grande umiltà, ringraziate e servite, con grande umiltà. Laudato sii mio Signore per quelli che per il tuo amore perdonano e sopportano in pace ogni persecuzione, che sora morte ha trovato viventi nella tua volontà, da te Altissimo un giorno saranno da te incoronati. Lodate e benedite il Signore, ringraziate e servite con grande umiltà, ringraziate e servite. (lodate) Lodate e benedite il Signore, ringraziate e servite con grande umiltà. Lodate, lodate, benedite il Signore con grande umiltà, ringraziate e servite, con grande umiltà.",
       "categorie": [
-        "comunione"
+        "comunione",
+        "san francesco"
       ],
       "url": "canti/altissimo",
       "fileName": "altissimo.html"
@@ -603,7 +604,8 @@
       "id": 57,
       "testo": "Dolce sentire come nel mio cuore, ora umilmente sta nascendo amore. Dolce è capire che non son più solo, ma che son parte di una immensa vita. Che generosa risplende intorno a me: dono di Lui, del suo immenso amore. Ci ha dato il cielo e le chiare stelle, fratello sole e sorella luna, la madre terra con frutti, prati e fiori, il fuoco, il vento, l'aria e l'acqua pura. Fonte di vita per le sue creature. Dono di Lui, del suo immenso amore. Dono di Lui, del suo immenso amore.",
       "categorie": [
-        "comunione"
+        "comunione",
+        "san francesco"
       ],
       "url": "canti/dolce-sentire",
       "fileName": "dolce-sentire.html"
@@ -978,7 +980,7 @@
       "titolo": "Laudato sii",
       "id": 94,
       "testo": "Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. E per tutte le sue creature, per il sole e per la luna, per le stelle e per il vento, e per l'acqua e per il fuoco. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Per sorella madre terra, ci alimenta e ci sostiene, per i frutti, i fiori e l'erba, per i monti e per il mare. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Perché il senso della vita è cantare e lodarti, e perché la nostra vita sia sempre una canzone. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. E per quelli che ora piangono, e per quelli che ora soffrono, e per quelli che ora nascono, e per quelli che ora muoiono. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. E per quelli che camminano, e per quelli che ti lodano, e per quelli che ti aspettano, e per quelli che ora cantano. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore. Laudato sii, o mi Signore.",
-      "categorie": [],
+      "categorie": ["san francesco"],
       "url": "canti/laudato-sii-o-mi-signore",
       "fileName": "laudato-sii-o-mi-signore.html"
     },
@@ -1331,7 +1333,8 @@
       "id": 128,
       "testo": "Ogni uomo semplice porta in cuore un sogno; con amore ed umiltà potrà costruirlo. Se con fede tu saprai vivere umilmente, più felice tu sarai anche senza niente. Se vorrai ogni giorno, con il tuo sudore, una pietra dopo l'altra alto arriverai. Nella vita semplice troverai la strada, che la pace donerà al tuo cuore puro; e le gioie semplici sono le più belle, sono quelle che alla fine sono le più grandi. Dai e dai, ogni giorno, con il tuo sudore, una pietra dopo l'altra alto arriverai.",
       "categorie": [
-        "santi"
+        "santi",
+        "san francesco"
       ],
       "url": "canti/san-damiano",
       "fileName": "san-damiano.html"
@@ -1341,7 +1344,8 @@
       "id": 129,
       "testo": "O Signore fa’ di me uno strumento, fa’ di me uno strumento della tua pace, dov’è odio ch'io porti l’amore, dov’è offesa ch'io porti il perdono, dov’è dubbio ch'io porti la fede, dov’è discordia ch'io porti l’unione, dov’è errore ch'io porti verità, a chi dispera ch’io porti la speranza, dov’è errore ch'io porti verità, a chi dispera ch’io porti la speranza. O Maestro dammi tu un cuore grande, che sia goccia di rugiada per il mondo, che sia voce di speranza, che sia un buon mattino per il giorno di ogni uomo. E con gli ultimi del mondo sia il mio passo lieto nella povertà, nella povertà. O Signore fa’ di me il tuo canto, fa’ di me il tuo canto di pace; a chi è triste che io porti la gioia, a chi è nel buio che io porti la luce. È donando che si ama la vita, è servendo che si vive con gioia, perdonando che si trova il perdono, è morendo che si vive in eterno, perdonando che si trova il perdono, è morendo che si vive in eterno. O Maestro dammi tu un cuore grande, che sia goccia di rugiada per il mondo, che sia voce di speranza, che sia un buon mattino per il giorno di ogni uomo. E con gli ultimi del mondo sia il mio passo lieto nella povertà, nella povertà.",
       "categorie": [
-        "santi"
+        "santi",
+        "san francesco"
       ],
       "url": "canti/san-francesco",
       "fileName": "san-francesco.html"

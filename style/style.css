@@ -123,7 +123,7 @@ main {
     margin: 0 auto;
     padding: 2rem 3rem;
     overflow: visible;
-    min-height: calc(100vh - 8rem);
+    min-height: calc(100vh - 140px);
 }
 
 section {
@@ -147,7 +147,7 @@ footer {
     text-align: center;
     padding: 1.5rem;
     margin-top: auto;
-    bottom: 0;
+    height: 70px;
 }
 
 @media (max-width: 768px) {

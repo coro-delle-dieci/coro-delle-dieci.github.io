@@ -33,19 +33,34 @@ function cercaCanti(query) {
         return;
     }
     
-    const termini = query.toLowerCase().split(' ').filter(term => term.length > 0);
+    const queryLower = query.toLowerCase().trim();
+    const termini = queryLower.split(' ').filter(term => term.length > 0);
     const risultati = [];
     
     cantiData.forEach(canto => {
         let punteggio = 0;
         const categorie = canto.categorie || [];
+        const titoloLower = canto.titolo.toLowerCase();
         const testoCompleto = (canto.titolo + ' ' + canto.testo + ' ' + categorie.join(' ')).toLowerCase();
-        
-        // Calcola punteggio di rilevanza
+
+        // Bonus forti per corrispondenze esatte della frase intera
+        if (titoloLower === queryLower) {
+            punteggio += 100; // titolo identico alla ricerca
+        } else if (titoloLower.includes(queryLower)) {
+            punteggio += 20; // titolo contiene la frase esatta (non solo i termini separati)
+        }
+
+        if (categorie.some(cat => cat.toLowerCase() === queryLower)) {
+            punteggio += 15; // categoria identica alla ricerca
+        } else if (categorie.some(cat => cat.toLowerCase().includes(queryLower))) {
+            punteggio += 5; // categoria contiene la frase esatta
+        }
+
+        // Calcola punteggio di rilevanza per i singoli termini (fallback per ricerche parziali)
         termini.forEach(termine => {
-            if (canto.titolo.toLowerCase().includes(termine)) punteggio += 10;
-            if (canto.testo.toLowerCase().includes(termine)) punteggio += 5;
-            if (categorie.some(cat => cat.toLowerCase().includes(termine))) punteggio += 3;
+            if (titoloLower.includes(termine)) punteggio += 1;
+            if (canto.testo.toLowerCase().includes(termine)) punteggio += 0.5;
+            if (categorie.some(cat => cat.toLowerCase().includes(termine))) punteggio += 0.3;
         });
         
         if (punteggio > 0) {

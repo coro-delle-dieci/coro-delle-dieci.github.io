@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'il-signore-e-la-mia-forza': 'https://www.youtube-nocookie.com/embed/0u920dwDucc',
         'jubilate-servite': 'https://www.youtube-nocookie.com/embed/ri2lolcTu2c',
         'la-tenebre': 'https://www.youtube-nocookie.com/embed/vVZ0bTCRHW4',
+        'laudate-dominum': 'https://www.youtube-nocookie.com/embed/99cV-Y0_QLo',
         'laudate-omnes-gentes': 'https://www.youtube-nocookie.com/embed/nYBfHdbf-6M',
         'magnificat': 'https://www.youtube-nocookie.com/embed/ijHz0HfRt10',
         'misericordias-domini': 'https://www.youtube-nocookie.com/embed/9O0bbMusa3U',

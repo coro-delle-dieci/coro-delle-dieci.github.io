@@ -1,11 +1,57 @@
-.calendar-page main {
-    max-width: 1000px;
+.descrizione {
+    margin-bottom: 1.5rem;
 }
 
-.calendar-section iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
+#calendar {
+    background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulsanti (se mai fossero visibili) */
+.fc-button-primary {
+    background-color: #061a40 !important;
+    border-color: #061a40 !important;
+    color: #ffffff !important;
+}
+
+.fc-button-primary:hover {
+    background-color: #1c6ea4 !important;
+    border-color: #1c6ea4 !important;
+    color: #ffffff !important;
+}
+
+.fc-daygrid-day.fc-day-today,
+.fc-timegrid-col.fc-day-today {
+    background-color: rgba(6, 26, 64, 0.06) !important;
+}
+
+/* Stile base degli eventi */
+.fc-event {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #061a40 !important;
+}
+
+/* HOVER: sfondo blu, testo bianco su TUTTI gli elementi interni */
+.fc-event:hover, .fc-event:hover * {
+    background-color: #061a40 !important;
+    color: #ffffff !important;
+    border-color: #061a40 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #calendar {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 426px) {
+    #calendar {
+        padding: 0.5rem;
+    }
 }

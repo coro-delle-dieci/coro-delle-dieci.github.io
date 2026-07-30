@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let isAutoScrolling = false;
     
     // VELOCITÀ MOLTO LENTE
-    const speedValues = [0, 0.25, 0.5, 0.75];
+    const speedValues = [0, 0.25, 0.5, 0.70];
     const intervals = [0, 100, 75, 50]; // Intervalli più lunghi per maggiore lentezza
     
     function startScrolling() {

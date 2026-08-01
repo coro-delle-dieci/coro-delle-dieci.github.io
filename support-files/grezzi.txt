@@ -1,0 +1,740 @@
+accogli-signore-i-nostri-doni
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Marie Thérèse Henderson, Gen Verde</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dalla Liturgia</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">È bello lodarti - Messa per coro e assemblea</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1987, Gen Verde della P.A.F.O.M.</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 96)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Offertorio</span>
+</div>
+</section>
+
+
+acqua-siamo-noi
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Giosy Cento</span>
+<span class="metadata-label">Raccolta:</span>
+<span class="metadata-value">È il giorno del Signore - Canti per la Messa dei giovani</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1985, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 114)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Congedo</span>
+</div>
+</section>
+
+
+adesso-e-la-pienezza
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Daniele Ricci</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Sei venuto dal Cielo - Messa di Natale</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1994, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 80)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Tempo di Natale</span>
+</div>
+</section>
+
+
+adeste-fideles
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; musica:</span>
+<span class="metadata-value">Tradizionale</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegretto (♩ = 105)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Tempo di Natale</span>
+</div>
+</section>
+
+
+agnello-di-dio-buttazzo-dargenio
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Pasquale Dargenio</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dalla Liturgia</span>
+<span class="metadata-label">Arrangiamento:</span>
+<span class="metadata-value">Francesco Buttazzo</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Esulta il cielo</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2008, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Lento (♩ = 54)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia</span>
+</div>
+</section>
+
+
+agnello-di-dio-de-dominicis
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Dino De Dominicis (RnS)</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dalla Liturgia</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Ad una voce</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2002, Rinnovamento nello Spirito Santo</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andantino (♩ = 75)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia</span>
+</div>
+</section>
+
+
+agnello-di-dio-giorgi
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Renato Giorgi</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dalla Liturgia</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Messa con i bambini</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2011, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andantino (♩ = 75)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia</span>
+</div>
+</section>
+
+
+agnello-di-dio-picchi
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Luigi Picchi</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dalla Liturgia</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1953, Edizioni Carrara</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andantino (♩ = 60)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia</span>
+</div>
+</section>
+
+
+alleluia-a-colui-che-risuscito
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Donald Fishel</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1978, GIA Publications</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 104)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-canto-per-cristo
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Musica folk inglese adattata da Eugenio Costa</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Eugenio Costa</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1976</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegretto (♩ = 96)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-celtic
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Fintan O'Carroll, Christopher Walker</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dalle Scritture (Salmi)</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1985, OCP - Oregon Catholic Press</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 90)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-chi-ascolta
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Francesco Buttazzo</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Adattamento di Francesco Buttazzo delle Scritture (Mt 7,24-25 e Gv 4,14)</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Vita nuova con Te</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1995, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegretto (♩ = 100)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-ed-oggi-ancora
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Pierangelo Sequeri</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">E mi sorprende (per cantare quello che non potremmo dire e non sappiamo tacere)</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1981, Rugginetti</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 92)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-la-nostra-festa
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Stefano Varnavà</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1995</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato/Allegretto (♩ = 96)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-la-tua-parola
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Giosy Cento</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">È il giorno del Signore</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1985, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegretto (♩ = 110)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-lode-cosmica
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Stefano Puri</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Salmo 148</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2004</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegretto (♩ = 102)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-ora-lui-vive
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Fabio Baggio</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Un'altra storia d'amore</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1997, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegretto (♩ = 108)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-passeranno-i-cieli
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Stefano Varnavà</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Alessandro Costa</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Il pane del cammino</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1969, Rugginenti</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Vivace (♩ = 138)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-questa-tua-parola
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Paolo Spoladore</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Come in cielo così in terra</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1992, USIOGOPE</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Vivace (♩ = 110)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-rendete-grazie
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Nancy L. Uelmen, M. Thérèse Henderson, Jocelyn K. Belamide (Gen Verde)</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Dal Salmo 117</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Il mistero pasquale</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2011, Gen Verde della P.A.F.O.M.</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro/Vivace (♩ = 126--132)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+alleluia-signore-sei-venuto
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Luciano Scaglianti</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Andiamo a Betlemme</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1977, ElleDiCi</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 95)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Liturgia, Canto al Vangelo</span>
+</div>
+</section>
+
+
+altissimo
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Paolo Spoladore</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Adattamento del "Cantico delle Creature" di San Francesco d'Assisi</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Unanima</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2001, USIOGOPE</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andante (♩ = 70)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Comunione, San Francesco</span>
+</div>
+</section>
+
+
+alzati-e-risplendi
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Michael Joncas</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Isaia 60</span>
+<span class="metadata-label">Adattamento italiano:</span>
+<span class="metadata-value">Gocam (RnS)</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Su ali d'acquila</span>
+<span class="metadata-label">Pubblicazione italiana:</span>
+<span class="metadata-value">1984, Ass. Auxilium/Edizioni Il Carro</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 118)</span>
+</div>
+</section>
+
+
+amatevi-l-un-l-altro
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Pierangelo Sequeri</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Qui dove Tu ci chiami - Canti per la liturgia e la catechesi</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1974, Casa musicale Eco</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 95)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Congedo</span>
+</div>
+</section>
+
+
+andate-per-le-strade
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Lorenzo Capello</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Angelo Roncari</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Tener viva la speranza</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1978, ElleDiCi</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 108)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Congedo, Missione</span>
+</div>
+</section>
+
+
+anima-christi
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Marco Frisina</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Risalente al XIV secolo, di origine ignota</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Pane di vita nuova</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2000, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Adagio (♩ = 65)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Quaresima, Adorazione, Comunione</span>
+</div>
+</section>
+
+
+anima-di-cristo
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">G. Bonelli (RnS)</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Risalente al XIV secolo, di origine ignota</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Voglio vedere il Tuo Volto</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2005, Edzioni RnS</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andantino (♩ = 80)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Quaresima, Adorazione, Comunione</span>
+</div>
+</section>
+
+
+antica-eterna-danza
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">M. Thérèse Henderson, Jocelyn Belamide (Gen Verde)</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Paola Stradi (Gen Verde)</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Cerco il Tuo Volto</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2000, Gen Verde della P.A.F.O.M.</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 90)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Offertorio</span>
+</div>
+</section>
+
+
+astro-del-ciel
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Franz Xaver Gruber</span>
+<span class="metadata-label">Testo italiano:</span>
+<span class="metadata-value">Don Angelo Meli</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1818 (1937 la versione italiana)</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Natale</span>
+</div>
+</section>
+
+
+ave-maria-gratia-plena
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Linda Stassen</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Canto Mariano</span>
+</div>
+</section>
+
+
+ave-maria-ora-pro-nobis
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Mite Balduzzi</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Chiara Casucci</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Verbum Panis</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2007, Prov. It. Missionari Oblati</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Adagio (♩ = 60)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Canto Mariano</span>
+</div>
+</section>
+
+
+ave-maria-sequeri
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Pierangelo Sequeri</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Eppure Tu sei qui - Canti per la liturgia e la catechesi</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1976, Casa musicale Eco</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 81)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Canto Mariano</span>
+</div>
+</section>
+
+
+beati-voi
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Daniele Scarpa</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Francesco Buttazzo</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Vieni Soffio di Dio</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2005, Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Moderato (♩ = 81)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Beatitudini, Santi</span>
+</div>
+</section>
+
+
+beato-e-il-cuore-che-perdona
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Jakub Blycharz</span>
+<span class="metadata-label">Testo italiano:</span>
+<span class="metadata-value">Valerio Ciprì</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2015</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 116)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">GMG, Perdono</span>
+</div>
+</section>
+
+
+benedici-o-signore
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Benedikt Enderle (Gen Rosso)</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Valerio Ciprì (Gen Rosso)</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Se siamo uniti</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">1986, Città Nuova</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Vivace (♩ = 126)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Offertorio</span>
+</div>
+</section>
+
+
+benediro-il-signore
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Fabio Avolio</span>
+<span class="metadata-label">Raccolta:</span>
+<span class="metadata-value">Cantiamo a Te Gesù</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2013, Edizioni Paoline</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andantino (♩ = 77)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Ingresso</span>
+</div>
+</section>
+
+
+camminero
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Alberto Marani</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 116)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Congedo, Bambini, Missione</span>
+</div>
+</section>
+
+
+camminiamo-sulla-strada
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Testo &amp; Musica:</span>
+<span class="metadata-value">Tradizionale afroamericano, adattamento anonimo</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Presto (♩ = 180)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Santi, Beatitudini</span>
+</div>
+</section>
+
+
+su-ali-d-aquila
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Titolo originale:</span>
+<span class="metadata-value">On eagle's wings</span>
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Michael Joncas</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Isaia 90</span>
+<span class="metadata-label">Adattamento italiano:</span>
+<span class="metadata-value">Gocam (RnS)</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Su ali d'acquila</span>
+<span class="metadata-label">Pubblicazione italiana:</span>
+<span class="metadata-value">1984, Ass. Auxilium/Edizioni Il Carro</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Allegro (♩ = 108)</span>
+</div>
+</section>
+
+
+vieni-santo-spirito-di-dio
+<section class="song-metadata">
+<h4>Informazioni del canto</h4>
+<div class="metadata-grid">
+<span class="metadata-label">Musica:</span>
+<span class="metadata-value">Daniele Scarpa</span>
+<span class="metadata-label">Testo:</span>
+<span class="metadata-value">Francesco Buttazzo</span>
+<span class="metadata-label">Album:</span>
+<span class="metadata-value">Vieni Soffio di Dio</span>
+<span class="metadata-label">Pubblicazione:</span>
+<span class="metadata-value">2005</span>
+<span class="metadata-label">Tempo:</span>
+<span class="metadata-value">Andante (♩ = 73)</span>
+<span class="metadata-label">Categoria/e:</span>
+<span class="metadata-value">Spirito Santo, Confermazione/Cresima, Ingresso</span>
+</div>
+</section>
+
+

@@ -18,7 +18,15 @@
         "offertorio"
       ],
       "url": "canti/accogli-signore-i-nostri-doni",
-      "fileName": "accogli-signore-i-nostri-doni.html"
+      "fileName": "accogli-signore-i-nostri-doni.html",
+      "metadata": {
+        "Musica": "Marie Thérèse Henderson, Gen Verde",
+        "Testo": "Dalla Liturgia",
+        "Album": "È bello lodarti - Messa per coro e assemblea",
+        "Pubblicazione": "1987, Gen Verde della P.A.F.O.M.",
+        "Tempo": "Moderato (♩ = 96)",
+        "Categoria/e": "Offertorio"
+      }
     },
     {
       "titolo": "Acqua siamo noi",
@@ -28,7 +36,14 @@
         "congedo"
       ],
       "url": "canti/acqua-siamo-noi",
-      "fileName": "acqua-siamo-noi.html"
+      "fileName": "acqua-siamo-noi.html",
+      "metadata": {
+        "Testo &amp; Musica": "Giosy Cento",
+        "Raccolta": "È il giorno del Signore - Canti per la Messa dei giovani",
+        "Pubblicazione": "1985, Paoline",
+        "Tempo": "Allegro (♩ = 114)",
+        "Categoria/e": "Congedo"
+      }
     },
     {
       "titolo": "Adesso è la pienezza",
@@ -38,7 +53,14 @@
         "natale"
       ],
       "url": "canti/adesso-e-la-pienezza",
-      "fileName": "adesso-e-la-pienezza.html"
+      "fileName": "adesso-e-la-pienezza.html",
+      "metadata": {
+        "Testo &amp; Musica": "Daniele Ricci",
+        "Album": "Sei venuto dal Cielo - Messa di Natale",
+        "Pubblicazione": "1994, Paoline",
+        "Tempo": "Moderato (♩ = 80)",
+        "Categoria/e": "Tempo di Natale"
+      }
     },
     {
       "titolo": "Adeste Fideles",
@@ -48,7 +70,12 @@
         "natale"
       ],
       "url": "canti/adeste-fideles",
-      "fileName": "adeste-fideles.html"
+      "fileName": "adeste-fideles.html",
+      "metadata": {
+        "Testo &amp; musica": "Tradizionale",
+        "Tempo": "Allegretto (♩ = 105)",
+        "Categoria/e": "Tempo di Natale"
+      }
     },
     {
       "titolo": "Agnello di Dio (Buttazzo)",
@@ -59,7 +86,16 @@
         "agnello di dio"
       ],
       "url": "canti/agnello-di-dio-buttazzo-dargenio",
-      "fileName": "agnello-di-dio-buttazzo-dargenio.html"
+      "fileName": "agnello-di-dio-buttazzo-dargenio.html",
+      "metadata": {
+        "Musica": "Pasquale Dargenio",
+        "Testo": "Dalla Liturgia",
+        "Arrangiamento": "Francesco Buttazzo",
+        "Album": "Esulta il cielo",
+        "Pubblicazione": "2008, Paoline",
+        "Tempo": "Lento (♩ = 54)",
+        "Categoria/e": "Liturgia"
+      }
     },
     {
       "titolo": "Agnello di Dio (De Dominicis)",
@@ -70,7 +106,15 @@
         "agnello di dio"
       ],
       "url": "canti/agnello-di-dio-de-dominicis",
-      "fileName": "agnello-di-dio-de-dominicis.html"
+      "fileName": "agnello-di-dio-de-dominicis.html",
+      "metadata": {
+        "Musica": "Dino De Dominicis (RnS)",
+        "Testo": "Dalla Liturgia",
+        "Album": "Ad una voce",
+        "Pubblicazione": "2002, Rinnovamento nello Spirito Santo",
+        "Tempo": "Andantino (♩ = 75)",
+        "Categoria/e": "Liturgia"
+      }
     },
     {
       "titolo": "Agnello di Dio (Giorgi)",
@@ -82,7 +126,15 @@
         "agnello di dio"
       ],
       "url": "canti/agnello-di-dio-giorgi",
-      "fileName": "agnello-di-dio-giorgi.html"
+      "fileName": "agnello-di-dio-giorgi.html",
+      "metadata": {
+        "Musica": "Renato Giorgi",
+        "Testo": "Dalla Liturgia",
+        "Album": "Messa con i bambini",
+        "Pubblicazione": "2011, Paoline",
+        "Tempo": "Andantino (♩ = 75)",
+        "Categoria/e": "Liturgia"
+      }
     },
     {
       "titolo": "Agnello di Dio (Picchi)",
@@ -93,7 +145,14 @@
         "agnello di dio"
       ],
       "url": "canti/agnello-di-dio-picchi",
-      "fileName": "agnello-di-dio-picchi.html"
+      "fileName": "agnello-di-dio-picchi.html",
+      "metadata": {
+        "Musica": "Luigi Picchi",
+        "Testo": "Dalla Liturgia",
+        "Pubblicazione": "1953, Edizioni Carrara",
+        "Tempo": "Andantino (♩ = 60)",
+        "Categoria/e": "Liturgia"
+      }
     },
     {
       "titolo": "Agnello di Dio 2 (Buttazzo)",
@@ -112,7 +171,14 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-celtic",
-      "fileName": "alleluia-celtic.html"
+      "fileName": "alleluia-celtic.html",
+      "metadata": {
+        "Musica": "Fintan O'Carroll, Christopher Walker",
+        "Testo": "Dalle Scritture (Salmi)",
+        "Pubblicazione": "1985, OCP - Oregon Catholic Press",
+        "Tempo": "Moderato (♩ = 90)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia a colui che risuscitò",
@@ -124,7 +190,13 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-a-colui-che-risuscito",
-      "fileName": "alleluia-a-colui-che-risuscito.html"
+      "fileName": "alleluia-a-colui-che-risuscito.html",
+      "metadata": {
+        "Musica": "Donald Fishel",
+        "Pubblicazione": "1978, GIA Publications",
+        "Tempo": "Moderato (♩ = 104)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, canto per Cristo",
@@ -135,7 +207,14 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-canto-per-cristo",
-      "fileName": "alleluia-canto-per-cristo.html"
+      "fileName": "alleluia-canto-per-cristo.html",
+      "metadata": {
+        "Musica": "Musica folk inglese adattata da Eugenio Costa",
+        "Testo": "Eugenio Costa",
+        "Pubblicazione": "1976",
+        "Tempo": "Allegretto (♩ = 96)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, chi ascolta",
@@ -146,7 +225,15 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-chi-ascolta",
-      "fileName": "alleluia-chi-ascolta.html"
+      "fileName": "alleluia-chi-ascolta.html",
+      "metadata": {
+        "Musica": "Francesco Buttazzo",
+        "Testo": "Adattamento di Francesco Buttazzo delle Scritture (Mt 7,24-25 e Gv 4,14)",
+        "Album": "Vita nuova con Te",
+        "Pubblicazione": "1995, Paoline",
+        "Tempo": "Allegretto (♩ = 100)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, ed oggi ancora",
@@ -157,7 +244,14 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-ed-oggi-ancora",
-      "fileName": "alleluia-ed-oggi-ancora.html"
+      "fileName": "alleluia-ed-oggi-ancora.html",
+      "metadata": {
+        "Testo &amp; Musica": "Pierangelo Sequeri",
+        "Album": "E mi sorprende (per cantare quello che non potremmo dire e non sappiamo tacere)",
+        "Pubblicazione": "1981, Rugginetti",
+        "Tempo": "Moderato (♩ = 92)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, la nostra festa",
@@ -169,7 +263,13 @@
         "bambini"
       ],
       "url": "canti/alleluia-la-nostra-festa",
-      "fileName": "alleluia-la-nostra-festa.html"
+      "fileName": "alleluia-la-nostra-festa.html",
+      "metadata": {
+        "Testo &amp; Musica": "Stefano Varnavà",
+        "Pubblicazione": "1995",
+        "Tempo": "Moderato/Allegretto (♩ = 96)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, la tua parola",
@@ -181,7 +281,14 @@
         "bambini"
       ],
       "url": "canti/alleluia-la-tua-parola",
-      "fileName": "alleluia-la-tua-parola.html"
+      "fileName": "alleluia-la-tua-parola.html",
+      "metadata": {
+        "Testo &amp; Musica": "Giosy Cento",
+        "Album": "È il giorno del Signore",
+        "Pubblicazione": "1985, Paoline",
+        "Tempo": "Allegretto (♩ = 110)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, lode cosmica",
@@ -192,7 +299,14 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-lode-cosmica",
-      "fileName": "alleluia-lode-cosmica.html"
+      "fileName": "alleluia-lode-cosmica.html",
+      "metadata": {
+        "Musica": "Stefano Puri",
+        "Testo": "Salmo 148",
+        "Pubblicazione": "2004",
+        "Tempo": "Allegretto (♩ = 102)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, ora lui vive",
@@ -204,7 +318,14 @@
         "pasqua"
       ],
       "url": "canti/alleluia-ora-lui-vive",
-      "fileName": "alleluia-ora-lui-vive.html"
+      "fileName": "alleluia-ora-lui-vive.html",
+      "metadata": {
+        "Testo &amp; Musica": "Fabio Baggio",
+        "Album": "Un'altra storia d'amore",
+        "Pubblicazione": "1997, Paoline",
+        "Tempo": "Allegretto (♩ = 108)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, passeranno i cieli",
@@ -215,7 +336,15 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-passeranno-i-cieli",
-      "fileName": "alleluia-passeranno-i-cieli.html"
+      "fileName": "alleluia-passeranno-i-cieli.html",
+      "metadata": {
+        "Musica": "Stefano Varnavà",
+        "Testo": "Alessandro Costa",
+        "Album": "Il pane del cammino",
+        "Pubblicazione": "1969, Rugginenti",
+        "Tempo": "Vivace (♩ = 138)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, questa tua parola",
@@ -226,7 +355,14 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-questa-tua-parola",
-      "fileName": "alleluia-questa-tua-parola.html"
+      "fileName": "alleluia-questa-tua-parola.html",
+      "metadata": {
+        "Testo &amp; Musica": "Paolo Spoladore",
+        "Album": "Come in cielo così in terra",
+        "Pubblicazione": "1992, USIOGOPE",
+        "Tempo": "Vivace (♩ = 110)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, rendete grazie",
@@ -237,7 +373,15 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-rendete-grazie",
-      "fileName": "alleluia-rendete-grazie.html"
+      "fileName": "alleluia-rendete-grazie.html",
+      "metadata": {
+        "Musica": "Nancy L. Uelmen, M. Thérèse Henderson, Jocelyn K. Belamide (Gen Verde)",
+        "Testo": "Dal Salmo 117",
+        "Album": "Il mistero pasquale",
+        "Pubblicazione": "2011, Gen Verde della P.A.F.O.M.",
+        "Tempo": "Allegro/Vivace (♩ = 126--132)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Alleluia, Signore sei venuto",
@@ -250,7 +394,14 @@
         "acclamazione al vangelo"
       ],
       "url": "canti/alleluia-signore-sei-venuto",
-      "fileName": "alleluia-signore-sei-venuto.html"
+      "fileName": "alleluia-signore-sei-venuto.html",
+      "metadata": {
+        "Testo &amp; Musica": "Luciano Scaglianti",
+        "Album": "Andiamo a Betlemme",
+        "Pubblicazione": "1977, ElleDiCi",
+        "Tempo": "Moderato (♩ = 95)",
+        "Categoria/e": "Liturgia, Canto al Vangelo"
+      }
     },
     {
       "titolo": "Altissimo",
@@ -261,7 +412,15 @@
         "san francesco"
       ],
       "url": "canti/altissimo",
-      "fileName": "altissimo.html"
+      "fileName": "altissimo.html",
+      "metadata": {
+        "Musica": "Paolo Spoladore",
+        "Testo": "Adattamento del \"Cantico delle Creature\" di San Francesco d'Assisi",
+        "Album": "Unanima",
+        "Pubblicazione": "2001, USIOGOPE",
+        "Tempo": "Andante (♩ = 70)",
+        "Categoria/e": "Comunione, San Francesco"
+      }
     },
     {
       "titolo": "Alzati e risplendi",
@@ -272,7 +431,15 @@
         "pasqua"
       ],
       "url": "canti/alzati-e-risplendi",
-      "fileName": "alzati-e-risplendi.html"
+      "fileName": "alzati-e-risplendi.html",
+      "metadata": {
+        "Musica": "Michael Joncas",
+        "Testo": "Isaia 60",
+        "Adattamento italiano": "Gocam (RnS)",
+        "Album": "Su ali d'acquila",
+        "Pubblicazione italiana": "1984, Ass. Auxilium/Edizioni Il Carro",
+        "Tempo": "Allegro (♩ = 118)"
+      }
     },
     {
       "titolo": "Amatevi l'un l'altro",
@@ -283,7 +450,14 @@
         "bambini"
       ],
       "url": "canti/amatevi-l-un-l-altro",
-      "fileName": "amatevi-l-un-l-altro.html"
+      "fileName": "amatevi-l-un-l-altro.html",
+      "metadata": {
+        "Testo &amp; Musica": "Pierangelo Sequeri",
+        "Album": "Qui dove Tu ci chiami - Canti per la liturgia e la catechesi",
+        "Pubblicazione": "1974, Casa musicale Eco",
+        "Tempo": "Allegro (♩ = 95)",
+        "Categoria/e": "Congedo"
+      }
     },
     {
       "titolo": "Andate per le strade",
@@ -295,7 +469,15 @@
         "missione"
       ],
       "url": "canti/andate-per-le-strade",
-      "fileName": "andate-per-le-strade.html"
+      "fileName": "andate-per-le-strade.html",
+      "metadata": {
+        "Musica": "Lorenzo Capello",
+        "Testo": "Angelo Roncari",
+        "Album": "Tener viva la speranza",
+        "Pubblicazione": "1978, ElleDiCi",
+        "Tempo": "Allegro (♩ = 108)",
+        "Categoria/e": "Congedo, Missione"
+      }
     },
     {
       "titolo": "Anima Christi",
@@ -307,7 +489,15 @@
         "comunione"
       ],
       "url": "canti/anima-christi",
-      "fileName": "anima-christi.html"
+      "fileName": "anima-christi.html",
+      "metadata": {
+        "Musica": "Marco Frisina",
+        "Testo": "Risalente al XIV secolo, di origine ignota",
+        "Album": "Pane di vita nuova",
+        "Pubblicazione": "2000, Paoline",
+        "Tempo": "Adagio (♩ = 65)",
+        "Categoria/e": "Quaresima, Adorazione, Comunione"
+      }
     },
     {
       "titolo": "Anima di Cristo",
@@ -319,7 +509,15 @@
         "comunione"
       ],
       "url": "canti/anima-di-cristo",
-      "fileName": "anima-di-cristo.html"
+      "fileName": "anima-di-cristo.html",
+      "metadata": {
+        "Musica": "G. Bonelli (RnS)",
+        "Testo": "Risalente al XIV secolo, di origine ignota",
+        "Album": "Voglio vedere il Tuo Volto",
+        "Pubblicazione": "2005, Edzioni RnS",
+        "Tempo": "Andantino (♩ = 80)",
+        "Categoria/e": "Quaresima, Adorazione, Comunione"
+      }
     },
     {
       "titolo": "Antica eterna danza",
@@ -329,7 +527,15 @@
         "offertorio"
       ],
       "url": "canti/antica-eterna-danza",
-      "fileName": "antica-eterna-danza.html"
+      "fileName": "antica-eterna-danza.html",
+      "metadata": {
+        "Musica": "M. Thérèse Henderson, Jocelyn Belamide (Gen Verde)",
+        "Testo": "Paola Stradi (Gen Verde)",
+        "Album": "Cerco il Tuo Volto",
+        "Pubblicazione": "2000, Gen Verde della P.A.F.O.M.",
+        "Tempo": "Moderato (♩ = 90)",
+        "Categoria/e": "Offertorio"
+      }
     },
     {
       "titolo": "Astro del ciel",
@@ -339,7 +545,14 @@
         "natale"
       ],
       "url": "canti/astro-del-ciel",
-      "fileName": "astro-del-ciel.html"
+      "fileName": "astro-del-ciel.html",
+      "metadata": {
+        "Musica": "Franz Xaver Gruber",
+        "Testo italiano": "Don Angelo Meli",
+        "Pubblicazione": "1818 (1937 la versione italiana)",
+        "Tempo": "Moderato",
+        "Categoria/e": "Natale"
+      }
     },
     {
       "titolo": "Ave Maria (Sequeri)",
@@ -349,7 +562,14 @@
         "maria"
       ],
       "url": "canti/ave-maria-sequeri",
-      "fileName": "ave-maria-sequeri.html"
+      "fileName": "ave-maria-sequeri.html",
+      "metadata": {
+        "Testo &amp; Musica": "Pierangelo Sequeri",
+        "Album": "Eppure Tu sei qui - Canti per la liturgia e la catechesi",
+        "Pubblicazione": "1976, Casa musicale Eco",
+        "Tempo": "Moderato (♩ = 81)",
+        "Categoria/e": "Canto Mariano"
+      }
     },
     {
       "titolo": "Ave Maria ora pro nobis",
@@ -359,7 +579,15 @@
         "maria"
       ],
       "url": "canti/ave-maria-ora-pro-nobis",
-      "fileName": "ave-maria-ora-pro-nobis.html"
+      "fileName": "ave-maria-ora-pro-nobis.html",
+      "metadata": {
+        "Musica": "Mite Balduzzi",
+        "Testo": "Chiara Casucci",
+        "Album": "Verbum Panis",
+        "Pubblicazione": "2007, Prov. It. Missionari Oblati",
+        "Tempo": "Adagio (♩ = 60)",
+        "Categoria/e": "Canto Mariano"
+      }
     },
     {
       "titolo": "Ave Maria, gratia plena",
@@ -369,7 +597,12 @@
         "maria"
       ],
       "url": "canti/ave-maria-gratia-plena",
-      "fileName": "ave-maria-gratia-plena.html"
+      "fileName": "ave-maria-gratia-plena.html",
+      "metadata": {
+        "Testo &amp; Musica": "Linda Stassen",
+        "Tempo": "Moderato",
+        "Categoria/e": "Canto Mariano"
+      }
     },
     {
       "titolo": "Beati voi",
@@ -380,7 +613,15 @@
         "beatitudini"
       ],
       "url": "canti/beati-voi",
-      "fileName": "beati-voi.html"
+      "fileName": "beati-voi.html",
+      "metadata": {
+        "Musica": "Daniele Scarpa",
+        "Testo": "Francesco Buttazzo",
+        "Album": "Vieni Soffio di Dio",
+        "Pubblicazione": "2005, Paoline",
+        "Tempo": "Moderato (♩ = 81)",
+        "Categoria/e": "Beatitudini, Santi"
+      }
     },
     {
       "titolo": "Beato è il cuore che perdona (Inno GMG 2016)",
@@ -391,7 +632,14 @@
         "perdono"
       ],
       "url": "canti/beato-e-il-cuore-che-perdona",
-      "fileName": "beato-e-il-cuore-che-perdona.html"
+      "fileName": "beato-e-il-cuore-che-perdona.html",
+      "metadata": {
+        "Musica": "Jakub Blycharz",
+        "Testo italiano": "Valerio Ciprì",
+        "Pubblicazione": "2015",
+        "Tempo": "Allegro (♩ = 116)",
+        "Categoria/e": "GMG, Perdono"
+      }
     },
     {
       "titolo": "Benedici, o Signore",
@@ -401,7 +649,15 @@
         "offertorio"
       ],
       "url": "canti/benedici-o-signore",
-      "fileName": "benedici-o-signore.html"
+      "fileName": "benedici-o-signore.html",
+      "metadata": {
+        "Musica": "Benedikt Enderle (Gen Rosso)",
+        "Testo": "Valerio Ciprì (Gen Rosso)",
+        "Album": "Se siamo uniti",
+        "Pubblicazione": "1986, Città Nuova",
+        "Tempo": "Vivace (♩ = 126)",
+        "Categoria/e": "Offertorio"
+      }
     },
     {
       "titolo": "Benedirò il Signore",
@@ -411,7 +667,14 @@
         "ingresso"
       ],
       "url": "canti/benediro-il-signore",
-      "fileName": "benediro-il-signore.html"
+      "fileName": "benediro-il-signore.html",
+      "metadata": {
+        "Testo &amp; Musica": "Fabio Avolio",
+        "Raccolta": "Cantiamo a Te Gesù",
+        "Pubblicazione": "2013, Edizioni Paoline",
+        "Tempo": "Andantino (♩ = 77)",
+        "Categoria/e": "Ingresso"
+      }
     },
     {
       "titolo": "Camminerò",
@@ -423,7 +686,12 @@
         "missione"
       ],
       "url": "canti/camminero",
-      "fileName": "camminero.html"
+      "fileName": "camminero.html",
+      "metadata": {
+        "Testo &amp; Musica": "Alberto Marani",
+        "Tempo": "Allegro (♩ = 116)",
+        "Categoria/e": "Congedo, Bambini, Missione"
+      }
     },
     {
       "titolo": "Camminiamo sulla strada",
@@ -434,7 +702,12 @@
         "beatitudini"
       ],
       "url": "canti/camminiamo-sulla-strada",
-      "fileName": "camminiamo-sulla-strada.html"
+      "fileName": "camminiamo-sulla-strada.html",
+      "metadata": {
+        "Testo &amp; Musica": "Tradizionale afroamericano, adattamento anonimo",
+        "Tempo": "Presto (♩ = 180)",
+        "Categoria/e": "Santi, Beatitudini"
+      }
     },
     {
       "titolo": "Canta e cammina",
@@ -1645,7 +1918,16 @@
         "comunione"
       ],
       "url": "canti/su-ali-d-aquila",
-      "fileName": "su-ali-d-aquila.html"
+      "fileName": "su-ali-d-aquila.html",
+      "metadata": {
+        "Titolo originale": "On eagle's wings",
+        "Musica": "Michael Joncas",
+        "Testo": "Isaia 90",
+        "Adattamento italiano": "Gocam (RnS)",
+        "Album": "Su ali d'acquila",
+        "Pubblicazione italiana": "1984, Ass. Auxilium/Edizioni Il Carro",
+        "Tempo": "Allegro (♩ = 108)"
+      }
     },
     {
       "titolo": "Sulla tua parola (Pietro vai)",
@@ -1826,7 +2108,15 @@
         "ingresso"
       ],
       "url": "canti/vieni-santo-spirito-di-dio",
-      "fileName": "vieni-santo-spirito-di-dio.html"
+      "fileName": "vieni-santo-spirito-di-dio.html",
+      "metadata": {
+        "Musica": "Daniele Scarpa",
+        "Testo": "Francesco Buttazzo",
+        "Album": "Vieni Soffio di Dio",
+        "Pubblicazione": "2005",
+        "Tempo": "Andante (♩ = 73)",
+        "Categoria/e": "Spirito Santo, Confermazione/Cresima, Ingresso"
+      }
     },
     {
       "titolo": "Vieni Spirito di Cristo",

@@ -935,7 +935,9 @@
       "titolo": "Salve dolce Vergine",
       "id": 64,
       "testo": "Salve, o dolce Vergine, salve, o dolce  Madre, in Te esulta tutta la terra e i cori degli angeli. Tempio santo del Signore, gloria delle vergini, Tu giardino del Paradiso, soavissimo fiore. Tu sei trono altissimo, Tu altar purissimo, in te esulta, o piena di grazia, tutta la creazione. Paradiso mistico, fonte sigillata, il Signore in Te germoglia l'albero della vita. O Sovrana semplice, o Potente umile, apri a noi le porte del cielo, dona a noi la luce. Amen.",
-      "categorie": [],
+      "categorie": [
+        "maria"
+      ],
       "url": "canti/salve-dolce-vergine",
       "fileName": "salve-dolce-vergine.html"
     },
